@@ -1,0 +1,61 @@
+{
+  "package_release": "V14.6 FINAL",
+  "advisory_release": "V14.5",
+  "validation_timestamp_utc": "2026-10-24T01:59:05.990499+00:00",
+  "video": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 1280,
+        "height": 720,
+        "avg_frame_rate": "24/1"
+      },
+      {
+        "index": 1,
+        "codec_name": "aac",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2,
+        "avg_frame_rate": "0/0"
+      },
+      {
+        "index": 2,
+        "codec_name": "mov_text",
+        "codec_type": "subtitle",
+        "avg_frame_rate": "0/0"
+      }
+    ],
+    "format": {
+      "duration": "182.875000",
+      "size": "5286480"
+    }
+  },
+  "narration_audio": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2,
+        "avg_frame_rate": "0/0"
+      }
+    ],
+    "format": {
+      "duration": "182.865000",
+      "size": "35110124"
+    }
+  },
+  "scene_image_count": 10,
+  "embedded_caption_count": 23,
+  "extracted_srt": "01_Final_Video/Kokoro_Captions_am_michael_v14_6.srt",
+  "media_duration_difference_seconds": 0.009999999999990905,
+  "full_mp4_video_audio_decode": "passed",
+  "user_supplied_media_preserved": true
+}

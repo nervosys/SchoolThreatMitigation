@@ -1,0 +1,111 @@
+/* NERVOSYS VERSION 14.5 — canonical print geometry and editorial hierarchy.
+   0.75in body-content margins on every Letter page. The full-bleed illustrated
+   cover alone is exempt as artwork, with all live text inside a 0.75in safe area. */
+:root { --nv-paper-inset: 0.75in; }
+@page {
+  size: Letter;
+  margin:0.75in!important;
+  @top-left { content: "SCHOOL SAFETY  /  WASHINGTON K–12" !important; }
+  @top-right { content: "NERVOSYS  /  VERSION 14.5" !important; }
+  @bottom-left { content: "COURTESY OF NERVOSYS, LLC  /  DR. ADAM ERICKSON" !important; }
+  @bottom-center { content: "https://nervosys.ai" !important; }
+  @bottom-right { content: counter(page) !important; }
+}
+@page:first { size:Letter; margin:0.75in!important; background:white !important;
+  @top-left {content:none!important;} @top-right {content:none!important;}
+  @bottom-left {content:none!important;} @bottom-center {content:none!important;}
+  @bottom-right {content:none!important;}
+}
+@page summary-page {size:Letter;margin:0.75in!important;background:white!important;
+  @top-left{content:none!important;} @top-right{content:none!important;}
+  @bottom-left{content:none!important;} @bottom-center{content:none!important;}
+  @bottom-right{content:none!important;}
+}
+@page summary-page:first {size:Letter;margin:0.75in!important;background:white!important;
+  @top-left{content:none!important;} @top-right{content:none!important;}
+  @bottom-left{content:none!important;} @bottom-center{content:none!important;}
+  @bottom-right{content:none!important;}
+}
+/* The cover illustration is full bleed; its visible text follows a 0.75in inset. */
+@page defenseArt {size:Letter;margin:0!important;background:#080d12!important;
+  @top-left{content:none!important;} @top-right{content:none!important;}
+  @bottom-left{content:none!important;} @bottom-center{content:none!important;}
+  @bottom-right{content:none!important;}
+}
+@page defenseArt:first {size:Letter;margin:0!important;background:#080d12!important;
+  @top-left{content:none!important;} @top-right{content:none!important;}
+  @bottom-left{content:none!important;} @bottom-center{content:none!important;}
+  @bottom-right{content:none!important;}
+}
+.vector-cover .cover-foreground {padding:0.75in!important;}
+.vector-cover .cover-bottom {left:0.75in!important;right:0.75in!important;bottom:0.75in!important;}
+.vector-cover .cover-subtitle {font-size:8.4pt!important;max-width:7in!important;letter-spacing:.045em!important;}
+/* Executive brief retains the same component rules whether embedded in guide or standalone. */
+.vector-summary {height:9.5in!important;min-height:0!important;max-height:9.5in!important;
+  width:7in!important; padding:0!important;position:relative!important;
+  overflow:visible!important; margin:0!important; box-sizing:border-box!important;}
+.vector-summary h1 {font-size:21pt!important;margin:11pt 0 9pt!important;padding-bottom:8pt!important;}
+.vector-summary .summary-kicker {font-size:7pt!important;padding-bottom:7pt!important;}
+.vector-summary .summary-lead {font-size:9.25pt!important;margin-bottom:12pt!important;line-height:1.4!important;}
+.vector-summary .summary-standard {padding:10pt 12pt!important;margin-bottom:12pt!important;}
+.vector-summary .summary-standard p {font-size:8.5pt!important;line-height:1.37!important;}
+.vector-summary .summary-matrix {column-gap:12pt!important;row-gap:11pt!important;margin-bottom:12pt!important;}
+.vector-summary .summary-piece {padding-top:6pt!important;}
+.vector-summary .piece-kicker {font-size:14.5pt!important;margin-bottom:4pt!important;}
+.vector-summary .piece-kicker span {font-size:9.1pt!important;}
+.vector-summary .summary-piece p {font-size:7.7pt!important;line-height:1.39!important;}
+.vector-summary h2 {font-size:11.3pt!important;margin:0 0 6pt!important;}
+.vector-summary .summary-decision {font-size:8.1pt!important;line-height:1.39!important;padding:9pt 11pt!important;}
+.vector-summary .summary-fine {font-size:7.2pt!important;line-height:1.39!important;margin:12pt 0 0!important;}
+.vector-summary .summary-footer {left:0!important;right:0!important;bottom:0!important;
+  font-size:6.6pt!important;padding-top:7pt!important;}
+/* The charter adopts the same masthead, line rule, cards, and document furniture. */
+.national-forum {width:auto!important;min-height:0!important;padding:0!important;
+  font-family:var(--nv-font)!important;}
+.national-forum .eyebrow {color:var(--nv-graphite)!important;font-size:7pt!important;
+  padding-bottom:7pt!important;border-bottom:.6pt solid var(--nv-line)!important;}
+.national-forum h2 {color:var(--nv-graphite)!important;font-size:17pt!important;
+  line-height:1.18!important;padding-bottom:6pt!important;
+  border-bottom:2pt solid var(--nv-cyan)!important;margin:9pt 0 7pt!important;}
+.national-forum .forum-lead {font-size:8.6pt!important;line-height:1.36!important;margin:0 0 8pt!important;}
+.national-forum .forum-banner {padding:8pt 10pt!important;margin:6pt 0 8pt!important;}
+.national-forum .forum-banner p {font-size:8pt!important;line-height:1.33!important;margin:3pt 0 0!important;}
+.national-forum .forum-grid {gap:7pt!important;}
+.national-forum .forum-grid article {padding:7pt 8pt!important;}
+.national-forum h3 {font-size:9.1pt!important;margin:0 0 4pt!important;}
+.national-forum .forum-grid p {font-size:7.6pt!important;line-height:1.32!important;}
+.national-forum .forum-process {margin-top:8pt!important;padding:7pt 8pt!important;}
+.national-forum .forum-process .label {font-size:7.3pt!important;margin-bottom:5pt!important;}
+.national-forum .steps span {font-size:6.7pt!important;padding:4pt 2pt!important;}
+.national-forum .forum-footer {font-size:8pt!important;line-height:1.3!important;margin:7pt 0!important;padding:7pt 9pt!important;}
+.national-forum .forum-citations {font-size:6.8pt!important;line-height:1.30!important;padding-top:5pt!important;}
+.national-forum .forum-attribution {font-size:6.6pt!important;
+  margin-top:6pt!important;padding-top:6pt!important;}
+/* Pagination and overflow corrections at the new 7in live width. */
+#field-guide-at-a-glance {min-height:0!important;}
+#field-guide-at-a-glance .bottom-caption {font-size:7.5pt!important;line-height:1.27!important;margin-top:7pt!important;}
+#field-guide-at-a-glance .action-card {padding:9pt 8pt!important;min-height:0!important;}
+#field-guide-at-a-glance .action-card h3 {font-size:10pt!important;margin:6pt 0!important;}
+#field-guide-at-a-glance .action-card p {font-size:7.9pt!important;line-height:1.29!important;}
+#field-guide-at-a-glance h2 {font-size:17pt!important;}
+/* Force unbroken tokens inside narrow tabular cells to wrap. */
+body table {table-layout:fixed!important;max-width:100%!important;}
+body table td, body table th {overflow-wrap:anywhere!important;word-break:normal!important;}
+body table td *, body table th * {overflow-wrap:anywhere!important;}
+body ol, body ul {padding-left:1.85em;}
+/* The same legal/author attribution is already present in page furniture. */
+body > .print-provenance {display:none!important;}
+/* Three action cards must share the available 7in width INCLUDING gaps. */
+.action-grid {width:100%!important;gap:9pt!important;}
+.action-grid > .action-card {flex:1 1 0!important;width:auto!important;min-width:0!important;}
+.action-grid > .action-card p {overflow-wrap:anywhere!important;hyphens:auto!important;}
+/* Cover safety: its padded live layer must fit the sheet, not add padding to 11in. */
+.vector-cover {box-sizing:border-box!important; width:8.5in!important; height:11in!important;}
+.vector-cover .cover-foreground {
+  box-sizing:border-box!important; width:8.5in!important; height:11in!important;
+  padding:0.75in!important;
+}
+.vector-cover .cover-topline {box-sizing:border-box!important;width:100%!important;}
+.vector-cover .cover-bottom {box-sizing:border-box!important;left:0.75in!important;right:0.75in!important;bottom:0.75in!important;}
+/* Apply the full-bleed named page to the actual vector cover section. */
+.vector-cover {page:defenseArt!important;}

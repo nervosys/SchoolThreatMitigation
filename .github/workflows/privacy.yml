@@ -1,0 +1,16 @@
+name: Privacy and repository validation
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+jobs:
+  privacy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check repository for high-risk leaks
+        run: python3 scripts/privacy_check.py
+      - name: Compile-check Python renderer
+        run: python3 -m py_compile media/production/kokoro_uv_render.py
+      - name: Verify release hashes
+        run: sha256sum --check SHA256SUMS.txt

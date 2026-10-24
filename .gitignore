@@ -1,0 +1,34 @@
+# Never commit credentials, private records, or local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.p8
+id_rsa*
+id_ed25519*
+*.secrets.*
+secrets/
+private/
+confidential/
+local_data/
+private_data/
+# User and build artifacts
+.venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+output/
+media/production/output/
+dist/
+build/
+*.log
+*.bak
+*.tmp
