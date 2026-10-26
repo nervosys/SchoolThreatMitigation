@@ -1,0 +1,83 @@
+{
+  "retrieved": "2026-10-26",
+  "sources": [
+    {
+      "id": "SRC-01",
+      "title": "USSS NTAC, Protecting America\u2019s Schools (2019)",
+      "url": "https://www.secretservice.gov/sites/default/files/2020-04/Protecting_Americas_Schools.pdf",
+      "interpretation": "Historical case analysis and fact-based prevention; not a predictor for individuals"
+    },
+    {
+      "id": "SRC-02",
+      "title": "CISA K-12 School Security Guide (3rd ed.)",
+      "url": "https://www.cisa.gov/resources-tools/resources/k-12-school-security-guide-3rd-edition",
+      "interpretation": "Layered security and campus assessment; does not validate each proposed product"
+    },
+    {
+      "id": "SRC-03",
+      "title": "FBI, 2025 Active Shooter Incidents (released 2026-07-30)",
+      "url": "https://www.fbi.gov/news/press-releases/fbi-releases-2025-active-shooter-incidents-in-the-united-states-report",
+      "interpretation": "2025 total across settings; not a K-12 incident rate"
+    },
+    {
+      "id": "SRC-04",
+      "title": "CDC, Preventing Firearm Injury and Death",
+      "url": "https://www.cdc.gov/firearm-violence/prevention/",
+      "interpretation": "Public-health guidance for secure storage and child access prevention"
+    },
+    {
+      "id": "SRC-05",
+      "title": "Washington RCW 9.41.360",
+      "url": "https://app.leg.wa.gov/rcw/default.aspx?cite=9.41.360",
+      "interpretation": "Unsafe-storage liability in specified circumstances; no universal storage method mandate"
+    },
+    {
+      "id": "SRC-06",
+      "title": "Washington RCW 28A.320.124",
+      "url": "https://app.leg.wa.gov/rcw/default.aspx?cite=28A.320.124",
+      "interpretation": "School safety staff duties, separation from discipline and family complaint processes"
+    },
+    {
+      "id": "SRC-07",
+      "title": "Washington RCW 28A.320.1242",
+      "url": "https://app.leg.wa.gov/rcw/default.aspx?cite=28A.320.1242",
+      "interpretation": "Annual agreements with public involvement"
+    },
+    {
+      "id": "SRC-08",
+      "title": "US Department of Education FERPA threat assessment FAQ",
+      "url": "https://studentprivacy.ed.gov/faq/does-ferpa-permit-sharing-education-records-outside-law-enforcement-officials-mental-health",
+      "interpretation": "Purpose limitation and redisclosure conditions"
+    },
+    {
+      "id": "SRC-09",
+      "title": "NIST AI Risk Management Framework",
+      "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "interpretation": "AI governance/validation; not a certification"
+    },
+    {
+      "id": "SRC-10",
+      "title": "NIST Cybersecurity Framework 2.0",
+      "url": "https://www.nist.gov/cyberframework",
+      "interpretation": "Govern/identify/protect/detect/respond/recover control outcomes"
+    },
+    {
+      "id": "SRC-11",
+      "title": "CISA Protecting Our Future: Cybersecurity for K-12",
+      "url": "https://www.cisa.gov/protecting-our-future-cybersecurity-k-12",
+      "interpretation": "MFA, known exploited vulnerabilities, backups and IR exercises"
+    },
+    {
+      "id": "SRC-12",
+      "title": "U.S. Department of Education Active School Shooter Resources",
+      "url": "https://www.ed.gov/teaching-and-administration/safe-learning-environments/school-safety-and-security/preventing-targeted-violence-and-threat-assessment-resources/active-school-shooter",
+      "interpretation": "Behavior-based multidisciplinary TAT and avoiding stereotyping"
+    },
+    {
+      "id": "SRC-13",
+      "title": "Washington Department of Commerce Safe Storage Program",
+      "url": "https://www.commerce.wa.gov/community-safety/safe-storage/",
+      "interpretation": "Current Washington safe-storage outreach and definitions"
+    }
+  ]
+}

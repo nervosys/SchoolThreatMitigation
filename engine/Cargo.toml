@@ -1,0 +1,16 @@
+[package]
+name = "stm-neurosymbolic"
+version = "0.1.0"
+edition = "2021"
+authors = ["NERVOSYS, LLC contributors"]
+license = "AGPL-3.0-or-later"
+description = "Read-only neuro-symbolic school threat mitigation recommendation and compliance-support engine"
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+[profile.release]
+strip = true
+lto = true
+codegen-units = 1

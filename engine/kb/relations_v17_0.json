@@ -1,0 +1,329 @@
+{
+  "version": "17.0-NSAI.1",
+  "edges": [
+    {
+      "from": "T01",
+      "to": "P-01",
+      "relation": "mitigated_by",
+      "basis": "Version 17.0 scenario/control thematic trace; proposed mapping requiring independent validation"
+    },
+    {
+      "from": "T02",
+      "to": "P-01",
+      "relation": "mitigated_by",
+      "basis": "Version 17.0 scenario/control thematic trace; proposed mapping requiring independent validation"
+    },
+    {
+      "from": "T03",
+      "to": "P-01",
+      "relation": "mitigated_by",
+      "basis": "Version 17.0 scenario/control thematic trace; proposed mapping requiring independent validation"
+    },
+    {
+      "from": "T03",
+      "to": "P-02",
+      "relation": "mitigated_by",
+      "basis": "Version 17.0 scenario/control thematic trace; proposed mapping requiring independent validation"
+    },
+    {
+      "from": "T04",
+      "to": "B-01",
+      "relation": "mitigated_by",
+      "basis": "Version 17.0 scenario/control thematic trace; proposed mapping requiring independent validation"
+    },
+    {
+      "from": "T05",
+      "to": "B-01",
+      "relation": "mitigated_by",
+      "basis": "Version 17.0 scenario/control thematic trace; proposed mapping requiring independent validation"
+    },
+    {
+      "from": "T05",
+      "to": "G-01",
+      "relation": "mitigated_by",
+      "basis": "Version 17.0 scenario/control thematic trace; proposed mapping requiring independent validation"
+    },
+    {
+      "from": "T06",
+      "to": "D-01",
+      "relation": "mitigated_by",
+      "basis": "Version 17.0 scenario/control thematic trace; proposed mapping requiring independent validation"
+    },
+    {
+      "from": "T06",
+      "to": "F-01",
+      "relation": "mitigated_by",
+      "basis": "Version 17.0 scenario/control thematic trace; proposed mapping requiring independent validation"
+    },
+    {
+      "from": "T07",
+      "to": "D-02",
+      "relation": "mitigated_by",
+      "basis": "Version 17.0 scenario/control thematic trace; proposed mapping requiring independent validation"
+    },
+    {
+      "from": "T08",
+      "to": "D-01",
+      "relation": "mitigated_by",
+      "basis": "Version 17.0 scenario/control thematic trace; proposed mapping requiring independent validation"
+    },
+    {
+      "from": "T08",
+      "to": "F-01",
+      "relation": "mitigated_by",
+      "basis": "Version 17.0 scenario/control thematic trace; proposed mapping requiring independent validation"
+    },
+    {
+      "from": "T09",
+      "to": "F-01",
+      "relation": "mitigated_by",
+      "basis": "Version 17.0 scenario/control thematic trace; proposed mapping requiring independent validation"
+    },
+    {
+      "from": "T10",
+      "to": "F-01",
+      "relation": "mitigated_by",
+      "basis": "Version 17.0 scenario/control thematic trace; proposed mapping requiring independent validation"
+    },
+    {
+      "from": "T10",
+      "to": "I-01",
+      "relation": "mitigated_by",
+      "basis": "Version 17.0 scenario/control thematic trace; proposed mapping requiring independent validation"
+    },
+    {
+      "from": "T11",
+      "to": "F-02",
+      "relation": "mitigated_by",
+      "basis": "Version 17.0 scenario/control thematic trace; proposed mapping requiring independent validation"
+    },
+    {
+      "from": "T11",
+      "to": "D-01",
+      "relation": "mitigated_by",
+      "basis": "Version 17.0 scenario/control thematic trace; proposed mapping requiring independent validation"
+    },
+    {
+      "from": "T12",
+      "to": "C-01",
+      "relation": "mitigated_by",
+      "basis": "Version 17.0 scenario/control thematic trace; proposed mapping requiring independent validation"
+    },
+    {
+      "from": "T12",
+      "to": "D-01",
+      "relation": "mitigated_by",
+      "basis": "Version 17.0 scenario/control thematic trace; proposed mapping requiring independent validation"
+    },
+    {
+      "from": "T13",
+      "to": "M-01",
+      "relation": "mitigated_by",
+      "basis": "Version 17.0 scenario/control thematic trace; proposed mapping requiring independent validation"
+    },
+    {
+      "from": "T14",
+      "to": "R-01",
+      "relation": "mitigated_by",
+      "basis": "Version 17.0 scenario/control thematic trace; proposed mapping requiring independent validation"
+    },
+    {
+      "from": "T14",
+      "to": "M-01",
+      "relation": "mitigated_by",
+      "basis": "Version 17.0 scenario/control thematic trace; proposed mapping requiring independent validation"
+    },
+    {
+      "from": "T15",
+      "to": "K-01",
+      "relation": "mitigated_by",
+      "basis": "Version 17.0 scenario/control thematic trace; proposed mapping requiring independent validation"
+    },
+    {
+      "from": "T16",
+      "to": "R-01",
+      "relation": "mitigated_by",
+      "basis": "Version 17.0 scenario/control thematic trace; proposed mapping requiring independent validation"
+    },
+    {
+      "from": "T16",
+      "to": "G-01",
+      "relation": "mitigated_by",
+      "basis": "Version 17.0 scenario/control thematic trace; proposed mapping requiring independent validation"
+    },
+    {
+      "from": "T17",
+      "to": "A-01",
+      "relation": "mitigated_by",
+      "basis": "Version 17.0 scenario/control thematic trace; proposed mapping requiring independent validation"
+    },
+    {
+      "from": "T17",
+      "to": "G-01",
+      "relation": "mitigated_by",
+      "basis": "Version 17.0 scenario/control thematic trace; proposed mapping requiring independent validation"
+    },
+    {
+      "from": "T18",
+      "to": "G-01",
+      "relation": "mitigated_by",
+      "basis": "Version 17.0 scenario/control thematic trace; proposed mapping requiring independent validation"
+    },
+    {
+      "from": "T18",
+      "to": "I-01",
+      "relation": "mitigated_by",
+      "basis": "Version 17.0 scenario/control thematic trace; proposed mapping requiring independent validation"
+    },
+    {
+      "from": "T01",
+      "to": "G-001",
+      "relation": "governed_by",
+      "basis": "Project policy or conditional statutory safeguard; assess applicability and counsel review"
+    },
+    {
+      "from": "T01",
+      "to": "A-003",
+      "relation": "governed_by",
+      "basis": "Project policy or conditional statutory safeguard; assess applicability and counsel review"
+    },
+    {
+      "from": "T02",
+      "to": "G-001",
+      "relation": "governed_by",
+      "basis": "Project policy or conditional statutory safeguard; assess applicability and counsel review"
+    },
+    {
+      "from": "T02",
+      "to": "A-003",
+      "relation": "governed_by",
+      "basis": "Project policy or conditional statutory safeguard; assess applicability and counsel review"
+    },
+    {
+      "from": "T03",
+      "to": "G-001",
+      "relation": "governed_by",
+      "basis": "Project policy or conditional statutory safeguard; assess applicability and counsel review"
+    },
+    {
+      "from": "T04",
+      "to": "WA-123",
+      "relation": "governed_by",
+      "basis": "Project policy or conditional statutory safeguard; assess applicability and counsel review"
+    },
+    {
+      "from": "T04",
+      "to": "G-009",
+      "relation": "governed_by",
+      "basis": "Project policy or conditional statutory safeguard; assess applicability and counsel review"
+    },
+    {
+      "from": "T05",
+      "to": "G-002",
+      "relation": "governed_by",
+      "basis": "Project policy or conditional statutory safeguard; assess applicability and counsel review"
+    },
+    {
+      "from": "T05",
+      "to": "G-009",
+      "relation": "governed_by",
+      "basis": "Project policy or conditional statutory safeguard; assess applicability and counsel review"
+    },
+    {
+      "from": "T06",
+      "to": "A-002",
+      "relation": "governed_by",
+      "basis": "Project policy or conditional statutory safeguard; assess applicability and counsel review"
+    },
+    {
+      "from": "T07",
+      "to": "A-002",
+      "relation": "governed_by",
+      "basis": "Project policy or conditional statutory safeguard; assess applicability and counsel review"
+    },
+    {
+      "from": "T07",
+      "to": "G-003",
+      "relation": "governed_by",
+      "basis": "Project policy or conditional statutory safeguard; assess applicability and counsel review"
+    },
+    {
+      "from": "T08",
+      "to": "G-004",
+      "relation": "governed_by",
+      "basis": "Project policy or conditional statutory safeguard; assess applicability and counsel review"
+    },
+    {
+      "from": "T09",
+      "to": "G-004",
+      "relation": "governed_by",
+      "basis": "Project policy or conditional statutory safeguard; assess applicability and counsel review"
+    },
+    {
+      "from": "T10",
+      "to": "G-004",
+      "relation": "governed_by",
+      "basis": "Project policy or conditional statutory safeguard; assess applicability and counsel review"
+    },
+    {
+      "from": "T11",
+      "to": "A-001",
+      "relation": "governed_by",
+      "basis": "Project policy or conditional statutory safeguard; assess applicability and counsel review"
+    },
+    {
+      "from": "T12",
+      "to": "G-006",
+      "relation": "governed_by",
+      "basis": "Project policy or conditional statutory safeguard; assess applicability and counsel review"
+    },
+    {
+      "from": "T12",
+      "to": "A-001",
+      "relation": "governed_by",
+      "basis": "Project policy or conditional statutory safeguard; assess applicability and counsel review"
+    },
+    {
+      "from": "T13",
+      "to": "WA-440",
+      "relation": "governed_by",
+      "basis": "Project policy or conditional statutory safeguard; assess applicability and counsel review"
+    },
+    {
+      "from": "T14",
+      "to": "G-010",
+      "relation": "governed_by",
+      "basis": "Project policy or conditional statutory safeguard; assess applicability and counsel review"
+    },
+    {
+      "from": "T15",
+      "to": "G-007",
+      "relation": "governed_by",
+      "basis": "Project policy or conditional statutory safeguard; assess applicability and counsel review"
+    },
+    {
+      "from": "T16",
+      "to": "G-010",
+      "relation": "governed_by",
+      "basis": "Project policy or conditional statutory safeguard; assess applicability and counsel review"
+    },
+    {
+      "from": "T17",
+      "to": "G-002",
+      "relation": "governed_by",
+      "basis": "Project policy or conditional statutory safeguard; assess applicability and counsel review"
+    },
+    {
+      "from": "T17",
+      "to": "G-009",
+      "relation": "governed_by",
+      "basis": "Project policy or conditional statutory safeguard; assess applicability and counsel review"
+    },
+    {
+      "from": "T18",
+      "to": "G-005",
+      "relation": "governed_by",
+      "basis": "Project policy or conditional statutory safeguard; assess applicability and counsel review"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "reviewed_on": "2026-10-26",
+  "legal_sources": [
+    {
+      "id": "LAW-123",
+      "title": "RCW 28A.320.123: School-based threat assessment",
+      "url": "https://app.leg.wa.gov/rcw/default.aspx?cite=28A.320.123",
+      "interpretation": "Primary Washington statute; current applicability requires legal review."
+    },
+    {
+      "id": "LAW-124",
+      "title": "RCW 28A.320.124: School security staff policy",
+      "url": "https://app.leg.wa.gov/rcw/default.aspx?cite=28A.320.124",
+      "interpretation": "Primary Washington statute; current applicability requires legal review."
+    },
+    {
+      "id": "LAW-1241",
+      "title": "RCW 28A.320.1241: Staff agreements and reporting",
+      "url": "https://app.leg.wa.gov/rcw/default.aspx?cite=28A.320.1241",
+      "interpretation": "Primary Washington statute; current applicability requires legal review."
+    },
+    {
+      "id": "LAW-1242",
+      "title": "RCW 28A.320.1242: Security provider agreements",
+      "url": "https://app.leg.wa.gov/rcw/default.aspx?cite=28A.320.1242",
+      "interpretation": "Primary Washington statute; current applicability requires legal review."
+    },
+    {
+      "id": "LAW-440",
+      "title": "RCW 28A.210.440: Bleeding control equipment/training",
+      "url": "https://app.leg.wa.gov/rcw/default.aspx?cite=28A.210.440",
+      "interpretation": "Primary Washington statute; current applicability requires legal review."
+    }
+  ]
+}

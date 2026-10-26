@@ -1,0 +1,125 @@
+{
+  "version": "17.0",
+  "controls": [
+    {
+      "id": "P-01",
+      "name": "Voluntary safe storage outreach",
+      "objective": "Prevent unsupervised youth access",
+      "required_evidence": "Owner-independent anonymized adoption and comprehension audit",
+      "owner": "Partnership lead",
+      "hard_stop": "No household ownership registry or mandatory disclosure"
+    },
+    {
+      "id": "P-02",
+      "name": "Temporary secure storage referral network",
+      "objective": "Offer lawful and voluntary option during acute household risk",
+      "required_evidence": "Attorney-reviewed transfer/referral workflow; coverage audit",
+      "owner": "Public health partner",
+      "hard_stop": "No physical acceptance of firearms by schools"
+    },
+    {
+      "id": "B-01",
+      "name": "Evidence-based threat assessment",
+      "objective": "Differentiate credible behavior from stereotypes/rumors",
+      "required_evidence": "Independent case review; sampled dispositions; appeal test",
+      "owner": "Threat assessment chair",
+      "hard_stop": "No adverse finding solely from protected expression or anonymous tip"
+    },
+    {
+      "id": "D-01",
+      "name": "Verified multi-channel emergency alert",
+      "objective": "Warn and coordinate without automated irreversible action",
+      "required_evidence": "Blinded alert tests and accessibility review",
+      "owner": "District incident command",
+      "hard_stop": "No deployment with single unverified sensor failure mode"
+    },
+    {
+      "id": "D-02",
+      "name": "Sensor validation and provenance",
+      "objective": "Understand misses, false positives and adversarial input",
+      "required_evidence": "Representative independent bench testing",
+      "owner": "Technology lead",
+      "hard_stop": "No force or confinement automated by detector"
+    },
+    {
+      "id": "F-01",
+      "name": "Safe classroom protection and egress",
+      "objective": "Allow protection without trapping occupants",
+      "required_evidence": "AHJ and disability-access review; outage tests",
+      "owner": "Facilities director",
+      "hard_stop": "Stop at any fail-to-egress condition"
+    },
+    {
+      "id": "F-02",
+      "name": "Continuity of critical systems",
+      "objective": "Keep alerts and releases usable in outages",
+      "required_evidence": "Power/WAN outage exercise",
+      "owner": "IT + facilities",
+      "hard_stop": "No failure mode that disables all emergency communications"
+    },
+    {
+      "id": "M-01",
+      "name": "Bleeding-control readiness",
+      "objective": "Improve immediate medical capability",
+      "required_evidence": "Training skills test; periodic kit inspection",
+      "owner": "Nurse / EMS",
+      "hard_stop": "No inaccessible or unmaintained equipment"
+    },
+    {
+      "id": "R-01",
+      "name": "Professional coordination and lawful force",
+      "objective": "Reduce confusion and prevent unauthorized coercion",
+      "required_evidence": "MOU, credentialing, law review, exercise evaluation",
+      "owner": "Law enforcement MOU lead",
+      "hard_stop": "No unqualified armed staffing or AI force authority"
+    },
+    {
+      "id": "K-01",
+      "name": "Canine use subject to evidence",
+      "objective": "Evaluate narrow context-specific canine roles",
+      "required_evidence": "Independent double-blind tests and welfare checks",
+      "owner": "Canine lead",
+      "hard_stop": "No assumed mass-shooting efficacy or dangerous unvalidated search"
+    },
+    {
+      "id": "C-01",
+      "name": "Cyber-physical assurance",
+      "objective": "Prevent compromised technology from increasing harm",
+      "required_evidence": "Segmentation, update policy, outage and rollback exercises",
+      "owner": "CISO",
+      "hard_stop": "Stop when attackers could remotely lock exits"
+    },
+    {
+      "id": "A-01",
+      "name": "AI decision support gate",
+      "objective": "Keep human responsibility over judgments",
+      "required_evidence": "Bias, error, uncertainty, adversarial testing",
+      "owner": "AI assurance lead",
+      "hard_stop": "No automatic offender profile, adverse action or force"
+    },
+    {
+      "id": "G-01",
+      "name": "Constitutional and privacy audit",
+      "objective": "Prevent abuse, retaliation and unlawful transfers",
+      "required_evidence": "Independent authority, FERPA data-flow, complaint reviews",
+      "owner": "Board legal lead",
+      "hard_stop": "Any misuse of authority, retaliation or unlawful redisclosure"
+    },
+    {
+      "id": "I-01",
+      "name": "Accessible and inclusive emergency practice",
+      "objective": "Serve all students and visitors",
+      "required_evidence": "ADA/504 review and inclusive tabletop drills",
+      "owner": "Accessibility coordinator",
+      "hard_stop": "Failure to provide meaningful emergency access"
+    },
+    {
+      "id": "L-01",
+      "name": "Shared learning without exposure",
+      "objective": "Improve with de-identified validated lessons",
+      "required_evidence": "Evidence/version audit and privacy review",
+      "owner": "National forum curator",
+      "hard_stop": "No security-sensitive blueprints or identifying records in public package"
+    }
+  ]
+}

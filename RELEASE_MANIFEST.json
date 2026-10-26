@@ -1,0 +1,328 @@
+{
+  "release": "SchoolThreatMitigation V17.0 + Neuro-symbolic Engine 0.1.0",
+  "date": "2026-10-26",
+  "license": "AGPL-3.0-or-later",
+  "type": "public documentation + read-only Rust developer prototype",
+  "doc_version": "17.0",
+  "engine_version": "0.1.0",
+  "counts": {
+    "scenarios": 18,
+    "controls": 15,
+    "rules": 18,
+    "traceability_edges": 54,
+    "official_and_public_sources": 18
+  },
+  "testing": {
+    "offline_json_graph_privacy_check": "passed",
+    "cargo_build_and_test": "not_executed_toolchain_unavailable",
+    "site_testing": "not_performed",
+    "legal_certification": "none"
+  },
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 247,
+      "sha256": "e6c0cd602a3eb0f11a91d9a1f6f41507032d86cdd86401ad93fcadb65e346397"
+    },
+    {
+      "path": ".github/workflows/privacy.yml",
+      "bytes": 432,
+      "sha256": "646a3873af01b53fceef44e8d920b968b055a991d57057cde28a21b836cf5316"
+    },
+    {
+      "path": ".github/workflows/rust-engine.yml",
+      "bytes": 729,
+      "sha256": "938983a61ae01f14511451ff4472a49d5f29589d1e8184408f4993e5682bffbb"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 437,
+      "sha256": "fd93dac46a3b05980bff93483f965f8d5936bd5dffab0d7d6d6c7928e65a5e85"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 37104,
+      "sha256": "0c025fddbec587d017102ff99cb4e5bac9ea0234fb9e5d8510f810b8aed090e0"
+    },
+    {
+      "path": "NOTICE.md",
+      "bytes": 634,
+      "sha256": "359ab5499f7c721f3a070a365ca2e701d5aa0fa9bc26248a122b7bf6733c4ab1"
+    },
+    {
+      "path": "PRIVACY_AUDIT.md",
+      "bytes": 491,
+      "sha256": "aa9e69f080171d009322b8e5c596caf438eb4c5265f6613751aeec5b2a8dcbc3"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3571,
+      "sha256": "f7f3c308254bd53551ee8c179c55126fca1c3b466442d9fbc5996876ffa5c3b4"
+    },
+    {
+      "path": "RELEASE_NOTES.md",
+      "bytes": 1641,
+      "sha256": "37d61dc3645dc1f78101443319734085b724e0ba1812709c059fe0036b800c4b"
+    },
+    {
+      "path": "SECURE_INFORMATION_HANDLING.md",
+      "bytes": 626,
+      "sha256": "a09f1022c08891f9d3a58167ea79e9f17810fcb57654c1d28af3968a4dc5430a"
+    },
+    {
+      "path": "SECURITY.md",
+      "bytes": 378,
+      "sha256": "4921b1e25b094acb39a04b1218184c54259313204ba797a1e4c6d447d456d9c8"
+    },
+    {
+      "path": "docs/README.md",
+      "bytes": 165,
+      "sha256": "2d6aba9d98cd0b18986d2ba97ceb4390b13dc8fc7085b1e4e1055868f1fa7f3e"
+    },
+    {
+      "path": "docs/advisory-v17.0/Constitutional_Governance_and_Public_Trust_V17_0.html",
+      "bytes": 6897,
+      "sha256": "18ffeddda810ec5335b597d71dd7a09b9c6db88363722e5e8eee38e4ab8122f2"
+    },
+    {
+      "path": "docs/advisory-v17.0/Constitutional_Governance_and_Public_Trust_V17_0.pdf",
+      "bytes": 16931,
+      "sha256": "9c091265f57a1f302947df49e384a275d3152ffc78ba43dbe8ee190e7c7a87fe"
+    },
+    {
+      "path": "docs/advisory-v17.0/Executive_Decision_Brief_V17_0.html",
+      "bytes": 6175,
+      "sha256": "d42b23f8a63ba96dd69b2221358d2664bb0707344965f99dfc99cfa0b0031b29"
+    },
+    {
+      "path": "docs/advisory-v17.0/Executive_Decision_Brief_V17_0.pdf",
+      "bytes": 16073,
+      "sha256": "8a6c31fdc99ba267abdfad6dc2259dbfc3387e5cc0b93f5fbfaa9a76d82f05c4"
+    },
+    {
+      "path": "docs/advisory-v17.0/Ninety_Day_Qualification_Pilot_V17_0.html",
+      "bytes": 7170,
+      "sha256": "a5f63234cdc9b382cad0f9f698028216aff27172645bfb49fc9d46777aed3bed"
+    },
+    {
+      "path": "docs/advisory-v17.0/Ninety_Day_Qualification_Pilot_V17_0.pdf",
+      "bytes": 17523,
+      "sha256": "01ee39d9410035757055ce7aea32e9942efd99556d46b9b11a5d1d4485f4cb0e"
+    },
+    {
+      "path": "docs/advisory-v17.0/School_Safety_Field_Guide_V17_0.html",
+      "bytes": 371449,
+      "sha256": "17f7538bb1a930587bf293b8b0f206395aa4a06294a6dc7b7bf25260872360e0"
+    },
+    {
+      "path": "docs/advisory-v17.0/School_Safety_Field_Guide_V17_0.pdf",
+      "bytes": 2395841,
+      "sha256": "f8f1981a1daf19c5292c6f1d8513c7a9c0741a12baa21e1913772f9fa899e5fa"
+    },
+    {
+      "path": "docs/advisory-v17.0/Threat_Driven_Technology_and_AI_V17_0.html",
+      "bytes": 6663,
+      "sha256": "19e971ede2aa50fb1309213162f4b1a10ba1cd0ac93b23274be36668a4b04439"
+    },
+    {
+      "path": "docs/advisory-v17.0/Threat_Driven_Technology_and_AI_V17_0.pdf",
+      "bytes": 16355,
+      "sha256": "04fce42f933cda759831726da277804d6023fa6a1e4c47123db03855f6038f98"
+    },
+    {
+      "path": "docs/advisory-v17.0/Threat_Scenario_and_Countermeasure_Engineering_V17_0.html",
+      "bytes": 42509,
+      "sha256": "da71af2b5bbd89cd38a8a930997d0b5b87b1661d445896b04681be9532e094f4"
+    },
+    {
+      "path": "docs/advisory-v17.0/Threat_Scenario_and_Countermeasure_Engineering_V17_0.pdf",
+      "bytes": 66102,
+      "sha256": "85c85364963f4c6835a83c003c952346826b946d3655cab1f68acf36b137e265"
+    },
+    {
+      "path": "docs/advisory-v17.0/assets/cover_background.png",
+      "bytes": 2005359,
+      "sha256": "6d5091d8158e1b48b5e8316b95e9edfc71252f5956cd41a941bf9a738de46223"
+    },
+    {
+      "path": "engine/Cargo.toml",
+      "bytes": 401,
+      "sha256": "8ee3bbeaf9159ca2fa57bff9e834ed7da9ad59043cd974d1e837e68da268bbac"
+    },
+    {
+      "path": "engine/README.md",
+      "bytes": 7368,
+      "sha256": "5e4a2b427fa7b51947d9728ecf59d651097f7209fd7eabfc773f79773870b5cf"
+    },
+    {
+      "path": "engine/RUN_MCP_WINDOWS.cmd",
+      "bytes": 189,
+      "sha256": "ae7601091ced2bd8121f2d6a0f6a29f30632bea2920cc54b76eef74b6ae8bf5a"
+    },
+    {
+      "path": "engine/RUN_WINDOWS.cmd",
+      "bytes": 218,
+      "sha256": "3cf304bee6f6bcc7d3b2537d0dac0f90b34faaff2daacccd0dab3685c6acb96f"
+    },
+    {
+      "path": "engine/docs/ARCHITECTURE.md",
+      "bytes": 6828,
+      "sha256": "731af40122722d4f267b482eb7d713c5a673a4aab3c8ac9cde46594c19f8ab77"
+    },
+    {
+      "path": "engine/docs/KNOWLEDGE_GOVERNANCE.md",
+      "bytes": 3626,
+      "sha256": "1922c010d3d5476678069fa7dd4c772899af2069f910e6eb2e05d7aadf9fd89d"
+    },
+    {
+      "path": "engine/docs/MCP_TOOL_CONTRACT.md",
+      "bytes": 1804,
+      "sha256": "069f04d19a52d2aae805f9db70d12df2dfbf622946c158e00ed52f189b6435d5"
+    },
+    {
+      "path": "engine/docs/VERIFICATION_PLAN.md",
+      "bytes": 3406,
+      "sha256": "8ed09a357d7336a203df141a2188c306f886470d86d497435cb07ac3ccefb4db"
+    },
+    {
+      "path": "engine/examples/district_aggregate.json",
+      "bytes": 1268,
+      "sha256": "70285336eb7a40f28562238ee88da0e9b11f54ec0cf096bf0cf480ccccd98584"
+    },
+    {
+      "path": "engine/examples/policy_questions.md",
+      "bytes": 796,
+      "sha256": "df0188dd564805d121cf0b0f765c5c9700da4248bbcc44f3e55d465cda8f5d53"
+    },
+    {
+      "path": "engine/kb/relations_v17_0.json",
+      "bytes": 10779,
+      "sha256": "bed8bc19fbdfae5ca874b04143b2cb56148b70df3bd392288d25970b75d4b5b9"
+    },
+    {
+      "path": "engine/kb/rules_v17_0.json",
+      "bytes": 14418,
+      "sha256": "e18c5ade0788d63c3e3c880d73392679864c16bc5e6ba2a7f27090344b39cd05"
+    },
+    {
+      "path": "engine/kb/verified_legal_sources.json",
+      "bytes": 1436,
+      "sha256": "61746103dd59456f624ebe711e1d0cb07eec704d13b80f254d7ee474ea516c90"
+    },
+    {
+      "path": "engine/mcp-client-example.json",
+      "bytes": 164,
+      "sha256": "04e8997e7acb100af29fd25f5cea4cdc6e9731eb790dcaec385368c8b36d4fe5"
+    },
+    {
+      "path": "engine/scripts/validate_knowledge.py",
+      "bytes": 3420,
+      "sha256": "c1337fe434c586806a49ca8497f94e3142dedb1eb2c29f6eeafb673ab6e08b63"
+    },
+    {
+      "path": "engine/src/agent.rs",
+      "bytes": 3219,
+      "sha256": "24a9d346e62d6cb0992de832616fa0643342b442d0bece27e4defc55e256e20f"
+    },
+    {
+      "path": "engine/src/engine.rs",
+      "bytes": 9319,
+      "sha256": "04d3619555b16af180864f06df8180f2acb5c0787b3084d3b52bba021e336b9a"
+    },
+    {
+      "path": "engine/src/main.rs",
+      "bytes": 3208,
+      "sha256": "1e34d340cf0f16e6e4991dd7b9cd672b612c225de0272bc4cb90aa212d4f3274"
+    },
+    {
+      "path": "engine/src/mcp.rs",
+      "bytes": 5771,
+      "sha256": "fbadbd0c27c267fcd3365f350bac0b5acbc85b7d54b78cf889c34f8fcf9464c3"
+    },
+    {
+      "path": "engine/src/model.rs",
+      "bytes": 3709,
+      "sha256": "607532762acd0105f60c2da0a285ddbb70696dc3ee6567a45efb6d03b41cbacb"
+    },
+    {
+      "path": "engine/src/search.rs",
+      "bytes": 3216,
+      "sha256": "f4dc190fa192e0c964c496a4554225cbeb21738302b3c734122d5978b9e7db3c"
+    },
+    {
+      "path": "engine/tests/integration.rs",
+      "bytes": 1882,
+      "sha256": "47f7eabe6d3549e0452342747382c83c52953cbce479defee497a14550842251"
+    },
+    {
+      "path": "governance/README.md",
+      "bytes": 533,
+      "sha256": "17ea99a222bdafe1efccf0066bfe774043cbf981c0f15f6d7325e06c202be48b"
+    },
+    {
+      "path": "governance/control_requirements_v17_0.json",
+      "bytes": 5206,
+      "sha256": "a6a9fbe57284a3a5ee363fe93113a9fdc3677f87720719cf8934458b65aa59c7"
+    },
+    {
+      "path": "governance/public_sources_v17_0.json",
+      "bytes": 3715,
+      "sha256": "e651ecb73c3dac60adc2918508bf74ce2033a3d37e1ee22d55ba3c2750e11b40"
+    },
+    {
+      "path": "governance/qualification_gates_v17_0.json",
+      "bytes": 522,
+      "sha256": "c6075b0adda0b36e371dfefe16f634cbac48153375d95fe97f3e4cc94eac8dc5"
+    },
+    {
+      "path": "governance/threat_scenarios_v17_0.json",
+      "bytes": 17853,
+      "sha256": "5531d08185f94b96192ff2e8d7402ab405c5181deab9c26fd47a1c57929d49f9"
+    },
+    {
+      "path": "governance/threat_to_countermeasure_v17_0.csv",
+      "bytes": 12626,
+      "sha256": "345c683f7eb311b539bba25c8b71d8040bc1f1b4b0410c5efef471967840afd7"
+    },
+    {
+      "path": "media/v17.0/README.md",
+      "bytes": 220,
+      "sha256": "93a4a7ae5923f5afdcb6b9a0a42fe0bbfe88fc9ebd3fc20b690a91a946621e27"
+    },
+    {
+      "path": "media/v17.0/SchoolThreatMitigation_Briefing_V17_0.pdf",
+      "bytes": 424830,
+      "sha256": "5968a0bd4feec121e8b3f23d39461e0ca617e52f9751fbe37703f21919389b7e"
+    },
+    {
+      "path": "media/v17.0/SchoolThreatMitigation_Briefing_V17_0.pptx",
+      "bytes": 57524,
+      "sha256": "d225ebb76c6f52ed1df6a6583c04093d721d2535e024957f433996586661a63e"
+    },
+    {
+      "path": "qa/neurosymbolic_validation_v17_0.json",
+      "bytes": 889,
+      "sha256": "495ac734562d907ba47ceae1278e420bd20020c5f1cddfeb0ff9e6c2e234edfd"
+    },
+    {
+      "path": "qa/validation_v17_0.json",
+      "bytes": 1219,
+      "sha256": "9684bcb7d1576505be4226d85f21c2ec91b6eda61931a13038be3b31db2d9536"
+    },
+    {
+      "path": "scripts/privacy_check.py",
+      "bytes": 2230,
+      "sha256": "48877605ea1fd69461a7356dd4efa9fcfe88f825255494cad8dae5ea21c3c075"
+    },
+    {
+      "path": "scripts/render_pdf_sources.py",
+      "bytes": 412,
+      "sha256": "6964d00274f14eaae400c90f7afa1475099fef6fb613fdcddc4bd3036dc611f3"
+    },
+    {
+      "path": "scripts/verify_release.py",
+      "bytes": 1480,
+      "sha256": "1299845cef3ff8ce3cfe7a821fc5906935f12adb196f1d98d5fd0a1d4a3111a5"
+    }
+  ]
+}

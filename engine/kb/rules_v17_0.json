@@ -1,0 +1,485 @@
+{
+  "kb_version": "17.0-NSAI.1",
+  "source_proposal": "SchoolThreatMitigation V17.0",
+  "rules_reviewed_as_of": "2026-10-26",
+  "legal_status": "advisory_only; Washington-qualified counsel must verify current applicability",
+  "rules": [
+    {
+      "id": "WA-123",
+      "title": "District behavior-based threat assessment program",
+      "kind": "statutory_reference",
+      "jurisdiction": "WA",
+      "when": [
+        {
+          "fact": "wa_public_school",
+          "equals": true
+        }
+      ],
+      "check": [
+        {
+          "fact": "threat_assessment_program_adopted",
+          "equals": true
+        },
+        {
+          "fact": "behavior_based_not_demographic",
+          "equals": true
+        },
+        {
+          "fact": "referral_alone_causes_exclusion",
+          "equals": false
+        }
+      ],
+      "source_refs": [
+        "LAW-123"
+      ],
+      "accountable_owner": "District leadership",
+      "recommended_action": "Review policy and intervention procedures with Washington-qualified counsel.",
+      "rationale": "RCW 28A.320.123: adopted behavior-based program; referral alone cannot justify suspension or expulsion.",
+      "priority": "high"
+    },
+    {
+      "id": "WA-124",
+      "title": "School security staff duties and complaint policy",
+      "kind": "statutory_reference",
+      "jurisdiction": "WA",
+      "when": [
+        {
+          "fact": "school_security_staff_present",
+          "equals": true
+        }
+      ],
+      "check": [
+        {
+          "fact": "staff_duties_policy_adopted",
+          "equals": true
+        },
+        {
+          "fact": "sro_formal_discipline_role",
+          "equals": false
+        },
+        {
+          "fact": "family_security_complaint_path",
+          "equals": true
+        }
+      ],
+      "source_refs": [
+        "LAW-124"
+      ],
+      "accountable_owner": "District superintendent",
+      "recommended_action": "Update staff policy; separate school discipline from police functions; publish complaint routes.",
+      "rationale": "Conditional duties, role limits, and complaint process in RCW 28A.320.124.",
+      "priority": "high"
+    },
+    {
+      "id": "WA-1241",
+      "title": "Security-staff reporting process",
+      "kind": "statutory_reference",
+      "jurisdiction": "WA",
+      "when": [
+        {
+          "fact": "school_security_staff_present",
+          "equals": true
+        }
+      ],
+      "check": [
+        {
+          "fact": "security_staff_reporting_process",
+          "equals": true
+        }
+      ],
+      "source_refs": [
+        "LAW-1241"
+      ],
+      "accountable_owner": "District compliance officer",
+      "recommended_action": "Verify statutory collection/submission and confidentiality controls with counsel.",
+      "rationale": "RCW 28A.320.1241 includes prescribed reporting; sensitive details must be handled lawfully.",
+      "priority": "high"
+    },
+    {
+      "id": "WA-1242",
+      "title": "Annual security provider agreement and participation",
+      "kind": "statutory_reference",
+      "jurisdiction": "WA",
+      "when": [
+        {
+          "fact": "external_security_provider",
+          "equals": true
+        }
+      ],
+      "check": [
+        {
+          "fact": "annual_security_agreement_reviewed",
+          "equals": true
+        },
+        {
+          "fact": "parent_student_community_consultation",
+          "equals": true
+        }
+      ],
+      "source_refs": [
+        "LAW-1242"
+      ],
+      "accountable_owner": "District board",
+      "recommended_action": "Conduct annual agreement review including parents, students and community members.",
+      "rationale": "RCW 28A.320.1242 has conditional agreement and community-participation requirements.",
+      "priority": "high"
+    },
+    {
+      "id": "WA-440",
+      "title": "Bleeding control supplies, training and inspections",
+      "kind": "statutory_reference",
+      "jurisdiction": "WA",
+      "when": [
+        {
+          "fact": "wa_public_school",
+          "equals": true
+        }
+      ],
+      "check": [
+        {
+          "fact": "bleeding_control_equipment_accessible",
+          "equals": true
+        },
+        {
+          "fact": "bleeding_control_training_staffing_met",
+          "equals": true
+        },
+        {
+          "fact": "bleeding_control_inspections_current",
+          "equals": true
+        }
+      ],
+      "source_refs": [
+        "LAW-440"
+      ],
+      "accountable_owner": "District safety and health lead",
+      "recommended_action": "Check campus equipment, staffing thresholds and inspections under RCW 28A.210.440.",
+      "rationale": "School-year 2026-27 requirements, with student-count-dependent staffing provisions.",
+      "priority": "high"
+    },
+    {
+      "id": "G-001",
+      "title": "Protect lawful firearm ownership and privacy",
+      "kind": "safety_guardrail",
+      "jurisdiction": "WA",
+      "when": [],
+      "check": [
+        {
+          "fact": "firearm_owner_registry_created",
+          "equals": false
+        }
+      ],
+      "source_refs": [
+        "SRC-05",
+        "SRC-04"
+      ],
+      "accountable_owner": "Privacy officer",
+      "recommended_action": "Do not establish school firearm-owner registries; use anonymous voluntary outreach.",
+      "rationale": "Safeguard adopted by the project; not a claim that all owner registries are legally prohibited.",
+      "priority": "high"
+    },
+    {
+      "id": "G-002",
+      "title": "No demographic or political AI profiling",
+      "kind": "safety_guardrail",
+      "jurisdiction": "WA",
+      "when": [],
+      "check": [
+        {
+          "fact": "demographic_or_political_risk_profiling",
+          "equals": false
+        }
+      ],
+      "source_refs": [
+        "LAW-123",
+        "SRC-01"
+      ],
+      "accountable_owner": "Civil rights officer",
+      "recommended_action": "Remove profiling; use documented, behavior-based evidence and independent review.",
+      "rationale": "Protect expression, privacy and due process.",
+      "priority": "high"
+    },
+    {
+      "id": "G-003",
+      "title": "No autonomous authorization of physical force",
+      "kind": "safety_guardrail",
+      "jurisdiction": "WA",
+      "when": [],
+      "check": [
+        {
+          "fact": "ai_authorizes_physical_force",
+          "equals": false
+        }
+      ],
+      "source_refs": [
+        "SRC-02"
+      ],
+      "accountable_owner": "Board and law enforcement counsel",
+      "recommended_action": "Disable autonomous force decisions; require legally authorized human judgment.",
+      "rationale": "A mandatory design constraint; not an assertion that an AI system is a law enforcement officer.",
+      "priority": "high"
+    },
+    {
+      "id": "G-004",
+      "title": "Preserve safe and accessible emergency egress",
+      "kind": "safety_guardrail",
+      "jurisdiction": "WA",
+      "when": [],
+      "check": [
+        {
+          "fact": "egress_obstructed_by_security",
+          "equals": false
+        }
+      ],
+      "source_refs": [
+        "SRC-02"
+      ],
+      "accountable_owner": "Facilities and fire authority",
+      "recommended_action": "Stop barrier deployment pending fire and accessibility approval.",
+      "rationale": "Security must never create unsafe confinement.",
+      "priority": "high"
+    },
+    {
+      "id": "G-005",
+      "title": "Prevent unauthorized education-record sharing",
+      "kind": "safety_guardrail",
+      "jurisdiction": "WA",
+      "when": [],
+      "check": [
+        {
+          "fact": "unauthorized_education_record_sharing",
+          "equals": false
+        }
+      ],
+      "source_refs": [
+        "SRC-02"
+      ],
+      "accountable_owner": "District privacy officer",
+      "recommended_action": "Block unlawful access, preserve logs, and involve counsel for applicable privacy law.",
+      "rationale": "A safeguard against misuse of school data, not a blanket ban on lawful reporting.",
+      "priority": "high"
+    },
+    {
+      "id": "G-006",
+      "title": "No unverified remote physical actuation",
+      "kind": "safety_guardrail",
+      "jurisdiction": "WA",
+      "when": [
+        {
+          "fact": "connected_life_safety_system_planned",
+          "equals": true
+        }
+      ],
+      "check": [
+        {
+          "fact": "unverified_remote_physical_commands_enabled",
+          "equals": false
+        }
+      ],
+      "source_refs": [
+        "SRC-02"
+      ],
+      "accountable_owner": "OT security officer",
+      "recommended_action": "Require authenticated commands, independent testing, and manual fallback.",
+      "rationale": "Avoid cyber-to-physical hazard propagation.",
+      "priority": "high"
+    },
+    {
+      "id": "G-007",
+      "title": "Specialist canine program must be qualified",
+      "kind": "safety_guardrail",
+      "jurisdiction": "WA",
+      "when": [
+        {
+          "fact": "canine_program_planned",
+          "equals": true
+        }
+      ],
+      "check": [
+        {
+          "fact": "unauthorized_canine_deployment",
+          "equals": false
+        }
+      ],
+      "source_refs": [
+        "SRC-02"
+      ],
+      "accountable_owner": "District safety director",
+      "recommended_action": "Suspend unqualified canine program and arrange specialist independent assessment.",
+      "rationale": "Canine screening is not validated as a universal school-shooting countermeasure.",
+      "priority": "high"
+    },
+    {
+      "id": "G-008",
+      "title": "AI cannot directly modify verified rules",
+      "kind": "safety_guardrail",
+      "jurisdiction": "WA",
+      "when": [],
+      "check": [
+        {
+          "fact": "ai_can_edit_approved_rules",
+          "equals": false
+        }
+      ],
+      "source_refs": [
+        "SRC-02"
+      ],
+      "accountable_owner": "Governance board",
+      "recommended_action": "Use versioned change control and human-reviewed rule updates.",
+      "rationale": "Symbolic policy layer must not be silently rewritten by an LLM.",
+      "priority": "high"
+    },
+    {
+      "id": "G-009",
+      "title": "Human review and fair process for adverse actions",
+      "kind": "safety_guardrail",
+      "jurisdiction": "WA",
+      "when": [
+        {
+          "fact": "threat_assessment_program_adopted",
+          "equals": true
+        }
+      ],
+      "check": [
+        {
+          "fact": "human_review_for_adverse_actions",
+          "equals": true
+        },
+        {
+          "fact": "unverified_tip_triggers_punishment",
+          "equals": false
+        }
+      ],
+      "source_refs": [
+        "LAW-123",
+        "SRC-01"
+      ],
+      "accountable_owner": "Civil rights lead",
+      "recommended_action": "Require corroboration, appeal/correction path, and trained decision maker.",
+      "rationale": "Prevent malicious reports and mistaken irreversible actions.",
+      "priority": "high"
+    },
+    {
+      "id": "G-010",
+      "title": "Lawful and documented authority for on-site response",
+      "kind": "safety_guardrail",
+      "jurisdiction": "WA",
+      "when": [
+        {
+          "fact": "armed_response_program_planned",
+          "equals": true
+        }
+      ],
+      "check": [
+        {
+          "fact": "qualified_response_authorized_by_law",
+          "equals": true
+        },
+        {
+          "fact": "independent_force_oversight",
+          "equals": true
+        }
+      ],
+      "source_refs": [
+        "LAW-124",
+        "LAW-1242"
+      ],
+      "accountable_owner": "School district counsel",
+      "recommended_action": "Hold implementation until authorization, qualified staffing and independent oversight are documented.",
+      "rationale": "Public recommendation guidance, no tactical force instructions.",
+      "priority": "high"
+    },
+    {
+      "id": "A-001",
+      "title": "Threat-driven evaluation before connected technology deployment",
+      "kind": "deployment_qualification",
+      "jurisdiction": "WA",
+      "when": [
+        {
+          "fact": "connected_life_safety_system_planned",
+          "equals": true
+        }
+      ],
+      "check": [
+        {
+          "fact": "threat_gap_documented",
+          "equals": true
+        },
+        {
+          "fact": "independent_cyber_assessment_complete",
+          "equals": true
+        },
+        {
+          "fact": "manual_safe_fallback_tested",
+          "equals": true
+        }
+      ],
+      "source_refs": [
+        "SRC-02"
+      ],
+      "accountable_owner": "District technology lead",
+      "recommended_action": "Pilot against threat-specific requirements and independently test cyber-physical failure modes.",
+      "rationale": "Technology adoption follows identified risk and must preserve safe operation.",
+      "priority": "high"
+    },
+    {
+      "id": "A-002",
+      "title": "Independent alert validation",
+      "kind": "deployment_qualification",
+      "jurisdiction": "WA",
+      "when": [
+        {
+          "fact": "detector_deployment_planned",
+          "equals": true
+        }
+      ],
+      "check": [
+        {
+          "fact": "representative_false_alarm_testing_complete",
+          "equals": true
+        },
+        {
+          "fact": "alert_human_verification_defined",
+          "equals": true
+        }
+      ],
+      "source_refs": [
+        "SRC-02"
+      ],
+      "accountable_owner": "Campus incident command",
+      "recommended_action": "Validate misses and false alarms; keep people responsible for emergency decisions.",
+      "rationale": "No claimed product accuracy without independent test evidence.",
+      "priority": "high"
+    },
+    {
+      "id": "A-003",
+      "title": "Privacy-preserving youth access outreach",
+      "kind": "voluntary_recommendation",
+      "jurisdiction": "WA",
+      "when": [
+        {
+          "fact": "youth_firearm_access_program_planned",
+          "equals": true
+        }
+      ],
+      "check": [
+        {
+          "fact": "participation_voluntary",
+          "equals": true
+        },
+        {
+          "fact": "identifying_firearm_data_collected",
+          "equals": false
+        }
+      ],
+      "source_refs": [
+        "SRC-04",
+        "SRC-05"
+      ],
+      "accountable_owner": "Community partnership lead",
+      "recommended_action": "Use optional secure-storage education and anonymous impact reporting.",
+      "rationale": "Promote safeguards without compulsory ownership disclosure.",
+      "priority": "high"
+    }
+  ]
+}

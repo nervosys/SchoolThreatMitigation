@@ -1,0 +1,21 @@
+name: Rust neurosymbolic engine
+on:
+  push:
+    paths: ["engine/**", "governance/**", ".github/workflows/rust-engine.yml"]
+  pull_request:
+    paths: ["engine/**", "governance/**"]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    permissions: {contents: read}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - name: Knowledge graph and rule check
+        run: python engine/scripts/validate_knowledge.py
+      - name: Source privacy scan
+        run: python scripts/privacy_check.py
+      - name: Check types and compile
+        run: cargo check --manifest-path engine/Cargo.toml --all-targets
+      - name: Tests
+        run: cargo test --manifest-path engine/Cargo.toml --all-targets

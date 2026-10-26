@@ -32,3 +32,5 @@ build/
 *.log
 *.bak
 *.tmp
+
+media/v15.0-production/output/

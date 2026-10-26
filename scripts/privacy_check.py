@@ -6,7 +6,7 @@ import os, re, sys
 ROOT = Path(__file__).resolve().parents[1]
 BAD_EXTENSIONS = {'.p12', '.pfx', '.pem', '.p8', '.key'}
 BAD_DIRS = {'.git', '.venv', '__pycache__', '.idea', '.vscode', 'secrets', 'private', 'confidential'}
-CHECK_SUFFIXES = {'.py', '.typ', '.html', '.css', '.json', '.md', '.txt', '.yml', '.yaml', '.cmd', '.sh', '.srt', '.ipynb'}
+CHECK_SUFFIXES = {'.py', '.rs', '.toml', '.typ', '.html', '.css', '.json', '.md', '.txt', '.yml', '.yaml', '.cmd', '.sh', '.srt', '.ipynb'}
 PATTERNS = [
     ('private key', re.compile(rb'-----BEGIN (?:[A-Z ]+ )?PRIVATE KEY-----')),
     ('GitHub token', re.compile(rb'\b(?:ghp_|gho_|ghs_|ghu_|github_pat_)[A-Za-z0-9_]{10,}')),

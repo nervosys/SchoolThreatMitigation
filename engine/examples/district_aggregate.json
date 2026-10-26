@@ -1,0 +1,31 @@
+{
+  "site_label": "Illustrative district (synthetic data only)",
+  "facts": {
+    "wa_public_school": true,
+    "school_security_staff_present": true,
+    "external_security_provider": true,
+    "threat_assessment_program_adopted": true,
+    "behavior_based_not_demographic": true,
+    "referral_alone_causes_exclusion": false,
+    "staff_duties_policy_adopted": true,
+    "sro_formal_discipline_role": false,
+    "family_security_complaint_path": true,
+    "security_staff_reporting_process": true,
+    "annual_security_agreement_reviewed": false,
+    "parent_student_community_consultation": true,
+    "bleeding_control_equipment_accessible": true,
+    "bleeding_control_training_staffing_met": true,
+    "bleeding_control_inspections_current": true,
+    "firearm_owner_registry_created": false,
+    "demographic_or_political_risk_profiling": false,
+    "ai_authorizes_physical_force": false,
+    "egress_obstructed_by_security": false,
+    "unauthorized_education_record_sharing": false,
+    "ai_can_edit_approved_rules": false,
+    "human_review_for_adverse_actions": true,
+    "unverified_tip_triggers_punishment": false,
+    "youth_firearm_access_program_planned": true,
+    "participation_voluntary": true,
+    "identifying_firearm_data_collected": false
+  }
+}

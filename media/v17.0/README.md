@@ -1,0 +1,1 @@
+Version 17.0 public briefing, 14 slides. The PowerPoint is editable; the PDF is the corresponding publication render. The package does not include a newly Kokoro-narrated MP4; no narration was rendered in this revision.

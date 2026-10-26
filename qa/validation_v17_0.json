@@ -1,0 +1,28 @@
+{
+  "version": "17.0",
+  "release_date": "2026-10-26",
+  "publication_kind": "public defensive research",
+  "deployment_certified": false,
+  "privacy_check_rc": 0,
+  "privacy_check_stdout": "Privacy check scanned 22 text files; findings: 0\n",
+  "structure_check_rc": 0,
+  "structure_check_stdout": "PASS release structure, 6 document pairs, 18 scenarios, 15 control requirements, current slide deck\n",
+  "pdf_documents": {
+    "Constitutional_Governance_and_Public_Trust_V17_0.pdf": 2,
+    "Executive_Decision_Brief_V17_0.pdf": 2,
+    "Ninety_Day_Qualification_Pilot_V17_0.pdf": 2,
+    "School_Safety_Field_Guide_V17_0.pdf": 98,
+    "Threat_Driven_Technology_and_AI_V17_0.pdf": 2,
+    "Threat_Scenario_and_Countermeasure_Engineering_V17_0.pdf": 12
+  },
+  "slide_pages": 14,
+  "threat_scenarios": 18,
+  "control_requirements": 15,
+  "short_pages_below_130_chars": {},
+  "limitations": [
+    "Document and byte-integrity QA is not an independent site physical-security or cybersecurity test.",
+    "No operational armed-response drills or live canine validation were performed.",
+    "No new Kokoro narration has been synthesized.",
+    "This automated scan is not a guarantee that all sensitive data are absent."
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "component": "SchoolThreatMitigation neuro-symbolic Rust MVP",
+  "component_version": "0.1.0",
+  "proposal_version": "17.0",
+  "checks_executed": {
+    "json_parsing": true,
+    "cross_reference_integrity": true,
+    "graph_coverage": true,
+    "rule_precondition_reference_tests": true,
+    "release_structure": true,
+    "privacy_scan": true,
+    "rust_compilation": false,
+    "rust_unit_tests": false,
+    "mcp_runtime_interoperability": false,
+    "site_specific_validation": false,
+    "legal_compliance_certification": false
+  },
+  "counts": {
+    "scenarios": 18,
+    "controls": 15,
+    "rules": 18,
+    "trace_edges": 54,
+    "sources": 18
+  },
+  "note": "Rust and Cargo are not installed in the build environment. Code has not been compiled or executed; run the included CI/test harness.",
+  "release_classification": "public_research_developer_prototype_not_operational"
+}

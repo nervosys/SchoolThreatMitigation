@@ -1,0 +1,18 @@
+{
+  "version": "17.0",
+  "requirements": [
+    "necessity and documented threat",
+    "protective effectiveness and safe failure",
+    "constitutional authority and privacy",
+    "cybersecurity and resilient fallback",
+    "independent measurement and reauthorization"
+  ],
+  "critical_stop_conditions": [
+    "blocked egress",
+    "unlawful surveillance/records transfer",
+    "unqualified force authorization",
+    "AI-only adverse action",
+    "unverified remote physical commands",
+    "unsafe canine deployment"
+  ]
+}
