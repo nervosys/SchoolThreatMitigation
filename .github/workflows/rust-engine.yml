@@ -20,6 +20,10 @@ jobs:
       - uses: dtolnay/rust-toolchain@stable
         with:
           components: rustfmt, clippy
+      - name: Cache locked dependencies for all targets
+        # The offline SBOM needs metadata for the whole lockfile, including
+        # dependencies that a host-only build does not download.
+        run: cargo fetch --locked --manifest-path engine/Cargo.toml
       - name: Format
         run: cargo fmt --manifest-path engine/Cargo.toml -- --check
       - name: Lint

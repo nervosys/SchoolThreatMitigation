@@ -7,6 +7,7 @@ The public research scope remains 18 scenarios and 15 proposed controls. The inh
 ## Build and check
 
 ```text
+cargo fetch --locked --manifest-path engine/Cargo.toml
 cargo build --locked --release --manifest-path engine/Cargo.toml --bins
 cargo test --locked --manifest-path engine/Cargo.toml --all-targets
 engine/target/release/stm-tool check
@@ -15,6 +16,8 @@ engine/target/release/stm-tool check
 On Windows, use `engine\BUILD_WINDOWS.cmd`, `engine\RUN_WINDOWS.cmd`, `engine\TOOL_WINDOWS.cmd`, and `engine\CHECK_WINDOWS.cmd`. The check wrapper stages the tool outside Cargo's output before invoking Cargo checks, avoiding Windows executable locks. Use the `.exe` suffix when invoking native paths directly on Windows.
 
 Two binaries are produced: `stm-neurosymbolic` is the advisory engine and MCP server; `stm-tool` provides verification, agent hosting, evaluation, review, privacy, and release commands. Run either with `--help`. Cargo dependencies are locked; offline builds work after they are cached.
+
+The initial fetch caches the entire locked dependency graph for offline SBOM generation, including dependencies for other platforms. A host-only build can leave those packages uncached. CI performs this [all-target prefetch](https://doc.rust-lang.org/cargo/commands/cargo-fetch.html) before its native checks.
 
 ## Verified assessments
 
