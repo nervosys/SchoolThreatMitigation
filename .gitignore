@@ -15,6 +15,10 @@ private/
 confidential/
 local_data/
 private_data/
+# Local agent/cloud configuration; shared instructions live in AGENTS.md.
+.agents/
+.codex/
+.aws/
 # User and build artifacts
 .venv/
 __pycache__/

@@ -1,0 +1,11 @@
+{
+  "assertions_authenticated": false,
+  "deployment_authorization": false,
+  "knowledge_sha256": "2bcb941487fb138f3e014ff57a71140fcecd8e6bbe7fef5496abef2188b1f34c",
+  "legal_certification": false,
+  "release_manifest_sha256": "d58d39b95061c93c64af5fa71947efae07a7fdbe0f331bb8a3b808a55b2b27d2",
+  "rule_count": 18,
+  "specification": "stm-conjunctive-1",
+  "verified": true,
+  "verifier": "independent_rust_interpreter"
+}

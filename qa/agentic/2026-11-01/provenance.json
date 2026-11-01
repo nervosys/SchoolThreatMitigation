@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.0",
+  "classification": "sanitized_retained_maintainer_engine_run",
+  "baseline_commit": "7ce8159a027d962726ca5f634134c73d86505163",
+  "baseline_source_manifest_sha256": "d58d39b95061c93c64af5fa71947efae07a7fdbe0f331bb8a3b808a55b2b27d2",
+  "engine_executable_sha256": "df495f46742334596841eb5d4af207dbfd00cf29d3513aa7953874e3ff082b20",
+  "knowledge_sha256": "2bcb941487fb138f3e014ff57a71140fcecd8e6bbe7fef5496abef2188b1f34c",
+  "as_of_utc": "2026-11-01",
+  "payloads": [
+    {
+      "path": "request.json",
+      "source_artifact": "request.json",
+      "original_sha256": "9a22a02025780e7a0564ab9ccf3cf4ec953d442f04cbcd6f988c003f8b3513e9",
+      "published_sha256": "9a22a02025780e7a0564ab9ccf3cf4ec953d442f04cbcd6f988c003f8b3513e9",
+      "transformation": "UTF8_LF_normalization_only"
+    },
+    {
+      "path": "assessment.json",
+      "source_artifact": "assessment.json",
+      "original_sha256": "c09dc6e2886657e672718dea0fd164140a41c8a8146a1c7329692c0143aed12e",
+      "published_sha256": "7264a40894719e3f044cdf1a40a238c0d91a221c90a785b99fed37199332270f",
+      "transformation": "UTF8_LF_normalization_only"
+    },
+    {
+      "path": "proof_verification.json",
+      "source_artifact": "standalone-proof-verification.json",
+      "original_sha256": "c49dfcc58e0f4fcead29fb9caba3807dc8a157ef4d83d44788aaf08cc511fab6",
+      "published_sha256": "c49dfcc58e0f4fcead29fb9caba3807dc8a157ef4d83d44788aaf08cc511fab6",
+      "transformation": "UTF8_LF_normalization_only"
+    },
+    {
+      "path": "agent_actions.json",
+      "source_artifact": "agent-actions.json",
+      "original_sha256": "7b2294ac1cdf85e48e11228cb4cb75dc5501d976c222e038393d3188f0d6f7cd",
+      "published_sha256": "3dfe38f4646dcb6ba9cefae958cd461a4d111df91998826d098cfc23cf950611",
+      "transformation": "UTF8_LF_normalization_only"
+    },
+    {
+      "path": "source_review_status.json",
+      "source_artifact": "source-review-status.json",
+      "original_sha256": "0a3ff2720edb8f914e56fcfe217d49704b9665b2f13a29fb90a66d348e1d6c29",
+      "published_sha256": "0a3ff2720edb8f914e56fcfe217d49704b9665b2f13a29fb90a66d348e1d6c29",
+      "transformation": "UTF8_LF_normalization_only"
+    },
+    {
+      "path": "report_privacy.json",
+      "source_artifact": "report-privacy.json",
+      "original_sha256": "864f15c769d45932d04fdd9cc7f6c4940fbb224003515437745110aed9f9875d",
+      "published_sha256": "864f15c769d45932d04fdd9cc7f6c4940fbb224003515437745110aed9f9875d",
+      "transformation": "UTF8_LF_normalization_only"
+    },
+    {
+      "path": "ci_results.json",
+      "source_artifact": "final-verification.json",
+      "original_sha256": "8ec9d793624a79045ce86a2bce5dfe03d33ec6ef3f253ed5fa099a1c7356bee5",
+      "published_sha256": "88fb1c010211eceeeb115ce495fee5f405293ad94b7acf59f39a27ae9e34c40a",
+      "transformation": "UTF8_LF_normalization_only"
+    },
+    {
+      "path": "bridge_verification.json",
+      "source_artifact": "verified-assessment.json",
+      "original_sha256": "cc45f9d92b4b3702d30636b2fc7279010eca62d69e0d7c55d5bb889b1f7b5c8c",
+      "published_sha256": "8b0b8bcb984e5fb49c273ef719039aecad5bcf83f5059b3a942ba5224a5ae795",
+      "transformation": "verification_object_only_JSON_formatting_UTF8_LF"
+    }
+  ],
+  "documentation_sha256": "feb230e43de30c661b3326406684da0a02dd116bfec67e7261250c9f477ad0d6",
+  "original_diagnostics_or_local_paths_included": false,
+  "private_inputs_used": false,
+  "native_executables_included": false,
+  "records_relabelled_as_new_source_qualification": false,
+  "publisher_authenticated": false,
+  "independent_acceptance": false,
+  "deployment_authorization": false,
+  "limits": "These records retain the baseline source/executable bindings. The enclosing release manifest covers their published bytes. LF normalization preserves JSON values; current publication checks do not grant institutional acceptance."
+}

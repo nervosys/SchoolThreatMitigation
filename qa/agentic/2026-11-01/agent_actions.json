@@ -1,0 +1,99 @@
+{
+  "classification": "agent_actions_guided_by_engine_recommendations_not_institutional_acceptance",
+  "source_manifest_sha256": "d58d39b95061c93c64af5fa71947efae07a7fdbe0f331bb8a3b808a55b2b27d2",
+  "engine_executable_sha256": "df495f46742334596841eb5d4af207dbfd00cf29d3513aa7953874e3ff082b20",
+  "engine_build_scope": "local_debug_build_from_verified_current_source_offline_locked_public_cache",
+  "knowledge_sha256": "2bcb941487fb138f3e014ff57a71140fcecd8e6bbe7fef5496abef2188b1f34c",
+  "asserted_school_facts": 0,
+  "assessment_summary": {
+    "needs_evidence": 6,
+    "scope_unknown": 12
+  },
+  "standalone_proof_verification": {
+    "assertions_authenticated": false,
+    "deployment_authorization": false,
+    "knowledge_sha256": "2bcb941487fb138f3e014ff57a71140fcecd8e6bbe7fef5496abef2188b1f34c",
+    "legal_certification": false,
+    "release_manifest_sha256": "d58d39b95061c93c64af5fa71947efae07a7fdbe0f331bb8a3b808a55b2b27d2",
+    "rule_count": 18,
+    "specification": "stm-conjunctive-1",
+    "verified": true,
+    "verifier": "independent_rust_interpreter"
+  },
+  "source_checks_requiring_review": 20,
+  "source_status": "all_unreviewed_no_approval_inferred",
+  "actions": [
+    {
+      "engine_reference": "G-008",
+      "engine_action": "Use versioned change control and human-reviewed rule updates.",
+      "agent_technical_action": "Verify source/executable pins, replay the assessment and test rejection of writable tools and forged proofs.",
+      "automated_check": {
+        "assessments_independently_replayed": 6,
+        "check": "adversarial_mcp_authority_boundaries",
+        "classification": "maintainer_synthetic_regression",
+        "deployment_authorization": false,
+        "engine_version": "0.4.0",
+        "forged_tool_or_argument_calls_rejected": 10,
+        "independent_acceptance": false,
+        "kb_version": "17.0-NSAI.4",
+        "knowledge_sha256": "2bcb941487fb138f3e014ff57a71140fcecd8e6bbe7fef5496abef2188b1f34c",
+        "llm_wrapper_evaluation": false,
+        "mandatory_force_guardrail_preserved": true,
+        "mcp_requests_checked": 34,
+        "passed": true,
+        "platform": "windows",
+        "presentation_audiences_checked": 5,
+        "query_text_reported": false,
+        "rejected_marker_not_reflected": true,
+        "retrieval_injection_cases": 15,
+        "sessions_completed": 2,
+        "tampered_or_substituted_proofs_rejected": 6,
+        "tool_catalog_and_assessments_unchanged": true
+      },
+      "human_policy_attestation_recorded": false
+    },
+    {
+      "engine_reference": "auditor.next_human_action",
+      "engine_action": "Inspect source and verification IDs and record unresolved gaps.",
+      "agent_technical_action": "Replay all bounded per-rule assignments and expose missing assertions and unreviewed source records.",
+      "automated_check": {
+        "assignments_checked": 582,
+        "check": "exhaustive_per_rule_mcp_truth_tables",
+        "complete_assessments_independently_verified": 582,
+        "independent_acceptance": false,
+        "knowledge_sha256": "2bcb941487fb138f3e014ff57a71140fcecd8e6bbe7fef5496abef2188b1f34c",
+        "outcomes_observed": [
+          "deployment_hold",
+          "evidence_indicates_satisfied",
+          "gap_for_review",
+          "needs_evidence",
+          "not_applicable",
+          "scope_unknown"
+        ],
+        "passed": true,
+        "verifier": "independent_rust_interpreter"
+      },
+      "human_source_review_recorded": false
+    },
+    {
+      "engine_reference": "G-01",
+      "engine_action": "Constitutional and privacy audit",
+      "agent_technical_action": "Inspect all explicit public source files without collecting institutional records.",
+      "automated_check": {
+        "files_inspected": 312,
+        "findings": 0,
+        "independent_review": false,
+        "method": "rust_raw_json_pdf_xml_all_presentation_parts",
+        "passed": true
+      },
+      "legal_or_independent_privacy_acceptance_recorded": false
+    }
+  ],
+  "recommendation_selection": "Agent narrowed the governance query, inspected canonical rule G-008 and selected checks relevant to the software; keyword rank was not treated as operational authority.",
+  "engine_scope_limit": "Current rule predicates concern school-safety conditions; they do not encode the project owner or software backlog. Project staffing was not converted into school facts.",
+  "technical_check_results_not_converted_into_human_policy_fact_assertions": true,
+  "private_inputs_used": false,
+  "publisher_authenticated": false,
+  "independent_acceptance": false,
+  "deployment_authorization": false
+}

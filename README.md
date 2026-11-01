@@ -30,6 +30,7 @@ The bridge verifies both artifacts before launch, accepts only approved anonymou
 
 ## Project references
 
+- [Agentic workflow instructions](AGENTS.md) and [sanitized engine-guided test results](qa/agentic/2026-11-01/README.md)
 - [Engine and native workflow](engine/README.md)
 - [Reasoning semantics](engine/docs/REASONING_CONTRACT.md)
 - [Host integration](engine/docs/AGENT_INTEGRATION.md)

@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "commit": "7ce8159a027d962726ca5f634134c73d86505163",
+  "source_manifest_sha256": "d58d39b95061c93c64af5fa71947efae07a7fdbe0f331bb8a3b808a55b2b27d2",
+  "all_three_github_workflows_passed": true,
+  "workflow_runs": [
+    {
+      "conclusion": "success",
+      "databaseId": 41332388623,
+      "headSha": "7ce8159a027d962726ca5f634134c73d86505163",
+      "status": "completed",
+      "url": "https://github.com/nervosys/SchoolThreatMitigation/actions/runs/41332388623",
+      "workflowName": "Public source integrity"
+    },
+    {
+      "conclusion": "success",
+      "databaseId": 41332388692,
+      "headSha": "7ce8159a027d962726ca5f634134c73d86505163",
+      "status": "completed",
+      "url": "https://github.com/nervosys/SchoolThreatMitigation/actions/runs/41332388692",
+      "workflowName": "Rust engine and native workflow"
+    },
+    {
+      "conclusion": "success",
+      "databaseId": 41332388608,
+      "headSha": "7ce8159a027d962726ca5f634134c73d86505163",
+      "status": "completed",
+      "url": "https://github.com/nervosys/SchoolThreatMitigation/actions/runs/41332388608",
+      "workflowName": "Dependency security and declared licenses"
+    }
+  ],
+  "working_tree_clean": true,
+  "independent_acceptance": false,
+  "deployment_authorization": false
+}
