@@ -1,0 +1,11 @@
+{
+  "audit_recorded_on": "2026-10-28",
+  "cargo_lock_sha256": "68b25538dad421787b13e8964f886b99b846a45c95ec9e93feda5927c9a8816e",
+  "check": "retained_dependency_snapshot_binding",
+  "database_revision": "40f5be6fb12ed93fc591bf4ab23b7d793b3f2239",
+  "deployment_authorization": false,
+  "independent_acceptance": false,
+  "live_advisory_lookup": false,
+  "passed": true,
+  "policy_sha256": "def93032de08b4eac610d5ceb7283b255a2ce67a74f79ace08a6c54591a3072b"
+}

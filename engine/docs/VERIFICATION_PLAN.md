@@ -42,3 +42,8 @@
 ### Current validation status
 
 Static knowledge and source links were checked during packaging. The development container has no `rustc` or `cargo`, so Rust compilation, integration tests and runtime MCP interoperability could **not** be executed in that environment. The engine is a source-complete prototype, not a verified deployed service.
+
+
+## Engine 0.4.0 RC10 evidence
+
+The creation-environment limitation above applies to the original 0.1.0 package. Current local engineering results are recorded separately in `qa/implementation_validation.json` at the repository root. Run `stm-tool check` to reproduce them with offline Cargo dependencies and the locked Rust dependencies. Current Windows and Debian WSL engineering outcomes are recorded in qa/implementation_validation.json and qa/linux_validation.json. Required independent reviews and clean-machine/real-client acceptance are tracked in `docs/IMPLEMENTATION_STATUS.md`. No historical QA record has been relabeled as new test evidence.

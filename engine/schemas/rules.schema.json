@@ -1,0 +1,154 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "2.0"
+    },
+    "kb_version": {
+      "const": "17.0-NSAI.4"
+    },
+    "review_status": {
+      "const": "draft_independent_review_pending"
+    },
+    "source_proposal": {
+      "type": "string",
+      "minLength": 1
+    },
+    "rules_reviewed_as_of": {
+      "type": "string",
+      "minLength": 1
+    },
+    "legal_status": {
+      "type": "string",
+      "minLength": 1
+    },
+    "rules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9-]{1,64}$"
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "jurisdiction": {
+            "type": "string",
+            "minLength": 1
+          },
+          "scope": {
+            "type": "string",
+            "minLength": 1
+          },
+          "accountable_owner": {
+            "type": "string",
+            "minLength": 1
+          },
+          "recommended_action": {
+            "type": "string",
+            "minLength": 1
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 1
+          },
+          "priority": {
+            "type": "string",
+            "minLength": 1
+          },
+          "kind": {
+            "enum": [
+              "statutory_reference",
+              "safety_guardrail",
+              "deployment_qualification",
+              "voluntary_recommendation"
+            ]
+          },
+          "when": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "fact": {
+                  "type": "string",
+                  "pattern": "^[a-z][a-z0-9_]{0,79}$"
+                },
+                "equals": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "fact",
+                "equals"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "check": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "fact": {
+                  "type": "string",
+                  "pattern": "^[a-z][a-z0-9_]{0,79}$"
+                },
+                "equals": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "fact",
+                "equals"
+              ],
+              "additionalProperties": false
+            },
+            "minItems": 1
+          },
+          "source_refs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9-]{1,64}$"
+            },
+            "minItems": 1
+          }
+        },
+        "required": [
+          "id",
+          "title",
+          "jurisdiction",
+          "scope",
+          "accountable_owner",
+          "recommended_action",
+          "rationale",
+          "priority",
+          "kind",
+          "when",
+          "check",
+          "source_refs"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1
+    },
+    "reasoning_specification": {
+      "const": "stm-conjunctive-1"
+    }
+  },
+  "required": [
+    "schema_version",
+    "kb_version",
+    "review_status",
+    "source_proposal",
+    "rules_reviewed_as_of",
+    "legal_status",
+    "rules",
+    "reasoning_specification"
+  ],
+  "additionalProperties": false
+}

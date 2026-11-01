@@ -1,0 +1,259 @@
+{
+  "classification": "maintainer_smoke_not_independent_evaluation",
+  "kb_version": "17.0-NSAI.2",
+  "top_k": 8,
+  "cases_passed": 20,
+  "case_count": 20,
+  "all_passed": true,
+  "independent_evaluation": false,
+  "limitations": "Curated public phrase smoke cases, not blinded retrieval quality or user effectiveness validation.",
+  "results": [
+    {
+      "case_id": "public-T01",
+      "passed": true,
+      "retrieved_ids": [
+        "T01",
+        "T03",
+        "T02",
+        "G-001",
+        "P-01",
+        "P-02",
+        "SRC-04",
+        "SRC-13"
+      ]
+    },
+    {
+      "case_id": "public-T02",
+      "passed": true,
+      "retrieved_ids": [
+        "T02",
+        "L-01",
+        "T08",
+        "T13"
+      ]
+    },
+    {
+      "case_id": "public-T03",
+      "passed": true,
+      "retrieved_ids": [
+        "T03",
+        "T01",
+        "T02",
+        "G-001",
+        "SRC-04",
+        "SRC-13",
+        "P-01",
+        "P-02"
+      ]
+    },
+    {
+      "case_id": "public-T04",
+      "passed": true,
+      "retrieved_ids": [
+        "T04",
+        "A-001",
+        "B-01",
+        "T08",
+        "LAW-123",
+        "SRC-08",
+        "T14",
+        "T17"
+      ]
+    },
+    {
+      "case_id": "public-T05",
+      "passed": true,
+      "retrieved_ids": [
+        "T05",
+        "T17",
+        "G-009"
+      ]
+    },
+    {
+      "case_id": "public-T06",
+      "passed": true,
+      "retrieved_ids": [
+        "T06",
+        "G-001",
+        "T01",
+        "T02",
+        "T03",
+        "T13",
+        "T14",
+        "SRC-04"
+      ]
+    },
+    {
+      "case_id": "public-T07",
+      "passed": true,
+      "retrieved_ids": [
+        "T07",
+        "G-001",
+        "T01",
+        "T02",
+        "T03",
+        "SRC-04",
+        "T15",
+        "A-002"
+      ]
+    },
+    {
+      "case_id": "public-T08",
+      "passed": true,
+      "retrieved_ids": [
+        "T08",
+        "T10",
+        "T06",
+        "T02",
+        "T09",
+        "T14"
+      ]
+    },
+    {
+      "case_id": "public-T09",
+      "passed": true,
+      "retrieved_ids": [
+        "T09",
+        "F-01",
+        "G-004",
+        "T12",
+        "A-001",
+        "D-01",
+        "F-02",
+        "I-01"
+      ]
+    },
+    {
+      "case_id": "public-T10",
+      "passed": true,
+      "retrieved_ids": [
+        "T10",
+        "T06",
+        "T09",
+        "D-01",
+        "F-01",
+        "G-004",
+        "T02",
+        "T08"
+      ]
+    },
+    {
+      "case_id": "public-T11",
+      "passed": true,
+      "retrieved_ids": [
+        "T11",
+        "F-02",
+        "C-01",
+        "F-01",
+        "T09",
+        "T14"
+      ]
+    },
+    {
+      "case_id": "public-T12",
+      "passed": true,
+      "retrieved_ids": [
+        "T12",
+        "T06",
+        "D-01",
+        "A-002",
+        "A-003",
+        "LAW-440",
+        "M-01",
+        "WA-440"
+      ]
+    },
+    {
+      "case_id": "public-T13",
+      "passed": true,
+      "retrieved_ids": [
+        "T13",
+        "LAW-440",
+        "M-01",
+        "WA-440",
+        "T11",
+        "T14"
+      ]
+    },
+    {
+      "case_id": "public-T14",
+      "passed": true,
+      "retrieved_ids": [
+        "T14",
+        "A-001",
+        "SRC-02",
+        "T08",
+        "T13",
+        "T17",
+        "WA-124",
+        "B-01"
+      ]
+    },
+    {
+      "case_id": "public-T15",
+      "passed": true,
+      "retrieved_ids": [
+        "T15",
+        "T07",
+        "G-007",
+        "K-01",
+        "SRC-04",
+        "A-002",
+        "D-02",
+        "T05"
+      ]
+    },
+    {
+      "case_id": "public-T16",
+      "passed": true,
+      "retrieved_ids": [
+        "T16",
+        "R-01",
+        "G-003",
+        "G-010",
+        "G-005",
+        "A-01",
+        "D-02",
+        "T01"
+      ]
+    },
+    {
+      "case_id": "public-T17",
+      "passed": true,
+      "retrieved_ids": [
+        "T17",
+        "SRC-09",
+        "T05",
+        "A-01",
+        "G-002",
+        "G-008",
+        "G-003",
+        "R-01"
+      ]
+    },
+    {
+      "case_id": "public-T18",
+      "passed": true,
+      "retrieved_ids": [
+        "T18",
+        "T04",
+        "G-005",
+        "G-01",
+        "L-01",
+        "R-01",
+        "T03",
+        "T06"
+      ]
+    },
+    {
+      "case_id": "no-match",
+      "passed": true,
+      "retrieved_ids": []
+    },
+    {
+      "case_id": "disallowed",
+      "passed": true,
+      "retrieved_ids": []
+    }
+  ]
+}

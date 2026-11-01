@@ -1,0 +1,1968 @@
+{
+  "source_release_id": "engine-0.3.0-rc2",
+  "source_manifest_sha256": "9fb9b91784e49c53852100d12c362f3fde459f661b0e5a7d03293d0a0a85d200",
+  "knowledge_sha256": "8270fd3e3fe272a17b3f6010014d25ac2a89ac2b6898cc210d2c7539a35cedf3",
+  "knowledge": {
+    "rule_register": {
+      "kb_version": "17.0-NSAI.3",
+      "source_proposal": "SchoolThreatMitigation V17.0",
+      "rules_reviewed_as_of": "2026-10-26",
+      "legal_status": "advisory_only; Washington-qualified counsel must verify current applicability",
+      "rules": [
+        {
+          "id": "WA-123",
+          "title": "District behavior-based threat assessment program",
+          "kind": "statutory_reference",
+          "jurisdiction": "WA",
+          "when": [
+            {
+              "fact": "wa_public_school",
+              "equals": true
+            }
+          ],
+          "check": [
+            {
+              "fact": "threat_assessment_program_adopted",
+              "equals": true
+            },
+            {
+              "fact": "behavior_based_not_demographic",
+              "equals": true
+            },
+            {
+              "fact": "referral_alone_causes_exclusion",
+              "equals": false
+            }
+          ],
+          "source_refs": [
+            "LAW-123"
+          ],
+          "accountable_owner": "District leadership",
+          "recommended_action": "Review policy and intervention procedures with Washington-qualified counsel.",
+          "rationale": "RCW 28A.320.123: adopted behavior-based program; referral alone cannot justify suspension or expulsion.",
+          "priority": "high",
+          "scope": "Draft advisory scope: wa_public_school=true. Evaluate only anonymous Boolean assertions; independent applicability review remains required."
+        },
+        {
+          "id": "WA-124",
+          "title": "School security staff duties and complaint policy",
+          "kind": "statutory_reference",
+          "jurisdiction": "WA",
+          "when": [
+            {
+              "fact": "school_security_staff_present",
+              "equals": true
+            }
+          ],
+          "check": [
+            {
+              "fact": "staff_duties_policy_adopted",
+              "equals": true
+            },
+            {
+              "fact": "sro_formal_discipline_role",
+              "equals": false
+            },
+            {
+              "fact": "family_security_complaint_path",
+              "equals": true
+            }
+          ],
+          "source_refs": [
+            "LAW-124"
+          ],
+          "accountable_owner": "District superintendent",
+          "recommended_action": "Update staff policy; separate school discipline from police functions; publish complaint routes.",
+          "rationale": "Conditional duties, role limits, and complaint process in RCW 28A.320.124.",
+          "priority": "high",
+          "scope": "Draft advisory scope: school_security_staff_present=true. Evaluate only anonymous Boolean assertions; independent applicability review remains required."
+        },
+        {
+          "id": "WA-1241",
+          "title": "Security-staff reporting process",
+          "kind": "statutory_reference",
+          "jurisdiction": "WA",
+          "when": [
+            {
+              "fact": "school_security_staff_present",
+              "equals": true
+            }
+          ],
+          "check": [
+            {
+              "fact": "security_staff_reporting_process",
+              "equals": true
+            }
+          ],
+          "source_refs": [
+            "LAW-1241"
+          ],
+          "accountable_owner": "District compliance officer",
+          "recommended_action": "Verify statutory collection/submission and confidentiality controls with counsel.",
+          "rationale": "RCW 28A.320.1241 includes prescribed reporting; sensitive details must be handled lawfully.",
+          "priority": "high",
+          "scope": "Draft advisory scope: school_security_staff_present=true. Evaluate only anonymous Boolean assertions; independent applicability review remains required."
+        },
+        {
+          "id": "WA-1242",
+          "title": "Annual security provider agreement and participation",
+          "kind": "statutory_reference",
+          "jurisdiction": "WA",
+          "when": [
+            {
+              "fact": "external_security_provider",
+              "equals": true
+            }
+          ],
+          "check": [
+            {
+              "fact": "annual_security_agreement_reviewed",
+              "equals": true
+            },
+            {
+              "fact": "parent_student_community_consultation",
+              "equals": true
+            }
+          ],
+          "source_refs": [
+            "LAW-1242"
+          ],
+          "accountable_owner": "District board",
+          "recommended_action": "Conduct annual agreement review including parents, students and community members.",
+          "rationale": "RCW 28A.320.1242 has conditional agreement and community-participation requirements.",
+          "priority": "high",
+          "scope": "Draft advisory scope: external_security_provider=true. Evaluate only anonymous Boolean assertions; independent applicability review remains required."
+        },
+        {
+          "id": "WA-440",
+          "title": "Bleeding control supplies, training and inspections",
+          "kind": "statutory_reference",
+          "jurisdiction": "WA",
+          "when": [
+            {
+              "fact": "wa_public_school",
+              "equals": true
+            }
+          ],
+          "check": [
+            {
+              "fact": "bleeding_control_equipment_accessible",
+              "equals": true
+            },
+            {
+              "fact": "bleeding_control_training_staffing_met",
+              "equals": true
+            },
+            {
+              "fact": "bleeding_control_inspections_current",
+              "equals": true
+            }
+          ],
+          "source_refs": [
+            "LAW-440"
+          ],
+          "accountable_owner": "District safety and health lead",
+          "recommended_action": "Check campus equipment, staffing thresholds and inspections under RCW 28A.210.440.",
+          "rationale": "School-year 2026-27 requirements, with student-count-dependent staffing provisions.",
+          "priority": "high",
+          "scope": "Draft advisory scope: wa_public_school=true. Evaluate only anonymous Boolean assertions; independent applicability review remains required."
+        },
+        {
+          "id": "G-001",
+          "title": "Protect lawful firearm ownership and privacy",
+          "kind": "safety_guardrail",
+          "jurisdiction": "WA",
+          "when": [],
+          "check": [
+            {
+              "fact": "firearm_owner_registry_created",
+              "equals": false
+            }
+          ],
+          "source_refs": [
+            "SRC-05",
+            "SRC-04"
+          ],
+          "accountable_owner": "Privacy officer",
+          "recommended_action": "Do not establish school firearm-owner registries; use anonymous voluntary outreach.",
+          "rationale": "Safeguard adopted by the project; not a claim that all owner registries are legally prohibited.",
+          "priority": "high",
+          "scope": "Draft advisory scope: all public advisory assessments. Evaluate only anonymous Boolean assertions; independent applicability review remains required."
+        },
+        {
+          "id": "G-002",
+          "title": "No demographic or political AI profiling",
+          "kind": "safety_guardrail",
+          "jurisdiction": "WA",
+          "when": [],
+          "check": [
+            {
+              "fact": "demographic_or_political_risk_profiling",
+              "equals": false
+            }
+          ],
+          "source_refs": [
+            "LAW-123",
+            "SRC-01"
+          ],
+          "accountable_owner": "Civil rights officer",
+          "recommended_action": "Remove profiling; use documented, behavior-based evidence and independent review.",
+          "rationale": "Protect expression, privacy and due process.",
+          "priority": "high",
+          "scope": "Draft advisory scope: all public advisory assessments. Evaluate only anonymous Boolean assertions; independent applicability review remains required."
+        },
+        {
+          "id": "G-003",
+          "title": "No autonomous authorization of physical force",
+          "kind": "safety_guardrail",
+          "jurisdiction": "WA",
+          "when": [],
+          "check": [
+            {
+              "fact": "ai_authorizes_physical_force",
+              "equals": false
+            }
+          ],
+          "source_refs": [
+            "SRC-02"
+          ],
+          "accountable_owner": "Board and law enforcement counsel",
+          "recommended_action": "Disable autonomous force decisions; require legally authorized human judgment.",
+          "rationale": "A mandatory design constraint; not an assertion that an AI system is a law enforcement officer.",
+          "priority": "high",
+          "scope": "Draft advisory scope: all public advisory assessments. Evaluate only anonymous Boolean assertions; independent applicability review remains required."
+        },
+        {
+          "id": "G-004",
+          "title": "Preserve safe and accessible emergency egress",
+          "kind": "safety_guardrail",
+          "jurisdiction": "WA",
+          "when": [],
+          "check": [
+            {
+              "fact": "egress_obstructed_by_security",
+              "equals": false
+            }
+          ],
+          "source_refs": [
+            "SRC-02"
+          ],
+          "accountable_owner": "Facilities and fire authority",
+          "recommended_action": "Stop barrier deployment pending fire and accessibility approval.",
+          "rationale": "Security must never create unsafe confinement.",
+          "priority": "high",
+          "scope": "Draft advisory scope: all public advisory assessments. Evaluate only anonymous Boolean assertions; independent applicability review remains required."
+        },
+        {
+          "id": "G-005",
+          "title": "Prevent unauthorized education-record sharing",
+          "kind": "safety_guardrail",
+          "jurisdiction": "WA",
+          "when": [],
+          "check": [
+            {
+              "fact": "unauthorized_education_record_sharing",
+              "equals": false
+            }
+          ],
+          "source_refs": [
+            "SRC-02"
+          ],
+          "accountable_owner": "District privacy officer",
+          "recommended_action": "Block unlawful access, preserve logs, and involve counsel for applicable privacy law.",
+          "rationale": "A safeguard against misuse of school data, not a blanket ban on lawful reporting.",
+          "priority": "high",
+          "scope": "Draft advisory scope: all public advisory assessments. Evaluate only anonymous Boolean assertions; independent applicability review remains required."
+        },
+        {
+          "id": "G-006",
+          "title": "No unverified remote physical actuation",
+          "kind": "safety_guardrail",
+          "jurisdiction": "WA",
+          "when": [
+            {
+              "fact": "connected_life_safety_system_planned",
+              "equals": true
+            }
+          ],
+          "check": [
+            {
+              "fact": "unverified_remote_physical_commands_enabled",
+              "equals": false
+            }
+          ],
+          "source_refs": [
+            "SRC-02"
+          ],
+          "accountable_owner": "OT security officer",
+          "recommended_action": "Require authenticated commands, independent testing, and manual fallback.",
+          "rationale": "Avoid cyber-to-physical hazard propagation.",
+          "priority": "high",
+          "scope": "Draft advisory scope: connected_life_safety_system_planned=true. Evaluate only anonymous Boolean assertions; independent applicability review remains required."
+        },
+        {
+          "id": "G-007",
+          "title": "Specialist canine program must be qualified",
+          "kind": "safety_guardrail",
+          "jurisdiction": "WA",
+          "when": [
+            {
+              "fact": "canine_program_planned",
+              "equals": true
+            }
+          ],
+          "check": [
+            {
+              "fact": "unauthorized_canine_deployment",
+              "equals": false
+            }
+          ],
+          "source_refs": [
+            "SRC-02"
+          ],
+          "accountable_owner": "District safety director",
+          "recommended_action": "Suspend unqualified canine program and arrange specialist independent assessment.",
+          "rationale": "Canine screening is not validated as a universal school-shooting countermeasure.",
+          "priority": "high",
+          "scope": "Draft advisory scope: canine_program_planned=true. Evaluate only anonymous Boolean assertions; independent applicability review remains required."
+        },
+        {
+          "id": "G-008",
+          "title": "AI cannot directly modify verified rules",
+          "kind": "safety_guardrail",
+          "jurisdiction": "WA",
+          "when": [],
+          "check": [
+            {
+              "fact": "ai_can_edit_approved_rules",
+              "equals": false
+            }
+          ],
+          "source_refs": [
+            "SRC-02"
+          ],
+          "accountable_owner": "Governance board",
+          "recommended_action": "Use versioned change control and human-reviewed rule updates.",
+          "rationale": "Symbolic policy layer must not be silently rewritten by an LLM.",
+          "priority": "high",
+          "scope": "Draft advisory scope: all public advisory assessments. Evaluate only anonymous Boolean assertions; independent applicability review remains required."
+        },
+        {
+          "id": "G-009",
+          "title": "Human review and fair process for adverse actions",
+          "kind": "safety_guardrail",
+          "jurisdiction": "WA",
+          "when": [
+            {
+              "fact": "threat_assessment_program_adopted",
+              "equals": true
+            }
+          ],
+          "check": [
+            {
+              "fact": "human_review_for_adverse_actions",
+              "equals": true
+            },
+            {
+              "fact": "unverified_tip_triggers_punishment",
+              "equals": false
+            }
+          ],
+          "source_refs": [
+            "LAW-123",
+            "SRC-01"
+          ],
+          "accountable_owner": "Civil rights lead",
+          "recommended_action": "Require corroboration, appeal/correction path, and trained decision maker.",
+          "rationale": "Prevent malicious reports and mistaken irreversible actions.",
+          "priority": "high",
+          "scope": "Draft advisory scope: threat_assessment_program_adopted=true. Evaluate only anonymous Boolean assertions; independent applicability review remains required."
+        },
+        {
+          "id": "G-010",
+          "title": "Lawful and documented authority for on-site response",
+          "kind": "safety_guardrail",
+          "jurisdiction": "WA",
+          "when": [
+            {
+              "fact": "armed_response_program_planned",
+              "equals": true
+            }
+          ],
+          "check": [
+            {
+              "fact": "qualified_response_authorized_by_law",
+              "equals": true
+            },
+            {
+              "fact": "independent_force_oversight",
+              "equals": true
+            }
+          ],
+          "source_refs": [
+            "LAW-124",
+            "LAW-1242"
+          ],
+          "accountable_owner": "School district counsel",
+          "recommended_action": "Hold implementation until authorization, qualified staffing and independent oversight are documented.",
+          "rationale": "Public recommendation guidance, no tactical force instructions.",
+          "priority": "high",
+          "scope": "Draft advisory scope: armed_response_program_planned=true. Evaluate only anonymous Boolean assertions; independent applicability review remains required."
+        },
+        {
+          "id": "A-001",
+          "title": "Threat-driven evaluation before connected technology deployment",
+          "kind": "deployment_qualification",
+          "jurisdiction": "WA",
+          "when": [
+            {
+              "fact": "connected_life_safety_system_planned",
+              "equals": true
+            }
+          ],
+          "check": [
+            {
+              "fact": "threat_gap_documented",
+              "equals": true
+            },
+            {
+              "fact": "independent_cyber_assessment_complete",
+              "equals": true
+            },
+            {
+              "fact": "manual_safe_fallback_tested",
+              "equals": true
+            }
+          ],
+          "source_refs": [
+            "SRC-02"
+          ],
+          "accountable_owner": "District technology lead",
+          "recommended_action": "Pilot against threat-specific requirements and independently test cyber-physical failure modes.",
+          "rationale": "Technology adoption follows identified risk and must preserve safe operation.",
+          "priority": "high",
+          "scope": "Draft advisory scope: connected_life_safety_system_planned=true. Evaluate only anonymous Boolean assertions; independent applicability review remains required."
+        },
+        {
+          "id": "A-002",
+          "title": "Independent alert validation",
+          "kind": "deployment_qualification",
+          "jurisdiction": "WA",
+          "when": [
+            {
+              "fact": "detector_deployment_planned",
+              "equals": true
+            }
+          ],
+          "check": [
+            {
+              "fact": "representative_false_alarm_testing_complete",
+              "equals": true
+            },
+            {
+              "fact": "alert_human_verification_defined",
+              "equals": true
+            }
+          ],
+          "source_refs": [
+            "SRC-02"
+          ],
+          "accountable_owner": "Campus incident command",
+          "recommended_action": "Validate misses and false alarms; keep people responsible for emergency decisions.",
+          "rationale": "No claimed product accuracy without independent test evidence.",
+          "priority": "high",
+          "scope": "Draft advisory scope: detector_deployment_planned=true. Evaluate only anonymous Boolean assertions; independent applicability review remains required."
+        },
+        {
+          "id": "A-003",
+          "title": "Privacy-preserving youth access outreach",
+          "kind": "voluntary_recommendation",
+          "jurisdiction": "WA",
+          "when": [
+            {
+              "fact": "youth_firearm_access_program_planned",
+              "equals": true
+            }
+          ],
+          "check": [
+            {
+              "fact": "participation_voluntary",
+              "equals": true
+            },
+            {
+              "fact": "identifying_firearm_data_collected",
+              "equals": false
+            }
+          ],
+          "source_refs": [
+            "SRC-04",
+            "SRC-05"
+          ],
+          "accountable_owner": "Community partnership lead",
+          "recommended_action": "Use optional secure-storage education and anonymous impact reporting.",
+          "rationale": "Promote safeguards without compulsory ownership disclosure.",
+          "priority": "high",
+          "scope": "Draft advisory scope: youth_firearm_access_program_planned=true. Evaluate only anonymous Boolean assertions; independent applicability review remains required."
+        }
+      ],
+      "schema_version": "2.0",
+      "review_status": "draft_independent_review_pending",
+      "reasoning_specification": "stm-conjunctive-1"
+    },
+    "scenarios": [
+      {
+        "id": "T01",
+        "threat": "Household firearm accessible to a minor",
+        "classification": "Established",
+        "observable_signal": "Caregiver identifies an unlocked firearm or accessible key/code",
+        "objective": "Reduce unauthorized youth access before an incident",
+        "countermeasure": "Voluntary locked and unloaded storage guidance; protect combinations; discounted safe or lock referral",
+        "owner": "Community firearm-safety lead",
+        "verification_method": "Anonymous opt-in adoption survey, lock voucher accounting, and caregiver comprehension exercise",
+        "metric": "Number adopting safeguards; non-identifying participation rate",
+        "evidence_label": "Research-backed prevention mechanism",
+        "rights_gate": "Do not collect owner identities, addresses, serials or storage inventories",
+        "stop_condition": "Ownership reporting required or security intervention based solely on ownership"
+      },
+      {
+        "id": "T02",
+        "threat": "Firearm in relatives’, friends’, or shared-care locations",
+        "classification": "Established",
+        "observable_signal": "Caregiver concern about access during visits or custody transitions",
+        "objective": "Extend protective practice outside primary home",
+        "countermeasure": "Universal caregiver discussion guide; voluntary peer-to-peer secure-storage conversation; translated materials",
+        "owner": "Family engagement coordinator",
+        "verification_method": "Usability test with volunteer caregivers across household types",
+        "metric": "Comprehension and voluntary commitment; language accessibility",
+        "evidence_label": "Research-informed extrapolation",
+        "rights_gate": "Do not infer or disclose custody, family firearm holdings, or guardian status",
+        "stop_condition": "Program conditions school access on parental ownership disclosure"
+      },
+      {
+        "id": "T03",
+        "threat": "Unsecured firearm left in a vehicle",
+        "classification": "Established",
+        "observable_signal": "Voluntary report that firearm was previously left accessible in a vehicle",
+        "objective": "Reduce opportunistic access and theft exposure",
+        "countermeasure": "Avoid unattended vehicle storage; voluntary locked storage education; lawful temporary storage referrals",
+        "owner": "Community retailer and caregiver network",
+        "verification_method": "Anonymized scenario questionnaire and program distribution audit",
+        "metric": "Change in storage intent or reported practice, without individual tracking",
+        "evidence_label": "Research-informed prevention",
+        "rights_gate": "No vehicle-owner registry or vehicle searches under education program",
+        "stop_condition": "Law-enforcement vehicle search derived from education enrollment data"
+      },
+      {
+        "id": "T04",
+        "threat": "Credible communicated threat or planning leakage",
+        "classification": "Established",
+        "observable_signal": "Specific observed statements or behavior with corroborating context",
+        "objective": "Review actionable concern early and initiate proportionate supports",
+        "countermeasure": "Multidisciplinary, behavior-based assessment; documented corroboration; supportive interventions; emergency referral only where justified",
+        "owner": "School threat assessment chair",
+        "verification_method": "Tabletop case review with synthetic facts and independent review of proportionality",
+        "metric": "Evidence quality, triage timeliness, interventions and overturn rates",
+        "evidence_label": "Supported professional practice, not individual prediction",
+        "rights_gate": "FERPA purpose limits; protected expression alone is not sufficient",
+        "stop_condition": "Unsupported coercion or unsupported record transfer"
+      },
+      {
+        "id": "T05",
+        "threat": "Malicious, mistaken, or uncorroborated accusation",
+        "classification": "Established",
+        "observable_signal": "Anonymous allegation lacking independently corroborated conduct",
+        "objective": "Avoid wrongful labeling and retaliatory intervention",
+        "countermeasure": "Separate intake from finding; preserve exculpatory information; corrective review, time limits and appeals",
+        "owner": "Civil rights officer / independent reviewer",
+        "verification_method": "Synthetic false-report exercise with review by legal and student representatives",
+        "metric": "False escalation rate, correction timeliness and resolution quality",
+        "evidence_label": "Governance / due-process design",
+        "rights_gate": "Presumption against disciplinary or police action based solely on allegation",
+        "stop_condition": "Student punishment, political profiling or irreversible label without support"
+      },
+      {
+        "id": "T06",
+        "threat": "Suspected weapon or violence near school arrival/access area",
+        "classification": "Established",
+        "observable_signal": "Direct human report of potential weapon or danger, not algorithmic inference alone",
+        "objective": "Communicate credible urgent risk without exposing additional students",
+        "countermeasure": "Trained human confirmation where safe; dispatch escalation; campus-specific protective action; accessible notification",
+        "owner": "School incident commander / 911 dispatch",
+        "verification_method": "No-live-weapon notification tabletop; measure decision and alert chain",
+        "metric": "p50/p95 notification delay and comprehension; missed recipients",
+        "evidence_label": "Operational guidance; local effectiveness unverified",
+        "rights_gate": "Avoid publishing campus-sensitive routes or exploitable access points",
+        "stop_condition": "Protective action depends entirely on a network sensor or unvalidated classifier"
+      },
+      {
+        "id": "T07",
+        "threat": "False or missed acoustic/visual firearm alarm",
+        "classification": "Known technology failure class",
+        "observable_signal": "Sensor activates without verified incident, or misses simulated signal",
+        "objective": "Avoid harmful false response while retaining urgent notification",
+        "countermeasure": "Independent sensor benchmark; source provenance; human verification; alternate reporting channel",
+        "owner": "Technology assurance lead",
+        "verification_method": "Controlled authorized synthetic tests, blinded false-positive and false-negative assessments",
+        "metric": "Sensitivity, specificity, alert latency and false alarm workload",
+        "evidence_label": "Technology-specific evidence required",
+        "rights_gate": "No automatic suspect identity inference or use-of-force trigger",
+        "stop_condition": "Vendor cannot disclose validation data; false alerts trigger irreversible action"
+      },
+      {
+        "id": "T08",
+        "threat": "Threat reported while groups are in hallways or common areas",
+        "classification": "Established",
+        "observable_signal": "Verified immediate threat with mixed locations and conflicting movement instructions",
+        "objective": "Support safer protective action appropriate to each location",
+        "countermeasure": "Preplanned options-based training; intelligible multi-channel guidance; trained staff judgement",
+        "owner": "Emergency preparedness lead",
+        "verification_method": "Accessible, non-violent exercise with multiple mobility profiles and observers",
+        "metric": "Instruction comprehension, conflicts, accessibility and elapsed communication",
+        "evidence_label": "General emergency-preparedness evidence",
+        "rights_gate": "No publishable room-by-room tactical playbook",
+        "stop_condition": "Single inflexible command unnecessarily exposes or traps occupants"
+      },
+      {
+        "id": "T09",
+        "threat": "Classroom door hardware fails or impedes egress",
+        "classification": "Established secondary safety hazard",
+        "observable_signal": "Routine inspection finds fault, incompatible accessory, or emergency release failure",
+        "objective": "Maintain protective closure while preserving lawful egress and emergency access",
+        "countermeasure": "Code-reviewed listed hardware; scheduled inspection; manual opening and release; accessibility testing",
+        "owner": "Facilities / fire code authority",
+        "verification_method": "Qualified walk-through under power-off and simulated panic conditions",
+        "metric": "Every tested door independently satisfies egress/accessibility criteria",
+        "evidence_label": "Code/engineering requirement",
+        "rights_gate": "No unsanctioned door lock-in or incapacitating enclosure",
+        "stop_condition": "Any tested exit obstruction or inability to release from inside"
+      },
+      {
+        "id": "T10",
+        "threat": "Person with disability cannot perceive or follow protective instruction",
+        "classification": "Established",
+        "observable_signal": "Audible-only alert or obstructed accessible exit",
+        "objective": "Ensure inclusive, independently usable emergency action",
+        "countermeasure": "Multimodal accessible alerts, individualized support planning, accessible refuge/egress review",
+        "owner": "ADA/504 coordinator",
+        "verification_method": "Inclusive drill with disabled participants and voluntary accommodations",
+        "metric": "Notification reach, support timeliness and documented accessibility defects",
+        "evidence_label": "Accessibility duty; specific benefit must be tested",
+        "rights_gate": "Do not expose medical or disability details in broad alerts",
+        "stop_condition": "Protective protocol excludes or isolates disabled occupants"
+      },
+      {
+        "id": "T11",
+        "threat": "Power or communications outage during incident",
+        "classification": "Established resilience threat",
+        "observable_signal": "Loss of power, WAN, cellular, or security control unit",
+        "objective": "Maintain minimum alerts, unlocked legal egress, and command continuity",
+        "countermeasure": "Tested backup power; manual public address / radio alternatives; fail-safe access and written procedures",
+        "owner": "Facilities / IT / incident command",
+        "verification_method": "Authorized loss-of-power functional test with observer and fire authority",
+        "metric": "Continuity of essential functions; restoration time and failed transitions",
+        "evidence_label": "Established resilience practice",
+        "rights_gate": "Backup cannot override life-safety release or logging rules",
+        "stop_condition": "Any power loss locks an occupied exit or disables all emergency notification"
+      },
+      {
+        "id": "T12",
+        "threat": "Spoofed alert, ransomware, or compromised access-control system",
+        "classification": "Emerging and observed cyber threat",
+        "observable_signal": "Unexpected vendor login, unsigned command, inconsistent emergency message",
+        "objective": "Prevent cyber compromise from creating unsafe physical behavior",
+        "countermeasure": "MFA; least privilege; segmentation; signed updates; manual override; offline incident playbook",
+        "owner": "CISO / physical security owner",
+        "verification_method": "Authorized tabletop and isolated cyber-physical failure injection (no live student impact)",
+        "metric": "Time to detect/contain; uncompromised exit function; recovery success",
+        "evidence_label": "NIST/CISA control guidance; site testing required",
+        "rights_gate": "Do not connect surveillance telemetry to general police databases",
+        "stop_condition": "Remote operator can close all egress or issue unverified lethal-threat instructions"
+      },
+      {
+        "id": "T13",
+        "threat": "Life-threatening bleeding before EMS arrival",
+        "classification": "Established",
+        "observable_signal": "Observed injury requiring immediate emergency medical response",
+        "objective": "Make trained assistance and supplies accessible before professional arrival",
+        "countermeasure": "Bleeding-control kits, trained personnel, accessible cache locations, EMS handoff coordination",
+        "owner": "School nurse / EMS liaison",
+        "verification_method": "Skills-based medical training and equipment inspection; coordinate with qualified clinicians",
+        "metric": "Training coverage, kit readiness, performance in safe simulation",
+        "evidence_label": "Established emergency medical preparedness",
+        "rights_gate": "Do not collect student-specific medical details beyond lawful operational need",
+        "stop_condition": "Kits inaccessible or training not sustained"
+      },
+      {
+        "id": "T14",
+        "threat": "Delayed police arrival during an active threat",
+        "classification": "Established operational constraint",
+        "observable_signal": "Dispatch acknowledges incident but units are not yet on scene",
+        "objective": "Reduce dependence on a single external response timeline",
+        "countermeasure": "Protective actions, verified alarms, trained communications lead, EMS staging; only legally authorized professional security with oversight",
+        "owner": "District emergency lead / law enforcement agency",
+        "verification_method": "Multi-agency tabletop; timed non-weapon exercise; authority and ID checks",
+        "metric": "Reliable dispatch interface, communications robustness, accountable authority",
+        "evidence_label": "Operational planning; armed response outcome varies",
+        "rights_gate": "No armed deployment outside legal authority, training and explicit policy",
+        "stop_condition": "Unqualified staff armed or force authority delegated to software"
+      },
+      {
+        "id": "T15",
+        "threat": "Canine false indication, injury, or unreliable deployment",
+        "classification": "Specialist capability / uncertain benefit",
+        "observable_signal": "Canine proposed for explosives/firearms screening or a positive indication occurs",
+        "objective": "Avoid unvalidated claims and secondary physical harms",
+        "countermeasure": "Qualified canine/handler credentialing; validated application-specific reliability; welfare and student safety review",
+        "owner": "Canine program supervisor / independent evaluator",
+        "verification_method": "Double-blind controlled screening trials; documented incident review",
+        "metric": "False indication rate, coverage, handler performance, injury near-misses",
+        "evidence_label": "Limited context-specific evidence; not proven mass-shooting prevention",
+        "rights_gate": "No random intrusive student search based solely on dog alert without lawful grounds",
+        "stop_condition": "Insufficient canine validation or foreseeable student bite/exposure risk"
+      },
+      {
+        "id": "T16",
+        "threat": "Misidentified person or unauthorized on-site use of force",
+        "classification": "High-consequence human/system failure",
+        "observable_signal": "Confusing observations; responder has incomplete incident picture",
+        "objective": "Protect innocent people, enforce constitutional limits and prevent friendly-force errors",
+        "countermeasure": "Qualified law-enforcement coordination; identification and restraint standards; independent force review; medical response",
+        "owner": "Authorized law enforcement / independent oversight",
+        "verification_method": "Legal policy review, credentials audit and scenario-based decision exercise without weapons",
+        "metric": "Misidentification risks, policy compliance, reporting completeness",
+        "evidence_label": "Law/policy gate, not demonstrated intervention efficacy",
+        "rights_gate": "Never provide target selection, automated force recommendation or unreviewed force authority",
+        "stop_condition": "Unlawful force policy; missing chain of command or independent review"
+      },
+      {
+        "id": "T17",
+        "threat": "AI-generated accusation, synthetic media, or automated threat score",
+        "classification": "Emerging",
+        "observable_signal": "Suspicious synthetic audio/video or automated recommendation presents urgent allegation",
+        "objective": "Require authentic, corroborated evidence before adverse action",
+        "countermeasure": "Source verification, human case review, multiple independent observations and challenge process",
+        "owner": "AI assurance officer / threat team",
+        "verification_method": "Adversarial synthetic exercise, subgroup error analysis and documentation review",
+        "metric": "False escalation, reversals, provenance verification success",
+        "evidence_label": "Emerging research; model-specific validation needed",
+        "rights_gate": "No student risk scoring, mass surveillance, or AI-only enforcement",
+        "stop_condition": "Model recommendation is treated as proof or enables automatic police action"
+      },
+      {
+        "id": "T18",
+        "threat": "After-event reunification confusion or sensitive-data leakage",
+        "classification": "Established",
+        "observable_signal": "Families receive contradictory or over-detailed status messages",
+        "objective": "Accountable reunification, privacy and trauma-informed communication",
+        "countermeasure": "Single authorized family information lead, secure verification, accessible multilingual updates",
+        "owner": "Reunification coordinator / privacy officer",
+        "verification_method": "Family-facing tabletop, multilingual review, redacted communication audit",
+        "metric": "Family comprehension, rumor correction time, unauthorized releases",
+        "evidence_label": "Emergency management practice",
+        "rights_gate": "No public posting of pupil identities or sensitive medical data",
+        "stop_condition": "Live roster exposed or misinformation uncontrolled"
+      }
+    ],
+    "controls": [
+      {
+        "id": "P-01",
+        "name": "Voluntary safe storage outreach",
+        "objective": "Prevent unsupervised youth access",
+        "required_evidence": "Owner-independent anonymized adoption and comprehension audit",
+        "owner": "Partnership lead",
+        "hard_stop": "No household ownership registry or mandatory disclosure"
+      },
+      {
+        "id": "P-02",
+        "name": "Temporary secure storage referral network",
+        "objective": "Offer lawful and voluntary option during acute household risk",
+        "required_evidence": "Attorney-reviewed transfer/referral workflow; coverage audit",
+        "owner": "Public health partner",
+        "hard_stop": "No physical acceptance of firearms by schools"
+      },
+      {
+        "id": "B-01",
+        "name": "Evidence-based threat assessment",
+        "objective": "Differentiate credible behavior from stereotypes/rumors",
+        "required_evidence": "Independent case review; sampled dispositions; appeal test",
+        "owner": "Threat assessment chair",
+        "hard_stop": "No adverse finding solely from protected expression or anonymous tip"
+      },
+      {
+        "id": "D-01",
+        "name": "Verified multi-channel emergency alert",
+        "objective": "Warn and coordinate without automated irreversible action",
+        "required_evidence": "Blinded alert tests and accessibility review",
+        "owner": "District incident command",
+        "hard_stop": "No deployment with single unverified sensor failure mode"
+      },
+      {
+        "id": "D-02",
+        "name": "Sensor validation and provenance",
+        "objective": "Understand misses, false positives and adversarial input",
+        "required_evidence": "Representative independent bench testing",
+        "owner": "Technology lead",
+        "hard_stop": "No force or confinement automated by detector"
+      },
+      {
+        "id": "F-01",
+        "name": "Safe classroom protection and egress",
+        "objective": "Allow protection without trapping occupants",
+        "required_evidence": "AHJ and disability-access review; outage tests",
+        "owner": "Facilities director",
+        "hard_stop": "Stop at any fail-to-egress condition"
+      },
+      {
+        "id": "F-02",
+        "name": "Continuity of critical systems",
+        "objective": "Keep alerts and releases usable in outages",
+        "required_evidence": "Power/WAN outage exercise",
+        "owner": "IT + facilities",
+        "hard_stop": "No failure mode that disables all emergency communications"
+      },
+      {
+        "id": "M-01",
+        "name": "Bleeding-control readiness",
+        "objective": "Improve immediate medical capability",
+        "required_evidence": "Training skills test; periodic kit inspection",
+        "owner": "Nurse / EMS",
+        "hard_stop": "No inaccessible or unmaintained equipment"
+      },
+      {
+        "id": "R-01",
+        "name": "Professional coordination and lawful force",
+        "objective": "Reduce confusion and prevent unauthorized coercion",
+        "required_evidence": "MOU, credentialing, law review, exercise evaluation",
+        "owner": "Law enforcement MOU lead",
+        "hard_stop": "No unqualified armed staffing or AI force authority"
+      },
+      {
+        "id": "K-01",
+        "name": "Canine use subject to evidence",
+        "objective": "Evaluate narrow context-specific canine roles",
+        "required_evidence": "Independent double-blind tests and welfare checks",
+        "owner": "Canine lead",
+        "hard_stop": "No assumed mass-shooting efficacy or dangerous unvalidated search"
+      },
+      {
+        "id": "C-01",
+        "name": "Cyber-physical assurance",
+        "objective": "Prevent compromised technology from increasing harm",
+        "required_evidence": "Segmentation, update policy, outage and rollback exercises",
+        "owner": "CISO",
+        "hard_stop": "Stop when attackers could remotely lock exits"
+      },
+      {
+        "id": "A-01",
+        "name": "AI decision support gate",
+        "objective": "Keep human responsibility over judgments",
+        "required_evidence": "Bias, error, uncertainty, adversarial testing",
+        "owner": "AI assurance lead",
+        "hard_stop": "No automatic offender profile, adverse action or force"
+      },
+      {
+        "id": "G-01",
+        "name": "Constitutional and privacy audit",
+        "objective": "Prevent abuse, retaliation and unlawful transfers",
+        "required_evidence": "Independent authority, FERPA data-flow, complaint reviews",
+        "owner": "Board legal lead",
+        "hard_stop": "Any misuse of authority, retaliation or unlawful redisclosure"
+      },
+      {
+        "id": "I-01",
+        "name": "Accessible and inclusive emergency practice",
+        "objective": "Serve all students and visitors",
+        "required_evidence": "ADA/504 review and inclusive tabletop drills",
+        "owner": "Accessibility coordinator",
+        "hard_stop": "Failure to provide meaningful emergency access"
+      },
+      {
+        "id": "L-01",
+        "name": "Shared learning without exposure",
+        "objective": "Improve with de-identified validated lessons",
+        "required_evidence": "Evidence/version audit and privacy review",
+        "owner": "National forum curator",
+        "hard_stop": "No security-sensitive blueprints or identifying records in public package"
+      }
+    ],
+    "sources": [
+      {
+        "id": "SRC-01",
+        "title": "USSS NTAC, Protecting America’s Schools (2019)",
+        "url": "https://www.secretservice.gov/sites/default/files/2020-04/Protecting_Americas_Schools.pdf",
+        "interpretation": "Historical case analysis and fact-based prevention; not a predictor for individuals"
+      },
+      {
+        "id": "SRC-02",
+        "title": "CISA K-12 School Security Guide (3rd ed.)",
+        "url": "https://www.cisa.gov/resources-tools/resources/k-12-school-security-guide-3rd-edition",
+        "interpretation": "Layered security and campus assessment; does not validate each proposed product"
+      },
+      {
+        "id": "SRC-03",
+        "title": "FBI, 2025 Active Shooter Incidents (released 2026-07-30)",
+        "url": "https://www.fbi.gov/news/press-releases/fbi-releases-2025-active-shooter-incidents-in-the-united-states-report",
+        "interpretation": "2025 total across settings; not a K-12 incident rate"
+      },
+      {
+        "id": "SRC-04",
+        "title": "CDC, Preventing Firearm Injury and Death",
+        "url": "https://www.cdc.gov/firearm-violence/prevention/",
+        "interpretation": "Public-health guidance for secure storage and child access prevention"
+      },
+      {
+        "id": "SRC-05",
+        "title": "Washington RCW 9.41.360",
+        "url": "https://app.leg.wa.gov/rcw/default.aspx?cite=9.41.360",
+        "interpretation": "Unsafe-storage liability in specified circumstances; no universal storage method mandate"
+      },
+      {
+        "id": "SRC-06",
+        "title": "Washington RCW 28A.320.124",
+        "url": "https://app.leg.wa.gov/rcw/default.aspx?cite=28A.320.124",
+        "interpretation": "School safety staff duties, separation from discipline and family complaint processes"
+      },
+      {
+        "id": "SRC-07",
+        "title": "Washington RCW 28A.320.1242",
+        "url": "https://app.leg.wa.gov/rcw/default.aspx?cite=28A.320.1242",
+        "interpretation": "Annual agreements with public involvement"
+      },
+      {
+        "id": "SRC-08",
+        "title": "US Department of Education FERPA threat assessment FAQ",
+        "url": "https://studentprivacy.ed.gov/faq/does-ferpa-permit-sharing-education-records-outside-law-enforcement-officials-mental-health",
+        "interpretation": "Purpose limitation and redisclosure conditions"
+      },
+      {
+        "id": "SRC-09",
+        "title": "NIST AI Risk Management Framework",
+        "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+        "interpretation": "AI governance/validation; not a certification"
+      },
+      {
+        "id": "SRC-10",
+        "title": "NIST Cybersecurity Framework 2.0",
+        "url": "https://www.nist.gov/cyberframework",
+        "interpretation": "Govern/identify/protect/detect/respond/recover control outcomes"
+      },
+      {
+        "id": "SRC-11",
+        "title": "CISA Protecting Our Future: Cybersecurity for K-12",
+        "url": "https://www.cisa.gov/protecting-our-future-cybersecurity-k-12",
+        "interpretation": "MFA, known exploited vulnerabilities, backups and IR exercises"
+      },
+      {
+        "id": "SRC-12",
+        "title": "U.S. Department of Education Active School Shooter Resources",
+        "url": "https://www.ed.gov/teaching-and-administration/safe-learning-environments/school-safety-and-security/preventing-targeted-violence-and-threat-assessment-resources/active-school-shooter",
+        "interpretation": "Behavior-based multidisciplinary TAT and avoiding stereotyping"
+      },
+      {
+        "id": "SRC-13",
+        "title": "Washington Department of Commerce Safe Storage Program",
+        "url": "https://www.commerce.wa.gov/community-safety/safe-storage/",
+        "interpretation": "Current Washington safe-storage outreach and definitions"
+      },
+      {
+        "id": "LAW-123",
+        "title": "RCW 28A.320.123: School-based threat assessment",
+        "url": "https://app.leg.wa.gov/rcw/default.aspx?cite=28A.320.123",
+        "interpretation": "Primary Washington statute; current applicability requires legal review."
+      },
+      {
+        "id": "LAW-124",
+        "title": "RCW 28A.320.124: School security staff policy",
+        "url": "https://app.leg.wa.gov/rcw/default.aspx?cite=28A.320.124",
+        "interpretation": "Primary Washington statute; current applicability requires legal review."
+      },
+      {
+        "id": "LAW-1241",
+        "title": "RCW 28A.320.1241: Staff agreements and reporting",
+        "url": "https://app.leg.wa.gov/rcw/default.aspx?cite=28A.320.1241",
+        "interpretation": "Primary Washington statute; current applicability requires legal review."
+      },
+      {
+        "id": "LAW-1242",
+        "title": "RCW 28A.320.1242: Security provider agreements",
+        "url": "https://app.leg.wa.gov/rcw/default.aspx?cite=28A.320.1242",
+        "interpretation": "Primary Washington statute; current applicability requires legal review."
+      },
+      {
+        "id": "LAW-440",
+        "title": "RCW 28A.210.440: Bleeding control equipment/training",
+        "url": "https://app.leg.wa.gov/rcw/default.aspx?cite=28A.210.440",
+        "interpretation": "Primary Washington statute; current applicability requires legal review."
+      }
+    ],
+    "relations": [
+      {
+        "from": "T01",
+        "to": "P-01",
+        "relation": "mitigated_by",
+        "basis": "Version 17.0 scenario/control thematic trace; proposed mapping requiring independent validation"
+      },
+      {
+        "from": "T02",
+        "to": "P-01",
+        "relation": "mitigated_by",
+        "basis": "Version 17.0 scenario/control thematic trace; proposed mapping requiring independent validation"
+      },
+      {
+        "from": "T03",
+        "to": "P-01",
+        "relation": "mitigated_by",
+        "basis": "Version 17.0 scenario/control thematic trace; proposed mapping requiring independent validation"
+      },
+      {
+        "from": "T03",
+        "to": "P-02",
+        "relation": "mitigated_by",
+        "basis": "Version 17.0 scenario/control thematic trace; proposed mapping requiring independent validation"
+      },
+      {
+        "from": "T04",
+        "to": "B-01",
+        "relation": "mitigated_by",
+        "basis": "Version 17.0 scenario/control thematic trace; proposed mapping requiring independent validation"
+      },
+      {
+        "from": "T05",
+        "to": "B-01",
+        "relation": "mitigated_by",
+        "basis": "Version 17.0 scenario/control thematic trace; proposed mapping requiring independent validation"
+      },
+      {
+        "from": "T05",
+        "to": "G-01",
+        "relation": "mitigated_by",
+        "basis": "Version 17.0 scenario/control thematic trace; proposed mapping requiring independent validation"
+      },
+      {
+        "from": "T06",
+        "to": "D-01",
+        "relation": "mitigated_by",
+        "basis": "Version 17.0 scenario/control thematic trace; proposed mapping requiring independent validation"
+      },
+      {
+        "from": "T06",
+        "to": "F-01",
+        "relation": "mitigated_by",
+        "basis": "Version 17.0 scenario/control thematic trace; proposed mapping requiring independent validation"
+      },
+      {
+        "from": "T07",
+        "to": "D-02",
+        "relation": "mitigated_by",
+        "basis": "Version 17.0 scenario/control thematic trace; proposed mapping requiring independent validation"
+      },
+      {
+        "from": "T08",
+        "to": "D-01",
+        "relation": "mitigated_by",
+        "basis": "Version 17.0 scenario/control thematic trace; proposed mapping requiring independent validation"
+      },
+      {
+        "from": "T08",
+        "to": "F-01",
+        "relation": "mitigated_by",
+        "basis": "Version 17.0 scenario/control thematic trace; proposed mapping requiring independent validation"
+      },
+      {
+        "from": "T09",
+        "to": "F-01",
+        "relation": "mitigated_by",
+        "basis": "Version 17.0 scenario/control thematic trace; proposed mapping requiring independent validation"
+      },
+      {
+        "from": "T10",
+        "to": "F-01",
+        "relation": "mitigated_by",
+        "basis": "Version 17.0 scenario/control thematic trace; proposed mapping requiring independent validation"
+      },
+      {
+        "from": "T10",
+        "to": "I-01",
+        "relation": "mitigated_by",
+        "basis": "Version 17.0 scenario/control thematic trace; proposed mapping requiring independent validation"
+      },
+      {
+        "from": "T11",
+        "to": "F-02",
+        "relation": "mitigated_by",
+        "basis": "Version 17.0 scenario/control thematic trace; proposed mapping requiring independent validation"
+      },
+      {
+        "from": "T11",
+        "to": "D-01",
+        "relation": "mitigated_by",
+        "basis": "Version 17.0 scenario/control thematic trace; proposed mapping requiring independent validation"
+      },
+      {
+        "from": "T12",
+        "to": "C-01",
+        "relation": "mitigated_by",
+        "basis": "Version 17.0 scenario/control thematic trace; proposed mapping requiring independent validation"
+      },
+      {
+        "from": "T12",
+        "to": "D-01",
+        "relation": "mitigated_by",
+        "basis": "Version 17.0 scenario/control thematic trace; proposed mapping requiring independent validation"
+      },
+      {
+        "from": "T13",
+        "to": "M-01",
+        "relation": "mitigated_by",
+        "basis": "Version 17.0 scenario/control thematic trace; proposed mapping requiring independent validation"
+      },
+      {
+        "from": "T14",
+        "to": "R-01",
+        "relation": "mitigated_by",
+        "basis": "Version 17.0 scenario/control thematic trace; proposed mapping requiring independent validation"
+      },
+      {
+        "from": "T14",
+        "to": "M-01",
+        "relation": "mitigated_by",
+        "basis": "Version 17.0 scenario/control thematic trace; proposed mapping requiring independent validation"
+      },
+      {
+        "from": "T15",
+        "to": "K-01",
+        "relation": "mitigated_by",
+        "basis": "Version 17.0 scenario/control thematic trace; proposed mapping requiring independent validation"
+      },
+      {
+        "from": "T16",
+        "to": "R-01",
+        "relation": "mitigated_by",
+        "basis": "Version 17.0 scenario/control thematic trace; proposed mapping requiring independent validation"
+      },
+      {
+        "from": "T16",
+        "to": "G-01",
+        "relation": "mitigated_by",
+        "basis": "Version 17.0 scenario/control thematic trace; proposed mapping requiring independent validation"
+      },
+      {
+        "from": "T17",
+        "to": "A-01",
+        "relation": "mitigated_by",
+        "basis": "Version 17.0 scenario/control thematic trace; proposed mapping requiring independent validation"
+      },
+      {
+        "from": "T17",
+        "to": "G-01",
+        "relation": "mitigated_by",
+        "basis": "Version 17.0 scenario/control thematic trace; proposed mapping requiring independent validation"
+      },
+      {
+        "from": "T18",
+        "to": "G-01",
+        "relation": "mitigated_by",
+        "basis": "Version 17.0 scenario/control thematic trace; proposed mapping requiring independent validation"
+      },
+      {
+        "from": "T18",
+        "to": "I-01",
+        "relation": "mitigated_by",
+        "basis": "Version 17.0 scenario/control thematic trace; proposed mapping requiring independent validation"
+      },
+      {
+        "from": "T01",
+        "to": "G-001",
+        "relation": "governed_by",
+        "basis": "Project policy or conditional statutory safeguard; assess applicability and counsel review"
+      },
+      {
+        "from": "T01",
+        "to": "A-003",
+        "relation": "governed_by",
+        "basis": "Project policy or conditional statutory safeguard; assess applicability and counsel review"
+      },
+      {
+        "from": "T02",
+        "to": "G-001",
+        "relation": "governed_by",
+        "basis": "Project policy or conditional statutory safeguard; assess applicability and counsel review"
+      },
+      {
+        "from": "T02",
+        "to": "A-003",
+        "relation": "governed_by",
+        "basis": "Project policy or conditional statutory safeguard; assess applicability and counsel review"
+      },
+      {
+        "from": "T03",
+        "to": "G-001",
+        "relation": "governed_by",
+        "basis": "Project policy or conditional statutory safeguard; assess applicability and counsel review"
+      },
+      {
+        "from": "T04",
+        "to": "WA-123",
+        "relation": "governed_by",
+        "basis": "Project policy or conditional statutory safeguard; assess applicability and counsel review"
+      },
+      {
+        "from": "T04",
+        "to": "G-009",
+        "relation": "governed_by",
+        "basis": "Project policy or conditional statutory safeguard; assess applicability and counsel review"
+      },
+      {
+        "from": "T05",
+        "to": "G-002",
+        "relation": "governed_by",
+        "basis": "Project policy or conditional statutory safeguard; assess applicability and counsel review"
+      },
+      {
+        "from": "T05",
+        "to": "G-009",
+        "relation": "governed_by",
+        "basis": "Project policy or conditional statutory safeguard; assess applicability and counsel review"
+      },
+      {
+        "from": "T06",
+        "to": "A-002",
+        "relation": "governed_by",
+        "basis": "Project policy or conditional statutory safeguard; assess applicability and counsel review"
+      },
+      {
+        "from": "T07",
+        "to": "A-002",
+        "relation": "governed_by",
+        "basis": "Project policy or conditional statutory safeguard; assess applicability and counsel review"
+      },
+      {
+        "from": "T07",
+        "to": "G-003",
+        "relation": "governed_by",
+        "basis": "Project policy or conditional statutory safeguard; assess applicability and counsel review"
+      },
+      {
+        "from": "T08",
+        "to": "G-004",
+        "relation": "governed_by",
+        "basis": "Project policy or conditional statutory safeguard; assess applicability and counsel review"
+      },
+      {
+        "from": "T09",
+        "to": "G-004",
+        "relation": "governed_by",
+        "basis": "Project policy or conditional statutory safeguard; assess applicability and counsel review"
+      },
+      {
+        "from": "T10",
+        "to": "G-004",
+        "relation": "governed_by",
+        "basis": "Project policy or conditional statutory safeguard; assess applicability and counsel review"
+      },
+      {
+        "from": "T11",
+        "to": "A-001",
+        "relation": "governed_by",
+        "basis": "Project policy or conditional statutory safeguard; assess applicability and counsel review"
+      },
+      {
+        "from": "T12",
+        "to": "G-006",
+        "relation": "governed_by",
+        "basis": "Project policy or conditional statutory safeguard; assess applicability and counsel review"
+      },
+      {
+        "from": "T12",
+        "to": "A-001",
+        "relation": "governed_by",
+        "basis": "Project policy or conditional statutory safeguard; assess applicability and counsel review"
+      },
+      {
+        "from": "T13",
+        "to": "WA-440",
+        "relation": "governed_by",
+        "basis": "Project policy or conditional statutory safeguard; assess applicability and counsel review"
+      },
+      {
+        "from": "T14",
+        "to": "G-010",
+        "relation": "governed_by",
+        "basis": "Project policy or conditional statutory safeguard; assess applicability and counsel review"
+      },
+      {
+        "from": "T15",
+        "to": "G-007",
+        "relation": "governed_by",
+        "basis": "Project policy or conditional statutory safeguard; assess applicability and counsel review"
+      },
+      {
+        "from": "T16",
+        "to": "G-010",
+        "relation": "governed_by",
+        "basis": "Project policy or conditional statutory safeguard; assess applicability and counsel review"
+      },
+      {
+        "from": "T17",
+        "to": "G-002",
+        "relation": "governed_by",
+        "basis": "Project policy or conditional statutory safeguard; assess applicability and counsel review"
+      },
+      {
+        "from": "T17",
+        "to": "G-009",
+        "relation": "governed_by",
+        "basis": "Project policy or conditional statutory safeguard; assess applicability and counsel review"
+      },
+      {
+        "from": "T18",
+        "to": "G-005",
+        "relation": "governed_by",
+        "basis": "Project policy or conditional statutory safeguard; assess applicability and counsel review"
+      }
+    ],
+    "source_reviews": {
+      "schema_version": "2.0",
+      "kb_version": "17.0-NSAI.3",
+      "policy": "reviewed means documented maintainer source review only; never institutional or legal approval",
+      "sources": [
+        {
+          "source_id": "SRC-01",
+          "status": "unreviewed",
+          "reviewed_on": null,
+          "valid_through": null,
+          "evidence_locator": "Inherited source link and interpretation; passage-level verification pending.",
+          "review_note": "Independent applicability and currency review remains required."
+        },
+        {
+          "source_id": "SRC-02",
+          "status": "unreviewed",
+          "reviewed_on": null,
+          "valid_through": null,
+          "evidence_locator": "Inherited source link and interpretation; passage-level verification pending.",
+          "review_note": "Independent applicability and currency review remains required."
+        },
+        {
+          "source_id": "SRC-03",
+          "status": "unreviewed",
+          "reviewed_on": null,
+          "valid_through": null,
+          "evidence_locator": "Inherited source link and interpretation; passage-level verification pending.",
+          "review_note": "Independent applicability and currency review remains required."
+        },
+        {
+          "source_id": "SRC-04",
+          "status": "unreviewed",
+          "reviewed_on": null,
+          "valid_through": null,
+          "evidence_locator": "Inherited source link and interpretation; passage-level verification pending.",
+          "review_note": "Independent applicability and currency review remains required."
+        },
+        {
+          "source_id": "SRC-05",
+          "status": "unreviewed",
+          "reviewed_on": null,
+          "valid_through": null,
+          "evidence_locator": "Inherited source link and interpretation; passage-level verification pending.",
+          "review_note": "Independent applicability and currency review remains required."
+        },
+        {
+          "source_id": "SRC-06",
+          "status": "unreviewed",
+          "reviewed_on": null,
+          "valid_through": null,
+          "evidence_locator": "Inherited source link and interpretation; passage-level verification pending.",
+          "review_note": "Independent applicability and currency review remains required."
+        },
+        {
+          "source_id": "SRC-07",
+          "status": "unreviewed",
+          "reviewed_on": null,
+          "valid_through": null,
+          "evidence_locator": "Inherited source link and interpretation; passage-level verification pending.",
+          "review_note": "Independent applicability and currency review remains required."
+        },
+        {
+          "source_id": "SRC-08",
+          "status": "unreviewed",
+          "reviewed_on": null,
+          "valid_through": null,
+          "evidence_locator": "Inherited source link and interpretation; passage-level verification pending.",
+          "review_note": "Independent applicability and currency review remains required."
+        },
+        {
+          "source_id": "SRC-09",
+          "status": "unreviewed",
+          "reviewed_on": null,
+          "valid_through": null,
+          "evidence_locator": "Inherited source link and interpretation; passage-level verification pending.",
+          "review_note": "Independent applicability and currency review remains required."
+        },
+        {
+          "source_id": "SRC-10",
+          "status": "unreviewed",
+          "reviewed_on": null,
+          "valid_through": null,
+          "evidence_locator": "Inherited source link and interpretation; passage-level verification pending.",
+          "review_note": "Independent applicability and currency review remains required."
+        },
+        {
+          "source_id": "SRC-11",
+          "status": "unreviewed",
+          "reviewed_on": null,
+          "valid_through": null,
+          "evidence_locator": "Inherited source link and interpretation; passage-level verification pending.",
+          "review_note": "Independent applicability and currency review remains required."
+        },
+        {
+          "source_id": "SRC-12",
+          "status": "unreviewed",
+          "reviewed_on": null,
+          "valid_through": null,
+          "evidence_locator": "Inherited source link and interpretation; passage-level verification pending.",
+          "review_note": "Independent applicability and currency review remains required."
+        },
+        {
+          "source_id": "SRC-13",
+          "status": "unreviewed",
+          "reviewed_on": null,
+          "valid_through": null,
+          "evidence_locator": "Inherited source link and interpretation; passage-level verification pending.",
+          "review_note": "Independent applicability and currency review remains required."
+        },
+        {
+          "source_id": "LAW-123",
+          "status": "unreviewed",
+          "reviewed_on": null,
+          "valid_through": null,
+          "evidence_locator": "Inherited source link and interpretation; passage-level verification pending.",
+          "review_note": "Independent applicability and currency review remains required."
+        },
+        {
+          "source_id": "LAW-124",
+          "status": "unreviewed",
+          "reviewed_on": null,
+          "valid_through": null,
+          "evidence_locator": "Inherited source link and interpretation; passage-level verification pending.",
+          "review_note": "Independent applicability and currency review remains required."
+        },
+        {
+          "source_id": "LAW-1241",
+          "status": "unreviewed",
+          "reviewed_on": null,
+          "valid_through": null,
+          "evidence_locator": "Inherited source link and interpretation; passage-level verification pending.",
+          "review_note": "Independent applicability and currency review remains required."
+        },
+        {
+          "source_id": "LAW-1242",
+          "status": "unreviewed",
+          "reviewed_on": null,
+          "valid_through": null,
+          "evidence_locator": "Inherited source link and interpretation; passage-level verification pending.",
+          "review_note": "Independent applicability and currency review remains required."
+        },
+        {
+          "source_id": "LAW-440",
+          "status": "unreviewed",
+          "reviewed_on": null,
+          "valid_through": null,
+          "evidence_locator": "Inherited source link and interpretation; passage-level verification pending.",
+          "review_note": "Independent applicability and currency review remains required."
+        }
+      ]
+    },
+    "fact_catalog": {
+      "schema_version": "2.0",
+      "kb_version": "17.0-NSAI.3",
+      "review_status": "draft_independent_review_pending",
+      "facts": [
+        {
+          "fact": "ai_authorizes_physical_force",
+          "true_means": "AI or software can authorize physical force.",
+          "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+          "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+          "rule_refs": [
+            "G-003"
+          ],
+          "source_refs": [
+            "SRC-02"
+          ]
+        },
+        {
+          "fact": "ai_can_edit_approved_rules",
+          "true_means": "AI can directly edit the approved logical rules without reviewed change control.",
+          "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+          "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+          "rule_refs": [
+            "G-008"
+          ],
+          "source_refs": [
+            "SRC-02"
+          ]
+        },
+        {
+          "fact": "alert_human_verification_defined",
+          "true_means": "The alert workflow defines accountable human verification.",
+          "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+          "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+          "rule_refs": [
+            "A-002"
+          ],
+          "source_refs": [
+            "SRC-02"
+          ]
+        },
+        {
+          "fact": "annual_security_agreement_reviewed",
+          "true_means": "The applicable annual security-provider agreement has been reviewed in the required institutional process.",
+          "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+          "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+          "rule_refs": [
+            "WA-1242"
+          ],
+          "source_refs": [
+            "LAW-1242"
+          ]
+        },
+        {
+          "fact": "armed_response_program_planned",
+          "true_means": "An on-site armed-response program is being proposed or operated.",
+          "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+          "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+          "rule_refs": [
+            "G-010"
+          ],
+          "source_refs": [
+            "LAW-124",
+            "LAW-1242"
+          ]
+        },
+        {
+          "fact": "behavior_based_not_demographic",
+          "true_means": "The assessment program uses observable behavior and context rather than demographic or political profiling.",
+          "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+          "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+          "rule_refs": [
+            "WA-123"
+          ],
+          "source_refs": [
+            "LAW-123"
+          ]
+        },
+        {
+          "fact": "bleeding_control_equipment_accessible",
+          "true_means": "A human inspection found the required bleeding-control equipment accessible in the assessed scope.",
+          "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+          "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+          "rule_refs": [
+            "WA-440"
+          ],
+          "source_refs": [
+            "LAW-440"
+          ]
+        },
+        {
+          "fact": "bleeding_control_inspections_current",
+          "true_means": "A qualified reviewer found inspection and replenishment records current for the assessed scope.",
+          "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+          "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+          "rule_refs": [
+            "WA-440"
+          ],
+          "source_refs": [
+            "LAW-440"
+          ]
+        },
+        {
+          "fact": "bleeding_control_training_staffing_met",
+          "true_means": "A qualified reviewer found applicable bleeding-control training and staffing conditions met.",
+          "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+          "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+          "rule_refs": [
+            "WA-440"
+          ],
+          "source_refs": [
+            "LAW-440"
+          ]
+        },
+        {
+          "fact": "canine_program_planned",
+          "true_means": "A specialist canine program is being proposed or operated.",
+          "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+          "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+          "rule_refs": [
+            "G-007"
+          ],
+          "source_refs": [
+            "SRC-02"
+          ]
+        },
+        {
+          "fact": "connected_life_safety_system_planned",
+          "true_means": "A network-connected life-safety system is being proposed or operated.",
+          "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+          "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+          "rule_refs": [
+            "G-006",
+            "A-001"
+          ],
+          "source_refs": [
+            "SRC-02"
+          ]
+        },
+        {
+          "fact": "demographic_or_political_risk_profiling",
+          "true_means": "The program assigns dangerousness using demographic or political categories.",
+          "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+          "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+          "rule_refs": [
+            "G-002"
+          ],
+          "source_refs": [
+            "LAW-123",
+            "SRC-01"
+          ]
+        },
+        {
+          "fact": "detector_deployment_planned",
+          "true_means": "An automated hazard detector is being proposed or operated.",
+          "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+          "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+          "rule_refs": [
+            "A-002"
+          ],
+          "source_refs": [
+            "SRC-02"
+          ]
+        },
+        {
+          "fact": "egress_obstructed_by_security",
+          "true_means": "A protective security measure obstructs safe or accessible emergency egress.",
+          "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+          "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+          "rule_refs": [
+            "G-004"
+          ],
+          "source_refs": [
+            "SRC-02"
+          ]
+        },
+        {
+          "fact": "external_security_provider",
+          "true_means": "An external law-enforcement or security provider participates in the assessed arrangement.",
+          "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+          "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+          "rule_refs": [
+            "WA-1242"
+          ],
+          "source_refs": [
+            "LAW-1242"
+          ]
+        },
+        {
+          "fact": "family_security_complaint_path",
+          "true_means": "Families have an accessible documented route for security-staff complaints.",
+          "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+          "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+          "rule_refs": [
+            "WA-124"
+          ],
+          "source_refs": [
+            "LAW-124"
+          ]
+        },
+        {
+          "fact": "firearm_owner_registry_created",
+          "true_means": "The school program has created a household firearm-owner registry.",
+          "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+          "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+          "rule_refs": [
+            "G-001"
+          ],
+          "source_refs": [
+            "SRC-04",
+            "SRC-05"
+          ]
+        },
+        {
+          "fact": "human_review_for_adverse_actions",
+          "true_means": "The program requires accountable human review before consequential adverse actions.",
+          "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+          "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+          "rule_refs": [
+            "G-009"
+          ],
+          "source_refs": [
+            "LAW-123",
+            "SRC-01"
+          ]
+        },
+        {
+          "fact": "identifying_firearm_data_collected",
+          "true_means": "The outreach program collects identifying household firearm information.",
+          "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+          "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+          "rule_refs": [
+            "A-003"
+          ],
+          "source_refs": [
+            "SRC-04",
+            "SRC-05"
+          ]
+        },
+        {
+          "fact": "independent_cyber_assessment_complete",
+          "true_means": "An independent cybersecurity assessment for the proposed scope has been completed.",
+          "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+          "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+          "rule_refs": [
+            "A-001"
+          ],
+          "source_refs": [
+            "SRC-02"
+          ]
+        },
+        {
+          "fact": "independent_force_oversight",
+          "true_means": "The professional response arrangement has independent oversight of force incidents.",
+          "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+          "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+          "rule_refs": [
+            "G-010"
+          ],
+          "source_refs": [
+            "LAW-124",
+            "LAW-1242"
+          ]
+        },
+        {
+          "fact": "manual_safe_fallback_tested",
+          "true_means": "An authorized test demonstrated a safe manual fallback in the stated scope.",
+          "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+          "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+          "rule_refs": [
+            "A-001"
+          ],
+          "source_refs": [
+            "SRC-02"
+          ]
+        },
+        {
+          "fact": "parent_student_community_consultation",
+          "true_means": "Parents, students, and community participants have been included in the applicable agreement review.",
+          "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+          "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+          "rule_refs": [
+            "WA-1242"
+          ],
+          "source_refs": [
+            "LAW-1242"
+          ]
+        },
+        {
+          "fact": "participation_voluntary",
+          "true_means": "Participation in the firearm-access outreach program is voluntary.",
+          "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+          "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+          "rule_refs": [
+            "A-003"
+          ],
+          "source_refs": [
+            "SRC-04",
+            "SRC-05"
+          ]
+        },
+        {
+          "fact": "qualified_response_authorized_by_law",
+          "true_means": "Qualified human legal and institutional reviewers have documented authority for the specific professional response arrangement.",
+          "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+          "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+          "rule_refs": [
+            "G-010"
+          ],
+          "source_refs": [
+            "LAW-124",
+            "LAW-1242"
+          ]
+        },
+        {
+          "fact": "referral_alone_causes_exclusion",
+          "true_means": "A threat-assessment referral alone causes student exclusion.",
+          "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+          "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+          "rule_refs": [
+            "WA-123"
+          ],
+          "source_refs": [
+            "LAW-123"
+          ]
+        },
+        {
+          "fact": "representative_false_alarm_testing_complete",
+          "true_means": "Independent representative detector testing includes both false alarms and missed events.",
+          "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+          "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+          "rule_refs": [
+            "A-002"
+          ],
+          "source_refs": [
+            "SRC-02"
+          ]
+        },
+        {
+          "fact": "school_security_staff_present",
+          "true_means": "Safety or security staff participate in the assessed school arrangement.",
+          "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+          "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+          "rule_refs": [
+            "WA-124",
+            "WA-1241"
+          ],
+          "source_refs": [
+            "LAW-124",
+            "LAW-1241"
+          ]
+        },
+        {
+          "fact": "security_staff_reporting_process",
+          "true_means": "An applicable security-staff reporting process is documented and assigned.",
+          "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+          "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+          "rule_refs": [
+            "WA-1241"
+          ],
+          "source_refs": [
+            "LAW-1241"
+          ]
+        },
+        {
+          "fact": "sro_formal_discipline_role",
+          "true_means": "School resource officers have a formal school-discipline decision role.",
+          "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+          "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+          "rule_refs": [
+            "WA-124"
+          ],
+          "source_refs": [
+            "LAW-124"
+          ]
+        },
+        {
+          "fact": "staff_duties_policy_adopted",
+          "true_means": "The applicable security-staff duties policy has been adopted.",
+          "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+          "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+          "rule_refs": [
+            "WA-124"
+          ],
+          "source_refs": [
+            "LAW-124"
+          ]
+        },
+        {
+          "fact": "threat_assessment_program_adopted",
+          "true_means": "The district has adopted a school-based threat-assessment program.",
+          "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+          "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+          "rule_refs": [
+            "WA-123",
+            "G-009"
+          ],
+          "source_refs": [
+            "LAW-123",
+            "SRC-01"
+          ]
+        },
+        {
+          "fact": "threat_gap_documented",
+          "true_means": "A specific protective gap and existing baseline have been documented before technology selection.",
+          "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+          "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+          "rule_refs": [
+            "A-001"
+          ],
+          "source_refs": [
+            "SRC-02"
+          ]
+        },
+        {
+          "fact": "unauthorized_canine_deployment",
+          "true_means": "A canine deployment lacks the required qualified authorization.",
+          "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+          "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+          "rule_refs": [
+            "G-007"
+          ],
+          "source_refs": [
+            "SRC-02"
+          ]
+        },
+        {
+          "fact": "unauthorized_education_record_sharing",
+          "true_means": "Education records are shared outside a documented lawful purpose.",
+          "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+          "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+          "rule_refs": [
+            "G-005"
+          ],
+          "source_refs": [
+            "SRC-02"
+          ]
+        },
+        {
+          "fact": "unverified_remote_physical_commands_enabled",
+          "true_means": "Unverified remote commands can actuate physical safety equipment.",
+          "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+          "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+          "rule_refs": [
+            "G-006"
+          ],
+          "source_refs": [
+            "SRC-02"
+          ]
+        },
+        {
+          "fact": "unverified_tip_triggers_punishment",
+          "true_means": "An unverified allegation alone triggers punishment.",
+          "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+          "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+          "rule_refs": [
+            "G-009"
+          ],
+          "source_refs": [
+            "LAW-123",
+            "SRC-01"
+          ]
+        },
+        {
+          "fact": "wa_public_school",
+          "true_means": "The assessed institutional scope is a Washington public school.",
+          "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+          "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+          "rule_refs": [
+            "WA-123",
+            "WA-440"
+          ],
+          "source_refs": [
+            "LAW-123",
+            "LAW-440"
+          ]
+        },
+        {
+          "fact": "youth_firearm_access_program_planned",
+          "true_means": "A voluntary youth firearm-access prevention or storage-outreach program is being proposed or operated.",
+          "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+          "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+          "rule_refs": [
+            "A-003"
+          ],
+          "source_refs": [
+            "SRC-04",
+            "SRC-05"
+          ]
+        }
+      ]
+    }
+  }
+}

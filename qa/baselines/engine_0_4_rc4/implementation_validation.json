@@ -1,0 +1,76 @@
+{
+  "all_checks_passed": true,
+  "component": "stm-rust-workflow",
+  "desktop_client_acceptance": false,
+  "engine_version": "0.4.0",
+  "historical_cross_language_QA": "preserved_in_prior_release_archives_not_rerun",
+  "independent_acceptance": false,
+  "linux_acceptance": false,
+  "platform": "windows",
+  "production_languages": [
+    "Rust"
+  ],
+  "python_required": false,
+  "recorded_on": "2026-10-28",
+  "results": [
+    {
+      "check": "rust_format",
+      "passed": true,
+      "test_summaries": []
+    },
+    {
+      "check": "rust_clippy",
+      "passed": true,
+      "test_summaries": []
+    },
+    {
+      "check": "rust_tests",
+      "passed": true,
+      "test_summaries": [
+        "test result: ok. 19 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 16.08s",
+        "test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s",
+        "test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s",
+        "test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.81s",
+        "test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.13s",
+        "test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.86s",
+        "test result: ok. 11 passed; 0 failed; 4 ignored; 0 measured; 0 filtered out; finished in 10.20s",
+        "test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.35s"
+      ]
+    },
+    {
+      "check": "official_rust_sdk",
+      "passed": true
+    },
+    {
+      "check": "knowledge_validation",
+      "passed": true
+    },
+    {
+      "check": "native_mcp",
+      "passed": true
+    },
+    {
+      "check": "reasoning_truth_tables",
+      "passed": true
+    },
+    {
+      "check": "frozen_retrieval_evaluation",
+      "passed": true
+    },
+    {
+      "check": "publication_structure",
+      "passed": true
+    },
+    {
+      "check": "source_privacy",
+      "passed": true
+    },
+    {
+      "check": "knowledge_version_change_gate",
+      "human_change_review_required": false,
+      "knowledge_identical": true,
+      "passed": true
+    }
+  ],
+  "source_revision": "working_tree_candidate_bound_by_release_manifest"
+}

@@ -1,0 +1,102 @@
+{
+  "schema_version": "1.0",
+  "classification": "maintainer_automated_security_audit",
+  "recorded_at_utc": "2026-10-31T22:22:40.2241393Z",
+  "passed": true,
+  "source_revision": "audit-readme-2026-10-31",
+  "sealed_rc10_baseline_manifest_sha256": "6209458d097e8a033b60f50c54370fc8aaded49c2c9226eb45206dd9f07dc5a3",
+  "cargo_lock_sha256": "68b25538dad421787b13e8964f886b99b846a45c95ec9e93feda5927c9a8816e",
+  "policy_sha256": "def93032de08b4eac610d5ceb7283b255a2ce67a74f79ace08a6c54591a3072b",
+  "dependency_audit": {
+    "tool": "cargo-audit",
+    "version": "0.22.2",
+    "executable_sha256": "c914a84fe472baf46baa5bfd8057c8b99707804f1e642821ab30da761e38bde1",
+    "database": {
+      "revision": "2295466c4e9df26647fd67d8fa1c705ac2fc7f81",
+      "tree": "a95b9514c0f6e6af352c9c7845720fe73a964d1e",
+      "commit_date": "2026-10-30T04:12:39-07:00",
+      "repository": "https://github.com/RustSec/advisory-db",
+      "worktree_clean": true
+    },
+    "advisory_count": 1395,
+    "lockfile_packages": 202,
+    "known_vulnerabilities": 0,
+    "warnings": 0,
+    "ignored_advisories": 0,
+    "target_filter": false,
+    "severity_filter": false,
+    "warnings_denied": true,
+    "yanked_status_checked": false,
+    "scan_network_access": false,
+    "exit_code": 0
+  },
+  "dependency_policy": {
+    "tool": "cargo-deny",
+    "version": "0.19.0",
+    "executable_sha256": "ad976d58e97a66a8138e11ee11dd9be915e8f1b6e20dfccfaf763f6a82e4090d",
+    "frozen": true,
+    "license_errors": 0,
+    "license_warnings": 0,
+    "source_errors": 0,
+    "source_warnings": 0,
+    "legal_compatibility_accepted": false,
+    "exit_code": 0
+  },
+  "secret_scan": {
+    "tool": "gitleaks",
+    "executable_sha256": "9ea3198368489a61f47b1d2d84c7c69c505d98c91df86bf07d15629d471cb394",
+    "version_metadata": "not_embedded_in_installed_binary",
+    "rules": "installed_default_rules",
+    "custom_rule_exclusions": false,
+    "allow_comments_honored": false,
+    "baseline_used": false,
+    "redaction_percent": 100,
+    "archive_depth": 2,
+    "decode_depth": 5,
+    "git_candidate_findings": 0,
+    "existing_git_history_findings": 0,
+    "candidate_file_count": 325,
+    "history_scope": "all_local_refs_after_origin_fetch",
+    "raw_diagnostics_published": false
+  },
+  "rust_checks": {
+    "platform": "windows_x86_64",
+    "format_passed": true,
+    "warning_denied_clippy_passed": true,
+    "all_target_tests_passed": 67,
+    "failed": 0,
+    "ignored_helper_fixtures": 4,
+    "ignored_fixtures_exercised_by_parent_tests": true,
+    "offline": true,
+    "locked": true
+  },
+  "privacy_scan": {
+    "tool": "native_Rust_public_file_inspector",
+    "release_inventory_files": 312,
+    "historical_publication_files": 13,
+    "findings": 0,
+    "scope": "raw_bytes_decoded_JSON_PDF_text_metadata_XML_and_all_presentation_parts",
+    "image_pixels_or_OCR_checked": false,
+    "independent_review": false
+  },
+  "git_publication": {
+    "current_text_normalized_to_git_bytes": true,
+    "historical_baseline_bytes_preserved": true,
+    "windows_launcher_bytes_preserved": true,
+    "manifests_refreshed_for_current_snapshot": true,
+    "archived_RC10_qualification_relabelled": false,
+    "ignored_caches_logs_private_inputs_or_output_included": false
+  },
+  "private_inputs_used": false,
+  "owner_status": "TBD",
+  "release_gates_pending": 10,
+  "publisher_authentication": false,
+  "independent_acceptance": false,
+  "deployment_authorization": false,
+  "limitations": [
+    "Automated maintainer checks, not an independent penetration test or acceptance decision.",
+    "No guarantee against unknown vulnerabilities, malicious dependencies, encoded secrets beyond scanner bounds or private information in image pixels.",
+    "Yanked status, legal license compatibility, current source interpretations and protective effectiveness are not established.",
+    "Existing platform/client evidence remains bound to its original source and executable hashes; this audit does not rerun Linux or a desktop-host acceptance test."
+  ]
+}

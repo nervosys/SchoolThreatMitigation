@@ -1,0 +1,23 @@
+{
+  "assessments_independently_replayed": 6,
+  "check": "adversarial_mcp_authority_boundaries",
+  "classification": "maintainer_synthetic_regression",
+  "deployment_authorization": false,
+  "engine_version": "0.4.0",
+  "forged_tool_or_argument_calls_rejected": 10,
+  "independent_acceptance": false,
+  "kb_version": "17.0-NSAI.4",
+  "knowledge_sha256": "2bcb941487fb138f3e014ff57a71140fcecd8e6bbe7fef5496abef2188b1f34c",
+  "llm_wrapper_evaluation": false,
+  "mandatory_force_guardrail_preserved": true,
+  "mcp_requests_checked": 34,
+  "passed": true,
+  "platform": "windows",
+  "presentation_audiences_checked": 5,
+  "query_text_reported": false,
+  "rejected_marker_not_reflected": true,
+  "retrieval_injection_cases": 15,
+  "sessions_completed": 2,
+  "tampered_or_substituted_proofs_rejected": 6,
+  "tool_catalog_and_assessments_unchanged": true
+}

@@ -1,0 +1,15 @@
+#set page("us-letter", margin: (x: 0.65in, y: 0.7in),
+  header: text(size: 7pt, fill: rgb("#345362"))[NERVOSYS / SCHOOL SAFETY / PUBLIC RESEARCH / 17.0 R1],
+  footer: context align(right)[#text(size: 7pt, fill: rgb("#345362"))[Independent acceptance pending / #counter(page).display("1")]])
+#set text(font: "Arial", size: 10pt, lang: "en", fill: rgb("#182d3a"))
+#set par(justify: false, leading: 0.6em)
+#set heading(numbering: none)
+#show heading.where(level: 1): set text(size: 20pt, weight: "bold", fill: rgb("#123d4a"))
+#show heading.where(level: 2): set text(size: 15pt, weight: "bold", fill: rgb("#087777"))
+#show heading.where(level: 3): set text(size: 12pt, weight: "bold", fill: rgb("#123d4a"))
+#set table(inset: 5pt, stroke: 0.35pt + rgb("#d7e0e6"))
+#show table: set text(size: 9pt)
+#show figure.where(kind: table): set block(breakable: true)
+#set table(align: left + top)
+#show link: set text(fill: rgb("#087777"))
+#let horizontalRule = line(length: 100%, stroke: 0.5pt + rgb("#d7e0e6"))

@@ -1,0 +1,1035 @@
+{
+  "schema_version": 1,
+  "classification": "maintainer_knowledge_conformance_and_completion_checkpoint",
+  "passed": true,
+  "source_candidate": "RC7",
+  "source_manifest_sha256": "32d2f8cf71c8ebdb6c5b0676c238f14597f1ff17fea9a26b68621967b83667f0",
+  "knowledge_sha256": "2bcb941487fb138f3e014ff57a71140fcecd8e6bbe7fef5496abef2188b1f34c",
+  "frozen_release_unchanged": true,
+  "fixture_sha256": "d7fc147e9300555b588f25b084cb8b2883899bf616ce8a48f2ff22d59a90d41e",
+  "platforms": [
+    {
+      "authoring_only_rejections": 10,
+      "baseline_authoring_gate_accepted": true,
+      "baseline_documents_accepted": 10,
+      "baseline_runtime_accepted": true,
+      "boundary_differences": 12,
+      "case_results": [
+        {
+          "authoring_gate_valid": false,
+          "document": "scenarios",
+          "id": "scenarios_missing_required",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "scenarios",
+          "id": "scenarios_wrong_type",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "scenarios",
+          "id": "scenarios_unknown_field",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "scenarios",
+          "id": "scenarios_incompatible_metadata",
+          "matches_expected": true,
+          "runtime_valid": true,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "controls",
+          "id": "controls_missing_required",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "controls",
+          "id": "controls_wrong_type",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "controls",
+          "id": "controls_unknown_field",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "controls",
+          "id": "controls_incompatible_metadata",
+          "matches_expected": true,
+          "runtime_valid": true,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "sources",
+          "id": "sources_missing_required",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "sources",
+          "id": "sources_wrong_type",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "sources",
+          "id": "sources_unknown_field",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "sources",
+          "id": "sources_incompatible_metadata",
+          "matches_expected": true,
+          "runtime_valid": true,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "technology_sources",
+          "id": "technology_sources_missing_required",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "technology_sources",
+          "id": "technology_sources_wrong_type",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "technology_sources",
+          "id": "technology_sources_unknown_field",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "technology_sources",
+          "id": "technology_sources_incompatible_metadata",
+          "matches_expected": true,
+          "runtime_valid": true,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "legal_sources",
+          "id": "legal_sources_missing_required",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "legal_sources",
+          "id": "legal_sources_wrong_type",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "legal_sources",
+          "id": "legal_sources_unknown_field",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "legal_sources",
+          "id": "legal_sources_incompatible_metadata",
+          "matches_expected": true,
+          "runtime_valid": true,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "gates",
+          "id": "gates_missing_required",
+          "matches_expected": true,
+          "runtime_valid": true,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "gates",
+          "id": "gates_wrong_type",
+          "matches_expected": true,
+          "runtime_valid": true,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "gates",
+          "id": "gates_unknown_field",
+          "matches_expected": true,
+          "runtime_valid": true,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "gates",
+          "id": "gates_incompatible_metadata",
+          "matches_expected": true,
+          "runtime_valid": true,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "rules",
+          "id": "rules_missing_required",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "rules",
+          "id": "rules_wrong_type",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "rules",
+          "id": "rules_unknown_field",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "rules",
+          "id": "rules_incompatible_metadata",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "relations",
+          "id": "relations_missing_required",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "relations",
+          "id": "relations_wrong_type",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "relations",
+          "id": "relations_unknown_field",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "relations",
+          "id": "relations_incompatible_metadata",
+          "matches_expected": true,
+          "runtime_valid": true,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "source_reviews",
+          "id": "source_reviews_missing_required",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "source_reviews",
+          "id": "source_reviews_wrong_type",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "source_reviews",
+          "id": "source_reviews_unknown_field",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "source_reviews",
+          "id": "source_reviews_incompatible_metadata",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "facts",
+          "id": "facts_missing_required",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "facts",
+          "id": "facts_wrong_type",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "facts",
+          "id": "facts_unknown_field",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "facts",
+          "id": "facts_incompatible_metadata",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "rules",
+          "id": "rules_non_boolean_predicate",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "rules",
+          "id": "rules_unknown_predicate_fact",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": true
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "relations",
+          "id": "relations_dangling_endpoint",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": true
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "source_reviews",
+          "id": "source_reviews_unknown_status",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "facts",
+          "id": "facts_empty_definition",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "rules",
+          "id": "rules_incompatible_kb",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "rules",
+          "id": "rules_duplicate_json_key",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "facts",
+          "id": "facts_duplicate_json_key",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "source_reviews",
+          "id": "source_reviews_duplicate_json_key",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": false
+        }
+      ],
+      "classification": "maintainer_shared_knowledge_fixture_validation",
+      "deployment_authorization": false,
+      "fixture_sha256": "d7fc147e9300555b588f25b084cb8b2883899bf616ce8a48f2ff22d59a90d41e",
+      "independent_acceptance": false,
+      "interpretation": "Authoring schemas and runtime semantic checks are complementary. Release authoring requires the production combined knowledge gate; runtime loading alone is not an authoring approval. Structural metadata outside runtime models may be rejected only by authoring schemas; cross-document semantic violations may be rejected only by runtime checks.",
+      "knowledge_sha256": "2bcb941487fb138f3e014ff57a71140fcecd8e6bbe7fef5496abef2188b1f34c",
+      "negative_cases": 49,
+      "original_source_modified": false,
+      "passed": true,
+      "platform": "windows",
+      "private_inputs_used": false,
+      "raw_errors_or_mutated_documents_in_report": false,
+      "restored_baseline_accepted": true,
+      "runtime_only_rejections": 2,
+      "schema_version": 1,
+      "source_candidate": "RC7",
+      "source_manifest_sha256": "32d2f8cf71c8ebdb6c5b0676c238f14597f1ff17fea9a26b68621967b83667f0"
+    },
+    {
+      "authoring_only_rejections": 10,
+      "baseline_authoring_gate_accepted": true,
+      "baseline_documents_accepted": 10,
+      "baseline_runtime_accepted": true,
+      "boundary_differences": 12,
+      "case_results": [
+        {
+          "authoring_gate_valid": false,
+          "document": "scenarios",
+          "id": "scenarios_missing_required",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "scenarios",
+          "id": "scenarios_wrong_type",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "scenarios",
+          "id": "scenarios_unknown_field",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "scenarios",
+          "id": "scenarios_incompatible_metadata",
+          "matches_expected": true,
+          "runtime_valid": true,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "controls",
+          "id": "controls_missing_required",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "controls",
+          "id": "controls_wrong_type",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "controls",
+          "id": "controls_unknown_field",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "controls",
+          "id": "controls_incompatible_metadata",
+          "matches_expected": true,
+          "runtime_valid": true,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "sources",
+          "id": "sources_missing_required",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "sources",
+          "id": "sources_wrong_type",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "sources",
+          "id": "sources_unknown_field",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "sources",
+          "id": "sources_incompatible_metadata",
+          "matches_expected": true,
+          "runtime_valid": true,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "technology_sources",
+          "id": "technology_sources_missing_required",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "technology_sources",
+          "id": "technology_sources_wrong_type",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "technology_sources",
+          "id": "technology_sources_unknown_field",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "technology_sources",
+          "id": "technology_sources_incompatible_metadata",
+          "matches_expected": true,
+          "runtime_valid": true,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "legal_sources",
+          "id": "legal_sources_missing_required",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "legal_sources",
+          "id": "legal_sources_wrong_type",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "legal_sources",
+          "id": "legal_sources_unknown_field",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "legal_sources",
+          "id": "legal_sources_incompatible_metadata",
+          "matches_expected": true,
+          "runtime_valid": true,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "gates",
+          "id": "gates_missing_required",
+          "matches_expected": true,
+          "runtime_valid": true,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "gates",
+          "id": "gates_wrong_type",
+          "matches_expected": true,
+          "runtime_valid": true,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "gates",
+          "id": "gates_unknown_field",
+          "matches_expected": true,
+          "runtime_valid": true,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "gates",
+          "id": "gates_incompatible_metadata",
+          "matches_expected": true,
+          "runtime_valid": true,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "rules",
+          "id": "rules_missing_required",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "rules",
+          "id": "rules_wrong_type",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "rules",
+          "id": "rules_unknown_field",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "rules",
+          "id": "rules_incompatible_metadata",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "relations",
+          "id": "relations_missing_required",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "relations",
+          "id": "relations_wrong_type",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "relations",
+          "id": "relations_unknown_field",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "relations",
+          "id": "relations_incompatible_metadata",
+          "matches_expected": true,
+          "runtime_valid": true,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "source_reviews",
+          "id": "source_reviews_missing_required",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "source_reviews",
+          "id": "source_reviews_wrong_type",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "source_reviews",
+          "id": "source_reviews_unknown_field",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "source_reviews",
+          "id": "source_reviews_incompatible_metadata",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "facts",
+          "id": "facts_missing_required",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "facts",
+          "id": "facts_wrong_type",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "facts",
+          "id": "facts_unknown_field",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "facts",
+          "id": "facts_incompatible_metadata",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "rules",
+          "id": "rules_non_boolean_predicate",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "rules",
+          "id": "rules_unknown_predicate_fact",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": true
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "relations",
+          "id": "relations_dangling_endpoint",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": true
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "source_reviews",
+          "id": "source_reviews_unknown_status",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "facts",
+          "id": "facts_empty_definition",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "rules",
+          "id": "rules_incompatible_kb",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "rules",
+          "id": "rules_duplicate_json_key",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "facts",
+          "id": "facts_duplicate_json_key",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": false
+        },
+        {
+          "authoring_gate_valid": false,
+          "document": "source_reviews",
+          "id": "source_reviews_duplicate_json_key",
+          "matches_expected": true,
+          "runtime_valid": false,
+          "schema_valid": false
+        }
+      ],
+      "classification": "maintainer_shared_knowledge_fixture_validation",
+      "deployment_authorization": false,
+      "fixture_sha256": "d7fc147e9300555b588f25b084cb8b2883899bf616ce8a48f2ff22d59a90d41e",
+      "independent_acceptance": false,
+      "interpretation": "Authoring schemas and runtime semantic checks are complementary. Release authoring requires the production combined knowledge gate; runtime loading alone is not an authoring approval. Structural metadata outside runtime models may be rejected only by authoring schemas; cross-document semantic violations may be rejected only by runtime checks.",
+      "knowledge_sha256": "2bcb941487fb138f3e014ff57a71140fcecd8e6bbe7fef5496abef2188b1f34c",
+      "negative_cases": 49,
+      "original_source_modified": false,
+      "passed": true,
+      "platform": "linux",
+      "private_inputs_used": false,
+      "raw_errors_or_mutated_documents_in_report": false,
+      "restored_baseline_accepted": true,
+      "runtime_only_rejections": 2,
+      "schema_version": 1,
+      "source_candidate": "RC7",
+      "source_manifest_sha256": "32d2f8cf71c8ebdb6c5b0676c238f14597f1ff17fea9a26b68621967b83667f0"
+    }
+  ],
+  "totals": {
+    "platforms": 2,
+    "baseline_documents_per_platform": 10,
+    "negative_cases_per_platform": 49,
+    "negative_cases_executed": 98,
+    "negative_cases_rejected_by_combined_authoring_gate": 98,
+    "cross_platform_case_results_identical": true
+  },
+  "interpretation": "The production combined authoring gate rejects all malformed fixtures. JSON schemas and runtime semantics have complementary responsibilities; standalone runtime loading is not release authoring approval. This finite corpus does not prove exhaustive language equivalence.",
+  "completion_checkpoint": [
+    {
+      "task": "P2.2",
+      "status": "automated_shared_fixture_work_completed_for_RC7",
+      "evidence": "platforms",
+      "remaining": "Independent knowledge and rule approval remains pending."
+    },
+    {
+      "task": "P5.9",
+      "status": "maintainer_real_Codex_app_server_workflow_passed_on_both_platforms",
+      "evidence": "output/stm-codex-host-0.4.0-rc7.json",
+      "remaining": "Desktop UI, model-driven workflow evaluation and independent selected-host acceptance remain pending."
+    },
+    {
+      "task": "P7.9",
+      "status": "maintainer_extracted_package_integrity_and_runtime_checks_passed_on_both_platforms",
+      "evidence": [
+        "output/rust-0.4-rc7-verification.json",
+        "output/linux-0.4-rc7-verification.json"
+      ],
+      "remaining": "Independent clean-machine installation and release authenticity acceptance remain pending."
+    },
+    {
+      "task": "P3.9",
+      "status": "not_closed_by_this_check",
+      "remaining": "No complete network-traffic observation or host-wide logging audit is claimed."
+    }
+  ],
+  "independent_release_gates": [
+    {
+      "gate_id": "ownership_and_funding",
+      "review": {
+        "evidence_ref": null,
+        "reviewer_ref": null,
+        "status": "pending"
+      }
+    },
+    {
+      "gate_id": "qualified_current_source_review",
+      "review": {
+        "evidence_ref": null,
+        "reviewer_ref": null,
+        "status": "pending"
+      }
+    },
+    {
+      "gate_id": "independent_rule_and_fact_review",
+      "review": {
+        "evidence_ref": null,
+        "reviewer_ref": null,
+        "status": "pending"
+      }
+    },
+    {
+      "gate_id": "reviewed_retrieval_evaluation",
+      "review": {
+        "evidence_ref": null,
+        "reviewer_ref": null,
+        "status": "pending"
+      }
+    },
+    {
+      "gate_id": "public_file_privacy_review",
+      "review": {
+        "evidence_ref": null,
+        "reviewer_ref": null,
+        "status": "pending"
+      }
+    },
+    {
+      "gate_id": "editorial_and_accessibility_review",
+      "review": {
+        "evidence_ref": null,
+        "reviewer_ref": null,
+        "status": "pending"
+      }
+    },
+    {
+      "gate_id": "dependency_security_and_license_review",
+      "review": {
+        "evidence_ref": null,
+        "reviewer_ref": null,
+        "status": "pending"
+      }
+    },
+    {
+      "gate_id": "release_authenticity_and_installation",
+      "review": {
+        "evidence_ref": null,
+        "reviewer_ref": null,
+        "status": "pending"
+      }
+    },
+    {
+      "gate_id": "windows_and_linux_runtime_evidence",
+      "review": {
+        "evidence_ref": null,
+        "reviewer_ref": null,
+        "status": "pending"
+      }
+    },
+    {
+      "gate_id": "selected_client_host_acceptance",
+      "review": {
+        "evidence_ref": null,
+        "reviewer_ref": null,
+        "status": "pending"
+      }
+    }
+  ],
+  "harness_dependencies": {
+    "lockfile_sha256": "819e9c6951e0f2d077ba0f8828fa5b0b3d8d755ceb60c761e17efbf5e3fac188",
+    "advisory_database_commit": "40f5be6fb12ed93fc591bf4ab23b7d793b3f2239",
+    "advisories": 1381,
+    "lockfile_packages": 166,
+    "known_vulnerabilities": 0,
+    "warnings": 0,
+    "ignored_advisories": 0,
+    "yanked_status_checked": false,
+    "license_approval": false
+  },
+  "evidence_files": [
+    {
+      "path": "output/knowledge-conformance-rc7/fixtures.json",
+      "sha256": "d7fc147e9300555b588f25b084cb8b2883899bf616ce8a48f2ff22d59a90d41e"
+    },
+    {
+      "path": "output/knowledge-conformance-rc7/harness/Cargo.toml",
+      "sha256": "f294575b5690f3795f8226d0d0bed75968abb2ea7201b4461f3a3e08cfed448d"
+    },
+    {
+      "path": "output/knowledge-conformance-rc7/harness/Cargo.lock",
+      "sha256": "819e9c6951e0f2d077ba0f8828fa5b0b3d8d755ceb60c761e17efbf5e3fac188"
+    },
+    {
+      "path": "output/knowledge-conformance-rc7/harness/src/main.rs",
+      "sha256": "547a120503bf49345d068321dd58476930deaa49aaa5841bc5bc916b4c6e16bb"
+    },
+    {
+      "path": "output/knowledge-conformance-rc7/windows.json",
+      "sha256": "b2a124a70e75e24529daacd6f375a45063e3eb60919391678137145fb7aea706"
+    },
+    {
+      "path": "output/knowledge-conformance-rc7/linux.json",
+      "sha256": "fb67281ab2550610cc6e5209a991c54337a90871a8ba563f3b00b37f11af2447"
+    },
+    {
+      "path": "output/knowledge-conformance-rc7/audit.json",
+      "sha256": "b8530f36ba45899230142e5314d6e7c332df82cc51f62606b18999cd0d9bcea1"
+    },
+    {
+      "path": "output/knowledge-conformance-rc7/README.txt",
+      "sha256": "8175487fdf778282a8687e294daf515e8ce9b74143a3fe7ca32bb917e52d4812"
+    },
+    {
+      "path": "output/knowledge-conformance-rc7/finalize.ps1",
+      "sha256": "1896a81aa94a0053ca03360b4ea53e66184df5987b6c6b08326665b75e4296d1"
+    },
+    {
+      "path": "output/stm-codex-host-0.4.0-rc7.json",
+      "sha256": "dbcd7b9c27f11d26d21e771c9367c37fd3afdd31c2281e6592a3fddca2888264"
+    },
+    {
+      "path": "output/rust-0.4-rc7-verification.json",
+      "sha256": "70594f1b5a09e2e7a42a27a1254ac82f318ebde4f8481301f4fb971b7c6e7e50"
+    },
+    {
+      "path": "output/linux-0.4-rc7-verification.json",
+      "sha256": "1c618d01dfb020a4e11f25f652a76f28ee4785519d9a8e8ff14a8f6ca04361c7"
+    },
+    {
+      "path": "output/stm-independent-review-0.4.0-rc7.json",
+      "sha256": "adc7cf84999b661d34029fd8d873aed785f9991a2430ee7d4ece57b3c49c7ad7"
+    }
+  ],
+  "private_inputs_used": false,
+  "independent_acceptance": false,
+  "deployment_authorization": false
+}

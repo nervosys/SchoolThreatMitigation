@@ -1,7 +1,7 @@
 {
-  "kb_version": "17.0-NSAI.1",
+  "kb_version": "17.0-NSAI.4",
   "source_proposal": "SchoolThreatMitigation V17.0",
-  "rules_reviewed_as_of": "2026-10-26",
+  "rules_reviewed_as_of": "2026-10-28",
   "legal_status": "advisory_only; Washington-qualified counsel must verify current applicability",
   "rules": [
     {
@@ -35,7 +35,8 @@
       "accountable_owner": "District leadership",
       "recommended_action": "Review policy and intervention procedures with Washington-qualified counsel.",
       "rationale": "RCW 28A.320.123: adopted behavior-based program; referral alone cannot justify suspension or expulsion.",
-      "priority": "high"
+      "priority": "high",
+      "scope": "Draft advisory scope: wa_public_school=true. Evaluate only anonymous Boolean assertions; independent applicability review remains required."
     },
     {
       "id": "WA-124",
@@ -68,7 +69,8 @@
       "accountable_owner": "District superintendent",
       "recommended_action": "Update staff policy; separate school discipline from police functions; publish complaint routes.",
       "rationale": "Conditional duties, role limits, and complaint process in RCW 28A.320.124.",
-      "priority": "high"
+      "priority": "high",
+      "scope": "Draft advisory scope: school_security_staff_present=true. Evaluate only anonymous Boolean assertions; independent applicability review remains required."
     },
     {
       "id": "WA-1241",
@@ -93,7 +95,8 @@
       "accountable_owner": "District compliance officer",
       "recommended_action": "Verify statutory collection/submission and confidentiality controls with counsel.",
       "rationale": "RCW 28A.320.1241 includes prescribed reporting; sensitive details must be handled lawfully.",
-      "priority": "high"
+      "priority": "high",
+      "scope": "Draft advisory scope: school_security_staff_present=true. Evaluate only anonymous Boolean assertions; independent applicability review remains required."
     },
     {
       "id": "WA-1242",
@@ -122,7 +125,8 @@
       "accountable_owner": "District board",
       "recommended_action": "Conduct annual agreement review including parents, students and community members.",
       "rationale": "RCW 28A.320.1242 has conditional agreement and community-participation requirements.",
-      "priority": "high"
+      "priority": "high",
+      "scope": "Draft advisory scope: external_security_provider=true. Evaluate only anonymous Boolean assertions; independent applicability review remains required."
     },
     {
       "id": "WA-440",
@@ -155,7 +159,8 @@
       "accountable_owner": "District safety and health lead",
       "recommended_action": "Check campus equipment, staffing thresholds and inspections under RCW 28A.210.440.",
       "rationale": "School-year 2026-27 requirements, with student-count-dependent staffing provisions.",
-      "priority": "high"
+      "priority": "high",
+      "scope": "Draft advisory scope: wa_public_school=true. Evaluate only anonymous Boolean assertions; independent applicability review remains required."
     },
     {
       "id": "G-001",
@@ -176,7 +181,8 @@
       "accountable_owner": "Privacy officer",
       "recommended_action": "Do not establish school firearm-owner registries; use anonymous voluntary outreach.",
       "rationale": "Safeguard adopted by the project; not a claim that all owner registries are legally prohibited.",
-      "priority": "high"
+      "priority": "high",
+      "scope": "Draft advisory scope: all public advisory assessments. Evaluate only anonymous Boolean assertions; independent applicability review remains required."
     },
     {
       "id": "G-002",
@@ -197,11 +203,12 @@
       "accountable_owner": "Civil rights officer",
       "recommended_action": "Remove profiling; use documented, behavior-based evidence and independent review.",
       "rationale": "Protect expression, privacy and due process.",
-      "priority": "high"
+      "priority": "high",
+      "scope": "Draft advisory scope: all public advisory assessments. Evaluate only anonymous Boolean assertions; independent applicability review remains required."
     },
     {
       "id": "G-003",
-      "title": "No autonomous authorization of physical force",
+      "title": "No automatic teargas release or autonomous physical force",
       "kind": "safety_guardrail",
       "jurisdiction": "WA",
       "when": [],
@@ -209,19 +216,33 @@
         {
           "fact": "ai_authorizes_physical_force",
           "equals": false
+        },
+        {
+          "fact": "automatic_chemical_agent_release_enabled",
+          "equals": false
+        },
+        {
+          "fact": "weaponized_uxs_enabled",
+          "equals": false
+        },
+        {
+          "fact": "automated_confinement_or_detention_enabled",
+          "equals": false
         }
       ],
       "source_refs": [
-        "SRC-02"
+        "SRC-02",
+        "SRC-14"
       ],
       "accountable_owner": "Board and law enforcement counsel",
-      "recommended_action": "Disable autonomous force decisions; require legally authorized human judgment.",
-      "rationale": "A mandatory design constraint; not an assertion that an AI system is a law enforcement officer.",
-      "priority": "high"
+      "recommended_action": "Reject automatic teargas or chemical-agent release, weaponized UxS, and software-directed confinement or detention. Keep permitted non-force observation and communication under accountable human oversight.",
+      "rationale": "Project safety restriction on autonomous force. CDC documents serious chemical-exposure hazards; that source does not validate a countermeasure or establish local authority.",
+      "priority": "high",
+      "scope": "All public advisory assessments, including AI, detector, software or other automation initiating chemical-agent release, weaponized UxS actions, or automatic confinement/detention. This restriction has no human-approval override."
     },
     {
       "id": "G-004",
-      "title": "Preserve safe and accessible emergency egress",
+      "title": "No self-sealing corridor entrapment; preserve emergency egress",
       "kind": "safety_guardrail",
       "jurisdiction": "WA",
       "when": [],
@@ -232,12 +253,14 @@
         }
       ],
       "source_refs": [
-        "SRC-02"
+        "SRC-02",
+        "SRC-15"
       ],
       "accountable_owner": "Facilities and fire authority",
-      "recommended_action": "Stop barrier deployment pending fire and accessibility approval.",
-      "rationale": "Security must never create unsafe confinement.",
-      "priority": "high"
+      "recommended_action": "Reject self-sealing hallway proposals that trap or detain people or obstruct emergency departure. Review only non-trapping compartmentation with qualified fire/building, accessibility and legal authorities.",
+      "rationale": "Project life-safety restriction against unsafe confinement. General OSHA exit-route guidance is background for qualified applicability review, not a finding that a specific regulation governs a school or design.",
+      "priority": "high",
+      "scope": "Draft advisory scope: all public advisory assessments. Evaluate only anonymous Boolean assertions; independent applicability review remains required."
     },
     {
       "id": "G-005",
@@ -257,7 +280,8 @@
       "accountable_owner": "District privacy officer",
       "recommended_action": "Block unlawful access, preserve logs, and involve counsel for applicable privacy law.",
       "rationale": "A safeguard against misuse of school data, not a blanket ban on lawful reporting.",
-      "priority": "high"
+      "priority": "high",
+      "scope": "Draft advisory scope: all public advisory assessments. Evaluate only anonymous Boolean assertions; independent applicability review remains required."
     },
     {
       "id": "G-006",
@@ -282,7 +306,8 @@
       "accountable_owner": "OT security officer",
       "recommended_action": "Require authenticated commands, independent testing, and manual fallback.",
       "rationale": "Avoid cyber-to-physical hazard propagation.",
-      "priority": "high"
+      "priority": "high",
+      "scope": "Draft advisory scope: connected_life_safety_system_planned=true. Evaluate only anonymous Boolean assertions; independent applicability review remains required."
     },
     {
       "id": "G-007",
@@ -307,7 +332,8 @@
       "accountable_owner": "District safety director",
       "recommended_action": "Suspend unqualified canine program and arrange specialist independent assessment.",
       "rationale": "Canine screening is not validated as a universal school-shooting countermeasure.",
-      "priority": "high"
+      "priority": "high",
+      "scope": "Draft advisory scope: canine_program_planned=true. Evaluate only anonymous Boolean assertions; independent applicability review remains required."
     },
     {
       "id": "G-008",
@@ -327,7 +353,8 @@
       "accountable_owner": "Governance board",
       "recommended_action": "Use versioned change control and human-reviewed rule updates.",
       "rationale": "Symbolic policy layer must not be silently rewritten by an LLM.",
-      "priority": "high"
+      "priority": "high",
+      "scope": "Draft advisory scope: all public advisory assessments. Evaluate only anonymous Boolean assertions; independent applicability review remains required."
     },
     {
       "id": "G-009",
@@ -357,7 +384,8 @@
       "accountable_owner": "Civil rights lead",
       "recommended_action": "Require corroboration, appeal/correction path, and trained decision maker.",
       "rationale": "Prevent malicious reports and mistaken irreversible actions.",
-      "priority": "high"
+      "priority": "high",
+      "scope": "Draft advisory scope: threat_assessment_program_adopted=true. Evaluate only anonymous Boolean assertions; independent applicability review remains required."
     },
     {
       "id": "G-010",
@@ -387,7 +415,8 @@
       "accountable_owner": "School district counsel",
       "recommended_action": "Hold implementation until authorization, qualified staffing and independent oversight are documented.",
       "rationale": "Public recommendation guidance, no tactical force instructions.",
-      "priority": "high"
+      "priority": "high",
+      "scope": "Draft advisory scope: armed_response_program_planned=true. Evaluate only anonymous Boolean assertions; independent applicability review remains required."
     },
     {
       "id": "A-001",
@@ -420,7 +449,8 @@
       "accountable_owner": "District technology lead",
       "recommended_action": "Pilot against threat-specific requirements and independently test cyber-physical failure modes.",
       "rationale": "Technology adoption follows identified risk and must preserve safe operation.",
-      "priority": "high"
+      "priority": "high",
+      "scope": "Draft advisory scope: connected_life_safety_system_planned=true. Evaluate only anonymous Boolean assertions; independent applicability review remains required."
     },
     {
       "id": "A-002",
@@ -449,7 +479,8 @@
       "accountable_owner": "Campus incident command",
       "recommended_action": "Validate misses and false alarms; keep people responsible for emergency decisions.",
       "rationale": "No claimed product accuracy without independent test evidence.",
-      "priority": "high"
+      "priority": "high",
+      "scope": "Draft advisory scope: detector_deployment_planned=true. Evaluate only anonymous Boolean assertions; independent applicability review remains required."
     },
     {
       "id": "A-003",
@@ -479,7 +510,11 @@
       "accountable_owner": "Community partnership lead",
       "recommended_action": "Use optional secure-storage education and anonymous impact reporting.",
       "rationale": "Promote safeguards without compulsory ownership disclosure.",
-      "priority": "high"
+      "priority": "high",
+      "scope": "Draft advisory scope: youth_firearm_access_program_planned=true. Evaluate only anonymous Boolean assertions; independent applicability review remains required."
     }
-  ]
+  ],
+  "schema_version": "2.0",
+  "review_status": "draft_independent_review_pending",
+  "reasoning_specification": "stm-conjunctive-1"
 }

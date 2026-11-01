@@ -1,0 +1,96 @@
+{
+  "component": "stm-neurosymbolic",
+  "engine_version": "0.2.0",
+  "kb_version": "17.0-NSAI.2",
+  "recorded_on": "2026-10-26",
+  "platform": "windows",
+  "tool_versions": {
+    "python": "3.10.11",
+    "cargo": "1.99.1",
+    "rustc": "1.99.1"
+  },
+  "source_revision": "working_tree_candidate_bound_by_release_manifest",
+  "results": [
+    {
+      "check": "rust_format",
+      "passed": true,
+      "exit_code": 0,
+      "rust_test_summaries": [],
+      "python_test_count": null
+    },
+    {
+      "check": "rust_check",
+      "passed": true,
+      "exit_code": 0,
+      "rust_test_summaries": [],
+      "python_test_count": null
+    },
+    {
+      "check": "rust_clippy",
+      "passed": true,
+      "exit_code": 0,
+      "rust_test_summaries": [],
+      "python_test_count": null
+    },
+    {
+      "check": "rust_tests",
+      "passed": true,
+      "exit_code": 0,
+      "rust_test_summaries": [
+        "test result: ok. 12 passed; 0 failed",
+        "test result: ok. 9 passed; 0 failed"
+      ],
+      "python_test_count": null
+    },
+    {
+      "check": "rust_release_build",
+      "passed": true,
+      "exit_code": 0,
+      "rust_test_summaries": [],
+      "python_test_count": null
+    },
+    {
+      "check": "retrieval_smoke",
+      "passed": true,
+      "exit_code": 0,
+      "rust_test_summaries": [],
+      "python_test_count": null
+    },
+    {
+      "check": "python_tests",
+      "passed": true,
+      "exit_code": 0,
+      "rust_test_summaries": [],
+      "python_test_count": 11
+    },
+    {
+      "check": "knowledge_validation",
+      "passed": true,
+      "exit_code": 0,
+      "rust_test_summaries": [],
+      "python_test_count": null
+    },
+    {
+      "check": "release_structure",
+      "passed": true,
+      "exit_code": 0,
+      "rust_test_summaries": [],
+      "python_test_count": null
+    },
+    {
+      "check": "source_privacy",
+      "passed": true,
+      "exit_code": 0,
+      "rust_test_summaries": [],
+      "python_test_count": null
+    }
+  ],
+  "all_checks_passed": true,
+  "test_inputs": "synthetic public fixtures only",
+  "independent_acceptance": false,
+  "linux_ci_result_recorded": false,
+  "real_mcp_client_acceptance": false,
+  "site_validation": false,
+  "legal_certification": false,
+  "notes": "Local engineering evidence only. CI and independent reviews remain separate acceptance requirements."
+}

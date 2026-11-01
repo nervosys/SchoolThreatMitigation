@@ -35,19 +35,19 @@
     },
     {
       "id": "D-02",
-      "name": "Sensor validation and provenance",
-      "objective": "Understand misses, false positives and adversarial input",
-      "required_evidence": "Representative independent bench testing",
+      "name": "Review-only UxS observation and sensor validation",
+      "objective": "UxS means uncrewed systems, including UAV/UAS drones and UGV ground systems. Review only non-force observation, alerts and communications; no autonomous pursuit, targeting, chemical payloads, confinement or detention.",
+      "required_evidence": "Representative independent bench testing of misses, false positives, provenance and adversarial inputs; privacy, accessibility, operating-authority and human-oversight review. Public or synthetic evidence only; see engine/docs/COUNTERMEASURE_PROPOSALS.md.",
       "owner": "Technology lead",
-      "hard_stop": "No force or confinement automated by detector"
+      "hard_stop": "Block weaponized UxS, chemical-agent release, automatic force or detention, and unapproved surveillance or identifying data collection."
     },
     {
       "id": "F-01",
-      "name": "Safe classroom protection and egress",
-      "objective": "Allow protection without trapping occupants",
-      "required_evidence": "AHJ and disability-access review; outage tests",
+      "name": "Safe classroom protection and restricted hallway compartmentation",
+      "objective": "Provide classroom protection without trapping occupants. Self-sealing hallway sections proposed to automatically contain or detain attackers are blocked concepts; review only non-trapping, egress-preserving life-safety compartmentation. No automated attacker identification.",
+      "required_evidence": "Qualified fire/building authority, accessibility and legal review, including independent emergency-release and outage evidence; SRC-15 supplies general employee-egress context, not school-specific approval.",
       "owner": "Facilities director",
-      "hard_stop": "Stop at any fail-to-egress condition"
+      "hard_stop": "No automatic entrapment or detention, occupied-exit locking, inaccessible emergency departure, or confinement combined with chemical-agent release."
     },
     {
       "id": "F-02",
@@ -67,11 +67,11 @@
     },
     {
       "id": "R-01",
-      "name": "Professional coordination and lawful force",
-      "objective": "Reduce confusion and prevent unauthorized coercion",
-      "required_evidence": "MOU, credentialing, law review, exercise evaluation",
+      "name": "Professional coordination and restricted automatic teargas proposals",
+      "objective": "Maintain accountable professional emergency response and prevent unauthorized coercion. Automatic teargas / tear gas chemical-agent release and automated force, confinement or detention are blocked; no actuation or deployment authority is provided.",
+      "required_evidence": "Credentialing, MOU, qualified legal review and non-weapon exercise evidence for professional coordination; independent public-health and rights review of chemical proposals. SRC-14 is hazard context, not protective-effectiveness evidence or approval.",
       "owner": "Law enforcement MOU lead",
-      "hard_stop": "No unqualified armed staffing or AI force authority"
+      "hard_stop": "No unqualified armed staffing, automatic chemical-agent release, weaponized UxS, or autonomous force, confinement or detention. Human review does not override the automatic-force restriction."
     },
     {
       "id": "K-01",

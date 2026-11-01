@@ -1,7 +1,8 @@
 [package]
 name = "stm-neurosymbolic"
-version = "0.1.0"
+version = "0.4.0"
 edition = "2021"
+default-run = "stm-neurosymbolic"
 authors = ["NERVOSYS, LLC contributors"]
 license = "AGPL-3.0-or-later"
 description = "Read-only neuro-symbolic school threat mitigation recommendation and compliance-support engine"
@@ -9,6 +10,19 @@ description = "Read-only neuro-symbolic school threat mitigation recommendation 
 [dependencies]
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
+sha2 = "=0.10.9"
+regex = "=1.12.3"
+zip = { version = "=9.1.3", default-features = false, features = ["deflate-flate2-zlib-rs"] }
+lopdf = { version = "=0.46.0", default-features = false }
+quick-xml = "=0.41.0"
+csv = "=1.4.0"
+
+jsonschema = { version = "=0.26.2", default-features = false }
+
+[dev-dependencies]
+tempfile = "=3.27.0"
+rmcp = { version = "=3.5.1", default-features = false, features = ["client", "transport-child-process"] }
+tokio = { version = "=1.54.1", features = ["rt-multi-thread", "time"] }
 
 [profile.release]
 strip = true

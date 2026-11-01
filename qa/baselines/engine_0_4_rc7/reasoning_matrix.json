@@ -1,0 +1,17 @@
+{
+  "assignments_checked": 582,
+  "check": "exhaustive_per_rule_mcp_truth_tables",
+  "complete_assessments_independently_verified": 582,
+  "independent_acceptance": false,
+  "knowledge_sha256": "2bcb941487fb138f3e014ff57a71140fcecd8e6bbe7fef5496abef2188b1f34c",
+  "outcomes_observed": [
+    "deployment_hold",
+    "evidence_indicates_satisfied",
+    "gap_for_review",
+    "needs_evidence",
+    "not_applicable",
+    "scope_unknown"
+  ],
+  "passed": true,
+  "verifier": "independent_rust_interpreter"
+}

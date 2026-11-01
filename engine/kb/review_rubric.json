@@ -1,0 +1,80 @@
+{
+  "specification": "stm-review-rubric-1",
+  "checks": {
+    "control": [
+      "source_support",
+      "evidence_and_owner",
+      "rights_and_hard_stop",
+      "operational_claim_limits"
+    ],
+    "fact": [
+      "plain_language_meaning",
+      "explicit_false_and_unknown",
+      "evidence_expectation",
+      "anonymous_input_boundary"
+    ],
+    "publication": [
+      "all_pages_or_slides",
+      "claims_and_cross_references",
+      "accessibility",
+      "images_notes_and_metadata_privacy"
+    ],
+    "rule": [
+      "authority_and_scope",
+      "exceptions_and_unknowns",
+      "predicate_meaning",
+      "action_and_owner",
+      "rights_and_stop_conditions"
+    ],
+    "scenario": [
+      "public_scope",
+      "source_support",
+      "proposed_vs_demonstrated",
+      "verification_and_stop_condition"
+    ],
+    "source": [
+      "current_official_passage",
+      "applicability_and_exceptions",
+      "conflicts_or_withdrawal",
+      "review_date_and_expiry"
+    ]
+  },
+  "criteria": {
+    "accessibility": "Review reading order, language, contrast, alternatives, navigation, and usable companion formats.",
+    "action_and_owner": "Check proposed action text and accountable ownership without treating a match as authorization.",
+    "all_pages_or_slides": "Inspect every page or slide against the matching hashed publication asset.",
+    "anonymous_input_boundary": "Require approved anonymous Boolean input and exclude personal or campus-sensitive details.",
+    "applicability_and_exceptions": "Check effective scope, exceptions, authority type, and material interpretations.",
+    "authority_and_scope": "Check the cited authority, jurisdiction, applicability, and exceptions with qualified reviewers.",
+    "claims_and_cross_references": "Reconcile publication claims, namespaces, source references, and implemented behavior.",
+    "conflicts_or_withdrawal": "Identify conflicting, withdrawn, superseded, or unavailable source support.",
+    "current_official_passage": "Retrieve the current authoritative passage and record its locator and actual retrieval date in a controlled record.",
+    "evidence_and_owner": "Check evidence requirements and accountable control ownership.",
+    "evidence_expectation": "Check which supporting evidence a qualified reviewer would need; assertions alone are not authenticated.",
+    "exceptions_and_unknowns": "Verify that absent facts remain unknown and scope exclusions are justified.",
+    "explicit_false_and_unknown": "Confirm that false requires an explicit assertion and missing data has no false default.",
+    "images_notes_and_metadata_privacy": "Review visible content, image pixels, notes, embedded data, and metadata for prohibited information.",
+    "operational_claim_limits": "Reject unsupported certification, endorsement, casualty-reduction, or deployment claims.",
+    "plain_language_meaning": "Check that intended users understand both true and false definitions.",
+    "predicate_meaning": "Compare every predicate with the intended obligation or safeguard using the synthetic truth table.",
+    "proposed_vs_demonstrated": "Preserve the distinction between a proposed safeguard and demonstrated protective effectiveness.",
+    "public_scope": "Confirm that the scenario is a public research abstraction rather than a sensitive site plan.",
+    "review_date_and_expiry": "Record actual review dates, expiry or re-review triggers, and reviewer qualifications separately.",
+    "rights_and_hard_stop": "Review rights constraints and mandatory control hard stops.",
+    "rights_and_stop_conditions": "Review civil rights, prohibited outcomes, and non-waivable stop conditions.",
+    "source_support": "Check specific support for material claims and distinguish thematic links from efficacy evidence.",
+    "verification_and_stop_condition": "Check scenario verification requirements and stop conditions with qualified domain reviewers."
+  },
+  "gates": [
+    "ownership_and_funding",
+    "qualified_current_source_review",
+    "independent_rule_and_fact_review",
+    "reviewed_retrieval_evaluation",
+    "public_file_privacy_review",
+    "editorial_and_accessibility_review",
+    "dependency_security_and_license_review",
+    "release_authenticity_and_installation",
+    "windows_and_linux_runtime_evidence",
+    "selected_client_host_acceptance"
+  ]
+}

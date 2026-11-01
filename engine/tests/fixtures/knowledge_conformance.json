@@ -1,0 +1,759 @@
+{
+  "schema_version": 1,
+  "classification": "synthetic_authoring_runtime_conformance_rc8",
+  "documents": [
+    {
+      "id": "scenarios",
+      "path": "governance/threat_scenarios_v17_0.json",
+      "schema": "scenarios"
+    },
+    {
+      "id": "controls",
+      "path": "governance/control_requirements_v17_0.json",
+      "schema": "controls"
+    },
+    {
+      "id": "sources",
+      "path": "governance/public_sources_v17_0.json",
+      "schema": "sources"
+    },
+    {
+      "id": "technology_sources",
+      "path": "engine/kb/technology_sources.json",
+      "schema": "sources"
+    },
+    {
+      "id": "legal_sources",
+      "path": "engine/kb/verified_legal_sources.json",
+      "schema": "legal_sources"
+    },
+    {
+      "id": "gates",
+      "path": "governance/qualification_gates_v17_0.json",
+      "schema": "gates"
+    },
+    {
+      "id": "rules",
+      "path": "engine/kb/rules_v17_0.json",
+      "schema": "rules"
+    },
+    {
+      "id": "relations",
+      "path": "engine/kb/relations_v17_0.json",
+      "schema": "relations"
+    },
+    {
+      "id": "source_reviews",
+      "path": "engine/kb/source_reviews.json",
+      "schema": "source_reviews"
+    },
+    {
+      "id": "facts",
+      "path": "engine/kb/fact_catalog.json",
+      "schema": "facts"
+    }
+  ],
+  "cases": [
+    {
+      "id": "scenarios_missing_required",
+      "document": "scenarios",
+      "operation": "remove",
+      "pointer": "/scenarios/0/id",
+      "schema_valid": false,
+      "runtime_valid": false,
+      "gate_valid": false
+    },
+    {
+      "id": "scenarios_wrong_type",
+      "document": "scenarios",
+      "operation": "replace",
+      "pointer": "/scenarios/0/id",
+      "value": 42,
+      "schema_valid": false,
+      "runtime_valid": false,
+      "gate_valid": false
+    },
+    {
+      "id": "scenarios_unknown_field",
+      "document": "scenarios",
+      "operation": "add",
+      "pointer": "/scenarios/0/synthetic_extra",
+      "value": true,
+      "schema_valid": false,
+      "runtime_valid": false,
+      "gate_valid": false
+    },
+    {
+      "id": "scenarios_incompatible_metadata",
+      "document": "scenarios",
+      "operation": "replace",
+      "pointer": "/version",
+      "value": "unsupported",
+      "schema_valid": false,
+      "runtime_valid": false,
+      "gate_valid": false
+    },
+    {
+      "id": "controls_missing_required",
+      "document": "controls",
+      "operation": "remove",
+      "pointer": "/controls/0/id",
+      "schema_valid": false,
+      "runtime_valid": false,
+      "gate_valid": false
+    },
+    {
+      "id": "controls_wrong_type",
+      "document": "controls",
+      "operation": "replace",
+      "pointer": "/controls/0/id",
+      "value": 42,
+      "schema_valid": false,
+      "runtime_valid": false,
+      "gate_valid": false
+    },
+    {
+      "id": "controls_unknown_field",
+      "document": "controls",
+      "operation": "add",
+      "pointer": "/controls/0/synthetic_extra",
+      "value": true,
+      "schema_valid": false,
+      "runtime_valid": false,
+      "gate_valid": false
+    },
+    {
+      "id": "controls_incompatible_metadata",
+      "document": "controls",
+      "operation": "replace",
+      "pointer": "/version",
+      "value": "unsupported",
+      "schema_valid": false,
+      "runtime_valid": false,
+      "gate_valid": false
+    },
+    {
+      "id": "sources_missing_required",
+      "document": "sources",
+      "operation": "remove",
+      "pointer": "/sources/0/id",
+      "schema_valid": false,
+      "runtime_valid": false,
+      "gate_valid": false
+    },
+    {
+      "id": "sources_wrong_type",
+      "document": "sources",
+      "operation": "replace",
+      "pointer": "/sources/0/id",
+      "value": 42,
+      "schema_valid": false,
+      "runtime_valid": false,
+      "gate_valid": false
+    },
+    {
+      "id": "sources_unknown_field",
+      "document": "sources",
+      "operation": "add",
+      "pointer": "/sources/0/synthetic_extra",
+      "value": true,
+      "schema_valid": false,
+      "runtime_valid": false,
+      "gate_valid": false
+    },
+    {
+      "id": "sources_incompatible_metadata",
+      "document": "sources",
+      "operation": "replace",
+      "pointer": "/retrieved",
+      "value": 42,
+      "schema_valid": false,
+      "runtime_valid": false,
+      "gate_valid": false
+    },
+    {
+      "id": "technology_sources_missing_required",
+      "document": "technology_sources",
+      "operation": "remove",
+      "pointer": "/sources/0/id",
+      "schema_valid": false,
+      "runtime_valid": false,
+      "gate_valid": false
+    },
+    {
+      "id": "technology_sources_wrong_type",
+      "document": "technology_sources",
+      "operation": "replace",
+      "pointer": "/sources/0/id",
+      "value": 42,
+      "schema_valid": false,
+      "runtime_valid": false,
+      "gate_valid": false
+    },
+    {
+      "id": "technology_sources_unknown_field",
+      "document": "technology_sources",
+      "operation": "add",
+      "pointer": "/sources/0/synthetic_extra",
+      "value": true,
+      "schema_valid": false,
+      "runtime_valid": false,
+      "gate_valid": false
+    },
+    {
+      "id": "technology_sources_incompatible_metadata",
+      "document": "technology_sources",
+      "operation": "replace",
+      "pointer": "/retrieved",
+      "value": 42,
+      "schema_valid": false,
+      "runtime_valid": false,
+      "gate_valid": false
+    },
+    {
+      "id": "legal_sources_missing_required",
+      "document": "legal_sources",
+      "operation": "remove",
+      "pointer": "/legal_sources/0/id",
+      "schema_valid": false,
+      "runtime_valid": false,
+      "gate_valid": false
+    },
+    {
+      "id": "legal_sources_wrong_type",
+      "document": "legal_sources",
+      "operation": "replace",
+      "pointer": "/legal_sources/0/id",
+      "value": 42,
+      "schema_valid": false,
+      "runtime_valid": false,
+      "gate_valid": false
+    },
+    {
+      "id": "legal_sources_unknown_field",
+      "document": "legal_sources",
+      "operation": "add",
+      "pointer": "/legal_sources/0/synthetic_extra",
+      "value": true,
+      "schema_valid": false,
+      "runtime_valid": false,
+      "gate_valid": false
+    },
+    {
+      "id": "legal_sources_incompatible_metadata",
+      "document": "legal_sources",
+      "operation": "replace",
+      "pointer": "/reviewed_on",
+      "value": 42,
+      "schema_valid": false,
+      "runtime_valid": false,
+      "gate_valid": false
+    },
+    {
+      "id": "gates_missing_required",
+      "document": "gates",
+      "operation": "remove",
+      "pointer": "/requirements",
+      "schema_valid": false,
+      "runtime_valid": true,
+      "gate_valid": false
+    },
+    {
+      "id": "gates_wrong_type",
+      "document": "gates",
+      "operation": "replace",
+      "pointer": "/requirements/0",
+      "value": 42,
+      "schema_valid": false,
+      "runtime_valid": true,
+      "gate_valid": false
+    },
+    {
+      "id": "gates_unknown_field",
+      "document": "gates",
+      "operation": "add",
+      "pointer": "/synthetic_extra",
+      "value": true,
+      "schema_valid": false,
+      "runtime_valid": true,
+      "gate_valid": false
+    },
+    {
+      "id": "gates_incompatible_metadata",
+      "document": "gates",
+      "operation": "replace",
+      "pointer": "/version",
+      "value": "unsupported",
+      "schema_valid": false,
+      "runtime_valid": true,
+      "gate_valid": false
+    },
+    {
+      "id": "rules_missing_required",
+      "document": "rules",
+      "operation": "remove",
+      "pointer": "/rules/0/id",
+      "schema_valid": false,
+      "runtime_valid": false,
+      "gate_valid": false
+    },
+    {
+      "id": "rules_wrong_type",
+      "document": "rules",
+      "operation": "replace",
+      "pointer": "/rules/0/id",
+      "value": 42,
+      "schema_valid": false,
+      "runtime_valid": false,
+      "gate_valid": false
+    },
+    {
+      "id": "rules_unknown_field",
+      "document": "rules",
+      "operation": "add",
+      "pointer": "/rules/0/synthetic_extra",
+      "value": true,
+      "schema_valid": false,
+      "runtime_valid": false,
+      "gate_valid": false
+    },
+    {
+      "id": "rules_incompatible_metadata",
+      "document": "rules",
+      "operation": "replace",
+      "pointer": "/schema_version",
+      "value": "unsupported",
+      "schema_valid": false,
+      "runtime_valid": false,
+      "gate_valid": false
+    },
+    {
+      "id": "relations_missing_required",
+      "document": "relations",
+      "operation": "remove",
+      "pointer": "/edges/0/from",
+      "schema_valid": false,
+      "runtime_valid": false,
+      "gate_valid": false
+    },
+    {
+      "id": "relations_wrong_type",
+      "document": "relations",
+      "operation": "replace",
+      "pointer": "/edges/0/from",
+      "value": 42,
+      "schema_valid": false,
+      "runtime_valid": false,
+      "gate_valid": false
+    },
+    {
+      "id": "relations_unknown_field",
+      "document": "relations",
+      "operation": "add",
+      "pointer": "/edges/0/synthetic_extra",
+      "value": true,
+      "schema_valid": false,
+      "runtime_valid": false,
+      "gate_valid": false
+    },
+    {
+      "id": "relations_incompatible_metadata",
+      "document": "relations",
+      "operation": "replace",
+      "pointer": "/version",
+      "value": "unsupported",
+      "schema_valid": false,
+      "runtime_valid": false,
+      "gate_valid": false
+    },
+    {
+      "id": "source_reviews_missing_required",
+      "document": "source_reviews",
+      "operation": "remove",
+      "pointer": "/sources/0/source_id",
+      "schema_valid": false,
+      "runtime_valid": false,
+      "gate_valid": false
+    },
+    {
+      "id": "source_reviews_wrong_type",
+      "document": "source_reviews",
+      "operation": "replace",
+      "pointer": "/sources/0/source_id",
+      "value": 42,
+      "schema_valid": false,
+      "runtime_valid": false,
+      "gate_valid": false
+    },
+    {
+      "id": "source_reviews_unknown_field",
+      "document": "source_reviews",
+      "operation": "add",
+      "pointer": "/sources/0/synthetic_extra",
+      "value": true,
+      "schema_valid": false,
+      "runtime_valid": false,
+      "gate_valid": false
+    },
+    {
+      "id": "source_reviews_incompatible_metadata",
+      "document": "source_reviews",
+      "operation": "replace",
+      "pointer": "/schema_version",
+      "value": "unsupported",
+      "schema_valid": false,
+      "runtime_valid": false,
+      "gate_valid": false
+    },
+    {
+      "id": "facts_missing_required",
+      "document": "facts",
+      "operation": "remove",
+      "pointer": "/facts/0/fact",
+      "schema_valid": false,
+      "runtime_valid": false,
+      "gate_valid": false
+    },
+    {
+      "id": "facts_wrong_type",
+      "document": "facts",
+      "operation": "replace",
+      "pointer": "/facts/0/fact",
+      "value": 42,
+      "schema_valid": false,
+      "runtime_valid": false,
+      "gate_valid": false
+    },
+    {
+      "id": "facts_unknown_field",
+      "document": "facts",
+      "operation": "add",
+      "pointer": "/facts/0/synthetic_extra",
+      "value": true,
+      "schema_valid": false,
+      "runtime_valid": false,
+      "gate_valid": false
+    },
+    {
+      "id": "facts_incompatible_metadata",
+      "document": "facts",
+      "operation": "replace",
+      "pointer": "/schema_version",
+      "value": "unsupported",
+      "schema_valid": false,
+      "runtime_valid": false,
+      "gate_valid": false
+    },
+    {
+      "id": "rules_non_boolean_predicate",
+      "document": "rules",
+      "pointer": "/rules/0/when/0/equals",
+      "value": "true",
+      "schema_valid": false,
+      "operation": "replace",
+      "runtime_valid": false,
+      "gate_valid": false
+    },
+    {
+      "id": "rules_unknown_predicate_fact",
+      "document": "rules",
+      "pointer": "/rules/0/when/0/fact",
+      "value": "synthetic_unknown_fact",
+      "schema_valid": true,
+      "operation": "replace",
+      "runtime_valid": false,
+      "gate_valid": false
+    },
+    {
+      "id": "relations_dangling_endpoint",
+      "document": "relations",
+      "pointer": "/edges/0/to",
+      "value": "SYNTHETIC-MISSING",
+      "schema_valid": true,
+      "operation": "replace",
+      "runtime_valid": false,
+      "gate_valid": false
+    },
+    {
+      "id": "source_reviews_unknown_status",
+      "document": "source_reviews",
+      "pointer": "/sources/0/status",
+      "value": "synthetic_invalid",
+      "schema_valid": false,
+      "operation": "replace",
+      "runtime_valid": false,
+      "gate_valid": false
+    },
+    {
+      "id": "facts_empty_definition",
+      "document": "facts",
+      "pointer": "/facts/0/true_means",
+      "value": "",
+      "schema_valid": false,
+      "operation": "replace",
+      "runtime_valid": false,
+      "gate_valid": false
+    },
+    {
+      "id": "rules_incompatible_kb",
+      "document": "rules",
+      "pointer": "/kb_version",
+      "value": "17.0-NSAI.0",
+      "schema_valid": false,
+      "operation": "replace",
+      "runtime_valid": false,
+      "gate_valid": false
+    },
+    {
+      "id": "rules_duplicate_json_key",
+      "document": "rules",
+      "operation": "duplicate_key",
+      "pointer": "schema_version",
+      "schema_valid": false,
+      "runtime_valid": false,
+      "gate_valid": false
+    },
+    {
+      "id": "facts_duplicate_json_key",
+      "document": "facts",
+      "operation": "duplicate_key",
+      "pointer": "schema_version",
+      "schema_valid": false,
+      "runtime_valid": false,
+      "gate_valid": false
+    },
+    {
+      "id": "source_reviews_duplicate_json_key",
+      "document": "source_reviews",
+      "operation": "duplicate_key",
+      "pointer": "schema_version",
+      "schema_valid": false,
+      "runtime_valid": false,
+      "gate_valid": false
+    },
+    {
+      "id": "scenarios_unknown_register_field",
+      "document": "scenarios",
+      "operation": "add",
+      "pointer": "/synthetic_extra",
+      "value": true,
+      "schema_valid": false,
+      "runtime_valid": false,
+      "gate_valid": false
+    },
+    {
+      "id": "controls_unknown_register_field",
+      "document": "controls",
+      "operation": "add",
+      "pointer": "/synthetic_extra",
+      "value": true,
+      "schema_valid": false,
+      "runtime_valid": false,
+      "gate_valid": false
+    },
+    {
+      "id": "sources_unknown_register_field",
+      "document": "sources",
+      "operation": "add",
+      "pointer": "/synthetic_extra",
+      "value": true,
+      "schema_valid": false,
+      "runtime_valid": false,
+      "gate_valid": false
+    },
+    {
+      "id": "technology_sources_unknown_register_field",
+      "document": "technology_sources",
+      "operation": "add",
+      "pointer": "/synthetic_extra",
+      "value": true,
+      "schema_valid": false,
+      "runtime_valid": false,
+      "gate_valid": false
+    },
+    {
+      "id": "legal_sources_unknown_register_field",
+      "document": "legal_sources",
+      "operation": "add",
+      "pointer": "/synthetic_extra",
+      "value": true,
+      "schema_valid": false,
+      "runtime_valid": false,
+      "gate_valid": false
+    },
+    {
+      "id": "rules_unknown_register_field",
+      "document": "rules",
+      "operation": "add",
+      "pointer": "/synthetic_extra",
+      "value": true,
+      "schema_valid": false,
+      "runtime_valid": false,
+      "gate_valid": false
+    },
+    {
+      "id": "relations_unknown_register_field",
+      "document": "relations",
+      "operation": "add",
+      "pointer": "/synthetic_extra",
+      "value": true,
+      "schema_valid": false,
+      "runtime_valid": false,
+      "gate_valid": false
+    },
+    {
+      "id": "source_reviews_unknown_register_field",
+      "document": "source_reviews",
+      "operation": "add",
+      "pointer": "/synthetic_extra",
+      "value": true,
+      "schema_valid": false,
+      "runtime_valid": false,
+      "gate_valid": false
+    },
+    {
+      "id": "facts_unknown_register_field",
+      "document": "facts",
+      "operation": "add",
+      "pointer": "/synthetic_extra",
+      "value": true,
+      "schema_valid": false,
+      "runtime_valid": false,
+      "gate_valid": false
+    },
+    {
+      "id": "scenarios_missing_register_metadata",
+      "document": "scenarios",
+      "operation": "remove",
+      "pointer": "/version",
+      "schema_valid": false,
+      "runtime_valid": false,
+      "gate_valid": false
+    },
+    {
+      "id": "controls_missing_register_metadata",
+      "document": "controls",
+      "operation": "remove",
+      "pointer": "/version",
+      "schema_valid": false,
+      "runtime_valid": false,
+      "gate_valid": false
+    },
+    {
+      "id": "sources_missing_register_metadata",
+      "document": "sources",
+      "operation": "remove",
+      "pointer": "/retrieved",
+      "schema_valid": false,
+      "runtime_valid": false,
+      "gate_valid": false
+    },
+    {
+      "id": "technology_sources_missing_register_metadata",
+      "document": "technology_sources",
+      "operation": "remove",
+      "pointer": "/retrieved",
+      "schema_valid": false,
+      "runtime_valid": false,
+      "gate_valid": false
+    },
+    {
+      "id": "legal_sources_missing_register_metadata",
+      "document": "legal_sources",
+      "operation": "remove",
+      "pointer": "/reviewed_on",
+      "schema_valid": false,
+      "runtime_valid": false,
+      "gate_valid": false
+    },
+    {
+      "id": "relations_missing_register_metadata",
+      "document": "relations",
+      "operation": "remove",
+      "pointer": "/version",
+      "schema_valid": false,
+      "runtime_valid": false,
+      "gate_valid": false
+    },
+    {
+      "id": "sources_invalid_calendar_date",
+      "document": "sources",
+      "operation": "replace",
+      "pointer": "/retrieved",
+      "value": "2026-02-30",
+      "schema_valid": true,
+      "runtime_valid": false,
+      "gate_valid": false
+    },
+    {
+      "id": "sources_valid_leap_date",
+      "document": "sources",
+      "operation": "replace",
+      "pointer": "/retrieved",
+      "value": "2024-02-29",
+      "schema_valid": true,
+      "runtime_valid": true,
+      "gate_valid": true
+    },
+    {
+      "id": "technology_sources_invalid_calendar_date",
+      "document": "technology_sources",
+      "operation": "replace",
+      "pointer": "/retrieved",
+      "value": "2026-02-30",
+      "schema_valid": true,
+      "runtime_valid": false,
+      "gate_valid": false
+    },
+    {
+      "id": "technology_sources_valid_leap_date",
+      "document": "technology_sources",
+      "operation": "replace",
+      "pointer": "/retrieved",
+      "value": "2024-02-29",
+      "schema_valid": true,
+      "runtime_valid": true,
+      "gate_valid": true
+    },
+    {
+      "id": "legal_sources_invalid_calendar_date",
+      "document": "legal_sources",
+      "operation": "replace",
+      "pointer": "/reviewed_on",
+      "value": "2026-02-30",
+      "schema_valid": true,
+      "runtime_valid": false,
+      "gate_valid": false
+    },
+    {
+      "id": "legal_sources_valid_leap_date",
+      "document": "legal_sources",
+      "operation": "replace",
+      "pointer": "/reviewed_on",
+      "value": "2024-02-29",
+      "schema_valid": true,
+      "runtime_valid": true,
+      "gate_valid": true
+    },
+    {
+      "id": "scenarios_invalid_public_release",
+      "document": "scenarios",
+      "operation": "replace",
+      "pointer": "/public_release",
+      "value": false,
+      "schema_valid": false,
+      "runtime_valid": false,
+      "gate_valid": false
+    },
+    {
+      "id": "scenarios_invalid_deployment_certified",
+      "document": "scenarios",
+      "operation": "replace",
+      "pointer": "/deployment_certified",
+      "value": true,
+      "schema_valid": false,
+      "runtime_valid": false,
+      "gate_valid": false
+    }
+  ]
+}

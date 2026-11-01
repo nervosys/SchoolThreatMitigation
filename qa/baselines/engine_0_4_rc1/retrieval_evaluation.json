@@ -1,0 +1,365 @@
+{
+  "checks": {
+    "min_hit_rate_at_k": true,
+    "min_mean_precision_at_k": true,
+    "min_mean_recall_at_k": true,
+    "min_mean_reciprocal_rank_at_k": true,
+    "no_forbidden_hits": true,
+    "no_negative_failures": true,
+    "no_redaction_failures": true,
+    "no_unexpected_rejections": true
+  },
+  "client": "native_rust_stdio",
+  "dataset_classification": "maintainer_fixture",
+  "dataset_sha256": "f5bb5c318190b5a0bff630e50544ee2d3597ee5cbbc930070aafa794b0b673bf",
+  "evaluation_specification": "stm-retrieval-evaluation-1",
+  "independent_evaluation": false,
+  "judgments_exhaustive": false,
+  "knowledge_sha256": "8270fd3e3fe272a17b3f6010014d25ac2a89ac2b6898cc210d2c7539a35cedf3",
+  "metrics": {
+    "abstention_case_count": 1,
+    "forbidden_hit_count": 0,
+    "hit_rate_at_k": 1.0,
+    "mean_precision_at_k": null,
+    "mean_recall_at_k": 1.0,
+    "mean_reciprocal_rank_at_k": 1.0,
+    "negative_failure_count": 0,
+    "positive_case_count": 18,
+    "redaction_failure_count": 0,
+    "rejection_probe_count": 1,
+    "unexpected_rejection_count": 0
+  },
+  "release_acceptance": false,
+  "results": [
+    {
+      "behavior": "retrieve",
+      "case_number": 1,
+      "hit_at_k": 1.0,
+      "precision_at_k": null,
+      "recall_at_k": 1.0,
+      "reciprocal_rank_at_k": 1.0,
+      "returned_ids": [
+        "T01",
+        "T03",
+        "T02",
+        "G-001",
+        "P-01",
+        "P-02",
+        "SRC-04",
+        "SRC-13"
+      ]
+    },
+    {
+      "behavior": "retrieve",
+      "case_number": 2,
+      "hit_at_k": 1.0,
+      "precision_at_k": null,
+      "recall_at_k": 1.0,
+      "reciprocal_rank_at_k": 1.0,
+      "returned_ids": [
+        "T02",
+        "L-01",
+        "T08",
+        "T13"
+      ]
+    },
+    {
+      "behavior": "retrieve",
+      "case_number": 3,
+      "hit_at_k": 1.0,
+      "precision_at_k": null,
+      "recall_at_k": 1.0,
+      "reciprocal_rank_at_k": 1.0,
+      "returned_ids": [
+        "T03",
+        "T01",
+        "T02",
+        "G-001",
+        "SRC-04",
+        "SRC-13",
+        "P-01",
+        "P-02"
+      ]
+    },
+    {
+      "behavior": "retrieve",
+      "case_number": 4,
+      "hit_at_k": 1.0,
+      "precision_at_k": null,
+      "recall_at_k": 1.0,
+      "reciprocal_rank_at_k": 1.0,
+      "returned_ids": [
+        "T04",
+        "A-001",
+        "B-01",
+        "T08",
+        "LAW-123",
+        "SRC-08",
+        "T14",
+        "T17"
+      ]
+    },
+    {
+      "behavior": "retrieve",
+      "case_number": 5,
+      "hit_at_k": 1.0,
+      "precision_at_k": null,
+      "recall_at_k": 1.0,
+      "reciprocal_rank_at_k": 1.0,
+      "returned_ids": [
+        "T05",
+        "T17",
+        "G-009"
+      ]
+    },
+    {
+      "behavior": "retrieve",
+      "case_number": 6,
+      "hit_at_k": 1.0,
+      "precision_at_k": null,
+      "recall_at_k": 1.0,
+      "reciprocal_rank_at_k": 1.0,
+      "returned_ids": [
+        "T06",
+        "G-001",
+        "T01",
+        "T02",
+        "T03",
+        "T13",
+        "T14",
+        "SRC-04"
+      ]
+    },
+    {
+      "behavior": "retrieve",
+      "case_number": 7,
+      "hit_at_k": 1.0,
+      "precision_at_k": null,
+      "recall_at_k": 1.0,
+      "reciprocal_rank_at_k": 1.0,
+      "returned_ids": [
+        "T07",
+        "G-001",
+        "T01",
+        "T02",
+        "T03",
+        "SRC-04",
+        "T15",
+        "A-002"
+      ]
+    },
+    {
+      "behavior": "retrieve",
+      "case_number": 8,
+      "hit_at_k": 1.0,
+      "precision_at_k": null,
+      "recall_at_k": 1.0,
+      "reciprocal_rank_at_k": 1.0,
+      "returned_ids": [
+        "T08",
+        "T10",
+        "T06",
+        "T02",
+        "T09",
+        "T14"
+      ]
+    },
+    {
+      "behavior": "retrieve",
+      "case_number": 9,
+      "hit_at_k": 1.0,
+      "precision_at_k": null,
+      "recall_at_k": 1.0,
+      "reciprocal_rank_at_k": 1.0,
+      "returned_ids": [
+        "T09",
+        "F-01",
+        "G-004",
+        "T12",
+        "A-001",
+        "D-01",
+        "F-02",
+        "I-01"
+      ]
+    },
+    {
+      "behavior": "retrieve",
+      "case_number": 10,
+      "hit_at_k": 1.0,
+      "precision_at_k": null,
+      "recall_at_k": 1.0,
+      "reciprocal_rank_at_k": 1.0,
+      "returned_ids": [
+        "T10",
+        "T06",
+        "T09",
+        "D-01",
+        "F-01",
+        "G-004",
+        "T02",
+        "T08"
+      ]
+    },
+    {
+      "behavior": "retrieve",
+      "case_number": 11,
+      "hit_at_k": 1.0,
+      "precision_at_k": null,
+      "recall_at_k": 1.0,
+      "reciprocal_rank_at_k": 1.0,
+      "returned_ids": [
+        "T11",
+        "F-02",
+        "C-01",
+        "F-01",
+        "T09",
+        "T14"
+      ]
+    },
+    {
+      "behavior": "retrieve",
+      "case_number": 12,
+      "hit_at_k": 1.0,
+      "precision_at_k": null,
+      "recall_at_k": 1.0,
+      "reciprocal_rank_at_k": 1.0,
+      "returned_ids": [
+        "T12",
+        "T06",
+        "D-01",
+        "A-002",
+        "A-003",
+        "LAW-440",
+        "M-01",
+        "WA-440"
+      ]
+    },
+    {
+      "behavior": "retrieve",
+      "case_number": 13,
+      "hit_at_k": 1.0,
+      "precision_at_k": null,
+      "recall_at_k": 1.0,
+      "reciprocal_rank_at_k": 1.0,
+      "returned_ids": [
+        "T13",
+        "LAW-440",
+        "M-01",
+        "WA-440",
+        "T11",
+        "T14"
+      ]
+    },
+    {
+      "behavior": "retrieve",
+      "case_number": 14,
+      "hit_at_k": 1.0,
+      "precision_at_k": null,
+      "recall_at_k": 1.0,
+      "reciprocal_rank_at_k": 1.0,
+      "returned_ids": [
+        "T14",
+        "A-001",
+        "SRC-02",
+        "T08",
+        "T13",
+        "T17",
+        "WA-124",
+        "B-01"
+      ]
+    },
+    {
+      "behavior": "retrieve",
+      "case_number": 15,
+      "hit_at_k": 1.0,
+      "precision_at_k": null,
+      "recall_at_k": 1.0,
+      "reciprocal_rank_at_k": 1.0,
+      "returned_ids": [
+        "T15",
+        "T07",
+        "G-007",
+        "K-01",
+        "SRC-04",
+        "A-002",
+        "D-02",
+        "T05"
+      ]
+    },
+    {
+      "behavior": "retrieve",
+      "case_number": 16,
+      "hit_at_k": 1.0,
+      "precision_at_k": null,
+      "recall_at_k": 1.0,
+      "reciprocal_rank_at_k": 1.0,
+      "returned_ids": [
+        "T16",
+        "R-01",
+        "G-003",
+        "G-010",
+        "G-005",
+        "A-01",
+        "D-02",
+        "T01"
+      ]
+    },
+    {
+      "behavior": "retrieve",
+      "case_number": 17,
+      "hit_at_k": 1.0,
+      "precision_at_k": null,
+      "recall_at_k": 1.0,
+      "reciprocal_rank_at_k": 1.0,
+      "returned_ids": [
+        "T17",
+        "SRC-09",
+        "T05",
+        "A-01",
+        "G-002",
+        "G-008",
+        "G-003",
+        "R-01"
+      ]
+    },
+    {
+      "behavior": "retrieve",
+      "case_number": 18,
+      "hit_at_k": 1.0,
+      "precision_at_k": null,
+      "recall_at_k": 1.0,
+      "reciprocal_rank_at_k": 1.0,
+      "returned_ids": [
+        "T18",
+        "T04",
+        "G-005",
+        "G-01",
+        "L-01",
+        "R-01",
+        "T03",
+        "T06"
+      ]
+    },
+    {
+      "behavior": "abstain",
+      "case_number": 19,
+      "negative_correct": true,
+      "returned_ids": []
+    },
+    {
+      "behavior": "reject",
+      "case_number": 20,
+      "negative_correct": true,
+      "returned_ids": []
+    }
+  ],
+  "returned_citations_checked": true,
+  "thresholds": {
+    "min_hit_rate_at_k": 1.0,
+    "min_mean_precision_at_k": null,
+    "min_mean_recall_at_k": 1.0,
+    "min_mean_reciprocal_rank_at_k": null
+  },
+  "thresholds_met": true,
+  "top_k": 8
+}

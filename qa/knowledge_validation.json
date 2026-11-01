@@ -1,0 +1,11 @@
+{
+  "controls": 15,
+  "facts": 42,
+  "independent_acceptance": false,
+  "passed": true,
+  "rules": 18,
+  "scenario_csv_matches": true,
+  "scenarios": 18,
+  "schema_validation": "rust_jsonschema_and_typed_runtime",
+  "sources": 20
+}

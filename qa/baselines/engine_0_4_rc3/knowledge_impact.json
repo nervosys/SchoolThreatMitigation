@@ -1,0 +1,10 @@
+{
+  "baseline": "8270fd3e3fe272a17b3f6010014d25ac2a89ac2b6898cc210d2c7539a35cedf3",
+  "baseline_kb_version": "17.0-NSAI.3",
+  "candidate": "2bcb941487fb138f3e014ff57a71140fcecd8e6bbe7fef5496abef2188b1f34c",
+  "candidate_kb_version": "17.0-NSAI.4",
+  "human_change_review_required": true,
+  "independent_acceptance": false,
+  "knowledge_identical": false,
+  "same_version_content_changed": false
+}

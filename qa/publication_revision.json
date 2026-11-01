@@ -1,0 +1,50 @@
+{
+  "revision": "17.0-r1",
+  "renderer": "Pandoc 3.12.1 and Typst 0.15.1",
+  "network_resources_used": false,
+  "independent_review": false,
+  "documents": [
+    {
+      "file": "docs/advisory-v17.0-r1/Constitutional_Governance_and_Public_Trust_V17_0_R1.pdf",
+      "pages": 1,
+      "source": "docs/advisory-v17.0-r1/Constitutional_Governance_and_Public_Trust_V17_0_R1.html",
+      "source_sha256": "2532ecbfea9db4409dd1d046c180ac5bdbb88389d2f191468c6cd6b822d91fea",
+      "pdf_sha256": "bb01d799ea1520b301e78e95bb42c480dba31993b8156d73357caf61753ba722"
+    },
+    {
+      "file": "docs/advisory-v17.0-r1/Executive_Decision_Brief_V17_0_R1.pdf",
+      "pages": 1,
+      "source": "docs/advisory-v17.0-r1/Executive_Decision_Brief_V17_0_R1.html",
+      "source_sha256": "94c9928973cf329a00c91e996cfbf6edacebfdfc5f00af301fc0e234975b427b",
+      "pdf_sha256": "d837f897366f2f5f7553e99ce7beb1563b37d190b9c8288d0ca19a20b5894a6a"
+    },
+    {
+      "file": "docs/advisory-v17.0-r1/Ninety_Day_Qualification_Pilot_V17_0_R1.pdf",
+      "pages": 2,
+      "source": "docs/advisory-v17.0-r1/Ninety_Day_Qualification_Pilot_V17_0_R1.html",
+      "source_sha256": "77881ab325cb3f502f00435e926f0934be45e9bd9b373f5581148c613c7bb392",
+      "pdf_sha256": "62a643854a9fa8629a8f0c6d3f4d1129e83deeb270d42a298753b77f93e576fb"
+    },
+    {
+      "file": "docs/advisory-v17.0-r1/School_Safety_Field_Guide_V17_0_R1.pdf",
+      "pages": 66,
+      "source": "docs/advisory-v17.0-r1/School_Safety_Field_Guide_V17_0_R1.html",
+      "source_sha256": "2bd4abe3ea6444c92e38e87d0166435b48d0fc7a0715e670491114c5fe9807ff",
+      "pdf_sha256": "c8fba7e2dd5c6b73dc3dc7c3a47a5b5088577d0e95d946c880e7d10fd802c581"
+    },
+    {
+      "file": "docs/advisory-v17.0-r1/Threat_Driven_Technology_and_AI_V17_0_R1.pdf",
+      "pages": 2,
+      "source": "docs/advisory-v17.0-r1/Threat_Driven_Technology_and_AI_V17_0_R1.html",
+      "source_sha256": "5c011e0a1e54a9ddcbe898efd15695f4fc2a3130fa40aebcbffeb064551c2028",
+      "pdf_sha256": "b4cae885db39ddf175f9a57926bf68c6747a4f44ab6545df8dde7bdfc186c09f"
+    },
+    {
+      "file": "docs/advisory-v17.0-r1/Threat_Scenario_and_Countermeasure_Engineering_V17_0_R1.pdf",
+      "pages": 11,
+      "source": "docs/advisory-v17.0-r1/Threat_Scenario_and_Countermeasure_Engineering_V17_0_R1.html",
+      "source_sha256": "022330d10f17bf32d65eaabd1a421e04345a5cd3658c7ea1c9e3026458b8258f",
+      "pdf_sha256": "6ca28c78625825c6a030c82a02695d74860ab687aea33c3a04f10567325c2882"
+    }
+  ]
+}

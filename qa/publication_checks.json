@@ -1,0 +1,69 @@
+{
+  "revision": "17.0-r1",
+  "all_pages_inspected_automatically": true,
+  "contact_sheets_generated": true,
+  "independent_visual_and_accessibility_acceptance": false,
+  "documents": [
+    {
+      "document": "docs/advisory-v17.0-r1/Constitutional_Governance_and_Public_Trust_V17_0_R1.pdf",
+      "pages": 1,
+      "out_of_page_text_spans": 0,
+      "near_blank_pages": 0,
+      "normalized_source_token_coverage": 1.0,
+      "pdf_structure_tags_present": true,
+      "html_landmark_and_language": true,
+      "independent_review": false
+    },
+    {
+      "document": "docs/advisory-v17.0-r1/Executive_Decision_Brief_V17_0_R1.pdf",
+      "pages": 1,
+      "out_of_page_text_spans": 0,
+      "near_blank_pages": 0,
+      "normalized_source_token_coverage": 1.0,
+      "pdf_structure_tags_present": true,
+      "html_landmark_and_language": true,
+      "independent_review": false
+    },
+    {
+      "document": "docs/advisory-v17.0-r1/Ninety_Day_Qualification_Pilot_V17_0_R1.pdf",
+      "pages": 2,
+      "out_of_page_text_spans": 0,
+      "near_blank_pages": 0,
+      "normalized_source_token_coverage": 1.0,
+      "pdf_structure_tags_present": true,
+      "html_landmark_and_language": true,
+      "independent_review": false
+    },
+    {
+      "document": "docs/advisory-v17.0-r1/School_Safety_Field_Guide_V17_0_R1.pdf",
+      "pages": 66,
+      "out_of_page_text_spans": 0,
+      "near_blank_pages": 0,
+      "normalized_source_token_coverage": 0.99922,
+      "pdf_structure_tags_present": true,
+      "html_landmark_and_language": true,
+      "independent_review": false
+    },
+    {
+      "document": "docs/advisory-v17.0-r1/Threat_Driven_Technology_and_AI_V17_0_R1.pdf",
+      "pages": 2,
+      "out_of_page_text_spans": 0,
+      "near_blank_pages": 0,
+      "normalized_source_token_coverage": 1.0,
+      "pdf_structure_tags_present": true,
+      "html_landmark_and_language": true,
+      "independent_review": false
+    },
+    {
+      "document": "docs/advisory-v17.0-r1/Threat_Scenario_and_Countermeasure_Engineering_V17_0_R1.pdf",
+      "pages": 11,
+      "out_of_page_text_spans": 0,
+      "near_blank_pages": 0,
+      "normalized_source_token_coverage": 1.0,
+      "pdf_structure_tags_present": true,
+      "html_landmark_and_language": true,
+      "independent_review": false
+    }
+  ],
+  "passed": true
+}

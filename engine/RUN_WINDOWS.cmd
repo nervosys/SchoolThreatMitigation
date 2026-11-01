@@ -1,10 +1,8 @@
 @echo off
 setlocal
-cd /d "%~dp0"
-where cargo >nul 2>&1
-if errorlevel 1 (
-  echo Rust/Cargo is not installed. Install via https://rustup.rs/
+if not exist "%~dp0target\release\stm-neurosymbolic.exe" (
+  echo Build once with engine\BUILD_WINDOWS.cmd before running.
   exit /b 1
 )
-cargo run --manifest-path Cargo.toml -- %*
+"%~dp0target\release\stm-neurosymbolic.exe" %*
 exit /b %ERRORLEVEL%

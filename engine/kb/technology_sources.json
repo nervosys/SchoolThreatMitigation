@@ -1,0 +1,17 @@
+{
+  "retrieved": "2026-10-28",
+  "sources": [
+    {
+      "id": "SRC-14",
+      "title": "CDC CTTL: Riot Control Agents",
+      "url": "https://www.cdc.gov/chemical-threats-and-toxins-laboratory/php/laboratory-capabilities-and-methods/riot-control-agents.html",
+      "interpretation": "Chemical irritants can cause severe injury, particularly with substantial or prolonged exposure in enclosed settings. Hazard context only; no validation of automatic teargas or school deployment."
+    },
+    {
+      "id": "SRC-15",
+      "title": "OSHA eTool: Design and construction requirements for exit routes",
+      "url": "https://www.osha.gov/etools/evacuation-plans-procedures/emergency-standards/design-construction",
+      "interpretation": "General employee-egress guidance addresses inside opening and emergency usability. School-specific applicability, exceptions and designs require qualified review; no authority for automatic confinement is established."
+    }
+  ]
+}

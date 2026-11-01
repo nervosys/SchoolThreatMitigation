@@ -1,0 +1,167 @@
+{
+  "schema_version": "2.0",
+  "kb_version": "17.0-NSAI.4",
+  "policy": "reviewed means documented maintainer source review only; never institutional or legal approval",
+  "sources": [
+    {
+      "source_id": "SRC-01",
+      "status": "unreviewed",
+      "reviewed_on": null,
+      "valid_through": null,
+      "evidence_locator": "Inherited source link and interpretation; passage-level verification pending.",
+      "review_note": "Independent applicability and currency review remains required."
+    },
+    {
+      "source_id": "SRC-02",
+      "status": "unreviewed",
+      "reviewed_on": null,
+      "valid_through": null,
+      "evidence_locator": "Inherited source link and interpretation; passage-level verification pending.",
+      "review_note": "Independent applicability and currency review remains required."
+    },
+    {
+      "source_id": "SRC-03",
+      "status": "unreviewed",
+      "reviewed_on": null,
+      "valid_through": null,
+      "evidence_locator": "Inherited source link and interpretation; passage-level verification pending.",
+      "review_note": "Independent applicability and currency review remains required."
+    },
+    {
+      "source_id": "SRC-04",
+      "status": "unreviewed",
+      "reviewed_on": null,
+      "valid_through": null,
+      "evidence_locator": "Inherited source link and interpretation; passage-level verification pending.",
+      "review_note": "Independent applicability and currency review remains required."
+    },
+    {
+      "source_id": "SRC-05",
+      "status": "unreviewed",
+      "reviewed_on": null,
+      "valid_through": null,
+      "evidence_locator": "Inherited source link and interpretation; passage-level verification pending.",
+      "review_note": "Independent applicability and currency review remains required."
+    },
+    {
+      "source_id": "SRC-06",
+      "status": "unreviewed",
+      "reviewed_on": null,
+      "valid_through": null,
+      "evidence_locator": "Inherited source link and interpretation; passage-level verification pending.",
+      "review_note": "Independent applicability and currency review remains required."
+    },
+    {
+      "source_id": "SRC-07",
+      "status": "unreviewed",
+      "reviewed_on": null,
+      "valid_through": null,
+      "evidence_locator": "Inherited source link and interpretation; passage-level verification pending.",
+      "review_note": "Independent applicability and currency review remains required."
+    },
+    {
+      "source_id": "SRC-08",
+      "status": "unreviewed",
+      "reviewed_on": null,
+      "valid_through": null,
+      "evidence_locator": "Inherited source link and interpretation; passage-level verification pending.",
+      "review_note": "Independent applicability and currency review remains required."
+    },
+    {
+      "source_id": "SRC-09",
+      "status": "unreviewed",
+      "reviewed_on": null,
+      "valid_through": null,
+      "evidence_locator": "Inherited source link and interpretation; passage-level verification pending.",
+      "review_note": "Independent applicability and currency review remains required."
+    },
+    {
+      "source_id": "SRC-10",
+      "status": "unreviewed",
+      "reviewed_on": null,
+      "valid_through": null,
+      "evidence_locator": "Inherited source link and interpretation; passage-level verification pending.",
+      "review_note": "Independent applicability and currency review remains required."
+    },
+    {
+      "source_id": "SRC-11",
+      "status": "unreviewed",
+      "reviewed_on": null,
+      "valid_through": null,
+      "evidence_locator": "Inherited source link and interpretation; passage-level verification pending.",
+      "review_note": "Independent applicability and currency review remains required."
+    },
+    {
+      "source_id": "SRC-12",
+      "status": "unreviewed",
+      "reviewed_on": null,
+      "valid_through": null,
+      "evidence_locator": "Inherited source link and interpretation; passage-level verification pending.",
+      "review_note": "Independent applicability and currency review remains required."
+    },
+    {
+      "source_id": "SRC-13",
+      "status": "unreviewed",
+      "reviewed_on": null,
+      "valid_through": null,
+      "evidence_locator": "Inherited source link and interpretation; passage-level verification pending.",
+      "review_note": "Independent applicability and currency review remains required."
+    },
+    {
+      "source_id": "LAW-123",
+      "status": "unreviewed",
+      "reviewed_on": null,
+      "valid_through": null,
+      "evidence_locator": "Inherited source link and interpretation; passage-level verification pending.",
+      "review_note": "Independent applicability and currency review remains required."
+    },
+    {
+      "source_id": "LAW-124",
+      "status": "unreviewed",
+      "reviewed_on": null,
+      "valid_through": null,
+      "evidence_locator": "Inherited source link and interpretation; passage-level verification pending.",
+      "review_note": "Independent applicability and currency review remains required."
+    },
+    {
+      "source_id": "LAW-1241",
+      "status": "unreviewed",
+      "reviewed_on": null,
+      "valid_through": null,
+      "evidence_locator": "Inherited source link and interpretation; passage-level verification pending.",
+      "review_note": "Independent applicability and currency review remains required."
+    },
+    {
+      "source_id": "LAW-1242",
+      "status": "unreviewed",
+      "reviewed_on": null,
+      "valid_through": null,
+      "evidence_locator": "Inherited source link and interpretation; passage-level verification pending.",
+      "review_note": "Independent applicability and currency review remains required."
+    },
+    {
+      "source_id": "LAW-440",
+      "status": "unreviewed",
+      "reviewed_on": null,
+      "valid_through": null,
+      "evidence_locator": "Inherited source link and interpretation; passage-level verification pending.",
+      "review_note": "Independent applicability and currency review remains required."
+    },
+    {
+      "source_id": "SRC-14",
+      "status": "unreviewed",
+      "reviewed_on": null,
+      "valid_through": null,
+      "evidence_locator": "Primary public source consulted 2026-10-28 UTC; see technology_sources.json and COUNTERMEASURE_PROPOSALS.md.",
+      "review_note": "Maintainer hazard-context addition only. Independent medical, fire/building, accessibility, rights and legal applicability review remains pending. No deployment approval."
+    },
+    {
+      "source_id": "SRC-15",
+      "status": "unreviewed",
+      "reviewed_on": null,
+      "valid_through": null,
+      "evidence_locator": "Primary public source consulted 2026-10-28 UTC; see technology_sources.json and COUNTERMEASURE_PROPOSALS.md.",
+      "review_note": "Maintainer hazard-context addition only. Independent medical, fire/building, accessibility, rights and legal applicability review remains pending. No deployment approval."
+    }
+  ]
+}

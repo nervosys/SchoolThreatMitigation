@@ -1,8 +1,8 @@
 {
   "mcpServers": {
     "stm-neurosymbolic": {
-      "command": "C:\\FULL\\PATH\\SchoolThreatMitigation\\engine\\RUN_MCP_WINDOWS.cmd",
-      "args": []
+      "command": "stm-neurosymbolic",
+      "args": ["mcp"]
     }
   }
 }

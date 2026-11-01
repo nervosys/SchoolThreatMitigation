@@ -1,0 +1,39 @@
+{
+  "classification": "maintainer_official_sdk_interoperability",
+  "passed": true,
+  "sdk_distribution": "mcp",
+  "dependency_versions": {
+    "mcp": "1.23.3",
+    "anyio": "4.14.2",
+    "pydantic": "2.13.4",
+    "httpx": "0.28.1"
+  },
+  "platform": "windows",
+  "protocol_negotiated": "2025-06-18",
+  "tool_count": 5,
+  "tool_calls_checked": 21,
+  "fact_definitions_checked": 39,
+  "complete_assessments_independently_verified": 8,
+  "rejected_tool_calls": 8,
+  "sessions_completed": 2,
+  "restart_reasoning_identical": true,
+  "outcomes_observed": [
+    "deployment_hold",
+    "evidence_indicates_satisfied",
+    "gap_for_review",
+    "needs_evidence",
+    "not_applicable",
+    "scope_unknown"
+  ],
+  "knowledge_sha256": "8270fd3e3fe272a17b3f6010014d25ac2a89ac2b6898cc210d2c7539a35cedf3",
+  "executable_sha256": "0fdae4fb609a2bbb0144e043b59d475d865a3bd38c9181c049cedf9135c87e06",
+  "artifact_check_mode": "local_maintainer_build_measurement",
+  "source_manifest_sha256": null,
+  "transport": "local_stdio",
+  "network_endpoint_configured": false,
+  "optional_inherited_environment_cleared": true,
+  "independent_acceptance": false,
+  "desktop_client_acceptance": false,
+  "test_inputs": "Public synthetic queries and Boolean combinations only.",
+  "limitations": "Official SDK client check only. Desktop hosts, other SDK versions, independent review, and platform acceptance require separate evidence."
+}

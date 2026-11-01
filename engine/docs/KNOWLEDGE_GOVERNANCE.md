@@ -25,7 +25,7 @@ Every rule must record source references, scope, rationale, owner, review date, 
 
 ## Legislative freshness
 
-Primary-source statutory checks were reviewed as of **2026-10-26**. They should be rechecked before an institutional use or any legal conclusion. A check referencing RCW 28A.320.124 applies conditionally when relevant safety and security staff are present; an agreement-specific check references RCW 28A.320.1242. RCW 28A.320.123 applies to school-based threat assessment programs; RCW 28A.210.440 includes medical equipment and staffing thresholds that depend on school size. Do not flatten conditional language into a universal legal claim.
+The knowledge reference date is **2026-10-26**; all source approvals are currently unreviewed. They should be rechecked before an institutional use or any legal conclusion. A check referencing RCW 28A.320.124 applies conditionally when relevant safety and security staff are present; an agreement-specific check references RCW 28A.320.1242. RCW 28A.320.123 applies to school-based threat assessment programs; RCW 28A.210.440 includes medical equipment and staffing thresholds that depend on school size. Do not flatten conditional language into a universal legal claim.
 
 ## Ethics and privacy
 
@@ -38,6 +38,19 @@ Primary-source statutory checks were reviewed as of **2026-10-26**. They should 
 ## Reproducibility
 
 - `governance/*.json` are the original Version 17.0 materials.
-- `engine/kb/*.json` contain additional reviewed conditional rules, legal source links and traceability edges.
+- `engine/kb/*.json` contain additional draft conditional rules, legal source links and traceability edges.
 - Git history and checksum manifests form the revision audit trail; the current prototype does **not** cryptographically sign releases.
 - CI should run the Rust tests and cross-reference validator on every PR.
+
+
+## Candidate knowledge version
+
+KB 17.0-NSAI.4 uses schema 2.0 and `review_status=draft_independent_review_pending`. Added scopes describe the existing applicability predicates; they are not fresh legal approvals. Historical review dates remain in baseline records. The current frozen knowledge reference date is 2026-10-28; this is not an independent source approval. Independent source and per-rule review remains open. The runtime rejects incompatible versions and empty scopes. Source expiry, conflict, withdrawal, and future-review evaluation is implemented separately from logical verdicts. The default reasoning date is frozen to the KB reference date; explicit current-date context and independent source approval remain required for institutional acceptance. Identifier namespaces are defined in `governance/identifier_namespaces.json` at the repository root.
+
+## Automated change impact
+
+Before reviewing a proposed KB update, compare the baseline and candidate with [the bounded change-impact tool](KNOWLEDGE_CHANGES.md). Review changed definitions, sources, actions, and traceability even when verdicts match. Reusing a KB version for changed fingerprinted content fails the local version gate. The tool does not approve or deploy changes. Current baseline and MCP truth-table evidence is stored under `qa/`; independent change review remains required.
+
+## Independent review evidence
+
+Generate a [pinned review packet](INDEPENDENT_REVIEW.md) before arranging acceptance review. Its knowledge records, synthetic truth tables, publication identities, criteria, and pending gates form an immutable snapshot. Qualified reviewers retain authenticated responses separately, using review IDs and record hashes. The verifier detects altered snapshots; it cannot approve material interpretations, reviewer independence, or a release.

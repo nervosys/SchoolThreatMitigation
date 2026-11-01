@@ -1,0 +1,25 @@
+{
+  "publication_version": "17.0",
+  "publication_revision": "1",
+  "publication_id": "17.0-r1",
+  "publication_directory": "docs/advisory-v17.0-r1",
+  "engine_version": "0.4.0",
+  "candidate_label": "RC10",
+  "kb_version": "17.0-NSAI.4",
+  "schema_version": "2.0",
+  "mcp_protocol_version": "2025-06-18",
+  "release_date": "2026-10-26",
+  "status": "release_candidate_independent_acceptance_pending",
+  "supported_workflows": [
+    "offline_cli",
+    "stdio_mcp"
+  ],
+  "supported_platforms": [
+    "windows",
+    "linux"
+  ],
+  "independent_acceptance": false,
+  "candidate_date": "2026-10-31",
+  "source_revision": "audit-readme-2026-10-31",
+  "sealed_rc10_manifest_sha256": "6209458d097e8a033b60f50c54370fc8aaded49c2c9226eb45206dd9f07dc5a3"
+}

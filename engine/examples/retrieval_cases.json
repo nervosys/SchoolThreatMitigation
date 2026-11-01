@@ -1,0 +1,107 @@
+{
+  "classification": "maintainer_smoke_not_independent_evaluation",
+  "top_k": 8,
+  "acceptance": "Each public positive case returns its expected scenario within the first eight results. Unsupported and disallowed cases behave as specified.",
+  "cases": [
+    {
+      "case_id": "public-T01",
+      "query": "household firearm storage locked",
+      "expected_id": "T01"
+    },
+    {
+      "case_id": "public-T02",
+      "query": "relatives friends shared care locations",
+      "expected_id": "T02"
+    },
+    {
+      "case_id": "public-T03",
+      "query": "unsecured firearm vehicle storage",
+      "expected_id": "T03"
+    },
+    {
+      "case_id": "public-T04",
+      "query": "credible communicated threat planning leakage",
+      "expected_id": "T04"
+    },
+    {
+      "case_id": "public-T05",
+      "query": "malicious mistaken uncorroborated accusation",
+      "expected_id": "T05"
+    },
+    {
+      "case_id": "public-T06",
+      "query": "arrival suspected weapon violence",
+      "expected_id": "T06"
+    },
+    {
+      "case_id": "public-T07",
+      "query": "false missed acoustic visual firearm alarm",
+      "expected_id": "T07"
+    },
+    {
+      "case_id": "public-T08",
+      "query": "hallways common areas protective instruction",
+      "expected_id": "T08"
+    },
+    {
+      "case_id": "public-T09",
+      "query": "classroom door hardware egress failure",
+      "expected_id": "T09"
+    },
+    {
+      "case_id": "public-T10",
+      "query": "disability protective instruction accessibility",
+      "expected_id": "T10"
+    },
+    {
+      "case_id": "public-T11",
+      "query": "power communications outage",
+      "expected_id": "T11"
+    },
+    {
+      "case_id": "public-T12",
+      "query": "ransomware spoofed alert access control",
+      "expected_id": "T12"
+    },
+    {
+      "case_id": "public-T13",
+      "query": "life threatening bleeding EMS",
+      "expected_id": "T13"
+    },
+    {
+      "case_id": "public-T14",
+      "query": "delayed police arrival active threat",
+      "expected_id": "T14"
+    },
+    {
+      "case_id": "public-T15",
+      "query": "canine false indication injury",
+      "expected_id": "T15"
+    },
+    {
+      "case_id": "public-T16",
+      "query": "misidentified unauthorized on site force",
+      "expected_id": "T16"
+    },
+    {
+      "case_id": "public-T17",
+      "query": "AI generated accusation synthetic media",
+      "expected_id": "T17"
+    },
+    {
+      "case_id": "public-T18",
+      "query": "reunification confusion sensitive data leakage",
+      "expected_id": "T18"
+    },
+    {
+      "case_id": "no-match",
+      "query": "xylophonicalquasar",
+      "expected_empty": true
+    },
+    {
+      "case_id": "disallowed",
+      "query": "student id 1234567",
+      "expected_rejection": true
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "policy": "An identifier must be qualified by its register. Unqualified legacy IDs must not be joined to the engine knowledgebase.",
+  "namespaces": [
+    {"name": "legacy_hazard", "source": "Field Guide Section 12", "coverage": "56 planning hazards", "engine_supported": false},
+    {"name": "scenario", "source": "governance/threat_scenarios_v17_0.json", "coverage": "T01 through T18", "engine_supported": true},
+    {"name": "legacy_capability", "source": "Field Guide Section 13", "coverage": "M01 through M15", "engine_supported": false},
+    {"name": "control", "source": "governance/control_requirements_v17_0.json", "coverage": "15 control families including M-01", "engine_supported": true},
+    {"name": "rule", "source": "engine/kb/rules_v17_0.json", "coverage": "WA-*, G-*, A-*", "engine_supported": true}
+  ],
+  "overlapping_legacy_hazard_ids": {
+    "T01": "Transnational repression of student or family",
+    "T02": "Foreign-origin coercion or misuse of school data",
+    "T03": "Organized-crime recruitment or coercion",
+    "T04": "Minor labor or sex trafficking exploitation",
+    "T05": "Physical child abduction or luring",
+    "T06": "Custodial interference or unauthorized release",
+    "T07": "Virtual kidnapping and synthetic ransom claims",
+    "T08": "Nonviolent political, reputational or economic coercion"
+  },
+  "migration": "Use qualified references such as legacy_hazard:T01 and scenario:T01 in cross-document records. Existing CLI and MCP IDs resolve only within the engine registers. No automatic equivalence or expansion is asserted."
+}

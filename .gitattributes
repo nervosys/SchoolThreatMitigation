@@ -1,4 +1,4 @@
-* text=auto
+* text=auto eol=lf
 *.md text eol=lf
 *.py text eol=lf
 *.typ text eol=lf
@@ -8,8 +8,14 @@
 *.json text eol=lf
 *.srt text eol=lf
 *.ipynb text eol=lf
-*.cmd text eol=crlf
+# Preserve validated Windows launcher bytes in Git and source archives.
+*.cmd -text whitespace=cr-at-eol
+# Historical evidence must retain its original byte-level hash bindings.
+qa/baselines/** -text whitespace=cr-at-eol
 *.png binary
 *.wav binary
 *.mp4 binary
 *.pdf binary
+*.pptx binary
+*.zip binary
+*.exe binary

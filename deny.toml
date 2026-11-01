@@ -1,0 +1,26 @@
+# Technical dependency checks; not a legal compatibility or release approval.
+# Keep all targets and development dependencies in the checked graph.
+[graph]
+all-features = false
+
+[licenses]
+allow = [
+    "AGPL-3.0-or-later",
+    "Apache-2.0",
+    "BSD-2-Clause",
+    "BSD-3-Clause",
+    "MIT",
+    "MIT-0",
+    "Unicode-3.0",
+    "Unlicense",
+    "Zlib",
+    "0BSD",
+]
+confidence-threshold = 0.95
+exceptions = []
+
+[sources]
+unknown-registry = "deny"
+unknown-git = "deny"
+allow-registry = ["https://github.com/rust-lang/crates.io-index"]
+allow-git = []

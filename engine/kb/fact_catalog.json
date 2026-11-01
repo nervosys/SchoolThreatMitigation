@@ -1,0 +1,533 @@
+{
+  "schema_version": "2.0",
+  "kb_version": "17.0-NSAI.4",
+  "review_status": "draft_independent_review_pending",
+  "facts": [
+    {
+      "fact": "ai_authorizes_physical_force",
+      "true_means": "AI, software, a detector or any automation can initiate or authorize force, including automatic teargas / chemical-agent release, weaponized UxS action, or automatic confinement/detention. Absence of AI alone does not justify asserting false.",
+      "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+      "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+      "rule_refs": [
+        "G-003"
+      ],
+      "source_refs": [
+        "SRC-02",
+        "SRC-14"
+      ]
+    },
+    {
+      "fact": "ai_can_edit_approved_rules",
+      "true_means": "AI can directly edit the approved logical rules without reviewed change control.",
+      "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+      "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+      "rule_refs": [
+        "G-008"
+      ],
+      "source_refs": [
+        "SRC-02"
+      ]
+    },
+    {
+      "fact": "alert_human_verification_defined",
+      "true_means": "The alert workflow defines accountable human verification.",
+      "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+      "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+      "rule_refs": [
+        "A-002"
+      ],
+      "source_refs": [
+        "SRC-02"
+      ]
+    },
+    {
+      "fact": "annual_security_agreement_reviewed",
+      "true_means": "The applicable annual security-provider agreement has been reviewed in the required institutional process.",
+      "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+      "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+      "rule_refs": [
+        "WA-1242"
+      ],
+      "source_refs": [
+        "LAW-1242"
+      ]
+    },
+    {
+      "fact": "armed_response_program_planned",
+      "true_means": "An on-site armed-response program is being proposed or operated.",
+      "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+      "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+      "rule_refs": [
+        "G-010"
+      ],
+      "source_refs": [
+        "LAW-124",
+        "LAW-1242"
+      ]
+    },
+    {
+      "fact": "behavior_based_not_demographic",
+      "true_means": "The assessment program uses observable behavior and context rather than demographic or political profiling.",
+      "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+      "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+      "rule_refs": [
+        "WA-123"
+      ],
+      "source_refs": [
+        "LAW-123"
+      ]
+    },
+    {
+      "fact": "bleeding_control_equipment_accessible",
+      "true_means": "A human inspection found the required bleeding-control equipment accessible in the assessed scope.",
+      "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+      "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+      "rule_refs": [
+        "WA-440"
+      ],
+      "source_refs": [
+        "LAW-440"
+      ]
+    },
+    {
+      "fact": "bleeding_control_inspections_current",
+      "true_means": "A qualified reviewer found inspection and replenishment records current for the assessed scope.",
+      "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+      "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+      "rule_refs": [
+        "WA-440"
+      ],
+      "source_refs": [
+        "LAW-440"
+      ]
+    },
+    {
+      "fact": "bleeding_control_training_staffing_met",
+      "true_means": "A qualified reviewer found applicable bleeding-control training and staffing conditions met.",
+      "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+      "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+      "rule_refs": [
+        "WA-440"
+      ],
+      "source_refs": [
+        "LAW-440"
+      ]
+    },
+    {
+      "fact": "canine_program_planned",
+      "true_means": "A specialist canine program is being proposed or operated.",
+      "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+      "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+      "rule_refs": [
+        "G-007"
+      ],
+      "source_refs": [
+        "SRC-02"
+      ]
+    },
+    {
+      "fact": "connected_life_safety_system_planned",
+      "true_means": "A network-connected life-safety system is being proposed or operated.",
+      "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+      "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+      "rule_refs": [
+        "G-006",
+        "A-001"
+      ],
+      "source_refs": [
+        "SRC-02"
+      ]
+    },
+    {
+      "fact": "demographic_or_political_risk_profiling",
+      "true_means": "The program assigns dangerousness using demographic or political categories.",
+      "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+      "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+      "rule_refs": [
+        "G-002"
+      ],
+      "source_refs": [
+        "LAW-123",
+        "SRC-01"
+      ]
+    },
+    {
+      "fact": "detector_deployment_planned",
+      "true_means": "An automated hazard detector is being proposed or operated.",
+      "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+      "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+      "rule_refs": [
+        "A-002"
+      ],
+      "source_refs": [
+        "SRC-02"
+      ]
+    },
+    {
+      "fact": "egress_obstructed_by_security",
+      "true_means": "A security measure, including self-sealing hallway sections, obstructs safe accessible emergency departure or can trap or detain an occupant.",
+      "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+      "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+      "rule_refs": [
+        "G-004"
+      ],
+      "source_refs": [
+        "SRC-02",
+        "SRC-15"
+      ]
+    },
+    {
+      "fact": "external_security_provider",
+      "true_means": "An external law-enforcement or security provider participates in the assessed arrangement.",
+      "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+      "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+      "rule_refs": [
+        "WA-1242"
+      ],
+      "source_refs": [
+        "LAW-1242"
+      ]
+    },
+    {
+      "fact": "family_security_complaint_path",
+      "true_means": "Families have an accessible documented route for security-staff complaints.",
+      "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+      "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+      "rule_refs": [
+        "WA-124"
+      ],
+      "source_refs": [
+        "LAW-124"
+      ]
+    },
+    {
+      "fact": "firearm_owner_registry_created",
+      "true_means": "The school program has created a household firearm-owner registry.",
+      "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+      "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+      "rule_refs": [
+        "G-001"
+      ],
+      "source_refs": [
+        "SRC-04",
+        "SRC-05"
+      ]
+    },
+    {
+      "fact": "human_review_for_adverse_actions",
+      "true_means": "The program requires accountable human review before consequential adverse actions.",
+      "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+      "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+      "rule_refs": [
+        "G-009"
+      ],
+      "source_refs": [
+        "LAW-123",
+        "SRC-01"
+      ]
+    },
+    {
+      "fact": "identifying_firearm_data_collected",
+      "true_means": "The outreach program collects identifying household firearm information.",
+      "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+      "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+      "rule_refs": [
+        "A-003"
+      ],
+      "source_refs": [
+        "SRC-04",
+        "SRC-05"
+      ]
+    },
+    {
+      "fact": "independent_cyber_assessment_complete",
+      "true_means": "An independent cybersecurity assessment for the proposed scope has been completed.",
+      "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+      "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+      "rule_refs": [
+        "A-001"
+      ],
+      "source_refs": [
+        "SRC-02"
+      ]
+    },
+    {
+      "fact": "independent_force_oversight",
+      "true_means": "The professional response arrangement has independent oversight of force incidents.",
+      "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+      "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+      "rule_refs": [
+        "G-010"
+      ],
+      "source_refs": [
+        "LAW-124",
+        "LAW-1242"
+      ]
+    },
+    {
+      "fact": "manual_safe_fallback_tested",
+      "true_means": "An authorized test demonstrated a safe manual fallback in the stated scope.",
+      "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+      "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+      "rule_refs": [
+        "A-001"
+      ],
+      "source_refs": [
+        "SRC-02"
+      ]
+    },
+    {
+      "fact": "parent_student_community_consultation",
+      "true_means": "Parents, students, and community participants have been included in the applicable agreement review.",
+      "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+      "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+      "rule_refs": [
+        "WA-1242"
+      ],
+      "source_refs": [
+        "LAW-1242"
+      ]
+    },
+    {
+      "fact": "participation_voluntary",
+      "true_means": "Participation in the firearm-access outreach program is voluntary.",
+      "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+      "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+      "rule_refs": [
+        "A-003"
+      ],
+      "source_refs": [
+        "SRC-04",
+        "SRC-05"
+      ]
+    },
+    {
+      "fact": "qualified_response_authorized_by_law",
+      "true_means": "Qualified human legal and institutional reviewers have documented authority for the specific professional response arrangement.",
+      "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+      "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+      "rule_refs": [
+        "G-010"
+      ],
+      "source_refs": [
+        "LAW-124",
+        "LAW-1242"
+      ]
+    },
+    {
+      "fact": "referral_alone_causes_exclusion",
+      "true_means": "A threat-assessment referral alone causes student exclusion.",
+      "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+      "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+      "rule_refs": [
+        "WA-123"
+      ],
+      "source_refs": [
+        "LAW-123"
+      ]
+    },
+    {
+      "fact": "representative_false_alarm_testing_complete",
+      "true_means": "Independent representative detector testing includes both false alarms and missed events.",
+      "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+      "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+      "rule_refs": [
+        "A-002"
+      ],
+      "source_refs": [
+        "SRC-02"
+      ]
+    },
+    {
+      "fact": "school_security_staff_present",
+      "true_means": "Safety or security staff participate in the assessed school arrangement.",
+      "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+      "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+      "rule_refs": [
+        "WA-124",
+        "WA-1241"
+      ],
+      "source_refs": [
+        "LAW-124",
+        "LAW-1241"
+      ]
+    },
+    {
+      "fact": "security_staff_reporting_process",
+      "true_means": "An applicable security-staff reporting process is documented and assigned.",
+      "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+      "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+      "rule_refs": [
+        "WA-1241"
+      ],
+      "source_refs": [
+        "LAW-1241"
+      ]
+    },
+    {
+      "fact": "sro_formal_discipline_role",
+      "true_means": "School resource officers have a formal school-discipline decision role.",
+      "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+      "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+      "rule_refs": [
+        "WA-124"
+      ],
+      "source_refs": [
+        "LAW-124"
+      ]
+    },
+    {
+      "fact": "staff_duties_policy_adopted",
+      "true_means": "The applicable security-staff duties policy has been adopted.",
+      "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+      "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+      "rule_refs": [
+        "WA-124"
+      ],
+      "source_refs": [
+        "LAW-124"
+      ]
+    },
+    {
+      "fact": "threat_assessment_program_adopted",
+      "true_means": "The district has adopted a school-based threat-assessment program.",
+      "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+      "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+      "rule_refs": [
+        "WA-123",
+        "G-009"
+      ],
+      "source_refs": [
+        "LAW-123",
+        "SRC-01"
+      ]
+    },
+    {
+      "fact": "threat_gap_documented",
+      "true_means": "A specific protective gap and existing baseline have been documented before technology selection.",
+      "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+      "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+      "rule_refs": [
+        "A-001"
+      ],
+      "source_refs": [
+        "SRC-02"
+      ]
+    },
+    {
+      "fact": "unauthorized_canine_deployment",
+      "true_means": "A canine deployment lacks the required qualified authorization.",
+      "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+      "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+      "rule_refs": [
+        "G-007"
+      ],
+      "source_refs": [
+        "SRC-02"
+      ]
+    },
+    {
+      "fact": "unauthorized_education_record_sharing",
+      "true_means": "Education records are shared outside a documented lawful purpose.",
+      "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+      "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+      "rule_refs": [
+        "G-005"
+      ],
+      "source_refs": [
+        "SRC-02"
+      ]
+    },
+    {
+      "fact": "unverified_remote_physical_commands_enabled",
+      "true_means": "Unverified remote commands can actuate physical safety equipment.",
+      "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+      "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+      "rule_refs": [
+        "G-006"
+      ],
+      "source_refs": [
+        "SRC-02"
+      ]
+    },
+    {
+      "fact": "unverified_tip_triggers_punishment",
+      "true_means": "An unverified allegation alone triggers punishment.",
+      "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+      "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+      "rule_refs": [
+        "G-009"
+      ],
+      "source_refs": [
+        "LAW-123",
+        "SRC-01"
+      ]
+    },
+    {
+      "fact": "wa_public_school",
+      "true_means": "The assessed institutional scope is a Washington public school.",
+      "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+      "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+      "rule_refs": [
+        "WA-123",
+        "WA-440"
+      ],
+      "source_refs": [
+        "LAW-123",
+        "LAW-440"
+      ]
+    },
+    {
+      "fact": "youth_firearm_access_program_planned",
+      "true_means": "A voluntary youth firearm-access prevention or storage-outreach program is being proposed or operated.",
+      "false_means": "An authorized human explicitly asserts the negation of the true statement. Missing information must be omitted, not entered as false.",
+      "evidence_required": "A qualified human reviews applicable policy, authorization, inspection, or test evidence for the named scope and date. Do not submit the underlying personal or campus-sensitive records.",
+      "rule_refs": [
+        "A-003"
+      ],
+      "source_refs": [
+        "SRC-04",
+        "SRC-05"
+      ]
+    },
+    {
+      "fact": "automatic_chemical_agent_release_enabled",
+      "true_means": "A security proposal includes automatic teargas / riot-control chemical-agent discharge; any such capability is blocked in this project.",
+      "false_means": "A qualified human explicitly asserts that the described automatic-force capability is absent. Missing information must be omitted, never defaulted to false.",
+      "evidence_required": "Independent review of capability, policy and absence-of-automation evidence for the proposal. Submit only approved public or synthetic Boolean assertions, not campus configurations or operational records. No assertion grants deployment authority.",
+      "rule_refs": [
+        "G-003"
+      ],
+      "source_refs": [
+        "SRC-02",
+        "SRC-14"
+      ]
+    },
+    {
+      "fact": "weaponized_uxs_enabled",
+      "true_means": "An uncrewed system is enabled for physical force, chemical-agent delivery, or restraining/confining people; these uses are blocked.",
+      "false_means": "A qualified human explicitly asserts that the described automatic-force capability is absent. Missing information must be omitted, never defaulted to false.",
+      "evidence_required": "Independent review of capability, policy and absence-of-automation evidence for the proposal. Submit only approved public or synthetic Boolean assertions, not campus configurations or operational records. No assertion grants deployment authority.",
+      "rule_refs": [
+        "G-003"
+      ],
+      "source_refs": [
+        "SRC-02",
+        "SRC-14"
+      ]
+    },
+    {
+      "fact": "automated_confinement_or_detention_enabled",
+      "true_means": "A system automatically confines or detains people, including a self-sealing hallway section proposed for attacker containment; these uses are blocked.",
+      "false_means": "A qualified human explicitly asserts that the described automatic-force capability is absent. Missing information must be omitted, never defaulted to false.",
+      "evidence_required": "Independent review of capability, policy and absence-of-automation evidence for the proposal. Submit only approved public or synthetic Boolean assertions, not campus configurations or operational records. No assertion grants deployment authority.",
+      "rule_refs": [
+        "G-003"
+      ],
+      "source_refs": [
+        "SRC-02",
+        "SRC-14"
+      ]
+    }
+  ]
+}

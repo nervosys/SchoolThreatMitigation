@@ -1,0 +1,139 @@
+{
+  "schema_version": 1,
+  "classification": "maintainer_selected_codex_host_qualification",
+  "passed": true,
+  "source_candidate": "RC9",
+  "source_manifest_sha256": "83658d568d82cf1c409f5db29956578b75524c95b85c978051e86713fe0c8cbb",
+  "host": "Codex app-server",
+  "host_version": "0.165.0",
+  "protocol_reference": "https://learn.chatgpt.com/docs/app-server",
+  "platforms": [
+    {
+      "assessments_independently_replayed": 8,
+      "classification": "maintainer_actual_codex_host_qualification",
+      "credentials_used": false,
+      "deployment_authorization": false,
+      "desktop_ui_acceptance": false,
+      "engine_executable_sha256": "ad96eb2007dd8eeda435b74c6bc0c5ef6039a530df73ee96f8621606afbad86a",
+      "ephemeral_threads": 2,
+      "existing_user_profile_modified": false,
+      "fact_definitions_checked": 42,
+      "host": "Codex app-server",
+      "host_level_rejections": 0,
+      "host_version": "0.165.0",
+      "independent_acceptance": false,
+      "invalid_tool_calls_rejected": 16,
+      "knowledge_sha256": "2bcb941487fb138f3e014ff57a71140fcecd8e6bbe7fef5496abef2188b1f34c",
+      "llm_wrapper_evaluation": false,
+      "login_calls_made": 0,
+      "mandatory_force_guardrail_preserved": true,
+      "model_turns_started": 0,
+      "passed": true,
+      "platform": "windows",
+      "private_inputs_used": false,
+      "project_mcp_servers": 1,
+      "project_tools": 5,
+      "raw_responses_or_paths_in_report": false,
+      "restart_and_after_rejection_results_identical": true,
+      "rpc_requests_checked": 42,
+      "sessions_completed": 2,
+      "source_candidate": "RC9",
+      "source_manifest_sha256": "83658d568d82cf1c409f5db29956578b75524c95b85c978051e86713fe0c8cbb",
+      "successful_tool_calls": 16,
+      "tampered_proofs_rejected": 4
+    },
+    {
+      "assessments_independently_replayed": 8,
+      "classification": "maintainer_actual_codex_host_qualification",
+      "credentials_used": false,
+      "deployment_authorization": false,
+      "desktop_ui_acceptance": false,
+      "engine_executable_sha256": "223cba851976fa21580ae3315d33188773fa767a5c12163aca1bbcc8cddf70c0",
+      "ephemeral_threads": 2,
+      "existing_user_profile_modified": false,
+      "fact_definitions_checked": 42,
+      "host": "Codex app-server",
+      "host_level_rejections": 0,
+      "host_version": "0.165.0",
+      "independent_acceptance": false,
+      "invalid_tool_calls_rejected": 16,
+      "knowledge_sha256": "2bcb941487fb138f3e014ff57a71140fcecd8e6bbe7fef5496abef2188b1f34c",
+      "llm_wrapper_evaluation": false,
+      "login_calls_made": 0,
+      "mandatory_force_guardrail_preserved": true,
+      "model_turns_started": 0,
+      "passed": true,
+      "platform": "linux",
+      "private_inputs_used": false,
+      "project_mcp_servers": 1,
+      "project_tools": 5,
+      "raw_responses_or_paths_in_report": false,
+      "restart_and_after_rejection_results_identical": true,
+      "rpc_requests_checked": 42,
+      "sessions_completed": 2,
+      "source_candidate": "RC9",
+      "source_manifest_sha256": "83658d568d82cf1c409f5db29956578b75524c95b85c978051e86713fe0c8cbb",
+      "successful_tool_calls": 16,
+      "tampered_proofs_rejected": 4
+    }
+  ],
+  "totals": {
+    "sessions": 4,
+    "rpc_requests": 84,
+    "successful_tool_calls": 32,
+    "invalid_tool_calls_rejected": 32,
+    "assessments_independently_replayed": 16,
+    "tampered_proofs_rejected": 8,
+    "model_turns_started": 0,
+    "login_calls_made": 0
+  },
+  "host_provenance": {
+    "windows": {
+      "source": "existing installed Codex",
+      "sha256": "d4b2e6a054ea1dfe53217f9d8942c5f8a9f4b76171a1e0bb76ced5759915300a"
+    },
+    "linux": {
+      "source": "retained isolated public official artifact",
+      "url": "https://github.com/openai/codex/releases/download/rust-v0.165.0/codex-x86_64-unknown-linux-musl.tar.gz",
+      "archive_sha256": "be635d3486a5bd060d0fff582ae6d30160280c31344dd85719707fa920e187f0",
+      "executable_sha256": "c06a67fd8ac76508dc78bd99ce20c9f317b8d568beda59485f3f4134df9962d5"
+    }
+  },
+  "evidence_files": [
+    {
+      "path": "output/codex-qualification-rc9/harness/Cargo.toml",
+      "sha256": "74928e46986826724fa38116c28d1ee0df9035a12f12b1fc7e9262fcaf54bc2e"
+    },
+    {
+      "path": "output/codex-qualification-rc9/harness/Cargo.lock",
+      "sha256": "dc177e09937ea7d69a04696e4adfcd970ff574c0429e58030b8f688c704d415d"
+    },
+    {
+      "path": "output/codex-qualification-rc9/harness/src/main.rs",
+      "sha256": "7d5c154663a621bd373cc845808b45e633eb66c06003f936839ac4ba98c26290"
+    },
+    {
+      "path": "output/codex-qualification-rc9/README.txt",
+      "sha256": "9ffdd27a5d2a0fb8f67806b95aae9a3481565cb5bb39fbacd49814e1d8145028"
+    },
+    {
+      "path": "output/codex-qualification-rc9/codex-host-windows.json",
+      "sha256": "28d5e5037ec6e621bc24ce076f924da1f7e022c2e060cbf93ee9739635a215c5"
+    },
+    {
+      "path": "output/codex-qualification-rc9/codex-host-linux.json",
+      "sha256": "5aeea9ccfae2f3cc311db9b38c29af12c7389e97bd40121c28f20de88992a13b"
+    },
+    {
+      "path": "output/codex-qualification-rc9/finalize.ps1",
+      "sha256": "c3ca7eaf1b8ccd0891c0c8167bf619457ac65281d595349c69a4ce4845259952"
+    }
+  ],
+  "private_inputs_used": false,
+  "credentials_used": false,
+  "existing_user_profile_modified": false,
+  "desktop_ui_acceptance": false,
+  "llm_wrapper_evaluation": false,
+  "independent_acceptance": false,
+  "deployment_authorization": false
+}

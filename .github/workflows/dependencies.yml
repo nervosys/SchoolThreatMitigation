@@ -1,0 +1,42 @@
+name: Dependency security and declared licenses
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  dependencies:
+    runs-on: ubuntu-latest
+    env:
+      CARGO_BUILD_JOBS: 1
+      CARGO_TARGET_DIR: engine/target
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: dtolnay/rust-toolchain@stable
+      - name: Install pinned Rust audit tools
+        run: |
+          cargo install cargo-audit --version 0.22.2 --locked
+          cargo install cargo-deny --version 0.19.0 --locked
+      - name: Fetch public locked crates
+        run: cargo fetch --locked --manifest-path engine/Cargo.toml
+      - name: Audit known advisories and maintenance warnings
+        shell: bash
+        run: |
+          mkdir -p output/dependency-ci
+          if cargo audit --file engine/Cargo.lock --no-yanked --deny warnings --json > output/dependency-ci/audit.json 2> output/dependency-ci/audit.stderr; then
+            echo 'Known-advisory and maintenance-warning checks: PASS'
+          else
+            echo 'Dependency audit failed; diagnostics retained locally and not uploaded.'
+            exit 1
+          fi
+          git -C "${CARGO_HOME:-$HOME/.cargo}/advisory-db" rev-parse HEAD
+          sha256sum engine/Cargo.lock deny.toml
+      - name: Check declared license policy and registry sources offline
+        shell: bash
+        run: |
+          if cargo deny --manifest-path engine/Cargo.toml --frozen --format json check --config deny.toml --hide-inclusion-graph licenses sources > output/dependency-ci/licenses.stdout 2> output/dependency-ci/licenses.jsonl; then
+            echo 'Declared license policy and source checks: PASS'
+          else
+            echo 'Dependency policy failed; diagnostics retained locally and not uploaded.'
+            exit 1
+          fi

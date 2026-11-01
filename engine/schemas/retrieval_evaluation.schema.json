@@ -1,0 +1,122 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "evaluation_specification",
+    "classification",
+    "top_k",
+    "judgments_exhaustive",
+    "thresholds",
+    "cases"
+  ],
+  "properties": {
+    "evaluation_specification": {
+      "const": "stm-retrieval-evaluation-1"
+    },
+    "classification": {
+      "enum": [
+        "maintainer_fixture",
+        "external_labels_unverified"
+      ]
+    },
+    "top_k": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 20
+    },
+    "judgments_exhaustive": {
+      "type": "boolean"
+    },
+    "thresholds": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "min_hit_rate_at_k",
+        "min_mean_recall_at_k",
+        "min_mean_reciprocal_rank_at_k",
+        "min_mean_precision_at_k"
+      ],
+      "properties": {
+        "min_hit_rate_at_k": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "min_mean_recall_at_k": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "min_mean_reciprocal_rank_at_k": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 1
+        },
+        "min_mean_precision_at_k": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 1
+        }
+      }
+    },
+    "cases": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 200,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "case_id",
+          "behavior",
+          "relevant_ids",
+          "forbidden_ids"
+        ],
+        "properties": {
+          "case_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.-]{0,63}$"
+          },
+          "behavior": {
+            "enum": [
+              "retrieve",
+              "abstain",
+              "reject"
+            ]
+          },
+          "query": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 2400
+          },
+          "synthetic_probe": {
+            "const": "identifier_marker"
+          },
+          "relevant_ids": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9-]{1,64}$"
+            }
+          },
+          "forbidden_ids": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9-]{1,64}$"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "component": "stm-neurosymbolic",
+  "engine_version": "0.3.0",
+  "kb_version": "17.0-NSAI.3",
+  "candidate_label": "RC6",
+  "schema_version": "2.0",
+  "publication_id": "17.0-r1",
+  "recorded_on": "2026-10-27",
+  "platform": "windows",
+  "tool_versions": {
+    "python": "3.10.11",
+    "cargo": "1.99.1",
+    "rustc": "1.99.1"
+  },
+  "source_revision": "working_tree_candidate_bound_by_release_manifest",
+  "results": [
+    {
+      "check": "rust_format",
+      "passed": true,
+      "exit_code": 0,
+      "rust_test_summaries": [],
+      "python_test_count": null
+    },
+    {
+      "check": "rust_check",
+      "passed": true,
+      "exit_code": 0,
+      "rust_test_summaries": [],
+      "python_test_count": null
+    },
+    {
+      "check": "rust_clippy",
+      "passed": true,
+      "exit_code": 0,
+      "rust_test_summaries": [],
+      "python_test_count": null
+    },
+    {
+      "check": "rust_tests",
+      "passed": true,
+      "exit_code": 0,
+      "rust_test_summaries": [
+        "test result: ok. 16 passed; 0 failed",
+        "test result: ok. 9 passed; 0 failed"
+      ],
+      "python_test_count": null
+    },
+    {
+      "check": "rust_release_build",
+      "passed": true,
+      "exit_code": 0,
+      "rust_test_summaries": [],
+      "python_test_count": null
+    },
+    {
+      "check": "official_mcp_sdk",
+      "passed": true,
+      "exit_code": 0,
+      "rust_test_summaries": [],
+      "python_test_count": null
+    },
+    {
+      "check": "reasoning_truth_tables",
+      "passed": true,
+      "exit_code": 0,
+      "rust_test_summaries": [],
+      "python_test_count": null
+    },
+    {
+      "check": "knowledge_change_impact",
+      "passed": true,
+      "exit_code": 0,
+      "rust_test_summaries": [],
+      "python_test_count": null
+    },
+    {
+      "check": "retrieval_smoke",
+      "passed": true,
+      "exit_code": 0,
+      "rust_test_summaries": [],
+      "python_test_count": null
+    },
+    {
+      "check": "python_tests",
+      "passed": true,
+      "exit_code": 0,
+      "rust_test_summaries": [],
+      "python_test_count": 49
+    },
+    {
+      "check": "knowledge_validation",
+      "passed": true,
+      "exit_code": 0,
+      "rust_test_summaries": [],
+      "python_test_count": null
+    },
+    {
+      "check": "release_structure",
+      "passed": true,
+      "exit_code": 0,
+      "rust_test_summaries": [],
+      "python_test_count": null
+    },
+    {
+      "check": "publication_layout",
+      "passed": true,
+      "exit_code": 0,
+      "rust_test_summaries": [],
+      "python_test_count": null
+    },
+    {
+      "check": "source_privacy",
+      "passed": true,
+      "exit_code": 0,
+      "rust_test_summaries": [],
+      "python_test_count": null
+    }
+  ],
+  "all_checks_passed": true,
+  "test_inputs": "synthetic public fixtures only",
+  "independent_acceptance": false,
+  "linux_ci_result_recorded": false,
+  "official_mcp_sdk_interoperability": true,
+  "real_mcp_client_acceptance": false,
+  "site_validation": false,
+  "legal_certification": false,
+  "notes": "Local engineering and cross-language reasoning replay evidence only. Default reasoning dates are frozen by the KB. Official SDK interoperability is tracked separately from desktop/client-host acceptance. CI and independent reviews remain separate acceptance requirements."
+}

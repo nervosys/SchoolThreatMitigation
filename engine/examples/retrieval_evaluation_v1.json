@@ -1,0 +1,190 @@
+{
+  "evaluation_specification": "stm-retrieval-evaluation-1",
+  "classification": "maintainer_fixture",
+  "top_k": 8,
+  "judgments_exhaustive": false,
+  "thresholds": {
+    "min_hit_rate_at_k": 1.0,
+    "min_mean_recall_at_k": 1.0,
+    "min_mean_reciprocal_rank_at_k": null,
+    "min_mean_precision_at_k": null
+  },
+  "cases": [
+    {
+      "case_id": "public-T01",
+      "behavior": "retrieve",
+      "relevant_ids": [
+        "T01"
+      ],
+      "forbidden_ids": [],
+      "query": "household firearm storage locked"
+    },
+    {
+      "case_id": "public-T02",
+      "behavior": "retrieve",
+      "relevant_ids": [
+        "T02"
+      ],
+      "forbidden_ids": [],
+      "query": "relatives friends shared care locations"
+    },
+    {
+      "case_id": "public-T03",
+      "behavior": "retrieve",
+      "relevant_ids": [
+        "T03"
+      ],
+      "forbidden_ids": [],
+      "query": "unsecured firearm vehicle storage"
+    },
+    {
+      "case_id": "public-T04",
+      "behavior": "retrieve",
+      "relevant_ids": [
+        "T04"
+      ],
+      "forbidden_ids": [],
+      "query": "credible communicated threat planning leakage"
+    },
+    {
+      "case_id": "public-T05",
+      "behavior": "retrieve",
+      "relevant_ids": [
+        "T05"
+      ],
+      "forbidden_ids": [],
+      "query": "malicious mistaken uncorroborated accusation"
+    },
+    {
+      "case_id": "public-T06",
+      "behavior": "retrieve",
+      "relevant_ids": [
+        "T06"
+      ],
+      "forbidden_ids": [],
+      "query": "arrival suspected weapon violence"
+    },
+    {
+      "case_id": "public-T07",
+      "behavior": "retrieve",
+      "relevant_ids": [
+        "T07"
+      ],
+      "forbidden_ids": [],
+      "query": "false missed acoustic visual firearm alarm"
+    },
+    {
+      "case_id": "public-T08",
+      "behavior": "retrieve",
+      "relevant_ids": [
+        "T08"
+      ],
+      "forbidden_ids": [],
+      "query": "hallways common areas protective instruction"
+    },
+    {
+      "case_id": "public-T09",
+      "behavior": "retrieve",
+      "relevant_ids": [
+        "T09"
+      ],
+      "forbidden_ids": [],
+      "query": "classroom door hardware egress failure"
+    },
+    {
+      "case_id": "public-T10",
+      "behavior": "retrieve",
+      "relevant_ids": [
+        "T10"
+      ],
+      "forbidden_ids": [],
+      "query": "disability protective instruction accessibility"
+    },
+    {
+      "case_id": "public-T11",
+      "behavior": "retrieve",
+      "relevant_ids": [
+        "T11"
+      ],
+      "forbidden_ids": [],
+      "query": "power communications outage"
+    },
+    {
+      "case_id": "public-T12",
+      "behavior": "retrieve",
+      "relevant_ids": [
+        "T12"
+      ],
+      "forbidden_ids": [],
+      "query": "ransomware spoofed alert access control"
+    },
+    {
+      "case_id": "public-T13",
+      "behavior": "retrieve",
+      "relevant_ids": [
+        "T13"
+      ],
+      "forbidden_ids": [],
+      "query": "life threatening bleeding EMS"
+    },
+    {
+      "case_id": "public-T14",
+      "behavior": "retrieve",
+      "relevant_ids": [
+        "T14"
+      ],
+      "forbidden_ids": [],
+      "query": "delayed police arrival active threat"
+    },
+    {
+      "case_id": "public-T15",
+      "behavior": "retrieve",
+      "relevant_ids": [
+        "T15"
+      ],
+      "forbidden_ids": [],
+      "query": "canine false indication injury"
+    },
+    {
+      "case_id": "public-T16",
+      "behavior": "retrieve",
+      "relevant_ids": [
+        "T16"
+      ],
+      "forbidden_ids": [],
+      "query": "misidentified unauthorized on site force"
+    },
+    {
+      "case_id": "public-T17",
+      "behavior": "retrieve",
+      "relevant_ids": [
+        "T17"
+      ],
+      "forbidden_ids": [],
+      "query": "AI generated accusation synthetic media"
+    },
+    {
+      "case_id": "public-T18",
+      "behavior": "retrieve",
+      "relevant_ids": [
+        "T18"
+      ],
+      "forbidden_ids": [],
+      "query": "reunification confusion sensitive data leakage"
+    },
+    {
+      "case_id": "no-match",
+      "behavior": "abstain",
+      "relevant_ids": [],
+      "forbidden_ids": [],
+      "query": "xylophonicalquasar"
+    },
+    {
+      "case_id": "disallowed",
+      "behavior": "reject",
+      "relevant_ids": [],
+      "forbidden_ids": [],
+      "synthetic_probe": "identifier_marker"
+    }
+  ]
+}

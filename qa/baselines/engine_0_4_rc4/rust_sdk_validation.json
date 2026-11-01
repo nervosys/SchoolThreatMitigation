@@ -1,0 +1,18 @@
+{
+  "assessments_independently_replayed": 8,
+  "dependency_scope": "dev_only",
+  "desktop_client_acceptance": false,
+  "fact_definitions_checked": 42,
+  "independent_acceptance": false,
+  "passed": true,
+  "platform": "windows",
+  "protocol": "2025-06-18",
+  "python_required": false,
+  "rejected_calls": 8,
+  "restart_reasoning_identical": true,
+  "sdk": "rmcp",
+  "sdk_version": "3.5.1",
+  "sessions_completed": 2,
+  "test": "official_rust_sdk_stdio_discovery_replay_rejections_and_restart",
+  "tool_calls_completed": 21
+}

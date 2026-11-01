@@ -1,0 +1,26 @@
+{
+  "schema_version": "2.0",
+  "independent_roles": [
+    {
+      "id": "L-01",
+      "role": "Public shared-learning governance; applies across the program rather than a specific shooting scenario."
+    },
+    {
+      "id": "WA-124",
+      "role": "Conditional security-staff policy requirement, evaluated independently of scenario selection."
+    },
+    {
+      "id": "WA-1241",
+      "role": "Conditional staff-reporting requirement, evaluated independently of scenario selection."
+    },
+    {
+      "id": "WA-1242",
+      "role": "Conditional provider-agreement requirement, evaluated independently of scenario selection."
+    },
+    {
+      "id": "G-008",
+      "role": "Global rule-integrity guardrail, evaluated for every assessment."
+    }
+  ],
+  "review_status": "draft_independent_review_pending"
+}
