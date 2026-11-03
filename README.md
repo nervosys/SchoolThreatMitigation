@@ -1,8 +1,29 @@
 # SchoolThreatMitigation -- Rust implementation
 
+![Historical school-safety briefing graphic, Version 14.5](media/production/thumbnail.png)
+
+*Original Version 14.5 briefing artwork. Current documents are Version 17.0 Revision 1; protective readiness still requires independent review.*
+
 The 0.4.0 RC10 implementation is Rust throughout its supported software workflow. It provides a versioned school-safety knowledgebase, 18 logical advisory rules over 42 Boolean facts, deterministic assessments, proof replay, read-only MCP, evaluation, review packets, privacy checks, and release tooling. No Python interpreter, Python package installation, or Python SDK is required.
 
 The public research scope remains 18 scenarios and 15 proposed controls. The inherited 56-hazard register remains publication material. This software does not authenticate assertions, certify legal compliance, authorize deployment, predict individuals, or control security equipment.
+
+## Published documents
+
+Current publications: **Version 17.0 Revision 1**. Each document is available as a PDF and an editable HTML source.
+
+| Document | PDF | HTML source |
+| --- | --- | --- |
+| School Safety Field Guide | [PDF](docs/advisory-v17.0-r1/School_Safety_Field_Guide_V17_0_R1.pdf) | [HTML](docs/advisory-v17.0-r1/School_Safety_Field_Guide_V17_0_R1.html) |
+| Threat Scenario and Countermeasure Engineering | [PDF](docs/advisory-v17.0-r1/Threat_Scenario_and_Countermeasure_Engineering_V17_0_R1.pdf) | [HTML](docs/advisory-v17.0-r1/Threat_Scenario_and_Countermeasure_Engineering_V17_0_R1.html) |
+| Executive Decision Brief | [PDF](docs/advisory-v17.0-r1/Executive_Decision_Brief_V17_0_R1.pdf) | [HTML](docs/advisory-v17.0-r1/Executive_Decision_Brief_V17_0_R1.html) |
+| Ninety-Day Qualification Pilot | [PDF](docs/advisory-v17.0-r1/Ninety_Day_Qualification_Pilot_V17_0_R1.pdf) | [HTML](docs/advisory-v17.0-r1/Ninety_Day_Qualification_Pilot_V17_0_R1.html) |
+| Constitutional Governance and Public Trust | [PDF](docs/advisory-v17.0-r1/Constitutional_Governance_and_Public_Trust_V17_0_R1.pdf) | [HTML](docs/advisory-v17.0-r1/Constitutional_Governance_and_Public_Trust_V17_0_R1.html) |
+| Threat-Driven Technology and AI | [PDF](docs/advisory-v17.0-r1/Threat_Driven_Technology_and_AI_V17_0_R1.pdf) | [HTML](docs/advisory-v17.0-r1/Threat_Driven_Technology_and_AI_V17_0_R1.html) |
+
+Version 17.0 briefing: [PowerPoint slides](media/v17.0/SchoolThreatMitigation_Briefing_V17_0.pptx) · [PDF](media/v17.0/SchoolThreatMitigation_Briefing_V17_0.pdf).
+
+Machine-readable references: [scenario register](governance/threat_scenarios_v17_0.json) · [control requirements](governance/control_requirements_v17_0.json) · [scenario-to-control mapping (CSV)](governance/threat_to_countermeasure_v17_0.csv).
 
 ## Build and check
 

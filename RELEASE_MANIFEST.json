@@ -50,9 +50,9 @@
       "sha256": "2e6d603b7e72ec9f3ea1015373da3a6beebd0c07770a9030ecbcc34a98a8f86f"
     },
     {
-      "bytes": 6362,
+      "bytes": 8395,
       "path": "README.md",
-      "sha256": "7f6c63095cc04a1bc5ecb3049b6c119d08adfedb6db2a3c9bb91a5e44d4512df"
+      "sha256": "6213ee9537606b54f0f20291fe8d4d18c84512048bc5ae1d638df0fa05ce2980"
     },
     {
       "bytes": 19992,
@@ -608,6 +608,11 @@
       "bytes": 12607,
       "path": "governance/threat_to_countermeasure_v17_0.csv",
       "sha256": "35288ead9b171f35750092fb32bb0dc2ca39fb52688a289c92cdf3148df45a20"
+    },
+    {
+      "bytes": 742903,
+      "path": "media/production/thumbnail.png",
+      "sha256": "c00ad64e942b3e88df10ff2e38a7c0f1c9ad9efa3ba2b050a6774be4d9913f9d"
     },
     {
       "bytes": 220,
@@ -1605,9 +1610,9 @@
       "sha256": "7eb310ffd5e8841ef22fd0a4d32d8d63f88c03a5a2d8d215aad32e24e9a38dda"
     },
     {
-      "bytes": 16217,
+      "bytes": 16255,
       "path": "scripts/release_files.json",
-      "sha256": "82df76897b539a7ccc005683a1c720110050ffafbd7bec175854813d440b8016"
+      "sha256": "32e202d004de3ad8d45068eec9b2931d604dc36ff22bda2148cca2acf8538d40"
     }
   ],
   "kb_version": "17.0-NSAI.4",
