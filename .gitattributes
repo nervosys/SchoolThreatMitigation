@@ -19,3 +19,4 @@ qa/baselines/** -text whitespace=cr-at-eol
 *.pptx binary
 *.zip binary
 *.exe binary
+docs/advisory-v17.0-r1/assets/fonts/OFL.txt -text whitespace=cr-at-eol

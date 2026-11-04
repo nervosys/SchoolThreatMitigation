@@ -18,7 +18,8 @@ The verifier reconstructs the entire expected packet from the trusted release an
 ## Included evidence
 
 - All 18 rules, 42 fact definitions, 20 source records, 18 scenarios, 15 controls, and 54 relationships in the fingerprinted knowledge payload.
-- 128 review items: the 113 knowledge records and 15 publication assets, covering six HTML/PDF pairs, the cover image, and the briefing PDF/PPTX.
+- The current layout-repair snapshot has 129 review items: 113 knowledge records and 16 publication artifacts, covering six HTML/PDF pairs, the cover illustration, the current cover preview, and the briefing PDF/PPTX. The six Typst print sources, shared style, fonts and license are also bound by the release manifest; review them alongside their PDFs using the [publication source guide](../../docs/advisory-v17.0-r1/README.md).
+- The retained sealed RC10 packet has its original 128 items and 15 publication assets. Its source and asset bindings remain historical, and its acceptance remains pending; it does not cover the refreshed layout snapshot.
 - Record hashes and JSON pointers into the packet's knowledge payload. Publication items identify relative public release paths and exact file hashes; their file content remains in the matching source distribution.
 - All 582 local per-rule absent/false/true combinations, with predicate proofs, missing facts, and mismatched facts. The same supported-language bounds as the change-impact tool apply; oversized comparisons fail before any packet is exported.
 - Current source-review status for the explicitly selected date. Existing approvals remain unreviewed; a historical knowledge reference date is not a new source review.

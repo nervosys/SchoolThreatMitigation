@@ -1,0 +1,52 @@
+{
+  "documents": [
+    {
+      "all_page_text_available": true,
+      "file": "docs/advisory-v17.0-r1/Constitutional_Governance_and_Public_Trust_V17_0_R1.pdf",
+      "pages": 1,
+      "pair_hashes_match": true,
+      "tagged": true
+    },
+    {
+      "all_page_text_available": true,
+      "file": "docs/advisory-v17.0-r1/Executive_Decision_Brief_V17_0_R1.pdf",
+      "pages": 1,
+      "pair_hashes_match": true,
+      "tagged": true
+    },
+    {
+      "all_page_text_available": true,
+      "file": "docs/advisory-v17.0-r1/Ninety_Day_Qualification_Pilot_V17_0_R1.pdf",
+      "pages": 2,
+      "pair_hashes_match": true,
+      "tagged": true
+    },
+    {
+      "all_page_text_available": true,
+      "file": "docs/advisory-v17.0-r1/School_Safety_Field_Guide_V17_0_R1.pdf",
+      "pages": 66,
+      "pair_hashes_match": true,
+      "tagged": true
+    },
+    {
+      "all_page_text_available": true,
+      "file": "docs/advisory-v17.0-r1/Threat_Driven_Technology_and_AI_V17_0_R1.pdf",
+      "pages": 2,
+      "pair_hashes_match": true,
+      "tagged": true
+    },
+    {
+      "all_page_text_available": true,
+      "file": "docs/advisory-v17.0-r1/Threat_Scenario_and_Countermeasure_Engineering_V17_0_R1.pdf",
+      "pages": 11,
+      "pair_hashes_match": true,
+      "tagged": true
+    }
+  ],
+  "independent_acceptance": false,
+  "method": "native_rust_hash_structure_and_text_checks",
+  "pages_checked": 83,
+  "passed": true,
+  "revision": "17.0-r1",
+  "visual_layout_review": "prior_QA_preserved_unchanged_assets_independent_review_pending"
+}

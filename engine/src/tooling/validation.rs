@@ -99,6 +99,33 @@ pub fn knowledge(root: &Path) -> Result<Value> {
         json!({"passed":true,"scenarios":kb.scenarios.len(),"controls":kb.controls.len(),"rules":kb.rules.rules.len(),"sources":kb.sources.len(),"facts":kb.fact_catalog.facts.len(),"schema_validation":"rust_jsonschema_and_typed_runtime","scenario_csv_matches":true,"independent_acceptance":false}),
     )
 }
+fn publication_assets(root: &Path, report: &Value, directory: &str) -> Result<()> {
+    let expected = [
+        "publication.typ",
+        "assets/cover_background.png",
+        "assets/field-guide-cover.png",
+        "assets/fonts/Inter-Regular.ttf",
+        "assets/fonts/Inter-Italic.ttf",
+        "assets/fonts/Inter-Bold.ttf",
+        "assets/fonts/Inter-BoldItalic.ttf",
+        "assets/fonts/OFL.txt",
+    ];
+    let assets = arr(report, "layout_assets")?;
+    if assets.len() != expected.len() {
+        return Err("Publication layout asset set incomplete".into());
+    }
+    for relative in expected {
+        let name = format!("{directory}/{relative}");
+        let matches: Vec<_> = assets.iter().filter(|a| a["file"] == name).collect();
+        if matches.len() != 1
+            || matches[0]["sha256"] != hash(&bytes(&safe(root, &name)?, MAX_FILE)?)
+        {
+            return Err("Publication layout asset hash mismatch".into());
+        }
+    }
+    Ok(())
+}
+
 pub fn publications(root: &Path) -> Result<Value> {
     let meta = metadata(root)?;
     let report = read(&root.join("qa/publication_revision.json"))?;
@@ -106,6 +133,7 @@ pub fn publications(root: &Path) -> Result<Value> {
     if docs.len() != 6 {
         return Err("Six publication pairs required".into());
     }
+    publication_assets(root, &report, text(&meta, "publication_directory")?)?;
     let mut records = vec![];
     let mut pages = 0;
     for record in docs {
@@ -113,6 +141,10 @@ pub fn publications(root: &Path) -> Result<Value> {
         let source = safe(root, text(record, "source")?)?;
         let source_data = bytes(&source, MAX_FILE)?;
         let pdf_data = bytes(&pdf, MAX_FILE)?;
+        let typst = safe(root, text(record, "typst_source")?)?;
+        if record["typst_sha256"] != hash(&bytes(&typst, MAX_FILE)?) {
+            return Err("Publication Typst source hash mismatch".into());
+        }
         if record["source_sha256"] != hash(&source_data) || record["pdf_sha256"] != hash(&pdf_data)
         {
             return Err("Publication render pair hash mismatch".into());
@@ -142,7 +174,7 @@ pub fn publications(root: &Path) -> Result<Value> {
         records.push(json!({"file":record["file"],"pages":count,"pair_hashes_match":true,"tagged":true,"all_page_text_available":true}));
     }
     Ok(
-        json!({"passed":true,"revision":meta["publication_id"],"pages_checked":pages,"documents":records,"method":"native_rust_hash_structure_and_text_checks","visual_layout_review":"prior_QA_preserved_unchanged_assets_independent_review_pending","independent_acceptance":false}),
+        json!({"passed":true,"revision":meta["publication_id"],"pages_checked":pages,"documents":records,"method":"native_rust_hash_structure_and_text_checks","visual_layout_review":"agent_layout_review_recorded_independent_review_pending","independent_acceptance":false}),
     )
 }
 pub fn sbom(root: &Path) -> Result<Value> {
@@ -373,4 +405,42 @@ pub fn run(root: &Path, binary: &Path, cargo: bool) -> Result<Value> {
     let report = json!({"component":"stm-rust-workflow","engine_version":env!("CARGO_PKG_VERSION"),"recorded_on":utc_date()?,"platform":std::env::consts::OS,"results":results,"all_checks_passed":results.iter().all(|v|v["passed"]==true),"production_languages":["Rust"],"python_required":false,"independent_acceptance":false,"desktop_client_acceptance":false,"linux_acceptance":false,"source_revision":"working_tree_candidate_bound_by_release_manifest","historical_cross_language_QA":"preserved_in_prior_release_archives_not_rerun"});
     write(&root.join("qa/implementation_validation.json"), &report)?;
     Ok(report)
+}
+
+#[cfg(test)]
+mod publication_tests {
+    use super::*;
+    #[test]
+    fn layout_bindings_reject_omitted_duplicate_and_modified_assets() {
+        let dir = tempfile::tempdir().unwrap();
+        let names = [
+            "publication.typ",
+            "assets/cover_background.png",
+            "assets/field-guide-cover.png",
+            "assets/fonts/Inter-Regular.ttf",
+            "assets/fonts/Inter-Italic.ttf",
+            "assets/fonts/Inter-Bold.ttf",
+            "assets/fonts/Inter-BoldItalic.ttf",
+            "assets/fonts/OFL.txt",
+        ];
+        let mut assets = vec![];
+        for name in names {
+            let path = dir.path().join("public").join(name);
+            fs::create_dir_all(path.parent().unwrap()).unwrap();
+            fs::write(&path, b"public synthetic asset").unwrap();
+            assets.push(
+                json!({"file":format!("public/{name}"),"sha256":hash(b"public synthetic asset")}),
+            );
+        }
+        let report = json!({"layout_assets":assets});
+        publication_assets(dir.path(), &report, "public").unwrap();
+        let mut omitted = report.clone();
+        omitted["layout_assets"].as_array_mut().unwrap().pop();
+        assert!(publication_assets(dir.path(), &omitted, "public").is_err());
+        let mut duplicate = report.clone();
+        duplicate["layout_assets"][1] = duplicate["layout_assets"][0].clone();
+        assert!(publication_assets(dir.path(), &duplicate, "public").is_err());
+        fs::write(dir.path().join("public/publication.typ"), b"modified asset").unwrap();
+        assert!(publication_assets(dir.path(), &report, "public").is_err());
+    }
 }

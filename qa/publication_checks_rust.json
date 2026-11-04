@@ -24,14 +24,14 @@
     {
       "all_page_text_available": true,
       "file": "docs/advisory-v17.0-r1/School_Safety_Field_Guide_V17_0_R1.pdf",
-      "pages": 66,
+      "pages": 68,
       "pair_hashes_match": true,
       "tagged": true
     },
     {
       "all_page_text_available": true,
       "file": "docs/advisory-v17.0-r1/Threat_Driven_Technology_and_AI_V17_0_R1.pdf",
-      "pages": 2,
+      "pages": 1,
       "pair_hashes_match": true,
       "tagged": true
     },
@@ -45,8 +45,8 @@
   ],
   "independent_acceptance": false,
   "method": "native_rust_hash_structure_and_text_checks",
-  "pages_checked": 83,
+  "pages_checked": 84,
   "passed": true,
   "revision": "17.0-r1",
-  "visual_layout_review": "prior_QA_preserved_unchanged_assets_independent_review_pending"
+  "visual_layout_review": "agent_layout_review_recorded_independent_review_pending"
 }

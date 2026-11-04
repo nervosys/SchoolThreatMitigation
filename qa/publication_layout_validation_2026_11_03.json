@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0",
+  "date": "2026-11-03",
+  "classification": "maintainer_publication_layout_repair",
+  "source_revision": "publication-layout-typst-sources-2026-11-03",
+  "base_commit": "26e5e38aa1389019fd78f25e371a5f438396d4f9",
+  "implementation_language": "Rust",
+  "typst_version": "0.15.1",
+  "font_version": "Inter 4.1",
+  "font_release_archive_sha256": "9883fdd4a49d4fb66bd8177ba6625ef9a64aa45899767dde3d36aa425756b11e",
+  "rust_checks": {
+    "formatting_passed": true,
+    "warning_denied_all_target_lint_passed": true,
+    "all_target_tests_passed": 68,
+    "ignored_subprocess_fixture_tests": 4,
+    "render_source_sha256": "1867b32e9feba058b357ed0b6ab3839095d27c983db2f1dda5f66cbf69d8f3fc",
+    "validation_source_sha256": "fb41fa0401cddee11736a6a6392be33d4f9caad5e12e8dadf049e96ef69e3af9",
+    "regression": "Missing, duplicate and modified layout assets rejected."
+  },
+  "engine_guidance": {
+    "expected_kb_version": "17.0-NSAI.4",
+    "knowledge_sha256": "2bcb941487fb138f3e014ff57a71140fcecd8e6bbe7fef5496abef2188b1f34c",
+    "canonical_governance_reference": "G-008",
+    "anonymous_school_facts_submitted": 0,
+    "new_logical_assessment_promoted": false,
+    "agent_selected_actions": [
+      "Repair presentation while preserving approved advisory rules.",
+      "Validate PDF/source/layout-asset bindings.",
+      "Run Rust regressions, privacy and publication checks."
+    ],
+    "scope_limit": "The 18 rules assess school assertions, not project planning or document quality."
+  },
+  "publication_validation": {
+    "passed": true,
+    "documents": 6,
+    "pages": 84,
+    "tagged_and_all_page_text_checked": true,
+    "typst_and_layout_asset_bindings_verified": true,
+    "actual_native_build_bindings_match": true,
+    "minimum_heuristic_token_coverage": 0.999387,
+    "all_page_text_bounds_passed": true,
+    "visual_review": "final_contact_sheets_and_selected_full_page_detail_review",
+    "independent_accessibility_acceptance": false
+  },
+  "privacy_scan": {
+    "passed": true,
+    "release_inventory_files": 342,
+    "complete_public_candidate_files": 355,
+    "findings": 0,
+    "method": "Rust raw text, JSON, PDF, XML and all presentation parts",
+    "limitation": "Heuristic checks do not replace image/context review or decode arbitrary encodings."
+  },
+  "secret_scan": {
+    "candidate_passed": true,
+    "candidate_findings": 0,
+    "candidate_scanner_errors": 0,
+    "staged_scan_required_before_commit": true,
+    "configuration": "default Gitleaks rules; no baseline suppression",
+    "staged_passed": true,
+    "staged_findings": 0,
+    "staged_scanner_errors": 0
+  },
+  "independent_editorial_and_accessibility_acceptance": false,
+  "independent_source_approval": false,
+  "publisher_authentication": false,
+  "legal_certification": false,
+  "deployment_authorization": false,
+  "owner": "TBD",
+  "publication_audit_completed": "2026-11-04"
+}

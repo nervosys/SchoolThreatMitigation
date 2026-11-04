@@ -28,9 +28,9 @@ Run `stm-tool --help` for flags. Common source-root selection is `--root DIRECTO
 | `pack-source`, `pack-native`, `extract` | Native deterministic archives and bounded extraction |
 | `verify-native`, `extract-native` | [Pinned native package checks and staging](docs/NATIVE_PACKAGES.md) |
 | `sbom`, `publications` | Cargo dependency inventory and publication pair/structure/text checks |
-| `render-publications` | Optional native orchestration of Pandoc/Typst into `output/pdf-rust` |
+| `render-publications` | Native compilation of checked-in Typst print sources into `output/pdf-rust` |
 
-Normal runtime, verification, tests, and packaging require no document-rendering executables. Rebuilding publications optionally requires Pandoc and Typst and must receive fresh visual/accessibility review. Existing published assets retain their original hashes and prior QA; the migration does not claim a new visual review.
+Normal runtime, verification, tests, and packaging require no document-rendering executables. Rebuilding publications optionally requires Typst 0.15.1; the six editable sources, shared theme and licensed fonts are checked in. See the [publication build guide](../docs/advisory-v17.0-r1/README.md). The 3 November 2026 layout repair has separate current render evidence; historical QA retains its original bindings. Fresh independent editorial/accessibility acceptance remains pending.
 
 The second interpreter does not call the engine evaluator. It reconstructs every predicate proof, finding, summary, source-review result, fingerprint, and non-authorization flag. The implementations share Rust types and date parsing; this is separate implementation, not cross-language or organizational independence.
 

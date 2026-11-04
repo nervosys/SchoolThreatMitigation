@@ -31,8 +31,12 @@ The working briefing archive has had local printer settings and authorship/times
 
 ## Rust tooling correction (engine 0.4.0)
 
-The R1 publications predate the Rust tooling correction. Any software instructions referring to Python scripts are superseded by the native commands in engine/README.md. The six R1 HTML/PDF pairs have not been rerendered or presented as newly visually reviewed during this migration. Use the 0.4 source manifest and native QA for current software evidence.
+The R1 publications predate the Rust tooling correction. Any software instructions referring to Python scripts are superseded by the native commands in engine/README.md. The initial Rust migration retained the earlier six R1 HTML/PDF pairs. A separate layout repair on 3 November 2026 rebuilds the PDFs from checked-in Typst sources; see the source guide and current render evidence. Use the 0.4 source manifest and native QA for current software evidence.
 
 ## KB 17.0-NSAI.4 countermeasure restrictions
 
-Current proposal coverage is in engine/docs/COUNTERMEASURE_PROPOSALS.md. Non-force UxS may be reviewed with privacy and operating-authority safeguards. Automatic teargas/chemical-agent release and self-sealing hallway use for automatic confinement/detention are blocked concepts. Earlier publication references are not deployment approval. Existing R1 publication assets remain unchanged; independent medical, fire/building, accessibility, rights and legal review is still required.
+Current proposal coverage is in engine/docs/COUNTERMEASURE_PROPOSALS.md. Non-force UxS may be reviewed with privacy and operating-authority safeguards. Automatic teargas/chemical-agent release and self-sealing hallway use for automatic confinement/detention are blocked concepts. Earlier publication references are not deployment approval. The layout repair changes presentation, not these restrictions; independent medical, fire/building, accessibility, rights and legal review is still required.
+
+## Layout repair and editable print sources (3 November 2026)
+
+The former authoring pipeline removed HTML styles and images before converting to Typst. The current six checked-in `.typ` documents and shared `publication.typ` restore cover art, styled cards, navigation, table formatting and page divisions while retaining the R1 corrections. The README now displays the current field-guide cover, rather than Version 14.5 artwork. See the [source and build guide](advisory-v17.0-r1/README.md) and [source/PDF bindings](../qa/publication_revision.json). Prior QA is preserved under `qa/baselines/publication_17_0_r1_before_layout_repair/`. Agent layout review does not establish independent editorial or accessibility acceptance.

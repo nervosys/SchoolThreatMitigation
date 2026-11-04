@@ -1,8 +1,8 @@
 # SchoolThreatMitigation -- Rust implementation
 
-![Historical school-safety briefing graphic, Version 14.5](media/production/thumbnail.png)
+[<img src="docs/advisory-v17.0-r1/assets/field-guide-cover.png" alt="School Safety Field Guide — Version 17.0 Revision 1" width="440">](docs/advisory-v17.0-r1/School_Safety_Field_Guide_V17_0_R1.pdf)
 
-*Original Version 14.5 briefing artwork. Current documents are Version 17.0 Revision 1; protective readiness still requires independent review.*
+*Current field-guide cover, Version 17.0 Revision 1. Independent acceptance and site validation remain pending.*
 
 The 0.4.0 RC10 implementation is Rust throughout its supported software workflow. It provides a versioned school-safety knowledgebase, 18 logical advisory rules over 42 Boolean facts, deterministic assessments, proof replay, read-only MCP, evaluation, review packets, privacy checks, and release tooling. No Python interpreter, Python package installation, or Python SDK is required.
 
@@ -10,16 +10,16 @@ The public research scope remains 18 scenarios and 15 proposed controls. The inh
 
 ## Published documents
 
-Current publications: **Version 17.0 Revision 1**. Each document is available as a PDF and an editable HTML source.
+Current publications: **Version 17.0 Revision 1**. Each document includes a PDF, editable Typst print source, and HTML web source. See the [source and build guide](docs/advisory-v17.0-r1/README.md) and [layout repair checks](qa/publication_layout_validation_2026_11_03.json).
 
-| Document | PDF | HTML source |
-| --- | --- | --- |
-| School Safety Field Guide | [PDF](docs/advisory-v17.0-r1/School_Safety_Field_Guide_V17_0_R1.pdf) | [HTML](docs/advisory-v17.0-r1/School_Safety_Field_Guide_V17_0_R1.html) |
-| Threat Scenario and Countermeasure Engineering | [PDF](docs/advisory-v17.0-r1/Threat_Scenario_and_Countermeasure_Engineering_V17_0_R1.pdf) | [HTML](docs/advisory-v17.0-r1/Threat_Scenario_and_Countermeasure_Engineering_V17_0_R1.html) |
-| Executive Decision Brief | [PDF](docs/advisory-v17.0-r1/Executive_Decision_Brief_V17_0_R1.pdf) | [HTML](docs/advisory-v17.0-r1/Executive_Decision_Brief_V17_0_R1.html) |
-| Ninety-Day Qualification Pilot | [PDF](docs/advisory-v17.0-r1/Ninety_Day_Qualification_Pilot_V17_0_R1.pdf) | [HTML](docs/advisory-v17.0-r1/Ninety_Day_Qualification_Pilot_V17_0_R1.html) |
-| Constitutional Governance and Public Trust | [PDF](docs/advisory-v17.0-r1/Constitutional_Governance_and_Public_Trust_V17_0_R1.pdf) | [HTML](docs/advisory-v17.0-r1/Constitutional_Governance_and_Public_Trust_V17_0_R1.html) |
-| Threat-Driven Technology and AI | [PDF](docs/advisory-v17.0-r1/Threat_Driven_Technology_and_AI_V17_0_R1.pdf) | [HTML](docs/advisory-v17.0-r1/Threat_Driven_Technology_and_AI_V17_0_R1.html) |
+| Document | PDF | Typst source | HTML source |
+| --- | --- | --- | --- |
+| School Safety Field Guide | [PDF](docs/advisory-v17.0-r1/School_Safety_Field_Guide_V17_0_R1.pdf) | [Typst](docs/advisory-v17.0-r1/School_Safety_Field_Guide_V17_0_R1.typ) | [HTML](docs/advisory-v17.0-r1/School_Safety_Field_Guide_V17_0_R1.html) |
+| Threat Scenario and Countermeasure Engineering | [PDF](docs/advisory-v17.0-r1/Threat_Scenario_and_Countermeasure_Engineering_V17_0_R1.pdf) | [Typst](docs/advisory-v17.0-r1/Threat_Scenario_and_Countermeasure_Engineering_V17_0_R1.typ) | [HTML](docs/advisory-v17.0-r1/Threat_Scenario_and_Countermeasure_Engineering_V17_0_R1.html) |
+| Executive Decision Brief | [PDF](docs/advisory-v17.0-r1/Executive_Decision_Brief_V17_0_R1.pdf) | [Typst](docs/advisory-v17.0-r1/Executive_Decision_Brief_V17_0_R1.typ) | [HTML](docs/advisory-v17.0-r1/Executive_Decision_Brief_V17_0_R1.html) |
+| Ninety-Day Qualification Pilot | [PDF](docs/advisory-v17.0-r1/Ninety_Day_Qualification_Pilot_V17_0_R1.pdf) | [Typst](docs/advisory-v17.0-r1/Ninety_Day_Qualification_Pilot_V17_0_R1.typ) | [HTML](docs/advisory-v17.0-r1/Ninety_Day_Qualification_Pilot_V17_0_R1.html) |
+| Constitutional Governance and Public Trust | [PDF](docs/advisory-v17.0-r1/Constitutional_Governance_and_Public_Trust_V17_0_R1.pdf) | [Typst](docs/advisory-v17.0-r1/Constitutional_Governance_and_Public_Trust_V17_0_R1.typ) | [HTML](docs/advisory-v17.0-r1/Constitutional_Governance_and_Public_Trust_V17_0_R1.html) |
+| Threat-Driven Technology and AI | [PDF](docs/advisory-v17.0-r1/Threat_Driven_Technology_and_AI_V17_0_R1.pdf) | [Typst](docs/advisory-v17.0-r1/Threat_Driven_Technology_and_AI_V17_0_R1.typ) | [HTML](docs/advisory-v17.0-r1/Threat_Driven_Technology_and_AI_V17_0_R1.html) |
 
 Version 17.0 briefing: [PowerPoint slides](media/v17.0/SchoolThreatMitigation_Briefing_V17_0.pptx) · [PDF](media/v17.0/SchoolThreatMitigation_Briefing_V17_0.pdf).
 
@@ -62,7 +62,7 @@ The bridge verifies both artifacts before launch, accepts only approved anonymou
 - [Implementation status](docs/IMPLEMENTATION_STATUS.md) and [completion plan](docs/IMPLEMENTATION_PLAN.md)
 - Current publications: `docs/advisory-v17.0-r1/`; briefing: `media/v17.0/`.
 
-Publication R1 predates this software migration. Its references to a cross-language checker are superseded by the current Rust guides and [errata](docs/PUBLICATION_ERRATA.md). Publication contents and prior visual QA are preserved rather than silently relabeled.
+Publication R1 predates this software migration. Its references to a cross-language checker are superseded by the current Rust guides and [errata](docs/PUBLICATION_ERRATA.md). The 3 November 2026 layout repair uses checked-in Typst sources; [current render evidence](qa/publication_revision.json) binds sources, fonts, assets and PDFs. Earlier visual QA is retained under `qa/baselines/publication_17_0_r1_before_layout_repair/` with its original hashes.
 
 The Python-era 0.3 tools and evidence remain in retained historical archives. They are excluded from the 0.4 supported source distribution and current workflow. No optional cross-language test is run. Current local results are recorded in `qa/implementation_validation.json`; independent review, clean-machine/selected-host acceptance, signing/distribution policy, and release approval remain pending. Code and editable sources retain AGPL-3.0-or-later licensing and existing source attribution.
 
