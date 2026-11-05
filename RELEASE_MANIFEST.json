@@ -50,9 +50,9 @@
       "sha256": "2e6d603b7e72ec9f3ea1015373da3a6beebd0c07770a9030ecbcc34a98a8f86f"
     },
     {
-      "bytes": 9332,
+      "bytes": 10328,
       "path": "README.md",
-      "sha256": "6abe5a93a0dbbaf0bf010ca93879f369b85eb53bb02aa9315ea8ac4eec37786e"
+      "sha256": "e3db19b335da0ead7f9a4ded0b09a1585c4164d1a2b64195298f9358c888a949"
     },
     {
       "bytes": 19992,
@@ -75,6 +75,11 @@
       "sha256": "def93032de08b4eac610d5ceb7283b255a2ce67a74f79ace08a6c54591a3072b"
     },
     {
+      "bytes": 5236,
+      "path": "docs/CONSTITUTIONAL_RIGHTS.md",
+      "sha256": "f609faad873accb1391c0de81947a243b0f1f7219cde25f6d0b94f80ea267207"
+    },
+    {
       "bytes": 48851,
       "path": "docs/IMPLEMENTATION_PLAN.md",
       "sha256": "e2d4320e1c6ce1bbb7e3b0cc93d589f766fd1f84129dbdd1f24af58dffc207fe"
@@ -85,9 +90,9 @@
       "sha256": "0cd7fd330edfb66495657c14d191c9d37fb50d0ee381ef41c94aa11d3ff6c85c"
     },
     {
-      "bytes": 5453,
+      "bytes": 6415,
       "path": "docs/PUBLICATION_ERRATA.md",
-      "sha256": "e99e118bbd7be35d992ae54b219406000113bef621933dc0218eea7629dbc280"
+      "sha256": "c30aace901b36695ac264cb721f277c5511dea206586e95ee978ee14a425d299"
     },
     {
       "bytes": 893,
@@ -95,99 +100,99 @@
       "sha256": "bb2c6301d8d35e8363ed61ef21f5ff51536879b1223999494667c19aede26788"
     },
     {
-      "bytes": 7170,
+      "bytes": 9455,
       "path": "docs/advisory-v17.0-r1/Constitutional_Governance_and_Public_Trust_V17_0_R1.html",
-      "sha256": "2532ecbfea9db4409dd1d046c180ac5bdbb88389d2f191468c6cd6b822d91fea"
+      "sha256": "df15753998d33cec9791c2a98756aac6b24f78dd0946d4deba6524b07ae6bd99"
     },
     {
-      "bytes": 42095,
+      "bytes": 49206,
       "path": "docs/advisory-v17.0-r1/Constitutional_Governance_and_Public_Trust_V17_0_R1.pdf",
-      "sha256": "9999d976e9cbbc63261e3b1f0b73b27aa5889906214661dab3581391378b4e14"
+      "sha256": "e5c96195d6b674bc8dd653cc452f0babe34644c44ca702232063a5c69fb33ced"
     },
     {
-      "bytes": 4369,
+      "bytes": 6502,
       "path": "docs/advisory-v17.0-r1/Constitutional_Governance_and_Public_Trust_V17_0_R1.typ",
-      "sha256": "f745352c3a5e247ab9107304054ade71ee9ec13ec2f86887c404e9beb58c1e2b"
+      "sha256": "21a1cbf74ca51580754b36c186b41d2ca1f199ab85a405e7d15c05640394c3ba"
     },
     {
-      "bytes": 6459,
+      "bytes": 6969,
       "path": "docs/advisory-v17.0-r1/Executive_Decision_Brief_V17_0_R1.html",
-      "sha256": "94c9928973cf329a00c91e996cfbf6edacebfdfc5f00af301fc0e234975b427b"
+      "sha256": "bc52562b4d8b446fe0ac05b7e58e685b40ed72410bb1f5254db511bd11674981"
     },
     {
-      "bytes": 40338,
+      "bytes": 41192,
       "path": "docs/advisory-v17.0-r1/Executive_Decision_Brief_V17_0_R1.pdf",
-      "sha256": "43a3aef426070d6717a0d812dc7aedd48d324f733b859535118c60537f2d1d2b"
+      "sha256": "28327e0fa986b7992dd448654ea09d483b0f65a395c23fc70884f42e2a8f6874"
     },
     {
-      "bytes": 3651,
+      "bytes": 4124,
       "path": "docs/advisory-v17.0-r1/Executive_Decision_Brief_V17_0_R1.typ",
-      "sha256": "715b1b77758255e0643cfb766d947046870e260b7bd0ea916843a9d1e6c052f8"
+      "sha256": "7669a10718e4481bfbd5c502f31886277f41a2bc132548edb26cc55e4b317983"
     },
     {
-      "bytes": 7454,
+      "bytes": 7964,
       "path": "docs/advisory-v17.0-r1/Ninety_Day_Qualification_Pilot_V17_0_R1.html",
-      "sha256": "77881ab325cb3f502f00435e926f0934be45e9bd9b373f5581148c613c7bb392"
+      "sha256": "1fcb6c261c148c2d42a3d11332cf5ce3ed457d642e64c25dfdd7eff608b0c37e"
     },
     {
-      "bytes": 45565,
+      "bytes": 46522,
       "path": "docs/advisory-v17.0-r1/Ninety_Day_Qualification_Pilot_V17_0_R1.pdf",
-      "sha256": "85ef5f7c2c2a4bb3ae8042432cf18ce3f1f13d88a06f2eca0a94d37d660aa267"
+      "sha256": "a477a7dc2e72089bf6105ccf8e2f999a80a8c4e3b0562418b0803d9887e5404d"
     },
     {
-      "bytes": 4677,
+      "bytes": 5135,
       "path": "docs/advisory-v17.0-r1/Ninety_Day_Qualification_Pilot_V17_0_R1.typ",
-      "sha256": "e59a7abeb3277277c6feac9d1a04032faecfd1e7701e77b4a58f2ccac8d917d9"
+      "sha256": "f5e2cd623cc01136dfc8e55039c40e695bbc1792d9fe4c41a3f2af14d09bc7ba"
     },
     {
-      "bytes": 2344,
+      "bytes": 2669,
       "path": "docs/advisory-v17.0-r1/README.md",
-      "sha256": "f0201ad70bc7a9f9b8fbb5ec317542c9958063c9ada25b8f95291360fa46e5ae"
+      "sha256": "59728bd506a58bc0e4d3f4c8435ec830cfb2c55e026cd9aff1e89752b7800f34"
     },
     {
-      "bytes": 375505,
+      "bytes": 376015,
       "path": "docs/advisory-v17.0-r1/School_Safety_Field_Guide_V17_0_R1.html",
-      "sha256": "2bd4abe3ea6444c92e38e87d0166435b48d0fc7a0715e670491114c5fe9807ff"
+      "sha256": "30bb5e74f4a7539f515b6fc9db34c6851ea3c855e3020d85d7cb5a0abd327df9"
     },
     {
-      "bytes": 3271875,
+      "bytes": 3272661,
       "path": "docs/advisory-v17.0-r1/School_Safety_Field_Guide_V17_0_R1.pdf",
-      "sha256": "1a552d67ee29009608b51c167f97a20a6dde9b4f6db5aec08d7272ebf4c4635e"
+      "sha256": "455bd028ec46e75a176467597b3844b69f92da196b167d921adce02eab3232af"
     },
     {
-      "bytes": 282196,
+      "bytes": 282654,
       "path": "docs/advisory-v17.0-r1/School_Safety_Field_Guide_V17_0_R1.typ",
-      "sha256": "f79d818128250b3b1956b0d5b3f85422392d058fe79b21659e87d30d0d9b194b"
+      "sha256": "4838767d243c2fe14f55ffedd1906628903f7e0e75ca6cc43fa21a2d743e28be"
     },
     {
-      "bytes": 6947,
+      "bytes": 8771,
       "path": "docs/advisory-v17.0-r1/Threat_Driven_Technology_and_AI_V17_0_R1.html",
-      "sha256": "5c011e0a1e54a9ddcbe898efd15695f4fc2a3130fa40aebcbffeb064551c2028"
+      "sha256": "458f57bcda875ed78dae451e2f2bb834229695995ac99b97f3515f03b9f350a0"
     },
     {
-      "bytes": 40086,
+      "bytes": 47363,
       "path": "docs/advisory-v17.0-r1/Threat_Driven_Technology_and_AI_V17_0_R1.pdf",
-      "sha256": "eb1db0b5a75aba850c10016c3417ada574f4aa3b72e0f7517ff745e3800b80b9"
+      "sha256": "de6e3a5e3cde2d71a49b2d53f6360fd78637345557331762fee6e3a5f3bbfc6f"
     },
     {
-      "bytes": 4224,
+      "bytes": 5940,
       "path": "docs/advisory-v17.0-r1/Threat_Driven_Technology_and_AI_V17_0_R1.typ",
-      "sha256": "e8ab2d16bc56d1a298bb0b688e8288531113dc0f7cb97017abb43254a9057a3a"
+      "sha256": "34b039eb3f983bd810199ab36201633d45bd1efdbc235db4f48b177ec9566f57"
     },
     {
-      "bytes": 42892,
+      "bytes": 43402,
       "path": "docs/advisory-v17.0-r1/Threat_Scenario_and_Countermeasure_Engineering_V17_0_R1.html",
-      "sha256": "022330d10f17bf32d65eaabd1a421e04345a5cd3658c7ea1c9e3026458b8258f"
+      "sha256": "47284334091b8934eec73d0a937453be03d4441f0b11c56debf42b0e3a0aa0dd"
     },
     {
-      "bytes": 214175,
+      "bytes": 215005,
       "path": "docs/advisory-v17.0-r1/Threat_Scenario_and_Countermeasure_Engineering_V17_0_R1.pdf",
-      "sha256": "6794c639c9beac77214e87e9211295469210ce4f13873b07bb90d602b9639127"
+      "sha256": "3b7925ced034400473913bf3ecb0688ca4a49ab02dc102451169b620835cdc33"
     },
     {
-      "bytes": 37004,
+      "bytes": 37462,
       "path": "docs/advisory-v17.0-r1/Threat_Scenario_and_Countermeasure_Engineering_V17_0_R1.typ",
-      "sha256": "e3c2df25e66ea898c43381b73bd7c6f040c9d95600c3bcda4efed13828e8542b"
+      "sha256": "72e84a28cb597d936aa8fab04ffc1df6bc492551b973d63c4376c5f6c24049ae"
     },
     {
       "bytes": 2005359,
@@ -295,9 +300,9 @@
       "sha256": "8230f6c8e6828f49d5f8171f56e168ebe762c2abac05c050ad66d327c985c037"
     },
     {
-      "bytes": 6341,
+      "bytes": 6338,
       "path": "engine/docs/INDEPENDENT_REVIEW.md",
-      "sha256": "18a61bf3533aac33432a060d6475b02ef50cfc32fb5fc2e5d297e41236862ba1"
+      "sha256": "450ea2cd42e3832cee9fd7b6ea821a90858870376f17046371503409d9dcb3b2"
     },
     {
       "bytes": 4747,
@@ -310,9 +315,9 @@
       "sha256": "972d83fa2be90f2a6b91248f129c49746ad737af6de154d08b5b72afd76c7e8f"
     },
     {
-      "bytes": 5490,
+      "bytes": 5780,
       "path": "engine/docs/KNOWLEDGE_GOVERNANCE.md",
-      "sha256": "3d95b214512ef7110c4a54c867c0d4cb6f95e0fe87722357bea7b0625bf90c22"
+      "sha256": "7cc5b539e4bfa63babac5b107d5958c3317f5c3aa712a4308e74196bde291b91"
     },
     {
       "bytes": 4427,
@@ -1585,9 +1590,29 @@
       "sha256": "38e30ab650e296e7ed38851fd0b7b78110da668115488399ef3aefa83ec967c7"
     },
     {
+      "bytes": 4106,
+      "path": "qa/baselines/publication_17_0_r1_before_rights_refinement/publication_checks.json",
+      "sha256": "50abf5b0773c5289552dc82b39a82c117bfb441eb3fff89f25c32709cc4f34af"
+    },
+    {
+      "bytes": 1536,
+      "path": "qa/baselines/publication_17_0_r1_before_rights_refinement/publication_checks_rust.json",
+      "sha256": "cc65039db9d55f9f454789275091e5493bfbcda530a18881a921eb929ddaa038"
+    },
+    {
+      "bytes": 6242,
+      "path": "qa/baselines/publication_17_0_r1_before_rights_refinement/publication_revision.json",
+      "sha256": "19cfffd45731462768d35a9747ec897b3058d1b1ef0c7b24d14ae91c40c3c728"
+    },
+    {
       "bytes": 10945,
       "path": "qa/baselines/release_manifest_v17_0.json",
       "sha256": "fcc01f601207d5330c79dd3608437ecb001f596bce9a2958b69a6954f1bf3b1e"
+    },
+    {
+      "bytes": 4370,
+      "path": "qa/constitutional_rights_validation_2026_11_04.json",
+      "sha256": "48b90a475dd000b2f5504770428dcfffcc533a564413921c42331f1fa253251d"
     },
     {
       "bytes": 224851,
@@ -1640,14 +1665,14 @@
       "sha256": "14add5ff92a487e7432f88cbe566645a3d4d8c8abfbfa7ac33a40e46d2ea95c3"
     },
     {
-      "bytes": 4106,
+      "bytes": 4108,
       "path": "qa/publication_checks.json",
-      "sha256": "50abf5b0773c5289552dc82b39a82c117bfb441eb3fff89f25c32709cc4f34af"
+      "sha256": "2afe5a7a61fd590ad889b8ce6b381ef4c80b1404e20b3f27cebcf406e7532ffe"
     },
     {
       "bytes": 1536,
       "path": "qa/publication_checks_rust.json",
-      "sha256": "cc65039db9d55f9f454789275091e5493bfbcda530a18881a921eb929ddaa038"
+      "sha256": "8d4c416b99436d92f550fde0bf8685c075dd975a026c2e641f44a4c309f3d5cd"
     },
     {
       "bytes": 2902,
@@ -1655,9 +1680,9 @@
       "sha256": "79e08e764f6f7ef41b3f226ad7bac26781671dfff4a93e6e72141ca5eca1bb7f"
     },
     {
-      "bytes": 6242,
+      "bytes": 5268,
       "path": "qa/publication_revision.json",
-      "sha256": "19cfffd45731462768d35a9747ec897b3058d1b1ef0c7b24d14ae91c40c3c728"
+      "sha256": "d4c946eeb9e7a89a6f5463826b2c6de96e7ac5d9f810bb6a0c6a8976db55d3ff"
     },
     {
       "bytes": 502,
@@ -1668,6 +1693,41 @@
       "bytes": 7559,
       "path": "qa/retrieval_evaluation.json",
       "sha256": "15651f77221f9abbbde20c780d4759aa5fc39d957a6ec1073abda4c4adda2154"
+    },
+    {
+      "bytes": 2080,
+      "path": "qa/rights_refinement_2026_11_04/README.md",
+      "sha256": "77a6b52e5c87dbf94be4021b3e2658fb4dd4867fda80e248cafcbc29e2881578"
+    },
+    {
+      "bytes": 38141,
+      "path": "qa/rights_refinement_2026_11_04/assessment.json",
+      "sha256": "30cdc996b1c414331dbc46eef71281acf9684f89187f3d22a67a7008d3f0497e"
+    },
+    {
+      "bytes": 38150,
+      "path": "qa/rights_refinement_2026_11_04/profiling-assessment.json",
+      "sha256": "ecd2f4e9becb0b75cddbc9a740742abdddbd3bf805258294a7a292861e0c0188"
+    },
+    {
+      "bytes": 422,
+      "path": "qa/rights_refinement_2026_11_04/profiling-proof-verification.json",
+      "sha256": "957325ab985bc5f718f10bc64be3679d25aaa8e2989edc2814c571650948d97f"
+    },
+    {
+      "bytes": 138,
+      "path": "qa/rights_refinement_2026_11_04/profiling-request.json",
+      "sha256": "ff643ab62770ca90687ad096e19cc2d7cd0ee736cbec9d5e14b4f7dabbf81eee"
+    },
+    {
+      "bytes": 422,
+      "path": "qa/rights_refinement_2026_11_04/proof_verification.json",
+      "sha256": "957325ab985bc5f718f10bc64be3679d25aaa8e2989edc2814c571650948d97f"
+    },
+    {
+      "bytes": 129,
+      "path": "qa/rights_refinement_2026_11_04/request.json",
+      "sha256": "a1b46034d30019f852e1f4a3750f95c6d898b0e5f22a0bd8f4b5ed5c6ed0ab67"
     },
     {
       "bytes": 525,
@@ -1692,7 +1752,7 @@
     {
       "bytes": 767,
       "path": "release.json",
-      "sha256": "ae9c99bf294a59b0fd86b2446773ffdeb8b3b1c8e3c371fec83f7ee25d812814"
+      "sha256": "0613d79b87002b4e07c3e8bd8fccafc0e5ce9c0abea35fe544eee9278b75d609"
     },
     {
       "bytes": 998,
@@ -1700,9 +1760,9 @@
       "sha256": "7eb310ffd5e8841ef22fd0a4d32d8d63f88c03a5a2d8d215aad32e24e9a38dda"
     },
     {
-      "bytes": 17490,
+      "bytes": 18279,
       "path": "scripts/release_files.json",
-      "sha256": "2584f294fa08f02f81722f1e71662b8cada322eb493d9bf339510b1417a8abb7"
+      "sha256": "7697b2563cc94cba21396547e2c505eaaabbd6f69f59f1facab8a1382206f5c8"
     }
   ],
   "kb_version": "17.0-NSAI.4",

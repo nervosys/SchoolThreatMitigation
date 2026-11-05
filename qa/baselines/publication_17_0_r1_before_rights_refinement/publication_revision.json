@@ -1,0 +1,112 @@
+{
+  "revision": "17.0-r1",
+  "layout_revision": "2026-11-03",
+  "renderer": "Typst 0.15.1; checked-in editable print sources",
+  "font_profile": "Inter 4.1 bundled; system fonts ignored; Typst built-in DejaVu Sans Mono",
+  "creation_timestamp": 1793664000,
+  "network_resources_used_during_compile": false,
+  "independent_review": false,
+  "historical_qa_directory": "qa/baselines/publication_17_0_r1_before_layout_repair",
+  "layout_assets": [
+    {
+      "file": "docs/advisory-v17.0-r1/assets/cover_background.png",
+      "sha256": "6d5091d8158e1b48b5e8316b95e9edfc71252f5956cd41a941bf9a738de46223"
+    },
+    {
+      "file": "docs/advisory-v17.0-r1/assets/field-guide-cover.png",
+      "sha256": "3c97d3248c5efd70118fd7cd8a8eac214d3dc5b6892c28982808d29e39c00992"
+    },
+    {
+      "file": "docs/advisory-v17.0-r1/assets/fonts/Inter-Bold.ttf",
+      "sha256": "288316099b1e0a47a4716d159098005eef7c0066921f34e3200393dbdb01947f"
+    },
+    {
+      "file": "docs/advisory-v17.0-r1/assets/fonts/Inter-BoldItalic.ttf",
+      "sha256": "948405a16cdc62701da5f4005ed068ca5f4d27061d98f7974ccfc37831d9581d"
+    },
+    {
+      "file": "docs/advisory-v17.0-r1/assets/fonts/Inter-Italic.ttf",
+      "sha256": "bbc051dd204b5019a1aa0bc0ae2aa8a05ab13e7a3f979fa357631dc7feb6833a"
+    },
+    {
+      "file": "docs/advisory-v17.0-r1/assets/fonts/Inter-Regular.ttf",
+      "sha256": "40d692fce188e4471e2b3cba937be967878f631ad3ebbbdcd587687c7ebe0c82"
+    },
+    {
+      "file": "docs/advisory-v17.0-r1/assets/fonts/OFL.txt",
+      "sha256": "262481e844521b326f5ecd053e59b98c8b2da78c8ee1bdbb6e8174305e54935a"
+    },
+    {
+      "file": "docs/advisory-v17.0-r1/publication.typ",
+      "sha256": "65901e9e39ae7fd0adcf64fe8b8b89c9f8aa98d053910c268873fd7d5ed024b6"
+    }
+  ],
+  "documents": [
+    {
+      "file": "docs/advisory-v17.0-r1/Constitutional_Governance_and_Public_Trust_V17_0_R1.pdf",
+      "pages": 1,
+      "source": "docs/advisory-v17.0-r1/Constitutional_Governance_and_Public_Trust_V17_0_R1.html",
+      "source_sha256": "2532ecbfea9db4409dd1d046c180ac5bdbb88389d2f191468c6cd6b822d91fea",
+      "typst_source": "docs/advisory-v17.0-r1/Constitutional_Governance_and_Public_Trust_V17_0_R1.typ",
+      "typst_sha256": "f745352c3a5e247ab9107304054ade71ee9ec13ec2f86887c404e9beb58c1e2b",
+      "pdf_sha256": "9999d976e9cbbc63261e3b1f0b73b27aa5889906214661dab3581391378b4e14",
+      "structured_text_atoms_preserved_at_import": true,
+      "structured_text_atoms_sha256_at_import": "30fe47873f98fc15e4869919d8184fe04d5cc075f46244346be574b7547a0ea2"
+    },
+    {
+      "file": "docs/advisory-v17.0-r1/Executive_Decision_Brief_V17_0_R1.pdf",
+      "pages": 1,
+      "source": "docs/advisory-v17.0-r1/Executive_Decision_Brief_V17_0_R1.html",
+      "source_sha256": "94c9928973cf329a00c91e996cfbf6edacebfdfc5f00af301fc0e234975b427b",
+      "typst_source": "docs/advisory-v17.0-r1/Executive_Decision_Brief_V17_0_R1.typ",
+      "typst_sha256": "715b1b77758255e0643cfb766d947046870e260b7bd0ea916843a9d1e6c052f8",
+      "pdf_sha256": "43a3aef426070d6717a0d812dc7aedd48d324f733b859535118c60537f2d1d2b",
+      "structured_text_atoms_preserved_at_import": true,
+      "structured_text_atoms_sha256_at_import": "ab01024a6110684ccaee21791e8652fa490234b74dee5e9ab417a0cf6ecdefb5"
+    },
+    {
+      "file": "docs/advisory-v17.0-r1/Ninety_Day_Qualification_Pilot_V17_0_R1.pdf",
+      "pages": 2,
+      "source": "docs/advisory-v17.0-r1/Ninety_Day_Qualification_Pilot_V17_0_R1.html",
+      "source_sha256": "77881ab325cb3f502f00435e926f0934be45e9bd9b373f5581148c613c7bb392",
+      "typst_source": "docs/advisory-v17.0-r1/Ninety_Day_Qualification_Pilot_V17_0_R1.typ",
+      "typst_sha256": "e59a7abeb3277277c6feac9d1a04032faecfd1e7701e77b4a58f2ccac8d917d9",
+      "pdf_sha256": "85ef5f7c2c2a4bb3ae8042432cf18ce3f1f13d88a06f2eca0a94d37d660aa267",
+      "structured_text_atoms_preserved_at_import": true,
+      "structured_text_atoms_sha256_at_import": "21722d1ebda552b519e4c3d1fe68c4f20da718714fb9c30d87baaa1b924ecce9"
+    },
+    {
+      "file": "docs/advisory-v17.0-r1/School_Safety_Field_Guide_V17_0_R1.pdf",
+      "pages": 68,
+      "source": "docs/advisory-v17.0-r1/School_Safety_Field_Guide_V17_0_R1.html",
+      "source_sha256": "2bd4abe3ea6444c92e38e87d0166435b48d0fc7a0715e670491114c5fe9807ff",
+      "typst_source": "docs/advisory-v17.0-r1/School_Safety_Field_Guide_V17_0_R1.typ",
+      "typst_sha256": "f79d818128250b3b1956b0d5b3f85422392d058fe79b21659e87d30d0d9b194b",
+      "pdf_sha256": "1a552d67ee29009608b51c167f97a20a6dde9b4f6db5aec08d7272ebf4c4635e",
+      "structured_text_atoms_preserved_at_import": true,
+      "structured_text_atoms_sha256_at_import": "ea135749105981ab85a93f042c56ff376e1aa530c72bcc65e356393e8f05a328"
+    },
+    {
+      "file": "docs/advisory-v17.0-r1/Threat_Driven_Technology_and_AI_V17_0_R1.pdf",
+      "pages": 1,
+      "source": "docs/advisory-v17.0-r1/Threat_Driven_Technology_and_AI_V17_0_R1.html",
+      "source_sha256": "5c011e0a1e54a9ddcbe898efd15695f4fc2a3130fa40aebcbffeb064551c2028",
+      "typst_source": "docs/advisory-v17.0-r1/Threat_Driven_Technology_and_AI_V17_0_R1.typ",
+      "typst_sha256": "e8ab2d16bc56d1a298bb0b688e8288531113dc0f7cb97017abb43254a9057a3a",
+      "pdf_sha256": "eb1db0b5a75aba850c10016c3417ada574f4aa3b72e0f7517ff745e3800b80b9",
+      "structured_text_atoms_preserved_at_import": true,
+      "structured_text_atoms_sha256_at_import": "bd39f9b73c7690e843fcdaee028756ca23a24f6634e16aa0ab7b59601dbb0165"
+    },
+    {
+      "file": "docs/advisory-v17.0-r1/Threat_Scenario_and_Countermeasure_Engineering_V17_0_R1.pdf",
+      "pages": 11,
+      "source": "docs/advisory-v17.0-r1/Threat_Scenario_and_Countermeasure_Engineering_V17_0_R1.html",
+      "source_sha256": "022330d10f17bf32d65eaabd1a421e04345a5cd3658c7ea1c9e3026458b8258f",
+      "typst_source": "docs/advisory-v17.0-r1/Threat_Scenario_and_Countermeasure_Engineering_V17_0_R1.typ",
+      "typst_sha256": "e3c2df25e66ea898c43381b73bd7c6f040c9d95600c3bcda4efed13828e8542b",
+      "pdf_sha256": "6794c639c9beac77214e87e9211295469210ce4f13873b07bb90d602b9639127",
+      "structured_text_atoms_preserved_at_import": true,
+      "structured_text_atoms_sha256_at_import": "561dbb176cb013b8e2287f87f272f4a34f83d65d811d6bb076cb6977e177d384"
+    }
+  ]
+}

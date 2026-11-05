@@ -8,9 +8,13 @@ The 0.4.0 RC10 implementation is Rust throughout its supported software workflow
 
 The public research scope remains 18 scenarios and 15 proposed controls. The inherited 56-hazard register remains publication material. This software does not authenticate assertions, certify legal compliance, authorize deployment, predict individuals, or control security equipment.
 
+## Constitutional safeguards
+
+First and Second Amendment protections are explicit review gates throughout the publications: protect lawful speech, press, religion, civic participation and firearm ownership; prohibit political profiling and school firearm-owner registries; require evidence, lawful authority, independent human review and an accessible remedy. See the [rights review standard and verification limits](docs/CONSTITUTIONAL_RIGHTS.md). These proposed safeguards require qualified review; the current 18-rule engine does not establish complete constitutional compliance.
+
 ## Published documents
 
-Current publications: **Version 17.0 Revision 1**. Each document includes a PDF, editable Typst print source, and HTML web source. See the [source and build guide](docs/advisory-v17.0-r1/README.md) and [layout repair checks](qa/publication_layout_validation_2026_11_03.json).
+Current publications: **Version 17.0 Revision 1**. Each document includes a PDF, editable Typst print source, and HTML web source. See the [source and build guide](docs/advisory-v17.0-r1/README.md) and [retained layout repair checks](qa/publication_layout_validation_2026_11_03.json) and [current rights/validation evidence](qa/constitutional_rights_validation_2026_11_04.json).
 
 | Document | PDF | Typst source | HTML source |
 | --- | --- | --- | --- |
@@ -64,15 +68,15 @@ The bridge verifies both artifacts before launch, accepts only approved anonymou
 
 Publication R1 predates this software migration. Its references to a cross-language checker are superseded by the current Rust guides and [errata](docs/PUBLICATION_ERRATA.md). The 3 November 2026 layout repair uses checked-in Typst sources; [current render evidence](qa/publication_revision.json) binds sources, fonts, assets and PDFs. Earlier visual QA is retained under `qa/baselines/publication_17_0_r1_before_layout_repair/` with its original hashes.
 
-The Python-era 0.3 tools and evidence remain in retained historical archives. They are excluded from the 0.4 supported source distribution and current workflow. No optional cross-language test is run. Current local results are recorded in `qa/implementation_validation.json`; independent review, clean-machine/selected-host acceptance, signing/distribution policy, and release approval remain pending. Code and editable sources retain AGPL-3.0-or-later licensing and existing source attribution.
+The Python-era 0.3 tools and evidence remain in retained historical archives. They are excluded from the 0.4 supported source distribution and current workflow. No optional cross-language test is run. Current software and editorial results are recorded in [rights and validation evidence](qa/constitutional_rights_validation_2026_11_04.json); the [migration validation baseline](qa/implementation_validation.json) retains its original scope and date. Independent review, clean-machine/selected-host acceptance, signing/distribution policy, and release approval remain pending. Code and editable sources retain AGPL-3.0-or-later licensing and existing source attribution.
 
 The explicit UxS, automatic teargas and self-sealing hallway proposals are documented in [countermeasure proposal coverage](engine/docs/COUNTERMEASURE_PROPOSALS.md). These are review-only records: autonomous chemical release, weaponized UxS and automatic confinement/detention are blocked, not implemented as actuators.
 
-## Security audit — 31 October 2026
+## Security and validation — 4 November 2026
 
-The latest [maintainer security audit](qa/security_audit_2026_10_31.json) checked all 202 lockfile packages against 1,395 advisories in a freshly downloaded [RustSec database](https://github.com/RustSec/advisory-db), revision `2295466c4e9df26647fd67d8fa1c705ac2fc7f81`. It reported zero matching vulnerabilities or warnings, with no ignored advisories or target/severity filters. Frozen license/source-policy checks reported zero errors or warnings. Yanked-package status was not checked.
+The [current maintainer validation](qa/constitutional_rights_validation_2026_11_04.json) checked all 202 locked packages against 1,403 advisories in a freshly fetched [RustSec database](https://github.com/RustSec/advisory-db), revision `965bf9ad083b58e6340d65829d85217b18be9290`. It found zero matching vulnerabilities or maintenance warnings, with no ignored advisories or target/severity filters. Frozen license/source-policy checks reported zero errors or warnings. Yanked-package status was not checked. This observation does not establish absence of unknown vulnerabilities or independent license acceptance.
 
-The local Windows run passed 67 Rust tests, formatting and warning-denied lint, including proof replay, MCP rejection and restart behavior, archive integrity, subprocess limits and privacy regressions. Gitleaks found no secrets in the public Git candidate or existing repository history. Native Rust privacy inspection also covered the current source inventory and the 13 historical publication files outside that inventory. These automated checks do not establish absence of unknown vulnerabilities, private information in image pixels, or legal license compatibility.
+The local Windows run passed 68 Rust tests, formatting and warning-denied lint, including proof replay, MCP rejection and restart behavior, archive integrity, subprocess limits and privacy regressions. Gitleaks found no secrets in the public Git candidate or existing repository history. Native Rust privacy inspection also covered the current source inventory and the 13 historical publication files outside that inventory. These automated checks do not establish absence of unknown vulnerabilities, private information in image pixels, or legal license compatibility.
 
 This commit includes an audit and documentation refresh of RC10, with Git-stable source bytes and refreshed manifests. The archived RC10 packages and their original qualification records remain historical evidence bound to their original hashes; they are not relabeled as qualification of this refreshed source snapshot. Build and verify the current checkout using its own `RELEASE_MANIFEST.json` and `SHA256SUMS.txt`. Local build caches, raw diagnostics and generated `output/` artifacts are excluded from Git.
 

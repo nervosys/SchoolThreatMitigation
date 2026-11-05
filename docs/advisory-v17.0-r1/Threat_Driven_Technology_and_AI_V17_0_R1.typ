@@ -22,6 +22,10 @@ pending.
 ]
 ]
 ]
+#callout[
+#strong[First and Second Amendment safeguards.] Protect lawful expression, religious exercise, peaceful assembly, association, petitions and lawful firearm ownership. Political viewpoint, criticism of officials, lawful advocacy and lawful ownership alone must not trigger threat labels, surveillance or adverse action. Require corroborated conduct, documented legal authority, independent human review and an accessible correction/appeal route.
+]
+
 == Threat-driven triggers for investment
 <threat-driven-triggers-for-investment>
 Technology adoption starts only when a threat class is substantiated, an
@@ -70,6 +74,7 @@ effects, cybersecurity requirements, residual safety/rights risk, vendor
 lock-in and cost. A low-tech fix that performs as well with less harm
 should be preferred for that use case.
 
+#pagebreak(weak: true)
 == Two-speed adoption
 <two-speed-adoption>
 #card-grid(
@@ -108,3 +113,12 @@ shift and attacker adaptation must be explicitly tested. A model used
 for incident summaries cannot be assumed capable of predicting an attack
 or assigning probable guilt. Human reviewers own every consequential
 decision, and must be able to challenge model assertions.
+
+== Rights review before a technology pilot
+<rights-review-before-a-technology-pilot>
++ Test public synthetic examples of lawful criticism, religious exercise, peaceful civic activity and lawful ownership; these alone must not generate threat labels or adverse recommendations.
++ Inspect the data inventory, model features, vendor outputs and retention rules for political/religious risk profiles or school firearm-owner lists. Preserve necessary incident evidence under its documented lawful purpose.
++ Record a qualified independent human decision, the factual and legal basis, uncertainty, least intrusive alternatives and an accessible correction/appeal route. Define lawful emergency procedures with counsel in advance and require subsequent independent review.
++ Publish only anonymous aggregate results and unresolved gaps. These are human review criteria; the existing 18-rule engine does not certify complete constitutional compliance.
+
+Primary references: #link("https://www.archives.gov/founding-docs/bill-of-rights-transcript")[National Archives, Amendments I and II] and #link("https://app.leg.wa.gov/rcw/default.aspx?cite=9.41.280")[RCW 9.41.280]. Independent legal, privacy and accessibility acceptance remains pending.

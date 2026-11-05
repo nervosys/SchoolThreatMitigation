@@ -1,12 +1,13 @@
 {
   "revision": "17.0-r1",
   "layout_revision": "2026-11-03",
+  "editorial_revision": "2026-11-04-constitutional-rights",
   "renderer": "Typst 0.15.1; checked-in editable print sources",
   "font_profile": "Inter 4.1 bundled; system fonts ignored; Typst built-in DejaVu Sans Mono",
   "creation_timestamp": 1793664000,
   "network_resources_used_during_compile": false,
   "independent_review": false,
-  "historical_qa_directory": "qa/baselines/publication_17_0_r1_before_layout_repair",
+  "historical_qa_directory": "qa/baselines/publication_17_0_r1_before_rights_refinement",
   "layout_assets": [
     {
       "file": "docs/advisory-v17.0-r1/assets/cover_background.png",
@@ -44,69 +45,57 @@
   "documents": [
     {
       "file": "docs/advisory-v17.0-r1/Constitutional_Governance_and_Public_Trust_V17_0_R1.pdf",
-      "pages": 1,
+      "pages": 2,
       "source": "docs/advisory-v17.0-r1/Constitutional_Governance_and_Public_Trust_V17_0_R1.html",
-      "source_sha256": "2532ecbfea9db4409dd1d046c180ac5bdbb88389d2f191468c6cd6b822d91fea",
+      "source_sha256": "df15753998d33cec9791c2a98756aac6b24f78dd0946d4deba6524b07ae6bd99",
       "typst_source": "docs/advisory-v17.0-r1/Constitutional_Governance_and_Public_Trust_V17_0_R1.typ",
-      "typst_sha256": "f745352c3a5e247ab9107304054ade71ee9ec13ec2f86887c404e9beb58c1e2b",
-      "pdf_sha256": "9999d976e9cbbc63261e3b1f0b73b27aa5889906214661dab3581391378b4e14",
-      "structured_text_atoms_preserved_at_import": true,
-      "structured_text_atoms_sha256_at_import": "30fe47873f98fc15e4869919d8184fe04d5cc075f46244346be574b7547a0ea2"
+      "typst_sha256": "21a1cbf74ca51580754b36c186b41d2ca1f199ab85a405e7d15c05640394c3ba",
+      "pdf_sha256": "e5c96195d6b674bc8dd653cc452f0babe34644c44ca702232063a5c69fb33ced"
     },
     {
       "file": "docs/advisory-v17.0-r1/Executive_Decision_Brief_V17_0_R1.pdf",
       "pages": 1,
       "source": "docs/advisory-v17.0-r1/Executive_Decision_Brief_V17_0_R1.html",
-      "source_sha256": "94c9928973cf329a00c91e996cfbf6edacebfdfc5f00af301fc0e234975b427b",
+      "source_sha256": "bc52562b4d8b446fe0ac05b7e58e685b40ed72410bb1f5254db511bd11674981",
       "typst_source": "docs/advisory-v17.0-r1/Executive_Decision_Brief_V17_0_R1.typ",
-      "typst_sha256": "715b1b77758255e0643cfb766d947046870e260b7bd0ea916843a9d1e6c052f8",
-      "pdf_sha256": "43a3aef426070d6717a0d812dc7aedd48d324f733b859535118c60537f2d1d2b",
-      "structured_text_atoms_preserved_at_import": true,
-      "structured_text_atoms_sha256_at_import": "ab01024a6110684ccaee21791e8652fa490234b74dee5e9ab417a0cf6ecdefb5"
+      "typst_sha256": "7669a10718e4481bfbd5c502f31886277f41a2bc132548edb26cc55e4b317983",
+      "pdf_sha256": "28327e0fa986b7992dd448654ea09d483b0f65a395c23fc70884f42e2a8f6874"
     },
     {
       "file": "docs/advisory-v17.0-r1/Ninety_Day_Qualification_Pilot_V17_0_R1.pdf",
       "pages": 2,
       "source": "docs/advisory-v17.0-r1/Ninety_Day_Qualification_Pilot_V17_0_R1.html",
-      "source_sha256": "77881ab325cb3f502f00435e926f0934be45e9bd9b373f5581148c613c7bb392",
+      "source_sha256": "1fcb6c261c148c2d42a3d11332cf5ce3ed457d642e64c25dfdd7eff608b0c37e",
       "typst_source": "docs/advisory-v17.0-r1/Ninety_Day_Qualification_Pilot_V17_0_R1.typ",
-      "typst_sha256": "e59a7abeb3277277c6feac9d1a04032faecfd1e7701e77b4a58f2ccac8d917d9",
-      "pdf_sha256": "85ef5f7c2c2a4bb3ae8042432cf18ce3f1f13d88a06f2eca0a94d37d660aa267",
-      "structured_text_atoms_preserved_at_import": true,
-      "structured_text_atoms_sha256_at_import": "21722d1ebda552b519e4c3d1fe68c4f20da718714fb9c30d87baaa1b924ecce9"
+      "typst_sha256": "f5e2cd623cc01136dfc8e55039c40e695bbc1792d9fe4c41a3f2af14d09bc7ba",
+      "pdf_sha256": "a477a7dc2e72089bf6105ccf8e2f999a80a8c4e3b0562418b0803d9887e5404d"
     },
     {
       "file": "docs/advisory-v17.0-r1/School_Safety_Field_Guide_V17_0_R1.pdf",
       "pages": 68,
       "source": "docs/advisory-v17.0-r1/School_Safety_Field_Guide_V17_0_R1.html",
-      "source_sha256": "2bd4abe3ea6444c92e38e87d0166435b48d0fc7a0715e670491114c5fe9807ff",
+      "source_sha256": "30bb5e74f4a7539f515b6fc9db34c6851ea3c855e3020d85d7cb5a0abd327df9",
       "typst_source": "docs/advisory-v17.0-r1/School_Safety_Field_Guide_V17_0_R1.typ",
-      "typst_sha256": "f79d818128250b3b1956b0d5b3f85422392d058fe79b21659e87d30d0d9b194b",
-      "pdf_sha256": "1a552d67ee29009608b51c167f97a20a6dde9b4f6db5aec08d7272ebf4c4635e",
-      "structured_text_atoms_preserved_at_import": true,
-      "structured_text_atoms_sha256_at_import": "ea135749105981ab85a93f042c56ff376e1aa530c72bcc65e356393e8f05a328"
+      "typst_sha256": "4838767d243c2fe14f55ffedd1906628903f7e0e75ca6cc43fa21a2d743e28be",
+      "pdf_sha256": "455bd028ec46e75a176467597b3844b69f92da196b167d921adce02eab3232af"
     },
     {
       "file": "docs/advisory-v17.0-r1/Threat_Driven_Technology_and_AI_V17_0_R1.pdf",
-      "pages": 1,
+      "pages": 2,
       "source": "docs/advisory-v17.0-r1/Threat_Driven_Technology_and_AI_V17_0_R1.html",
-      "source_sha256": "5c011e0a1e54a9ddcbe898efd15695f4fc2a3130fa40aebcbffeb064551c2028",
+      "source_sha256": "458f57bcda875ed78dae451e2f2bb834229695995ac99b97f3515f03b9f350a0",
       "typst_source": "docs/advisory-v17.0-r1/Threat_Driven_Technology_and_AI_V17_0_R1.typ",
-      "typst_sha256": "e8ab2d16bc56d1a298bb0b688e8288531113dc0f7cb97017abb43254a9057a3a",
-      "pdf_sha256": "eb1db0b5a75aba850c10016c3417ada574f4aa3b72e0f7517ff745e3800b80b9",
-      "structured_text_atoms_preserved_at_import": true,
-      "structured_text_atoms_sha256_at_import": "bd39f9b73c7690e843fcdaee028756ca23a24f6634e16aa0ab7b59601dbb0165"
+      "typst_sha256": "34b039eb3f983bd810199ab36201633d45bd1efdbc235db4f48b177ec9566f57",
+      "pdf_sha256": "de6e3a5e3cde2d71a49b2d53f6360fd78637345557331762fee6e3a5f3bbfc6f"
     },
     {
       "file": "docs/advisory-v17.0-r1/Threat_Scenario_and_Countermeasure_Engineering_V17_0_R1.pdf",
       "pages": 11,
       "source": "docs/advisory-v17.0-r1/Threat_Scenario_and_Countermeasure_Engineering_V17_0_R1.html",
-      "source_sha256": "022330d10f17bf32d65eaabd1a421e04345a5cd3658c7ea1c9e3026458b8258f",
+      "source_sha256": "47284334091b8934eec73d0a937453be03d4441f0b11c56debf42b0e3a0aa0dd",
       "typst_source": "docs/advisory-v17.0-r1/Threat_Scenario_and_Countermeasure_Engineering_V17_0_R1.typ",
-      "typst_sha256": "e3c2df25e66ea898c43381b73bd7c6f040c9d95600c3bcda4efed13828e8542b",
-      "pdf_sha256": "6794c639c9beac77214e87e9211295469210ce4f13873b07bb90d602b9639127",
-      "structured_text_atoms_preserved_at_import": true,
-      "structured_text_atoms_sha256_at_import": "561dbb176cb013b8e2287f87f272f4a34f83d65d811d6bb076cb6977e177d384"
+      "typst_sha256": "72e84a28cb597d936aa8fab04ffc1df6bc492551b973d63c4376c5f6c24049ae",
+      "pdf_sha256": "3b7925ced034400473913bf3ecb0688ca4a49ab02dc102451169b620835cdc33"
     }
   ]
 }

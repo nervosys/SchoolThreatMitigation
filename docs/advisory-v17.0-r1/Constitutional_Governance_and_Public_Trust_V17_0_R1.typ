@@ -29,6 +29,25 @@ Accountability is part of protection, not an impediment to emergency
 safety.
 
 ]
+#callout[
+#strong[First and Second Amendment safeguards.] Protect lawful expression, religious exercise, peaceful assembly, association, petitions and lawful firearm ownership. Political viewpoint, criticism of officials, lawful advocacy and lawful ownership alone must not trigger threat labels, surveillance or adverse action. Require corroborated conduct, documented legal authority, independent human review and an accessible correction/appeal route.
+]
+
+== First Amendment: expression, belief and remedy
+<rights-first-amendment>
+Protect lawful speech, religious exercise, peaceful assembly, association and petitions across political viewpoints. Criticism of officials, party affiliation or religious belief alone must not become a threat indicator. Preserve misconduct reporting, exculpatory evidence, correction, appeal and protection against retaliation.
+
+== Second Amendment: lawful ownership and authority
+<rights-second-amendment>
+Respect lawful keeping and bearing of arms. Keep safe-storage outreach voluntary and universal, with anonymous aggregate outcomes and no household owner registry. Apply current school-weapons law and its specific exceptions, including #link("https://app.leg.wa.gov/rcw/default.aspx?cite=9.41.280")[RCW 9.41.280], with qualified legal review of the actual setting.
+
+== Evidence and independent review
+<rights-evidence-review>
+Before consequential action, document specific conduct, corroboration, uncertainty, legal authority, least intrusive alternatives and an independent human decision. Exclude political/religious profiles and ownership lists. Record the correction/appeal route and suspend use when rights safeguards fail. AI output never supplies the sole basis for an adverse finding.
+
+Primary text: #link("https://www.archives.gov/founding-docs/bill-of-rights-transcript")[National Archives, Amendments I and II]. Proposed project safeguards; independent legal acceptance remains pending. The engine's existing 18 rules do not verify every criterion above. See the repository's Constitutional Rights guide for the review record and precise verification scope.
+
+#pagebreak(weak: true)
 == Operational controls
 <operational-controls>
 #figure(

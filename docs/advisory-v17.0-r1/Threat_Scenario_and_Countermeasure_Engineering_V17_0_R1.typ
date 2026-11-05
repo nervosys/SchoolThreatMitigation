@@ -44,6 +44,10 @@ includes no site-specific response tactics or sensitive security
 layouts. No instrument, armed response, canine or AI product is
 considered qualified merely because this document lists it.
 ]
+#callout[
+#strong[First and Second Amendment safeguards.] Protect lawful expression, religious exercise, peaceful assembly, association, petitions and lawful firearm ownership. Political viewpoint, criticism of officials, lawful advocacy and lawful ownership alone must not trigger threat labels, surveillance or adverse action. Require corroborated conduct, documented legal authority, independent human review and an accessible correction/appeal route.
+]
+
 == 1 · Assurance architecture
 <assurance-architecture>
 Control evidence is evaluated by provenance: (A) enforceable law/code,

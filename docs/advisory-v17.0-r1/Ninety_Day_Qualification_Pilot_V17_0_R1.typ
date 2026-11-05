@@ -23,6 +23,10 @@ pending.
 ]
 ]
 ]
+#callout[
+#strong[First and Second Amendment safeguards.] Protect lawful expression, religious exercise, peaceful assembly, association, petitions and lawful firearm ownership. Political viewpoint, criticism of officials, lawful advocacy and lawful ownership alone must not trigger threat labels, surveillance or adverse action. Require corroborated conduct, documented legal authority, independent human review and an accessible correction/appeal route.
+]
+
 == Day 0 --- Establish decision rights
 <day-0-establish-decision-rights>
 Board sponsor designates incident commander, threat assessment chair,

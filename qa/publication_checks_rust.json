@@ -3,7 +3,7 @@
     {
       "all_page_text_available": true,
       "file": "docs/advisory-v17.0-r1/Constitutional_Governance_and_Public_Trust_V17_0_R1.pdf",
-      "pages": 1,
+      "pages": 2,
       "pair_hashes_match": true,
       "tagged": true
     },
@@ -31,7 +31,7 @@
     {
       "all_page_text_available": true,
       "file": "docs/advisory-v17.0-r1/Threat_Driven_Technology_and_AI_V17_0_R1.pdf",
-      "pages": 1,
+      "pages": 2,
       "pair_hashes_match": true,
       "tagged": true
     },
@@ -45,7 +45,7 @@
   ],
   "independent_acceptance": false,
   "method": "native_rust_hash_structure_and_text_checks",
-  "pages_checked": 84,
+  "pages_checked": 86,
   "passed": true,
   "revision": "17.0-r1",
   "visual_layout_review": "agent_layout_review_recorded_independent_review_pending"

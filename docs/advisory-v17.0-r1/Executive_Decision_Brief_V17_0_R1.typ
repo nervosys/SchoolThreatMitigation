@@ -1,7 +1,7 @@
 // Editable print source for Version 17.0 Revision 1.
 // Shared styles, covers, cards and tables are in publication.typ.
 #import "publication.typ": *
-#show: publication.with(title: "Executive Decision Brief | Version 17.0 Revision 1", guide: false)
+#show: publication.with(title: "Executive Decision Brief | Version 17.0 Revision 1", guide: false, compact: true)
 
 #metadata(none)#label("publication-content")
 #hero[
@@ -30,6 +30,10 @@ ownership, and fund only controls that demonstrate a protective purpose
 and do not create unacceptable new hazards.
 
 ]
+#callout[
+#strong[First and Second Amendment safeguards.] Protect lawful expression, religious exercise, peaceful assembly, association, petitions and lawful firearm ownership. Political viewpoint, criticism of officials, lawful advocacy and lawful ownership alone must not trigger threat labels, surveillance or adverse action. Require corroborated conduct, documented legal authority, independent human review and an accessible correction/appeal route.
+]
+
 == Five immediate decisions
 <five-immediate-decisions>
 + #strong[Require a traceable threat register.] Give every concern an

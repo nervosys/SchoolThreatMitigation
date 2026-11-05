@@ -40,3 +40,9 @@ Current proposal coverage is in engine/docs/COUNTERMEASURE_PROPOSALS.md. Non-for
 ## Layout repair and editable print sources (3 November 2026)
 
 The former authoring pipeline removed HTML styles and images before converting to Typst. The current six checked-in `.typ` documents and shared `publication.typ` restore cover art, styled cards, navigation, table formatting and page divisions while retaining the R1 corrections. The README now displays the current field-guide cover, rather than Version 14.5 artwork. See the [source and build guide](advisory-v17.0-r1/README.md) and [source/PDF bindings](../qa/publication_revision.json). Prior QA is preserved under `qa/baselines/publication_17_0_r1_before_layout_repair/`. Agent layout review does not establish independent editorial or accessibility acceptance.
+
+## First and Second Amendment review emphasis (4 November 2026)
+
+The six web and Typst/PDF editions now include explicit, viewpoint-neutral safeguards for lawful expression, religion, civic participation and firearm ownership. The governance companion expands evidence, authority, independent review and remedy requirements; the technology companion adds public synthetic review criteria. See the [rights review standard](CONSTITUTIONAL_RIGHTS.md) and [validation evidence](../qa/constitutional_rights_validation_2026_11_04.json). Earlier publication QA is retained under `qa/baselines/publication_17_0_r1_before_rights_refinement/` with its original bindings.
+
+The 18 executable rules and knowledge fingerprint remain unchanged. G-001 and G-002 synthetic hold cases were separately replayed; they do not authenticate assertions or establish complete constitutional compliance. Independent legal, source, editorial and accessibility acceptance remains pending.

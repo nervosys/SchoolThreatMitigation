@@ -1,0 +1,1019 @@
+{
+  "classification": "public_advisory_assessment",
+  "data_handling": "Whitelisted Boolean self-attestations only; evidence is not authenticated. The engine does not persist supplied facts. Hosts must minimize intake and logging.",
+  "deployment_authorization": false,
+  "findings": [
+    {
+      "accountable_owner": "District leadership",
+      "classification": "statutory_reference",
+      "mismatched_facts": [],
+      "missing_facts": [
+        "wa_public_school"
+      ],
+      "priority": "high",
+      "rationale": "RCW 28A.320.123: adopted behavior-based program; referral alone cannot justify suspension or expulsion.",
+      "recommended_action": "Review policy and intervention procedures with Washington-qualified counsel.",
+      "rule_id": "WA-123",
+      "source_details": [
+        {
+          "id": "LAW-123",
+          "interpretation": "Primary Washington statute; current applicability requires legal review.",
+          "title": "RCW 28A.320.123: School-based threat assessment",
+          "url": "https://app.leg.wa.gov/rcw/default.aspx?cite=28A.320.123"
+        }
+      ],
+      "source_refs": [
+        "LAW-123"
+      ],
+      "source_review_required": true,
+      "status": "scope_unknown",
+      "title": "District behavior-based threat assessment program"
+    },
+    {
+      "accountable_owner": "District superintendent",
+      "classification": "statutory_reference",
+      "mismatched_facts": [],
+      "missing_facts": [
+        "school_security_staff_present"
+      ],
+      "priority": "high",
+      "rationale": "Conditional duties, role limits, and complaint process in RCW 28A.320.124.",
+      "recommended_action": "Update staff policy; separate school discipline from police functions; publish complaint routes.",
+      "rule_id": "WA-124",
+      "source_details": [
+        {
+          "id": "LAW-124",
+          "interpretation": "Primary Washington statute; current applicability requires legal review.",
+          "title": "RCW 28A.320.124: School security staff policy",
+          "url": "https://app.leg.wa.gov/rcw/default.aspx?cite=28A.320.124"
+        }
+      ],
+      "source_refs": [
+        "LAW-124"
+      ],
+      "source_review_required": true,
+      "status": "scope_unknown",
+      "title": "School security staff duties and complaint policy"
+    },
+    {
+      "accountable_owner": "District compliance officer",
+      "classification": "statutory_reference",
+      "mismatched_facts": [],
+      "missing_facts": [
+        "school_security_staff_present"
+      ],
+      "priority": "high",
+      "rationale": "RCW 28A.320.1241 includes prescribed reporting; sensitive details must be handled lawfully.",
+      "recommended_action": "Verify statutory collection/submission and confidentiality controls with counsel.",
+      "rule_id": "WA-1241",
+      "source_details": [
+        {
+          "id": "LAW-1241",
+          "interpretation": "Primary Washington statute; current applicability requires legal review.",
+          "title": "RCW 28A.320.1241: Staff agreements and reporting",
+          "url": "https://app.leg.wa.gov/rcw/default.aspx?cite=28A.320.1241"
+        }
+      ],
+      "source_refs": [
+        "LAW-1241"
+      ],
+      "source_review_required": true,
+      "status": "scope_unknown",
+      "title": "Security-staff reporting process"
+    },
+    {
+      "accountable_owner": "District board",
+      "classification": "statutory_reference",
+      "mismatched_facts": [],
+      "missing_facts": [
+        "external_security_provider"
+      ],
+      "priority": "high",
+      "rationale": "RCW 28A.320.1242 has conditional agreement and community-participation requirements.",
+      "recommended_action": "Conduct annual agreement review including parents, students and community members.",
+      "rule_id": "WA-1242",
+      "source_details": [
+        {
+          "id": "LAW-1242",
+          "interpretation": "Primary Washington statute; current applicability requires legal review.",
+          "title": "RCW 28A.320.1242: Security provider agreements",
+          "url": "https://app.leg.wa.gov/rcw/default.aspx?cite=28A.320.1242"
+        }
+      ],
+      "source_refs": [
+        "LAW-1242"
+      ],
+      "source_review_required": true,
+      "status": "scope_unknown",
+      "title": "Annual security provider agreement and participation"
+    },
+    {
+      "accountable_owner": "District safety and health lead",
+      "classification": "statutory_reference",
+      "mismatched_facts": [],
+      "missing_facts": [
+        "wa_public_school"
+      ],
+      "priority": "high",
+      "rationale": "School-year 2026-27 requirements, with student-count-dependent staffing provisions.",
+      "recommended_action": "Check campus equipment, staffing thresholds and inspections under RCW 28A.210.440.",
+      "rule_id": "WA-440",
+      "source_details": [
+        {
+          "id": "LAW-440",
+          "interpretation": "Primary Washington statute; current applicability requires legal review.",
+          "title": "RCW 28A.210.440: Bleeding control equipment/training",
+          "url": "https://app.leg.wa.gov/rcw/default.aspx?cite=28A.210.440"
+        }
+      ],
+      "source_refs": [
+        "LAW-440"
+      ],
+      "source_review_required": true,
+      "status": "scope_unknown",
+      "title": "Bleeding control supplies, training and inspections"
+    },
+    {
+      "accountable_owner": "Privacy officer",
+      "classification": "safety_guardrail",
+      "mismatched_facts": [
+        "firearm_owner_registry_created"
+      ],
+      "missing_facts": [],
+      "priority": "high",
+      "rationale": "Safeguard adopted by the project; not a claim that all owner registries are legally prohibited.",
+      "recommended_action": "Do not establish school firearm-owner registries; use anonymous voluntary outreach.",
+      "rule_id": "G-001",
+      "source_details": [
+        {
+          "id": "SRC-05",
+          "interpretation": "Unsafe-storage liability in specified circumstances; no universal storage method mandate",
+          "title": "Washington RCW 9.41.360",
+          "url": "https://app.leg.wa.gov/rcw/default.aspx?cite=9.41.360"
+        },
+        {
+          "id": "SRC-04",
+          "interpretation": "Public-health guidance for secure storage and child access prevention",
+          "title": "CDC, Preventing Firearm Injury and Death",
+          "url": "https://www.cdc.gov/firearm-violence/prevention/"
+        }
+      ],
+      "source_refs": [
+        "SRC-05",
+        "SRC-04"
+      ],
+      "source_review_required": true,
+      "status": "deployment_hold",
+      "title": "Protect lawful firearm ownership and privacy"
+    },
+    {
+      "accountable_owner": "Civil rights officer",
+      "classification": "safety_guardrail",
+      "mismatched_facts": [],
+      "missing_facts": [
+        "demographic_or_political_risk_profiling"
+      ],
+      "priority": "high",
+      "rationale": "Protect expression, privacy and due process.",
+      "recommended_action": "Remove profiling; use documented, behavior-based evidence and independent review.",
+      "rule_id": "G-002",
+      "source_details": [
+        {
+          "id": "LAW-123",
+          "interpretation": "Primary Washington statute; current applicability requires legal review.",
+          "title": "RCW 28A.320.123: School-based threat assessment",
+          "url": "https://app.leg.wa.gov/rcw/default.aspx?cite=28A.320.123"
+        },
+        {
+          "id": "SRC-01",
+          "interpretation": "Historical case analysis and fact-based prevention; not a predictor for individuals",
+          "title": "USSS NTAC, Protecting America’s Schools (2019)",
+          "url": "https://www.secretservice.gov/sites/default/files/2020-04/Protecting_Americas_Schools.pdf"
+        }
+      ],
+      "source_refs": [
+        "LAW-123",
+        "SRC-01"
+      ],
+      "source_review_required": true,
+      "status": "needs_evidence",
+      "title": "No demographic or political AI profiling"
+    },
+    {
+      "accountable_owner": "Board and law enforcement counsel",
+      "classification": "safety_guardrail",
+      "mismatched_facts": [],
+      "missing_facts": [
+        "ai_authorizes_physical_force",
+        "automatic_chemical_agent_release_enabled",
+        "weaponized_uxs_enabled",
+        "automated_confinement_or_detention_enabled"
+      ],
+      "priority": "high",
+      "rationale": "Project safety restriction on autonomous force. CDC documents serious chemical-exposure hazards; that source does not validate a countermeasure or establish local authority.",
+      "recommended_action": "Reject automatic teargas or chemical-agent release, weaponized UxS, and software-directed confinement or detention. Keep permitted non-force observation and communication under accountable human oversight.",
+      "rule_id": "G-003",
+      "source_details": [
+        {
+          "id": "SRC-02",
+          "interpretation": "Layered security and campus assessment; does not validate each proposed product",
+          "title": "CISA K-12 School Security Guide (3rd ed.)",
+          "url": "https://www.cisa.gov/resources-tools/resources/k-12-school-security-guide-3rd-edition"
+        },
+        {
+          "id": "SRC-14",
+          "interpretation": "Chemical irritants can cause severe injury, particularly with substantial or prolonged exposure in enclosed settings. Hazard context only; no validation of automatic teargas or school deployment.",
+          "title": "CDC CTTL: Riot Control Agents",
+          "url": "https://www.cdc.gov/chemical-threats-and-toxins-laboratory/php/laboratory-capabilities-and-methods/riot-control-agents.html"
+        }
+      ],
+      "source_refs": [
+        "SRC-02",
+        "SRC-14"
+      ],
+      "source_review_required": true,
+      "status": "needs_evidence",
+      "title": "No automatic teargas release or autonomous physical force"
+    },
+    {
+      "accountable_owner": "Facilities and fire authority",
+      "classification": "safety_guardrail",
+      "mismatched_facts": [],
+      "missing_facts": [
+        "egress_obstructed_by_security"
+      ],
+      "priority": "high",
+      "rationale": "Project life-safety restriction against unsafe confinement. General OSHA exit-route guidance is background for qualified applicability review, not a finding that a specific regulation governs a school or design.",
+      "recommended_action": "Reject self-sealing hallway proposals that trap or detain people or obstruct emergency departure. Review only non-trapping compartmentation with qualified fire/building, accessibility and legal authorities.",
+      "rule_id": "G-004",
+      "source_details": [
+        {
+          "id": "SRC-02",
+          "interpretation": "Layered security and campus assessment; does not validate each proposed product",
+          "title": "CISA K-12 School Security Guide (3rd ed.)",
+          "url": "https://www.cisa.gov/resources-tools/resources/k-12-school-security-guide-3rd-edition"
+        },
+        {
+          "id": "SRC-15",
+          "interpretation": "General employee-egress guidance addresses inside opening and emergency usability. School-specific applicability, exceptions and designs require qualified review; no authority for automatic confinement is established.",
+          "title": "OSHA eTool: Design and construction requirements for exit routes",
+          "url": "https://www.osha.gov/etools/evacuation-plans-procedures/emergency-standards/design-construction"
+        }
+      ],
+      "source_refs": [
+        "SRC-02",
+        "SRC-15"
+      ],
+      "source_review_required": true,
+      "status": "needs_evidence",
+      "title": "No self-sealing corridor entrapment; preserve emergency egress"
+    },
+    {
+      "accountable_owner": "District privacy officer",
+      "classification": "safety_guardrail",
+      "mismatched_facts": [],
+      "missing_facts": [
+        "unauthorized_education_record_sharing"
+      ],
+      "priority": "high",
+      "rationale": "A safeguard against misuse of school data, not a blanket ban on lawful reporting.",
+      "recommended_action": "Block unlawful access, preserve logs, and involve counsel for applicable privacy law.",
+      "rule_id": "G-005",
+      "source_details": [
+        {
+          "id": "SRC-02",
+          "interpretation": "Layered security and campus assessment; does not validate each proposed product",
+          "title": "CISA K-12 School Security Guide (3rd ed.)",
+          "url": "https://www.cisa.gov/resources-tools/resources/k-12-school-security-guide-3rd-edition"
+        }
+      ],
+      "source_refs": [
+        "SRC-02"
+      ],
+      "source_review_required": true,
+      "status": "needs_evidence",
+      "title": "Prevent unauthorized education-record sharing"
+    },
+    {
+      "accountable_owner": "OT security officer",
+      "classification": "safety_guardrail",
+      "mismatched_facts": [],
+      "missing_facts": [
+        "connected_life_safety_system_planned"
+      ],
+      "priority": "high",
+      "rationale": "Avoid cyber-to-physical hazard propagation.",
+      "recommended_action": "Require authenticated commands, independent testing, and manual fallback.",
+      "rule_id": "G-006",
+      "source_details": [
+        {
+          "id": "SRC-02",
+          "interpretation": "Layered security and campus assessment; does not validate each proposed product",
+          "title": "CISA K-12 School Security Guide (3rd ed.)",
+          "url": "https://www.cisa.gov/resources-tools/resources/k-12-school-security-guide-3rd-edition"
+        }
+      ],
+      "source_refs": [
+        "SRC-02"
+      ],
+      "source_review_required": true,
+      "status": "scope_unknown",
+      "title": "No unverified remote physical actuation"
+    },
+    {
+      "accountable_owner": "District safety director",
+      "classification": "safety_guardrail",
+      "mismatched_facts": [],
+      "missing_facts": [
+        "canine_program_planned"
+      ],
+      "priority": "high",
+      "rationale": "Canine screening is not validated as a universal school-shooting countermeasure.",
+      "recommended_action": "Suspend unqualified canine program and arrange specialist independent assessment.",
+      "rule_id": "G-007",
+      "source_details": [
+        {
+          "id": "SRC-02",
+          "interpretation": "Layered security and campus assessment; does not validate each proposed product",
+          "title": "CISA K-12 School Security Guide (3rd ed.)",
+          "url": "https://www.cisa.gov/resources-tools/resources/k-12-school-security-guide-3rd-edition"
+        }
+      ],
+      "source_refs": [
+        "SRC-02"
+      ],
+      "source_review_required": true,
+      "status": "scope_unknown",
+      "title": "Specialist canine program must be qualified"
+    },
+    {
+      "accountable_owner": "Governance board",
+      "classification": "safety_guardrail",
+      "mismatched_facts": [],
+      "missing_facts": [
+        "ai_can_edit_approved_rules"
+      ],
+      "priority": "high",
+      "rationale": "Symbolic policy layer must not be silently rewritten by an LLM.",
+      "recommended_action": "Use versioned change control and human-reviewed rule updates.",
+      "rule_id": "G-008",
+      "source_details": [
+        {
+          "id": "SRC-02",
+          "interpretation": "Layered security and campus assessment; does not validate each proposed product",
+          "title": "CISA K-12 School Security Guide (3rd ed.)",
+          "url": "https://www.cisa.gov/resources-tools/resources/k-12-school-security-guide-3rd-edition"
+        }
+      ],
+      "source_refs": [
+        "SRC-02"
+      ],
+      "source_review_required": true,
+      "status": "needs_evidence",
+      "title": "AI cannot directly modify verified rules"
+    },
+    {
+      "accountable_owner": "Civil rights lead",
+      "classification": "safety_guardrail",
+      "mismatched_facts": [],
+      "missing_facts": [
+        "threat_assessment_program_adopted"
+      ],
+      "priority": "high",
+      "rationale": "Prevent malicious reports and mistaken irreversible actions.",
+      "recommended_action": "Require corroboration, appeal/correction path, and trained decision maker.",
+      "rule_id": "G-009",
+      "source_details": [
+        {
+          "id": "LAW-123",
+          "interpretation": "Primary Washington statute; current applicability requires legal review.",
+          "title": "RCW 28A.320.123: School-based threat assessment",
+          "url": "https://app.leg.wa.gov/rcw/default.aspx?cite=28A.320.123"
+        },
+        {
+          "id": "SRC-01",
+          "interpretation": "Historical case analysis and fact-based prevention; not a predictor for individuals",
+          "title": "USSS NTAC, Protecting America’s Schools (2019)",
+          "url": "https://www.secretservice.gov/sites/default/files/2020-04/Protecting_Americas_Schools.pdf"
+        }
+      ],
+      "source_refs": [
+        "LAW-123",
+        "SRC-01"
+      ],
+      "source_review_required": true,
+      "status": "scope_unknown",
+      "title": "Human review and fair process for adverse actions"
+    },
+    {
+      "accountable_owner": "School district counsel",
+      "classification": "safety_guardrail",
+      "mismatched_facts": [],
+      "missing_facts": [
+        "armed_response_program_planned"
+      ],
+      "priority": "high",
+      "rationale": "Public recommendation guidance, no tactical force instructions.",
+      "recommended_action": "Hold implementation until authorization, qualified staffing and independent oversight are documented.",
+      "rule_id": "G-010",
+      "source_details": [
+        {
+          "id": "LAW-124",
+          "interpretation": "Primary Washington statute; current applicability requires legal review.",
+          "title": "RCW 28A.320.124: School security staff policy",
+          "url": "https://app.leg.wa.gov/rcw/default.aspx?cite=28A.320.124"
+        },
+        {
+          "id": "LAW-1242",
+          "interpretation": "Primary Washington statute; current applicability requires legal review.",
+          "title": "RCW 28A.320.1242: Security provider agreements",
+          "url": "https://app.leg.wa.gov/rcw/default.aspx?cite=28A.320.1242"
+        }
+      ],
+      "source_refs": [
+        "LAW-124",
+        "LAW-1242"
+      ],
+      "source_review_required": true,
+      "status": "scope_unknown",
+      "title": "Lawful and documented authority for on-site response"
+    },
+    {
+      "accountable_owner": "District technology lead",
+      "classification": "deployment_qualification",
+      "mismatched_facts": [],
+      "missing_facts": [
+        "connected_life_safety_system_planned"
+      ],
+      "priority": "high",
+      "rationale": "Technology adoption follows identified risk and must preserve safe operation.",
+      "recommended_action": "Pilot against threat-specific requirements and independently test cyber-physical failure modes.",
+      "rule_id": "A-001",
+      "source_details": [
+        {
+          "id": "SRC-02",
+          "interpretation": "Layered security and campus assessment; does not validate each proposed product",
+          "title": "CISA K-12 School Security Guide (3rd ed.)",
+          "url": "https://www.cisa.gov/resources-tools/resources/k-12-school-security-guide-3rd-edition"
+        }
+      ],
+      "source_refs": [
+        "SRC-02"
+      ],
+      "source_review_required": true,
+      "status": "scope_unknown",
+      "title": "Threat-driven evaluation before connected technology deployment"
+    },
+    {
+      "accountable_owner": "Campus incident command",
+      "classification": "deployment_qualification",
+      "mismatched_facts": [],
+      "missing_facts": [
+        "detector_deployment_planned"
+      ],
+      "priority": "high",
+      "rationale": "No claimed product accuracy without independent test evidence.",
+      "recommended_action": "Validate misses and false alarms; keep people responsible for emergency decisions.",
+      "rule_id": "A-002",
+      "source_details": [
+        {
+          "id": "SRC-02",
+          "interpretation": "Layered security and campus assessment; does not validate each proposed product",
+          "title": "CISA K-12 School Security Guide (3rd ed.)",
+          "url": "https://www.cisa.gov/resources-tools/resources/k-12-school-security-guide-3rd-edition"
+        }
+      ],
+      "source_refs": [
+        "SRC-02"
+      ],
+      "source_review_required": true,
+      "status": "scope_unknown",
+      "title": "Independent alert validation"
+    },
+    {
+      "accountable_owner": "Community partnership lead",
+      "classification": "voluntary_recommendation",
+      "mismatched_facts": [],
+      "missing_facts": [
+        "youth_firearm_access_program_planned"
+      ],
+      "priority": "high",
+      "rationale": "Promote safeguards without compulsory ownership disclosure.",
+      "recommended_action": "Use optional secure-storage education and anonymous impact reporting.",
+      "rule_id": "A-003",
+      "source_details": [
+        {
+          "id": "SRC-04",
+          "interpretation": "Public-health guidance for secure storage and child access prevention",
+          "title": "CDC, Preventing Firearm Injury and Death",
+          "url": "https://www.cdc.gov/firearm-violence/prevention/"
+        },
+        {
+          "id": "SRC-05",
+          "interpretation": "Unsafe-storage liability in specified circumstances; no universal storage method mandate",
+          "title": "Washington RCW 9.41.360",
+          "url": "https://app.leg.wa.gov/rcw/default.aspx?cite=9.41.360"
+        }
+      ],
+      "source_refs": [
+        "SRC-04",
+        "SRC-05"
+      ],
+      "source_review_required": true,
+      "status": "scope_unknown",
+      "title": "Privacy-preserving youth access outreach"
+    }
+  ],
+  "knowledgebase_version": "17.0-NSAI.4",
+  "legal_certification": false,
+  "reasoning_certificate": {
+    "asserted_facts": {
+      "firearm_owner_registry_created": true
+    },
+    "assertions_authenticated": false,
+    "engine_version": "0.4.0",
+    "knowledge_sha256": "2bcb941487fb138f3e014ff57a71140fcecd8e6bbe7fef5496abef2188b1f34c",
+    "knowledgebase_version": "17.0-NSAI.4",
+    "rule_proofs": [
+      {
+        "applicability": [
+          {
+            "expected": true,
+            "fact": "wa_public_school",
+            "observed": null,
+            "outcome": "unknown"
+          }
+        ],
+        "applicability_operator": "all",
+        "requirement_operator": "all",
+        "requirements": [],
+        "requirements_evaluated": false,
+        "rule_id": "WA-123",
+        "rule_kind": "statutory_reference",
+        "verdict": "scope_unknown"
+      },
+      {
+        "applicability": [
+          {
+            "expected": true,
+            "fact": "school_security_staff_present",
+            "observed": null,
+            "outcome": "unknown"
+          }
+        ],
+        "applicability_operator": "all",
+        "requirement_operator": "all",
+        "requirements": [],
+        "requirements_evaluated": false,
+        "rule_id": "WA-124",
+        "rule_kind": "statutory_reference",
+        "verdict": "scope_unknown"
+      },
+      {
+        "applicability": [
+          {
+            "expected": true,
+            "fact": "school_security_staff_present",
+            "observed": null,
+            "outcome": "unknown"
+          }
+        ],
+        "applicability_operator": "all",
+        "requirement_operator": "all",
+        "requirements": [],
+        "requirements_evaluated": false,
+        "rule_id": "WA-1241",
+        "rule_kind": "statutory_reference",
+        "verdict": "scope_unknown"
+      },
+      {
+        "applicability": [
+          {
+            "expected": true,
+            "fact": "external_security_provider",
+            "observed": null,
+            "outcome": "unknown"
+          }
+        ],
+        "applicability_operator": "all",
+        "requirement_operator": "all",
+        "requirements": [],
+        "requirements_evaluated": false,
+        "rule_id": "WA-1242",
+        "rule_kind": "statutory_reference",
+        "verdict": "scope_unknown"
+      },
+      {
+        "applicability": [
+          {
+            "expected": true,
+            "fact": "wa_public_school",
+            "observed": null,
+            "outcome": "unknown"
+          }
+        ],
+        "applicability_operator": "all",
+        "requirement_operator": "all",
+        "requirements": [],
+        "requirements_evaluated": false,
+        "rule_id": "WA-440",
+        "rule_kind": "statutory_reference",
+        "verdict": "scope_unknown"
+      },
+      {
+        "applicability": [],
+        "applicability_operator": "all",
+        "requirement_operator": "all",
+        "requirements": [
+          {
+            "expected": false,
+            "fact": "firearm_owner_registry_created",
+            "observed": true,
+            "outcome": "mismatched"
+          }
+        ],
+        "requirements_evaluated": true,
+        "rule_id": "G-001",
+        "rule_kind": "safety_guardrail",
+        "verdict": "deployment_hold"
+      },
+      {
+        "applicability": [],
+        "applicability_operator": "all",
+        "requirement_operator": "all",
+        "requirements": [
+          {
+            "expected": false,
+            "fact": "demographic_or_political_risk_profiling",
+            "observed": null,
+            "outcome": "unknown"
+          }
+        ],
+        "requirements_evaluated": true,
+        "rule_id": "G-002",
+        "rule_kind": "safety_guardrail",
+        "verdict": "needs_evidence"
+      },
+      {
+        "applicability": [],
+        "applicability_operator": "all",
+        "requirement_operator": "all",
+        "requirements": [
+          {
+            "expected": false,
+            "fact": "ai_authorizes_physical_force",
+            "observed": null,
+            "outcome": "unknown"
+          },
+          {
+            "expected": false,
+            "fact": "automatic_chemical_agent_release_enabled",
+            "observed": null,
+            "outcome": "unknown"
+          },
+          {
+            "expected": false,
+            "fact": "weaponized_uxs_enabled",
+            "observed": null,
+            "outcome": "unknown"
+          },
+          {
+            "expected": false,
+            "fact": "automated_confinement_or_detention_enabled",
+            "observed": null,
+            "outcome": "unknown"
+          }
+        ],
+        "requirements_evaluated": true,
+        "rule_id": "G-003",
+        "rule_kind": "safety_guardrail",
+        "verdict": "needs_evidence"
+      },
+      {
+        "applicability": [],
+        "applicability_operator": "all",
+        "requirement_operator": "all",
+        "requirements": [
+          {
+            "expected": false,
+            "fact": "egress_obstructed_by_security",
+            "observed": null,
+            "outcome": "unknown"
+          }
+        ],
+        "requirements_evaluated": true,
+        "rule_id": "G-004",
+        "rule_kind": "safety_guardrail",
+        "verdict": "needs_evidence"
+      },
+      {
+        "applicability": [],
+        "applicability_operator": "all",
+        "requirement_operator": "all",
+        "requirements": [
+          {
+            "expected": false,
+            "fact": "unauthorized_education_record_sharing",
+            "observed": null,
+            "outcome": "unknown"
+          }
+        ],
+        "requirements_evaluated": true,
+        "rule_id": "G-005",
+        "rule_kind": "safety_guardrail",
+        "verdict": "needs_evidence"
+      },
+      {
+        "applicability": [
+          {
+            "expected": true,
+            "fact": "connected_life_safety_system_planned",
+            "observed": null,
+            "outcome": "unknown"
+          }
+        ],
+        "applicability_operator": "all",
+        "requirement_operator": "all",
+        "requirements": [],
+        "requirements_evaluated": false,
+        "rule_id": "G-006",
+        "rule_kind": "safety_guardrail",
+        "verdict": "scope_unknown"
+      },
+      {
+        "applicability": [
+          {
+            "expected": true,
+            "fact": "canine_program_planned",
+            "observed": null,
+            "outcome": "unknown"
+          }
+        ],
+        "applicability_operator": "all",
+        "requirement_operator": "all",
+        "requirements": [],
+        "requirements_evaluated": false,
+        "rule_id": "G-007",
+        "rule_kind": "safety_guardrail",
+        "verdict": "scope_unknown"
+      },
+      {
+        "applicability": [],
+        "applicability_operator": "all",
+        "requirement_operator": "all",
+        "requirements": [
+          {
+            "expected": false,
+            "fact": "ai_can_edit_approved_rules",
+            "observed": null,
+            "outcome": "unknown"
+          }
+        ],
+        "requirements_evaluated": true,
+        "rule_id": "G-008",
+        "rule_kind": "safety_guardrail",
+        "verdict": "needs_evidence"
+      },
+      {
+        "applicability": [
+          {
+            "expected": true,
+            "fact": "threat_assessment_program_adopted",
+            "observed": null,
+            "outcome": "unknown"
+          }
+        ],
+        "applicability_operator": "all",
+        "requirement_operator": "all",
+        "requirements": [],
+        "requirements_evaluated": false,
+        "rule_id": "G-009",
+        "rule_kind": "safety_guardrail",
+        "verdict": "scope_unknown"
+      },
+      {
+        "applicability": [
+          {
+            "expected": true,
+            "fact": "armed_response_program_planned",
+            "observed": null,
+            "outcome": "unknown"
+          }
+        ],
+        "applicability_operator": "all",
+        "requirement_operator": "all",
+        "requirements": [],
+        "requirements_evaluated": false,
+        "rule_id": "G-010",
+        "rule_kind": "safety_guardrail",
+        "verdict": "scope_unknown"
+      },
+      {
+        "applicability": [
+          {
+            "expected": true,
+            "fact": "connected_life_safety_system_planned",
+            "observed": null,
+            "outcome": "unknown"
+          }
+        ],
+        "applicability_operator": "all",
+        "requirement_operator": "all",
+        "requirements": [],
+        "requirements_evaluated": false,
+        "rule_id": "A-001",
+        "rule_kind": "deployment_qualification",
+        "verdict": "scope_unknown"
+      },
+      {
+        "applicability": [
+          {
+            "expected": true,
+            "fact": "detector_deployment_planned",
+            "observed": null,
+            "outcome": "unknown"
+          }
+        ],
+        "applicability_operator": "all",
+        "requirement_operator": "all",
+        "requirements": [],
+        "requirements_evaluated": false,
+        "rule_id": "A-002",
+        "rule_kind": "deployment_qualification",
+        "verdict": "scope_unknown"
+      },
+      {
+        "applicability": [
+          {
+            "expected": true,
+            "fact": "youth_firearm_access_program_planned",
+            "observed": null,
+            "outcome": "unknown"
+          }
+        ],
+        "applicability_operator": "all",
+        "requirement_operator": "all",
+        "requirements": [],
+        "requirements_evaluated": false,
+        "rule_id": "A-003",
+        "rule_kind": "voluntary_recommendation",
+        "verdict": "scope_unknown"
+      }
+    ],
+    "specification": "stm-conjunctive-1"
+  },
+  "review_required": "Human/legal verification of evidence, Washington law and campus conditions is mandatory. Unknown is never a compliance pass.",
+  "source_review": {
+    "as_of_basis": "explicit_evaluation_date",
+    "as_of_utc": "2026-11-04",
+    "checks": [
+      {
+        "evidence_locator": "Inherited source link and interpretation; passage-level verification pending.",
+        "note": "Independent applicability and currency review remains required.",
+        "review_required": true,
+        "source_id": "SRC-01",
+        "status": "unreviewed"
+      },
+      {
+        "evidence_locator": "Inherited source link and interpretation; passage-level verification pending.",
+        "note": "Independent applicability and currency review remains required.",
+        "review_required": true,
+        "source_id": "SRC-02",
+        "status": "unreviewed"
+      },
+      {
+        "evidence_locator": "Inherited source link and interpretation; passage-level verification pending.",
+        "note": "Independent applicability and currency review remains required.",
+        "review_required": true,
+        "source_id": "SRC-03",
+        "status": "unreviewed"
+      },
+      {
+        "evidence_locator": "Inherited source link and interpretation; passage-level verification pending.",
+        "note": "Independent applicability and currency review remains required.",
+        "review_required": true,
+        "source_id": "SRC-04",
+        "status": "unreviewed"
+      },
+      {
+        "evidence_locator": "Inherited source link and interpretation; passage-level verification pending.",
+        "note": "Independent applicability and currency review remains required.",
+        "review_required": true,
+        "source_id": "SRC-05",
+        "status": "unreviewed"
+      },
+      {
+        "evidence_locator": "Inherited source link and interpretation; passage-level verification pending.",
+        "note": "Independent applicability and currency review remains required.",
+        "review_required": true,
+        "source_id": "SRC-06",
+        "status": "unreviewed"
+      },
+      {
+        "evidence_locator": "Inherited source link and interpretation; passage-level verification pending.",
+        "note": "Independent applicability and currency review remains required.",
+        "review_required": true,
+        "source_id": "SRC-07",
+        "status": "unreviewed"
+      },
+      {
+        "evidence_locator": "Inherited source link and interpretation; passage-level verification pending.",
+        "note": "Independent applicability and currency review remains required.",
+        "review_required": true,
+        "source_id": "SRC-08",
+        "status": "unreviewed"
+      },
+      {
+        "evidence_locator": "Inherited source link and interpretation; passage-level verification pending.",
+        "note": "Independent applicability and currency review remains required.",
+        "review_required": true,
+        "source_id": "SRC-09",
+        "status": "unreviewed"
+      },
+      {
+        "evidence_locator": "Inherited source link and interpretation; passage-level verification pending.",
+        "note": "Independent applicability and currency review remains required.",
+        "review_required": true,
+        "source_id": "SRC-10",
+        "status": "unreviewed"
+      },
+      {
+        "evidence_locator": "Inherited source link and interpretation; passage-level verification pending.",
+        "note": "Independent applicability and currency review remains required.",
+        "review_required": true,
+        "source_id": "SRC-11",
+        "status": "unreviewed"
+      },
+      {
+        "evidence_locator": "Inherited source link and interpretation; passage-level verification pending.",
+        "note": "Independent applicability and currency review remains required.",
+        "review_required": true,
+        "source_id": "SRC-12",
+        "status": "unreviewed"
+      },
+      {
+        "evidence_locator": "Inherited source link and interpretation; passage-level verification pending.",
+        "note": "Independent applicability and currency review remains required.",
+        "review_required": true,
+        "source_id": "SRC-13",
+        "status": "unreviewed"
+      },
+      {
+        "evidence_locator": "Inherited source link and interpretation; passage-level verification pending.",
+        "note": "Independent applicability and currency review remains required.",
+        "review_required": true,
+        "source_id": "LAW-123",
+        "status": "unreviewed"
+      },
+      {
+        "evidence_locator": "Inherited source link and interpretation; passage-level verification pending.",
+        "note": "Independent applicability and currency review remains required.",
+        "review_required": true,
+        "source_id": "LAW-124",
+        "status": "unreviewed"
+      },
+      {
+        "evidence_locator": "Inherited source link and interpretation; passage-level verification pending.",
+        "note": "Independent applicability and currency review remains required.",
+        "review_required": true,
+        "source_id": "LAW-1241",
+        "status": "unreviewed"
+      },
+      {
+        "evidence_locator": "Inherited source link and interpretation; passage-level verification pending.",
+        "note": "Independent applicability and currency review remains required.",
+        "review_required": true,
+        "source_id": "LAW-1242",
+        "status": "unreviewed"
+      },
+      {
+        "evidence_locator": "Inherited source link and interpretation; passage-level verification pending.",
+        "note": "Independent applicability and currency review remains required.",
+        "review_required": true,
+        "source_id": "LAW-440",
+        "status": "unreviewed"
+      },
+      {
+        "evidence_locator": "Primary public source consulted 2026-10-28 UTC; see technology_sources.json and COUNTERMEASURE_PROPOSALS.md.",
+        "note": "Maintainer hazard-context addition only. Independent medical, fire/building, accessibility, rights and legal applicability review remains pending. No deployment approval.",
+        "review_required": true,
+        "source_id": "SRC-14",
+        "status": "unreviewed"
+      },
+      {
+        "evidence_locator": "Primary public source consulted 2026-10-28 UTC; see technology_sources.json and COUNTERMEASURE_PROPOSALS.md.",
+        "note": "Maintainer hazard-context addition only. Independent medical, fire/building, accessibility, rights and legal applicability review remains pending. No deployment approval.",
+        "review_required": true,
+        "source_id": "SRC-15",
+        "status": "unreviewed"
+      }
+    ],
+    "independent_acceptance": false,
+    "review_required": true
+  },
+  "summary": {
+    "deployment_hold": 1,
+    "needs_evidence": 5,
+    "scope_unknown": 12
+  }
+}

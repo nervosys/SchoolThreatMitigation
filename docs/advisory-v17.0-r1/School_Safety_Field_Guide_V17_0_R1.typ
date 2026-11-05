@@ -124,6 +124,10 @@ metrics, independent evaluation and transparent corrective actions.
 ]
 ],
 )
+#callout[
+#strong[First and Second Amendment safeguards.] Protect lawful expression, religious exercise, peaceful assembly, association, petitions and lawful firearm ownership. Political viewpoint, criticism of officials, lawful advocacy and lawful ownership alone must not trigger threat labels, surveillance or adverse action. Require corroborated conduct, documented legal authority, independent human review and an accessible correction/appeal route.
+]
+
 == Decision requested from district leadership
 <decision-requested-from-district-leadership>
 #card[

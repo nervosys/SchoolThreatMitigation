@@ -54,3 +54,5 @@ Before reviewing a proposed KB update, compare the baseline and candidate with [
 ## Independent review evidence
 
 Generate a [pinned review packet](INDEPENDENT_REVIEW.md) before arranging acceptance review. Its knowledge records, synthetic truth tables, publication identities, criteria, and pending gates form an immutable snapshot. Qualified reviewers retain authenticated responses separately, using review IDs and record hashes. The verifier detects altered snapshots; it cannot approve material interpretations, reviewer independence, or a release.
+
+The [First and Second Amendment review standard](../../docs/CONSTITUTIONAL_RIGHTS.md) adds explicit editorial safeguards and evidence requirements. Broader rights review remains a human responsibility; new executable predicates require versioned change control and independent acceptance.

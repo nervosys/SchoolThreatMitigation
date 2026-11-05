@@ -1,0 +1,94 @@
+{
+  "revision": "17.0-r1",
+  "layout_revision": "2026-11-03",
+  "all_pages_inspected_automatically": true,
+  "agent_visual_review": true,
+  "independent_visual_and_accessibility_acceptance": false,
+  "limitations": [
+    "Token coverage is heuristic; hyphenation and punctuation may change token boundaries.",
+    "Poppler emits a catalog Suspects-type warning for these Typst PDFs; structural tags and text are checked separately by Rust.",
+    "Automated text bounds do not prove absence of visual overlap or accessibility defects."
+  ],
+  "documents": [
+    {
+      "document": "docs/advisory-v17.0-r1/Constitutional_Governance_and_Public_Trust_V17_0_R1.pdf",
+      "pdf_sha256": "9999d976e9cbbc63261e3b1f0b73b27aa5889906214661dab3581391378b4e14",
+      "pages": 1,
+      "page_images_generated": 1,
+      "out_of_page_text_spans": 0,
+      "near_blank_pages": 0,
+      "extracted_words": 434,
+      "normalized_source_token_coverage": 1.0,
+      "coverage_method": "casefolded_NFKC_unicode_token_multiset_including_headers_and_footers",
+      "agent_visual_review": true,
+      "independent_review": false
+    },
+    {
+      "document": "docs/advisory-v17.0-r1/Executive_Decision_Brief_V17_0_R1.pdf",
+      "pdf_sha256": "43a3aef426070d6717a0d812dc7aedd48d324f733b859535118c60537f2d1d2b",
+      "pages": 1,
+      "page_images_generated": 1,
+      "out_of_page_text_spans": 0,
+      "near_blank_pages": 0,
+      "extracted_words": 353,
+      "normalized_source_token_coverage": 1.0,
+      "coverage_method": "casefolded_NFKC_unicode_token_multiset_including_headers_and_footers",
+      "agent_visual_review": true,
+      "independent_review": false
+    },
+    {
+      "document": "docs/advisory-v17.0-r1/Ninety_Day_Qualification_Pilot_V17_0_R1.pdf",
+      "pdf_sha256": "85ef5f7c2c2a4bb3ae8042432cf18ce3f1f13d88a06f2eca0a94d37d660aa267",
+      "pages": 2,
+      "page_images_generated": 2,
+      "out_of_page_text_spans": 0,
+      "near_blank_pages": 0,
+      "extracted_words": 499,
+      "normalized_source_token_coverage": 1.0,
+      "coverage_method": "casefolded_NFKC_unicode_token_multiset_including_headers_and_footers",
+      "agent_visual_review": true,
+      "independent_review": false
+    },
+    {
+      "document": "docs/advisory-v17.0-r1/School_Safety_Field_Guide_V17_0_R1.pdf",
+      "pdf_sha256": "1a552d67ee29009608b51c167f97a20a6dde9b4f6db5aec08d7272ebf4c4635e",
+      "pages": 68,
+      "page_images_generated": 68,
+      "out_of_page_text_spans": 0,
+      "near_blank_pages": 0,
+      "extracted_words": 29859,
+      "normalized_source_token_coverage": 0.999387,
+      "coverage_method": "casefolded_NFKC_unicode_token_multiset_including_headers_and_footers",
+      "agent_visual_review": true,
+      "independent_review": false
+    },
+    {
+      "document": "docs/advisory-v17.0-r1/Threat_Driven_Technology_and_AI_V17_0_R1.pdf",
+      "pdf_sha256": "eb1db0b5a75aba850c10016c3417ada574f4aa3b72e0f7517ff745e3800b80b9",
+      "pages": 1,
+      "page_images_generated": 1,
+      "out_of_page_text_spans": 0,
+      "near_blank_pages": 0,
+      "extracted_words": 419,
+      "normalized_source_token_coverage": 1.0,
+      "coverage_method": "casefolded_NFKC_unicode_token_multiset_including_headers_and_footers",
+      "agent_visual_review": true,
+      "independent_review": false
+    },
+    {
+      "document": "docs/advisory-v17.0-r1/Threat_Scenario_and_Countermeasure_Engineering_V17_0_R1.pdf",
+      "pdf_sha256": "6794c639c9beac77214e87e9211295469210ce4f13873b07bb90d602b9639127",
+      "pages": 11,
+      "page_images_generated": 11,
+      "out_of_page_text_spans": 0,
+      "near_blank_pages": 0,
+      "extracted_words": 3777,
+      "normalized_source_token_coverage": 1.0,
+      "coverage_method": "casefolded_NFKC_unicode_token_multiset_including_headers_and_footers",
+      "agent_visual_review": true,
+      "independent_review": false
+    }
+  ],
+  "visual_review_method": "Agent reviewed all 84 page images in contact-sheet overviews and selected full-page details; independent editorial and accessibility acceptance remains pending.",
+  "review_completed": "2026-11-04"
+}

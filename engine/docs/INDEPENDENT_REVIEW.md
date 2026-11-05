@@ -11,7 +11,7 @@ stm-tool review-build --trusted-manifest-sha256 TRUSTED_MANIFEST_SHA256 --as-of 
 stm-tool review-verify --trusted-manifest-sha256 TRUSTED_MANIFEST_SHA256 --as-of 2026-10-27 --packet output/review/public-review-packet.json
 ```
 
-Add `--kb-root TRUSTED_SOURCE_DIRECTORY` to select another verified source bundle. The output must be a new `.json` file under the trusted tool workspace's `output` directory. Existing files are never overwritten. The packet is limited to 4 MiB; generation and verification errors print fixed redacted messages without packet contents or paths.
+Add `--root TRUSTED_SOURCE_DIRECTORY` to select another verified source bundle. The output must be a new `.json` file under the trusted tool workspace's `output` directory. Existing files are never overwritten. The packet is limited to 4 MiB; generation and verification errors print fixed redacted messages without packet contents or paths.
 
 The verifier reconstructs the entire expected packet from the trusted release and explicit date, then compares its canonical JSON. A changed record, hash, fact, proof, required criterion, publication asset, review status, source pin, date, or coverage fails verification. Changing whitespace or JSON object-key order does not change the canonical content identity. Duplicate keys and nonfinite JSON values are rejected while reading.
 

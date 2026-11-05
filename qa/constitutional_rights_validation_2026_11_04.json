@@ -1,0 +1,135 @@
+{
+  "schema_version": "1.0",
+  "date": "2026-11-04",
+  "classification": "maintainer_constitutional_rights_refinement",
+  "base_commit": "1fa3d5eb976b761608959cfdd4ab1e5a961d4aa6",
+  "knowledge_sha256": "2bcb941487fb138f3e014ff57a71140fcecd8e6bbe7fef5496abef2188b1f34c",
+  "expected_kb_version": "17.0-NSAI.4",
+  "executable_rules_changed": false,
+  "real_school_facts_submitted": 0,
+  "synthetic_cases": {
+    "registry_guardrail": "deployment_hold",
+    "profiling_guardrail": "deployment_hold",
+    "complete_assessments_replayed": 2,
+    "rules_checked_per_assessment": 18,
+    "unsupported_profile_key_rejected": true
+  },
+  "rust_checks": {
+    "formatting_passed": true,
+    "warning_denied_all_target_lint_passed": true,
+    "tests_passed": 68,
+    "ignored_subprocess_fixtures": 4
+  },
+  "native_workflow": {
+    "all_checks_passed": true,
+    "checks": [
+      {
+        "check": "knowledge_validation",
+        "passed": true
+      },
+      {
+        "check": "dependency_review_snapshot",
+        "passed": true
+      },
+      {
+        "check": "native_mcp",
+        "passed": true
+      },
+      {
+        "check": "adversarial_mcp",
+        "passed": true
+      },
+      {
+        "check": "reasoning_truth_tables",
+        "passed": true
+      },
+      {
+        "check": "frozen_retrieval_evaluation",
+        "passed": true
+      },
+      {
+        "check": "publication_structure",
+        "passed": true
+      },
+      {
+        "check": "source_privacy",
+        "passed": true
+      },
+      {
+        "check": "knowledge_version_change_gate",
+        "human_change_review_required": false,
+        "knowledge_identical": true,
+        "passed": true
+      }
+    ],
+    "truth_table_assessments_independently_replayed": 582,
+    "knowledge_identical": true,
+    "input_snapshot_manifest_sha256": "3f6ed09c7780e575eaf1eb50b2d976c4c52180d8590bef9b112a78e70ee970bb",
+    "scope": "Isolated public input snapshot; generated reports remained under ignored output. Editorial changes do not change the knowledge fingerprint."
+  },
+  "publication_validation": {
+    "documents": 6,
+    "pages": 86.0,
+    "all_page_images_rendered": true,
+    "out_of_page_text_spans": 0,
+    "minimum_heuristic_token_coverage": 0.999388,
+    "actual_source_pdf_bindings_verified": true,
+    "agent_visual_review": "all_86_pages_reviewed_with_selected_full_page_detail",
+    "independent_accessibility_acceptance": false
+  },
+  "dependency_audit": {
+    "passed": true,
+    "packages_checked": 202,
+    "advisories_checked": 1403,
+    "database_revision": "965bf9ad083b58e6340d65829d85217b18be9290",
+    "vulnerabilities": 0,
+    "warnings": 0,
+    "ignored_advisories": 0,
+    "target_filters": [],
+    "severity_filter": null,
+    "yanked_packages_checked": false,
+    "license_policy_errors": 0,
+    "license_policy_warnings": 0,
+    "source_policy_errors": 0,
+    "source_policy_warnings": 0,
+    "cargo_lock_sha256": "68b25538dad421787b13e8964f886b99b846a45c95ec9e93feda5927c9a8816e",
+    "deny_policy_sha256": "def93032de08b4eac610d5ceb7283b255a2ce67a74f79ace08a6c54591a3072b",
+    "independent_license_acceptance": false
+  },
+  "privacy": {
+    "release_inventory_files": 354,
+    "complete_public_candidate_files": 367,
+    "findings": 0,
+    "passed": true,
+    "method": "Rust raw, JSON, PDF, XML and presentation-part inspection; image/context review remains necessary"
+  },
+  "secrets": {
+    "candidate_passed": true,
+    "staged_passed": true,
+    "findings": 0,
+    "scanner_errors": 0,
+    "configuration": "default Gitleaks rules with no baseline suppression"
+  },
+  "source_reviews_unreviewed": 20,
+  "owner": "TBD",
+  "assertions_authenticated": false,
+  "independent_acceptance": false,
+  "legal_certification": false,
+  "publisher_authentication": false,
+  "deployment_authorization": false,
+  "validation_completed": "2026-11-05",
+  "primary_reference_checks": [
+    {
+      "url": "https://www.archives.gov/founding-docs/bill-of-rights-transcript",
+      "checked_on": "2026-11-04",
+      "scope": "Amendments I and II primary text",
+      "independent_legal_approval": false
+    },
+    {
+      "url": "https://app.leg.wa.gov/rcw/default.aspx?cite=9.41.280",
+      "checked_on": "2026-11-04",
+      "scope": "School weapons statute and exceptions; fact-specific application remains for counsel",
+      "independent_legal_approval": false
+    }
+  ]
+}
