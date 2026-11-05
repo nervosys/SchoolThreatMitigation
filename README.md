@@ -1,4 +1,4 @@
-# SchoolThreatMitigation -- Rust implementation
+# School Threat Mitigation: Guidance for Humans and AI Agents
 
 [<img src="docs/advisory-v17.0-r1/assets/field-guide-cover.png" alt="School Safety Field Guide — Version 17.0 Revision 1" width="440">](docs/advisory-v17.0-r1/School_Safety_Field_Guide_V17_0_R1.pdf)
 
